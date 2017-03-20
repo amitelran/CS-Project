@@ -17,6 +17,7 @@ import ntpath
 # we will need in order to calculate the MinHash.
 numHashes = 100
 shingle_size = 3
+SAMPLESDIR = 'codedatasetsample'
 
 
 # =============================================================================
@@ -655,7 +656,7 @@ def extract_APIhKey_name(traces):
 
 def generate_traces_as_text():
     parsed_traces_as_objects = parse_traces_as_objects('C:\Users\Amir\Desktop\Project\Code Data sets sample')
-    parsed_traces = parse_directory_files('C:\Users\Amir\Desktop\Project\Code Data sets sample')
+    parsed_traces = parse_directory_files(SAMPLESDIR)
     #parsed_traces = parse_directory_files('C:\\Users\\ghanayim\\Google Drive\\Virtualized Cloud Security\\DataSets\\MixAll_hooklogs_labeledBNGN')
     return extract_APIhKey_name(parsed_traces)
 
