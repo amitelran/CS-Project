@@ -3,6 +3,7 @@ from triangle_matrix import *
 import time
 from constants import *
 import datetime
+import json
 
 
 # =============================================================================
@@ -132,15 +133,13 @@ def MinHashNumpy(docsAsShingleSets):
         # TEMP
         # print('Doc index ['+ str(i) +'] signatures:' + str(signature))
     # Convert signatures matrix to numpy array
-    signatures = numpy.array(signatures)
+    # signatures = numpy.array(signatures)
     # Calculate the elapsed time (in seconds)
     elapsed = (time.time() - t0)
     print("\nGenerating MinHash signatures took %.2fsec" % elapsed)
-    print("\nOutput MinHash signatures to text file")
-    with open('Minhash_Data.txt', 'a') as text_file:
-        numpy.savetxt(text_file, signatures, fmt='%9s', newline="\n")
-        text_file.write(datetime.datetime.now().strftime("\nDate: %Y-%m-%d, %H:%M:%S\n"))
-        text_file.write("\n================================================================================================\n\n\n")
+    print("\nOutput MinHash signatures to json file")
+    with open('Minhash_Data.json', 'a') as jfile:
+        json.dump(signatures,jfile)
     return signatures
 
 
