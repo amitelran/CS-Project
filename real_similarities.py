@@ -1,6 +1,6 @@
 import time
 from triangle_matrix import *
-import Levenshtein
+#import Levenshtein
 
 # =============================================================================
 #                 Calculate Jaccard Similarities

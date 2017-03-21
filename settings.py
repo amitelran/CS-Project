@@ -2,6 +2,7 @@ def init():
 	global numHashes
 	global shingle_size
 	global samples_directory
+	global check_for_minHash_file
 
 	# This is the number of components in the resulting MinHash signatures.
 	# Correspondingly, it is also the number of random hash functions that
