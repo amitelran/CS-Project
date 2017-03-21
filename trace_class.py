@@ -8,17 +8,17 @@ import ntpath
 # =============================================================================
 
 class Trace:
-    def __init__(self, file_name, trace_name, data):
+    def __init__(self, file_name, program_name, data):
         self.file_name = file_name
-        self.trace_name = trace_name
+        self.program_name = program_name
         self.data = data
         self.is_malicious = True  # Variable to indicate if trace is malicious or benign
 
     def display_file_name(self):
         print "Trace's file name: ", self.file_name
 
-    def display_trace_name(self):
-        print "Trace Name: ", self.trace_name
+    def display_program_name(self):
+        print "Program Name: ", self.program_name
 
     def display_data(self):
         print "Trace Data: ", self.data
@@ -54,7 +54,7 @@ def parse_traces_as_objects(directory):
         # Get first line of file (trace name)
         input_file = open(fName, 'r')
         line = input_file.readline()    # Read first line of file
-        trace_name = [line.strip()]     # the program name (strips remove all white spaces at the start and end)
+        program_name = [line.strip()]     # the program name (strips remove all white spaces at the start and end)
 
         # Get trace data
         trace_data = []
@@ -64,7 +64,7 @@ def parse_traces_as_objects(directory):
             # The '+' means that other digits after the first one don't matter
             match_timestamp = re.search(r'#([\d]+)',line)  # regular expression searching for timestamp and return boolean value if found or not # TODO
             if match_timestamp:
-                trace_data.append({})  # appending an empty Python dictionary to trace_name (dictionary - set of separated words)
+                trace_data.append({})  # appending an empty Python dictionary to program_name (dictionary - set of separated words)
                 trace_data[-1]['timestamp'] = match_timestamp.group(1)
                 continue
             match_keyvalue = re.search(r'.+=.+', line)  # API Name # TODO
@@ -76,9 +76,9 @@ def parse_traces_as_objects(directory):
         # End of file lines looping
 
         input_file.close()
-        trace_objects.append(Trace(file_name, trace_name, trace_data))
+        trace_objects.append(Trace(file_name, program_name, trace_data))
         # trace_objects[-1].display_file_name()
-        # trace_objects[-1].display_trace_name()
+        # trace_objects[-1].display_program_name()
         # trace_objects[-1].display_data()
         # print
     return trace_objects
