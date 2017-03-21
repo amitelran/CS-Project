@@ -1,12 +1,10 @@
 import binascii
 import time
-from constants import *
+import settings
 
 # =============================================================================
 #               Convert Documents To Sets of Shingles
 # =============================================================================
-
-global shingle_size
 
 def convertToShingles(docs):
     print("Shingling docs...")
@@ -47,8 +45,8 @@ def convertToShingles(docs):
         # Add the hash value to the list of shingles for the current document.
         # Note that set objects will only add the value to the set if the set
         # doesn't already contain it.
-        for j in range(len(doc) - shingle_size + 1):
-            shingle = doc[j:j + shingle_size]
+        for j in range(len(doc) - settings.shingle_size + 1):
+            shingle = doc[j:j + settings.shingle_size]
             #shingle =bytes(shingle, 'UTF-8')
             crc = binascii.crc32(shingle) & 0xffffffff
             shinglesInDoc.add(crc)

@@ -1,7 +1,5 @@
 from real_similarities import calcJacaard
-from constants import *
-
-global numHashes
+import settings
 
 def lsh(sigs,b,r):
     hashMax =  50021
@@ -31,9 +29,9 @@ def findRB(signatures,docsAsShingles,jumps,falsePositivesWeight,falseNegativesWe
     for sim in calcJacaard(docsAsShingles):
         numOfAllTruePairs = numOfAllTruePairs + (sim > similarityThreshold)
 
-    for numOfBands in range(jumps,numHashes/2,jumps):
+    for numOfBands in range(jumps,settings.numHashes/2,jumps):
 
-        buckets = lsh(signatures, numOfBands, numHashes/numOfBands)
+        buckets = lsh(signatures, numOfBands, settings.numHashes/numOfBands)
         candidates = set()
         for bucketArray in buckets:
             for bucket in bucketArray:
@@ -53,7 +51,7 @@ def findRB(signatures,docsAsShingles,jumps,falsePositivesWeight,falseNegativesWe
         # print(buckets)
         falsePositives = len(candidates) - numOfTruePositives
         falseNegatives = numOfAllTruePairs - numOfTruePositives
-        print("============ B = "+str(numOfBands)+", R = "+str(numHashes/numOfBands)+" ==========")
+        print("============ B = "+str(numOfBands)+", R = "+str(settings.numHashes/numOfBands)+" ==========")
         print("similar pairs (above "+str(similarityThreshold)+"): " + str(numOfTruePositives) + " out of " + str(len(candidates)))
         print("false positives: " + str(falsePositives) + ", false negatives: " + str(falseNegatives))
         print("========================================\n")
@@ -64,5 +62,5 @@ def findRB(signatures,docsAsShingles,jumps,falsePositivesWeight,falseNegativesWe
         if(falsePositives > (len(candidates))/2):
             break
     print("Best parameters with FP weight = "+str(falsePositivesWeight)+", FN weight = "+str(falseNegativesWeight)+":")
-    print("B = "+str(bestNumOfBands)+", R = "+str(numHashes/bestNumOfBands))
-    return [bestNumOfBands,numHashes/bestNumOfBands]
+    print("B = "+str(bestNumOfBands)+", R = "+str(settings.numHashes/bestNumOfBands))
+    return [bestNumOfBands,settings.numHashes/bestNumOfBands]

@@ -1,4 +1,4 @@
-from constants import *
+import settings
 import glob
 import re
 import ntpath
@@ -77,10 +77,10 @@ def parse_traces_as_objects(directory):
 
         input_file.close()
         trace_objects.append(Trace(file_name, trace_name, trace_data))
-        trace_objects[-1].display_file_name()
-        trace_objects[-1].display_trace_name()
-        trace_objects[-1].display_data()
-        print
+        # trace_objects[-1].display_file_name()
+        # trace_objects[-1].display_trace_name()
+        # trace_objects[-1].display_data()
+        # print
     return trace_objects
 
 
@@ -148,7 +148,7 @@ def extract_APIhKey_name(traces):
     return [[t[0], '*'.join([(str(call.get('API_Name')) + '@' + str(call.get('hKey'))) for call in t[1:]])] for t in traces]
 
 def generate_traces_as_text():
-    parsed_traces_as_objects = parse_traces_as_objects(samples_directory)
-    parsed_traces = parse_directory_files(samples_directory)
+    parsed_traces_as_objects = parse_traces_as_objects(settings.samples_directory)
+    parsed_traces = parse_directory_files(settings.samples_directory)
     #parsed_traces = parse_directory_files('C:\\Users\\ghanayim\\Google Drive\\Virtualized Cloud Security\\DataSets\\MixAll_hooklogs_labeledBNGN')
     return extract_APIhKey_name(parsed_traces)

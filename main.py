@@ -3,8 +3,9 @@ import lsh
 import shingles
 import est_jaccard
 import trace_class
+import minhashing
 import sim_comparison
-from constants import *
+import settings
 
 
 
@@ -26,13 +27,14 @@ from constants import *
 
 
 def main():
+    settings.init()
     t0 = time.time()
     docs = trace_class.generate_traces_as_text()
     #docs = docs[0:50]
     #docs = random.sample(docs,30)
     docsAsShingles = shingles.convertToShingles(docs)
     numOfDocs = len(docs)
-    sigs = est_jaccard.MinHashNumpy(docsAsShingles)
+    sigs = minhashing.MinHashNumpy(docsAsShingles)
     lsh.findRB(sigs,docsAsShingles,1,1,2,0.9)
     print('\nTotal flow time took %.2f sec.' % (time.time() - t0))
 
