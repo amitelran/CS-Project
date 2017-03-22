@@ -149,7 +149,7 @@ def extract_API_name(traces):
 
 
 def extract_APIhKey_name(traces):
-    #print [[t.get_name(), '*'.join([(str(call.get('API_Name')) + '@' + str(call.get('hKey'))) for call in t.get_data()[:]])] for t in traces]
+    print [[t.get_name(), '*'.join([(str(call.get('API_Name')) + '@' + str(call.get('hKey'))) for call in t.get_data()[:]])] for t in traces]
     return [[t.get_name(), '*'.join([(str(call.get('API_Name')) + '@' + str(call.get('hKey'))) for call in t.get_data()[:]])] for t in traces]
 
 def generate_traces_as_text():
