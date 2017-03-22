@@ -32,7 +32,11 @@ class Trace:
     def change_status(self):
         self.is_malicious = not self.is_malicious
 
+    def get_name(self):
+        return self.program_name
 
+    def get_data(self):
+        return self.data
 
 # # =============================================================================
 # # =============================================================================
@@ -79,7 +83,7 @@ def parse_traces_as_objects(directory):
         trace_objects.append(Trace(file_name, program_name, trace_data))
         # trace_objects[-1].display_file_name()
         # trace_objects[-1].display_program_name()
-        # trace_objects[-1].display_data()
+        #trace_objects[-1].display_data()
         # print
     return trace_objects
 
@@ -145,10 +149,11 @@ def extract_API_name(traces):
 
 
 def extract_APIhKey_name(traces):
-    return [[t[0], '*'.join([(str(call.get('API_Name')) + '@' + str(call.get('hKey'))) for call in t[1:]])] for t in traces]
+    #print [[t.get_name(), '*'.join([(str(call.get('API_Name')) + '@' + str(call.get('hKey'))) for call in t.get_data()[:]])] for t in traces]
+    return [[t.get_name(), '*'.join([(str(call.get('API_Name')) + '@' + str(call.get('hKey'))) for call in t.get_data()[:]])] for t in traces]
 
 def generate_traces_as_text():
     parsed_traces_as_objects = parse_traces_as_objects(settings.samples_directory)
     parsed_traces = parse_directory_files(settings.samples_directory)
     #parsed_traces = parse_directory_files('C:\\Users\\ghanayim\\Google Drive\\Virtualized Cloud Security\\DataSets\\MixAll_hooklogs_labeledBNGN')
-    return extract_APIhKey_name(parsed_traces)
+    return extract_APIhKey_name(parsed_traces_as_objects)
