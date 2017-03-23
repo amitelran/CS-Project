@@ -2,7 +2,7 @@ from real_similarities import calcJacaard
 import settings
 
 def lsh(sigs,b,r):
-    hashMax =  50021
+    hashMax =  settings.hashMax
 
     buckets = list()
     for i in range(b):

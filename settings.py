@@ -5,6 +5,7 @@ def init():
 	global check_for_minHash_file
 	global numBands
 	global nextPrime
+	global hashMax
 
 	# This is the number of components in the resulting MinHash signatures.
 	# Correspondingly, it is also the number of random hash functions that
@@ -15,3 +16,4 @@ def init():
 	shingle_size = 3
 	samples_directory = 'codedatasetsample'
 	nextPrime = 4294967311
+	hashMax = 50021
