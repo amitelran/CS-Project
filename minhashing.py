@@ -26,7 +26,7 @@ def MinHashNumpy(docsAsShingleSets):
         # We need the next largest prime number above 'maxShingleID'.
         # I looked this value up here:
         # http://compoasso.free.fr/primelistweb/page/prime/liste_online_en.php
-        nextPrime = 4294967311
+        nextPrime = settings.nextPrime
 
         # Our random hash function will take the form of:
         #   h(x) = (a*x + b) % c
