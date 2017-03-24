@@ -3,7 +3,8 @@ import settings
 import json
 import dump_load_args
 
-def lsh(sigs,b,r):
+def build_buckets(sigs, b, r):
+	print "\nBuilding buckets with LSH...\n"
 	hashMax =  settings.hashMax
 
 	buckets = list()
@@ -26,6 +27,30 @@ def lsh(sigs,b,r):
 	dump_load_args.DumpBuckets(buckets)
 	return buckets
 
+def classify_new_data(sigs, b, r, buckets):
+	print "\nClassifying with LSH...\n"
+	hashMax =  settings.hashMax
+	neighbors = [list() for _ in range(len(sigs))]
+	for i in range(b):
+		for j in range(len(sigs)):
+			#print("i = "+str(i)+", j = "+str(j))
+			#print(sigs[j][b*(i):b*(i)+r])
+			start=b*i
+			if i == b-1:
+				end = None
+			else:
+				end = b*i+r
+			curHash = int(hash(tuple(sigs[j][start:end]))) % hashMax
+			#print(curHash
+			if curHash in buckets[i]:
+				# buckets[i][curHash].append(j)
+				neighbors[j].append(buckets[i][curHash])
+			else:
+				# buckets[i][curHash] = [j]
+				neighbors[j].append([])
+	# dump_load_args.DumpBuckets(buckets)
+	return neighbors
+
 def findRB(signatures,docsAsShingles,jumps,falsePositivesWeight,falseNegativesWeight,similarityThreshold):
 	numOfAllTruePairs = 0
 	bestNumOfBands = 0
@@ -36,7 +61,7 @@ def findRB(signatures,docsAsShingles,jumps,falsePositivesWeight,falseNegativesWe
 
 	for numOfBands in range(jumps,settings.numHashes/2,jumps):
 
-		buckets = lsh(signatures, numOfBands, settings.numHashes/numOfBands)
+		buckets = build_buckets(signatures, numOfBands, settings.numHashes / numOfBands)
 		candidates = set()
 		for bucketArray in buckets:
 			for bucket in bucketArray:

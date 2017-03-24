@@ -27,16 +27,19 @@ def LoadMinHashSignaturesBuckets():
 
 
 def DumpMinHash(CoeffA,CoeffB,nextPrime):
-	print("\nSaving MinHash parameters to file...\n")
+	print("\nSaving MinHash parameters to file...")
 	with open(minhashes_file, 'wb') as f:
 		pickle.dump((CoeffA, CoeffB, nextPrime), f, pickle.HIGHEST_PROTOCOL)
+	print "DONE"
 
 def DumpSignatures(signatures):
-	print("\nSaving Signatures to file...\n")
+	print("\nSaving Signatures to file...")
 	with open(signatures_file, 'wb') as f:
 		pickle.dump(signatures, f, pickle.HIGHEST_PROTOCOL)
+	print "DONE"
 
 def DumpBuckets(buckets):
-	print("\nSaving Buckets to file...\n")
+	print("\nSaving Buckets to file...")
 	with open(buckets_file, 'wb') as f:
 		pickle.dump(buckets, f, pickle.HIGHEST_PROTOCOL)
+	print "DONE"

@@ -7,7 +7,7 @@ import settings
 # =============================================================================
 
 def convertToShingles(docs):
-    print("Shingling docs...")
+    print "Shingling " + str(len(docs)) + " docs..."
 
     # The current shingle ID value to assign to the next new shingle we
     # encounter. When a shingle gets added to the dictionary, we'll increment this

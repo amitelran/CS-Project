@@ -12,11 +12,7 @@ import dump_load_args
 def MinHashNumpy(docsAsShingleSets):
 	# List of documents represented as signature vectors
 	signatures = []
-	print('\nGenerating random hash functions...')
 	t0 = time.time()  # Time the calculation.
-
-	# Record the maximum shingle ID that we assigned.
-	maxShingleID = 2 ** 32 - 1
 
 	# We need the next largest prime number above 'maxShingleID'.
 	# I looked this value up here:
@@ -33,8 +29,8 @@ def MinHashNumpy(docsAsShingleSets):
 	# list.
 
 	# For each of the 'numHashes' hash functions, generate a different coefficient 'a' and 'b'.
-	coeffA = pickRandomCoeffs(settings.numHashes, maxShingleID)
-	coeffB = pickRandomCoeffs(settings.numHashes, maxShingleID)
+	coeffA = settings.coeffA
+	coeffB = settings.coeffB
 
 	## TEMP
 	# print('Random Hash Functions: h(x) = (a*x + b) % c :')
@@ -91,8 +87,6 @@ def MinHashNumpy(docsAsShingleSets):
 	# Calculate the elapsed time (in seconds)
 	elapsed = (time.time() - t0)
 	print("\nGenerating MinHash signatures took %.2fsec" % elapsed)
-	dump_load_args.DumpMinHash(coeffA,coeffB,nextPrime)
-	dump_load_args.DumpSignatures(signatures)
 	return signatures
 
 
@@ -199,3 +193,8 @@ def pickRandomCoeffs(k, maxShingleID):
 
 	return randList
 
+
+def setRandomCoeffs():
+	print('\nGenerating random hash functions...')
+	settings.coeffA = pickRandomCoeffs(settings.numHashes, settings.maxShingleID)
+	settings.coeffB = pickRandomCoeffs(settings.numHashes, settings.maxShingleID)
