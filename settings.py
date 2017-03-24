@@ -23,9 +23,9 @@ def init():
 	samples_directory = 'codedatasetsample'
 	nextPrime = 4294967311
 	hashMax = 50021
-	minhash_path = "minhash_data.json"
-	signatures_path = "signatures.json"
-	buckets_path = "buckets.json"
+	minhash_path = "data//minhash_data.pkl"
+	signatures_path = "data//signatures.pkl"
+	buckets_path = "data//buckets.pkl"
 	coeffA = None
 	coeffB = None
 	overwriteData = False

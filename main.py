@@ -35,6 +35,15 @@ def main():
 	if not settings.overwriteData and dump_load_args.dataFilesExist():
 		try:
 			sigs,buckets = dump_load_args.LoadMinHashSignaturesBuckets()
+			print
+			print "Buckets:"
+			print buckets
+			print "Signatures:"
+			print sigs
+			print "MinHash parameters:"
+			print "\tCoeffA: " + str(settings.coeffA)
+			print "\tCoeffB: " + str(settings.coeffB)
+			print "\tnextPrime: " + str(settings.nextPrime)
 		except:
 			print "Error loading data from files"
 			print "Error type: " + sys.exc_type

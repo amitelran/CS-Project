@@ -3,6 +3,7 @@ import os
 import json
 import sys
 from minhashing import MinHashNumpy
+import pickle
 
 minhashes_file = settings.minhash_path
 signatures_file = settings.signatures_path
@@ -14,12 +15,12 @@ def dataFilesExist():
 def LoadMinHashSignaturesBuckets():
 	print "\nLoading Signatures, MinHash parameters and Buckets..."
 	if dataFilesExist():
-		with open(signatures_file,'r') as jfile:
-			signatures = json.load(jfile)
-		with open(minhashes_file,'r') as jfile:
-			settings.coeffA, settings.coeffB, settings.nextPrime = json.load(jfile)
-		with open(buckets_file,'r') as jfile:
-			buckets = json.load(jfile)
+		with open(signatures_file, 'rb') as f:
+			signatures = pickle.load(f)
+		with open(minhashes_file, 'rb') as f:
+			settings.coeffA, settings.coeffB, settings.nextPrime = pickle.load(f)
+		with open(buckets_file, 'rb') as f:
+			buckets = pickle.load(f)
 		print "DONE"
 		return signatures,buckets
 	raise Exception("Some data files not found...")
@@ -27,15 +28,15 @@ def LoadMinHashSignaturesBuckets():
 
 def DumpMinHash(CoeffA,CoeffB,nextPrime):
 	print("\nSaving MinHash parameters to file...\n")
-	with open(minhashes_file, 'w') as jfile:
-		json.dump((CoeffA, CoeffB, nextPrime), jfile)
+	with open(minhashes_file, 'wb') as f:
+		pickle.dump((CoeffA, CoeffB, nextPrime), f, pickle.HIGHEST_PROTOCOL)
 
 def DumpSignatures(signatures):
 	print("\nSaving Signatures to file...\n")
-	with open(signatures_file, 'w') as jfile:
-		json.dump(signatures, jfile)
+	with open(signatures_file, 'wb') as f:
+		pickle.dump(signatures, f, pickle.HIGHEST_PROTOCOL)
 
 def DumpBuckets(buckets):
 	print("\nSaving Buckets to file...\n")
-	with open(buckets_file, 'w') as jfile:
-		json.dump(buckets, jfile)
+	with open(buckets_file, 'wb') as f:
+		pickle.dump(buckets, f, pickle.HIGHEST_PROTOCOL)
