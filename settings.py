@@ -1,3 +1,5 @@
+import os
+
 def init():
 	global numHashes
 	global shingle_size
@@ -7,9 +9,10 @@ def init():
 	global numBands
 	global nextPrime
 	global hashMax
-	global minhash_path
-	global signatures_path
-	global buckets_path
+	global clustered_data_directory
+	global minhash_file
+	global signatures_file
+	global buckets_file
 	global coeffA
 	global coeffB
 	global overwriteData
@@ -29,9 +32,10 @@ def init():
 	unclassified_traces_directory = 'unclassifiedtraces'
 	nextPrime = 4294967311
 	hashMax = 50021
-	minhash_path = "data//minhash_data.pkl"
-	signatures_path = "data//signatures.pkl"
-	buckets_path = "data//buckets.pkl"
+	clustered_data_directory = "data"
+	minhash_file = "minhash_data.pkl"
+	signatures_file = "signatures.pkl"
+	buckets_file = "buckets.pkl"
 	coeffA = None
 	coeffB = None
 	overwriteData = False
