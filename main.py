@@ -24,7 +24,7 @@ import sys
 
 
 def main():
-	t0 = time.time()
+	t0 = time.time()		# Store beginning time to measure running time
 	if not settings.overwriteData and dump_load_args.dataFilesExist():
 		try:
 			sigs,buckets = dump_load_args.LoadMinHashSignaturesBuckets()

@@ -6,6 +6,9 @@ import settings
 #               Convert Documents To Sets of Shingles
 # =============================================================================
 
+# Function that receives traces as input, and converts the data to shingles according to the
+# shingle size set in settings.py
+
 def convertToShingles(docs):
     print "Shingling " + str(len(docs)) + " docs..."
 
@@ -24,7 +27,7 @@ def convertToShingles(docs):
 
     totalShingles = 0
 
-    for i in range(0, numDocs):
+    for i in range(0, numDocs):                # For every trace, convert its' data to shingles
         doc = docs[i]
         docID = doc[0]
         doc = doc[1]

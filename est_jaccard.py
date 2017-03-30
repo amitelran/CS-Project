@@ -1,3 +1,4 @@
+from minhashing import MinHashNumpy
 from triangle_matrix import *
 import time
 import settings
@@ -10,7 +11,7 @@ import settings
 def calcEstJacaard(docsAsShingleSets):
     print('\nComparing all signatures...')
 
-    signatures = MinHash(docsAsShingleSets)
+    signatures = MinHashNumpy(docsAsShingleSets)
 
     numDocs = len(docsAsShingleSets)
     estJSim = createTriangleMatrixNumpy(numDocs)

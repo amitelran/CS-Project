@@ -1,5 +1,6 @@
 import os
 
+# globalize all of the settings
 def init():
 	global numHashes
 	global shingle_size
@@ -24,19 +25,18 @@ def init():
 	# we will need in order to calculate the MinHash.
 
 	numHashes = 100
-	# Record the maximum shingle ID that we assigned.
-	maxShingleID = 2 ** 32 - 1
-	numBands = 5
-	shingle_size = 3
-	samples_directory = 'codedatasetsample'
-	unclassified_traces_directory = 'unclassifiedtraces'
-	nextPrime = 4294967311
-	hashMax = 50021
-	clustered_data_directory = "data"
-	minhash_file = "minhash_data.pkl"
-	signatures_file = "signatures.pkl"
-	buckets_file = "buckets.pkl"
+	maxShingleID = 2 ** 32 - 1					# Record the maximum shingle ID that we assigned.
+	numBands = 5								# Number of bands set
+	shingle_size = 3							# Size of a shingle
+	samples_directory = 'codedatasetsample'		# Reference to traces directory
+	unclassified_traces_directory = 'unclassifiedtraces'		# The directory where unclassified traces inserted until classification is made
+	nextPrime = 4294967311						# Value of next prime number
+	hashMax = 50021								# Maximum number of MinHash functions
+	clustered_data_directory = "data"			# Directory storing the already clustered traces data
+	minhash_file = "minhash_data.pkl"			# Pickle file storing all generated MinHash functions data
+	signatures_file = "signatures.pkl"			# Pickle file storing signatures matrix data
+	buckets_file = "buckets.pkl"				# Pickle file storing all buckets data
 	coeffA = None
 	coeffB = None
 	overwriteData = False
-	classifyTraces = True
+	classifyTraces = True						# Boolean to indicate traces classification on
