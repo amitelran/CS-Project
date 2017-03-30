@@ -7,9 +7,8 @@ def build_buckets(sigs, b, r):
 	print "\nBuilding buckets with LSH...\n"
 	hashMax =  settings.hashMax
 
-	buckets = list()
+	buckets = dict()
 	for i in range(b):
-		buckets.append(dict())
 		for j in range(0,len(sigs)):
 			#print("i = "+str(i)+", j = "+str(j))
 			#print(sigs[j][b*(i):b*(i)+r])
@@ -20,10 +19,10 @@ def build_buckets(sigs, b, r):
 				end = b*i+r
 			curHash = int(hash(tuple(sigs[j][start:end]))) % hashMax
 			#print(curHash)
-			if curHash in buckets[-1]:
-				buckets[-1][curHash].append(j)
+			if curHash in buckets:
+				buckets[curHash].append(j)
 			else:
-				buckets[-1][curHash] = [j]
+				buckets[curHash] = [j]
 	dump_load_args.DumpBuckets(buckets)
 	return buckets
 
@@ -42,12 +41,12 @@ def classify_new_data(sigs, b, r, buckets):
 				end = b*i+r
 			curHash = int(hash(tuple(sigs[j][start:end]))) % hashMax
 			#print(curHash
-			if curHash in buckets[i]:
+			if curHash in buckets:
 				# buckets[i][curHash].append(j)
-				neighbors[j].append(buckets[i][curHash])
+				neighbors[j].append((curHash,buckets[curHash]))
 			else:
 				# buckets[i][curHash] = [j]
-				neighbors[j].append([])
+				neighbors[j].append((curHash,[]))
 	# dump_load_args.DumpBuckets(buckets)
 	return neighbors
 
