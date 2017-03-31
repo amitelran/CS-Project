@@ -2,15 +2,16 @@ import numpy
 import time
 from matplotlib import pyplot
 
+# Similarities comparison
 def CompareSimilarities(Sim1,Sim2):
     delta = [(x - y) for x, y in zip(Sim1, Sim2)]
     avg_delta = sum(delta) / float(len(delta))
     max_delta = max(delta)
     min_delta = min(delta)
     median_delta = numpy.median(numpy.array(delta))
-
     print('Delta- Avg: %.3f, Max: %.3f, Min: %.3f, Median: %.3f' % (avg_delta,max_delta,min_delta,median_delta))
 
+# Similarities comparison calculation of relative error
 def CompareSimilarities_RelativeError(Sim1,Sim2):
     relative_err = [abs(x - y) / x for x, y in zip(Sim1, Sim2) if x != 0 ]
     avg_relative_err = numpy.mean(numpy.array(relative_err)) # (sum(relative_err) / float(len(relative_err)))
@@ -26,6 +27,7 @@ def CompareSimilarities_RelativeError(Sim1,Sim2):
     pyplot.ylabel('Frequency')
     pyplot.show()
 
+# Checking monotonicity of similarities input
 def CheckMono(Sim1,Sim2):
     if len(Sim1) != len(Sim2):
         print('num of pairs in Sim1 are not equal to num of pairs in Sim2')

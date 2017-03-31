@@ -5,21 +5,19 @@ from triangle_matrix import *
 # =============================================================================
 #                 Calculate Jaccard Similarities
 # =============================================================================
+
 # In this section, we will directly calculate the Jaccard similarities by
 # comparing the sets. This is included here to show how much slower it is than
 # the MinHash approach.
 
 def calcJaccard(docsAsShingleSets):
-    #print("\nCalculating Jaccard Similarities...")
-
+    #print("\nCalculating Jaccard Similarities..."
     numDocs = len(docsAsShingleSets)
     JSim = createTriangleMatrixNumpy(numDocs)
-
     t0 = time.time()  # Time the calculation.
 
     # For every document pair...
     for i in range(0, numDocs):
-
         # Print progress every 100 documents.
         #if (i % 100) == 0:
         #    print("  (" + str(i) + " / " + str(numDocs) + ")")
@@ -43,13 +41,12 @@ def calcJaccard(docsAsShingleSets):
 # =============================================================================
 #                 Calculate Levenstien Distance
 # =============================================================================
+
 def calcLev(docs):
     print("\nCalculating Levenshtein Similarities...")
-
     numDocs = len(docs)
     LevSim = createTriangleMatrixNumpy(numDocs)
     t0 = time.time()  # Time the calculation.
-
     for i in range(0, numDocs):
         # Print progress every 100 documents.
         if (i % 100) == 0:
@@ -63,11 +60,9 @@ def calcLev(docs):
             ##TEMP
             # print('NormED(' + str(i) + ',' + str(j) + ')=' + str(LevSim[getTriangleIndex(i, j, numDocs)]) + ', Lengths:'+ str(len(s1)) + ',' + str(len(s2)))
 
-
     # Calculate the elapsed time (in seconds)
     elapsed = (time.time() - t0)
     print("\nCalculating all Levenshtein Similarities took %.2fsec" % elapsed)
-
     return LevSim
 
 

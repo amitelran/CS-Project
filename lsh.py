@@ -7,7 +7,7 @@ import dump_load_args
 def build_buckets(sigs, b, r):
 	print "\nBuilding buckets with LSH...\n"
 	hashMax =  settings.hashMax
-	buckets = dict()
+	buckets = dict()				# Setting buckets as dictionary structure
 	for i in range(b):
 		for j in range(0,len(sigs)):
 			#print("i = "+str(i)+", j = "+str(j))
