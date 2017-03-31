@@ -84,8 +84,8 @@ def main():
 			print "Trace File Name: \"%s\"" % new_docsObjects[i].get_filename()
 			print "Program Name: \"%s\"" % new_docsObjects[i].get_name()
 			for j in range(len(classify[i])):
-				print "\tBucket #%d: %d neighbors" % (j + 1, len(classify[i][j]))
-			all_neighbors = set.union(*[set(bucket) for bucket in classify[i]])
+				print "\tBand #%d: bucket %d: %d neighbors" % (j + 1, classify[i][j][0], len(classify[i][j][1]))
+			all_neighbors = set.union(*[set(bucket[1]) for bucket in classify[i]])
 			print "\t\t>> Total unique neighbors: %d" % len(all_neighbors)
 
 	print('\nTotal flow time took %.2f sec.' % (time.time() - t0))
