@@ -178,7 +178,6 @@ def MinHash(docsAsShingleSets):
 def pickRandomCoeffs(k, maxShingleID):
 	# Create a list of 'k' random values.
 	randList = []
-
 	while k > 0:
 		# Get a random shingle ID.
 		randIndex = random.randint(0, maxShingleID)
@@ -193,7 +192,7 @@ def pickRandomCoeffs(k, maxShingleID):
 
 	return randList
 
-
+# Get random co-efficients for MinHash functions
 def setRandomCoeffs():
 	print('\nGenerating random hash functions...')
 	settings.coeffA = pickRandomCoeffs(settings.numHashes, settings.maxShingleID)

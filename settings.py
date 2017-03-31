@@ -36,7 +36,7 @@ def init():
 	minhash_file = "minhash_data.pkl"			# Pickle file storing all generated MinHash functions data
 	signatures_file = "signatures.pkl"			# Pickle file storing signatures matrix data
 	buckets_file = "buckets.pkl"				# Pickle file storing all buckets data
-	coeffA = None
-	coeffB = None
+	coeffA = None								# 1st Co-efficient for MinHash functions
+	coeffB = None								# 2nd Co-efficient for MinHash functions
 	overwriteData = False						# Boolean to indicate whether need to overwrite existing MinHash, Signatures & Buckets existing data
 	classifyTraces = True						# Boolean to indicate whether need to classify traces or not
