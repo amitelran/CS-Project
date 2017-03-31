@@ -3,30 +3,60 @@ import settings
 import json
 import dump_load_args
 
-# Build buckets for traces classification
+# ================================================================================================================================
+#	 LSH (Locality Sensitive Hashing \ Near-Neighbour Search) calculation, Buckets building, Classification of unclassified traces
+# ================================================================================================================================
+
+## Definitons:
+
+	## Candidate pair - Any pair of traces that hashed to the same bucket for any of the hashings.
+		##  We check only candidate pairs for similarity.
+	## True Positives - similiar trace pairs that hash to the same bucket under at least one of the hash functions.
+	## False Positives - dissimilar trace pairs that hash to the same bucket.
+	## False Negatives - similar trace pairs that don't hash to the same bucket.
+
+	## Given MinHash signatures, we will divide the signature matrix into B bands, each band consisting R rows.
+		## for each band, there is a hash function that takes vectors of R integers(the portion of
+		## one column within that band) and hashes them to some large number of buckets.
+		## We use a separate bucket array for each band, so columns with the same vector in
+		## different bands will not hash to the same bucket.
+
+# =============================================================================
+
+# Build buckets for traces classification:
+# Takes the signatures matrix 'sigs', divide it to 'b' bands, each with 'r' rows, hashes each band and saves the
+# index of the respective trace (by signature index) in the hash 2 dimensional array ([band-number][hash-result]).
+
 def build_buckets(sigs, b, r):
 	print "\nBuilding buckets with LSH...\n"
-	hashMax =  settings.hashMax
-	buckets = dict()				# Setting buckets as dictionary structure
+	hashMax = settings.hashMax		# Get the maximal number of hash functions as set in settings.py
+	buckets = dict()
+
+	# Hashing for each of the bands (number of bands as set by 'b' input)
 	for i in range(b):
-		for j in range(0,len(sigs)):
+		for j in range(0, len(sigs)):		# Go through all line elements in a band row (number of columns of signatures matrix)
 			#print("i = "+str(i)+", j = "+str(j))
 			#print(sigs[j][b*(i):b*(i)+r])
-			start=b*i
-			if i == b-1:
+			start = b*i				# start point of the band
+			if i == b-1:			# If reached to the last band, define the end as a NoneType value (Respresents absence of a value)
 				end = None
 			else:
-				end = b*i+r
-			curHash = int(hash(tuple(sigs[j][start:end]))) % hashMax
+				end = b*i + r		# If not the last band, set 'end' as the start of the band plus number of rows in a single band
+			curHash = int(hash(tuple(sigs[j][start:end]))) % hashMax		# Hash current band
 			#print(curHash)
+
+			# Check for membership of current hashing in the buckets dictionary structure:
+			# If already existing bucket for hash value --> append to the corresponding bucket
+			# else, map the new bucket according to the hashing value
 			if curHash in buckets:
 				buckets[curHash].append(j)
 			else:
 				buckets[curHash] = [j]
-	dump_load_args.DumpBuckets(buckets)
+	dump_load_args.DumpBuckets(buckets)			# Dump data into buckets data file
 	return buckets
 
-# Classifty new incoming traces
+
+# Classify new incoming traces (similar way to the build_buckets function above)
 def classify_new_data(sigs, b, r, buckets):
 	print "\nClassifying with LSH...\n"
 	hashMax =  settings.hashMax
@@ -35,7 +65,7 @@ def classify_new_data(sigs, b, r, buckets):
 		for j in range(len(sigs)):
 			#print("i = "+str(i)+", j = "+str(j))
 			#print(sigs[j][b*(i):b*(i)+r])
-			start=b*i
+			start = b*i
 			if i == b-1:
 				end = None
 			else:
@@ -51,7 +81,11 @@ def classify_new_data(sigs, b, r, buckets):
 	# dump_load_args.DumpBuckets(buckets)
 	return neighbors
 
-#
+# =============================================================================
+
+# Function that experimenting with different Bands & Rows values,
+# and finds the optimal Bands & Rows values according to a given weight and similarity threshold.
+
 def findRB(signatures,docsAsShingles,jumps,falsePositivesWeight,falseNegativesWeight,similarityThreshold):
 	numOfAllTruePairs = 0
 	bestNumOfBands = 0			# Insert to this variable what is the optimal number of bands
@@ -61,7 +95,7 @@ def findRB(signatures,docsAsShingles,jumps,falsePositivesWeight,falseNegativesWe
 	for sim in calcJaccard(docsAsShingles):
 		numOfAllTruePairs = numOfAllTruePairs + (sim > similarityThreshold)
 
-	# Build buckets and check for optimal band size
+	# For each band check:
 	for numOfBands in range(jumps,settings.numHashes/2,jumps):
 		buckets = build_buckets(signatures, numOfBands, settings.numHashes / numOfBands)
 		candidates = set()

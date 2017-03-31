@@ -1,6 +1,10 @@
 import os
 
-# globalize all of the settings
+# =============================================================================
+#								 Settings
+# =============================================================================
+
+# Globalize all of the settings
 def init():
 	global numHashes
 	global shingle_size
