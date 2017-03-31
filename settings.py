@@ -38,5 +38,5 @@ def init():
 	buckets_file = "buckets.pkl"				# Pickle file storing all buckets data
 	coeffA = None
 	coeffB = None
-	overwriteData = False
-	classifyTraces = True						# Boolean to indicate traces classification on
+	overwriteData = False						# Boolean to indicate whether need to overwrite existing MinHash, Signatures & Buckets existing data
+	classifyTraces = True						# Boolean to indicate whether need to classify traces or not

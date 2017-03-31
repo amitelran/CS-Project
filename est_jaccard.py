@@ -3,12 +3,11 @@ from triangle_matrix import *
 import time
 import settings
 
-
 # =============================================================================
-#                     Calculate Est Jacaard
+#                     Calculate Estimated Jaccard
 # =============================================================================
 
-def calcEstJacaard(docsAsShingleSets):
+def calcEstJaccard(docsAsShingleSets):
     print('\nComparing all signatures...')
 
     signatures = MinHashNumpy(docsAsShingleSets)

@@ -9,7 +9,7 @@ from triangle_matrix import *
 # comparing the sets. This is included here to show how much slower it is than
 # the MinHash approach.
 
-def calcJacaard(docsAsShingleSets):
+def calcJaccard(docsAsShingleSets):
     #print("\nCalculating Jaccard Similarities...")
 
     numDocs = len(docsAsShingleSets)

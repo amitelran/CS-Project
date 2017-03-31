@@ -25,6 +25,8 @@ import sys
 
 def main():
 	t0 = time.time()		# Store beginning time to measure running time
+	# Check whether there is already Minhash, Signatures & Buckets data exists. If so, load the existing data.
+	# else, generate MinHash functions, Signatures & Buckets data, and store this data by exporting to files.
 	if not settings.overwriteData and dump_load_args.dataFilesExist():
 		try:
 			sigs,buckets = dump_load_args.LoadMinHashSignaturesBuckets()
@@ -44,7 +46,7 @@ def main():
 			print "Error type: " + str(sys.exc_type)
 			print "Terminating..."
 			return
-	else:
+	else:		# (If no data exists, generate MinHash, Signatures & Buckets data and export (a.k.a dump) to files
 		docsObjects = trace_parser.parse_traces_as_objects(settings.samples_directory)
 		docs_as_strings = trace_parser.generate_traces_as_text(docsObjects)
 		# docs = docs[0:50]
@@ -60,21 +62,22 @@ def main():
 		buckets = lsh.build_buckets(sigs, settings.numBands, settings.numHashes / settings.numBands)
 		# print buckets
 
-	if settings.classifyTraces:
+	if settings.classifyTraces:		# Need to classify traces (Indicating boolean is 'ON')
+		# First, get unclassified traces from the unclassified-traces directory, and parse them as text
 		new_docsObjects = trace_parser.parse_traces_as_objects(settings.unclassified_traces_directory)
 		new_docs_as_strings = trace_parser.generate_traces_as_text(new_docsObjects)
 
 		# docs = docs[0:50]
 		# docs = random.sample(docs,30)
 
+		# Classification of unclassified traces:
 		print "\nStarting classification...\n"
-
 		new_docsAsShingles = shingles.convertToShingles(new_docs_as_strings)
 		# print docsAsShingles
 		# numOfDocs = len(new_docs)
-		new_sigs = minhashing.MinHashNumpy(new_docsAsShingles)
+		new_sigs = minhashing.MinHashNumpy(new_docsAsShingles)	# New signatures matrix
 		# lsh.findRB(sigs,docsAsShingles,1,1,2,0.9)
-		classify = lsh.classify_new_data(new_sigs, settings.numBands, settings.numHashes / settings.numBands, buckets)
+		classify = lsh.classify_new_data(new_sigs, settings.numBands, settings.numHashes / settings.numBands, buckets)	# Finally, classify the un-classified traces
 		# buckets = lsh.lsh(sigs, settings.numBands, settings.numHashes / settings.numBands)
 
 		print "Classification results:"

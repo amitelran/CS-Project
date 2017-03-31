@@ -1,4 +1,4 @@
-from real_similarities import calcJacaard
+from real_similarities import calcJaccard
 import settings
 import json
 import dump_load_args
@@ -55,7 +55,7 @@ def findRB(signatures,docsAsShingles,jumps,falsePositivesWeight,falseNegativesWe
 	bestNumOfBands = 0
 	minValue = float("inf")
 
-	for sim in calcJacaard(docsAsShingles):
+	for sim in calcJaccard(docsAsShingles):
 		numOfAllTruePairs = numOfAllTruePairs + (sim > similarityThreshold)
 
 	for numOfBands in range(jumps,settings.numHashes/2,jumps):
@@ -75,7 +75,7 @@ def findRB(signatures,docsAsShingles,jumps,falsePositivesWeight,falseNegativesWe
 			pairList = list(pair)
 			# print("pair #"+str(i)+": "+str(pairList))
 			i = i + 1
-			if (calcJacaard([docsAsShingles[pairList[0]], docsAsShingles[pairList[1]]])[0] > similarityThreshold):
+			if (calcJaccard([docsAsShingles[pairList[0]], docsAsShingles[pairList[1]]])[0] > similarityThreshold):
 				numOfTruePositives = numOfTruePositives + 1
 		# print(buckets)
 		falsePositives = len(candidates) - numOfTruePositives
