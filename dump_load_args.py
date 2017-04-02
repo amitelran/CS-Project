@@ -13,10 +13,11 @@ directory = settings.clustered_data_directory						# Get directory of clustered 
 minhashes_file = os.path.join(directory, settings.minhash_file)		# Get MinHash data file
 signatures_file = os.path.join(directory, settings.signatures_file)	# Get Signatures data file
 buckets_file = os.path.join(directory, settings.buckets_file)		# Get buckets data file
+traces_file = os.path.join(directory, settings.traces_file)			# Get traces data file
 
 # Check if there are already existing MinHash, Signatures & Buckets data files
 def dataFilesExist():
-	return os.path.isfile(minhashes_file) and os.path.isfile(signatures_file) and os.path.isfile(buckets_file)
+	return os.path.isfile(minhashes_file) and os.path.isfile(signatures_file) and os.path.isfile(buckets_file) and os.path.isfile(traces_file)
 
 # Check whether there is an existing path for data files directory. If not, create a directory.
 def makeSurePathExists():
@@ -33,8 +34,10 @@ def LoadMinHashSignaturesBuckets():
 			settings.coeffA, settings.coeffB, settings.nextPrime = pickle.load(f)
 		with open(buckets_file, 'rb') as f:
 			buckets = pickle.load(f)
+		with open(traces_file, 'rb') as f:
+			traces = pickle.load(f)
 		print "DONE"
-		return signatures,buckets
+		return signatures,buckets,traces
 	raise Exception("Some data files not found...")
 
 # Dump MinHash calculated data to MinHash data file in set directory
@@ -59,4 +62,12 @@ def DumpBuckets(buckets):
 	print("\nSaving Buckets to file...")
 	with open(buckets_file, 'wb') as f:
 		pickle.dump(buckets, f, pickle.HIGHEST_PROTOCOL)
+	print "DONE"
+
+# Dump Traces calculated data to Traces data file in set directory
+def DumpTraces(traces):
+	makeSurePathExists()
+	print("\nSaving Traces to file...")
+	with open(traces_file, 'wb') as f:
+		pickle.dump(traces, f, pickle.HIGHEST_PROTOCOL)
 	print "DONE"

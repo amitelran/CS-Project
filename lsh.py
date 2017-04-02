@@ -63,6 +63,7 @@ def build_buckets(sigs, b, r, docsObjects):
 			else:
 				buckets[curHash] = [j]
 	dump_load_args.DumpBuckets(buckets)			# Dump data into buckets data file
+	dump_load_args.DumpTraces(traces)			# Dump data into traces data file
 	#print traces
 	return buckets
 
@@ -97,6 +98,7 @@ def classify_new_data(sigs, b, r, buckets, docsObjects):
 				# buckets[i][curHash] = [j]
 				neighbors[j].append((curHash,[]))
 	# dump_load_args.DumpBuckets(buckets)
+	# dump_load_args.DumpTraces(traces)
 	print traces
 	return neighbors
 

@@ -29,7 +29,7 @@ def main():
 	# else, generate MinHash functions, Signatures & Buckets data, and store this data by exporting to files.
 	if not settings.overwriteData and dump_load_args.dataFilesExist():
 		try:
-			sigs,buckets = dump_load_args.LoadMinHashSignaturesBuckets()
+			sigs,buckets,traces = dump_load_args.LoadMinHashSignaturesBuckets()
 			# print
 			# print "Buckets:"
 			# print buckets
