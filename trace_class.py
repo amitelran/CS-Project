@@ -2,13 +2,18 @@
 #                               Trace Class
 # =============================================================================
 
+import time
+
+
 class Trace:
     def __init__(self, file_name, program_name, data):
         self.file_name = file_name
         self.program_name = program_name
         self.raw_data = data
+        self.classification_time = time.strftime("%c")
+        #self.classification_bucket = None
         # Variable to indicate if trace is malicious or benign
-        self.is_malicious = True  # TODO get this value as parameter
+        self.is_malicious = True                            # TODO get this value as parameter
 
     # Display trace's file's name
     def display_file_name(self):
@@ -21,6 +26,14 @@ class Trace:
     # Display trace's data
     def display_data(self):
         print "Trace Data: ", self.data
+
+    # Display trace's classification time
+    def display_classification_time(self):
+        print "Trace classification date & time: ", self.classification_time
+
+#     # Display trace's classification bucket
+#   def display_classification_bucket(self):
+#        print "Trace's classification bucket: ", self.classification_bucket
 
     # Check whether trace is classified as benign or malicious
     def is_malicious_check(self):
