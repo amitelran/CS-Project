@@ -59,7 +59,7 @@ def main():
 		sigs = minhashing.MinHashNumpy(docsAsShingles)
 		dump_load_args.DumpSignatures(sigs)
 		# lsh.findRB(sigs,docsAsShingles,1,1,2,0.9)
-		buckets = lsh.build_buckets(sigs, settings.numBands, settings.numHashes / settings.numBands)
+		buckets = lsh.build_buckets(sigs, settings.numBands, settings.numHashes / settings.numBands, docsObjects)
 		# print buckets
 
 	if settings.classifyTraces:		# Need to classify traces (Indicating boolean is 'ON')
@@ -77,7 +77,7 @@ def main():
 		# numOfDocs = len(new_docs)
 		new_sigs = minhashing.MinHashNumpy(new_docsAsShingles)	# New signatures matrix
 		# lsh.findRB(sigs,docsAsShingles,1,1,2,0.9)
-		classify = lsh.classify_new_data(new_sigs, settings.numBands, settings.numHashes / settings.numBands, buckets)	# Finally, classify the un-classified traces
+		classify = lsh.classify_new_data(new_sigs, settings.numBands, settings.numHashes / settings.numBands, buckets, new_docsObjects)	# Finally, classify the un-classified traces
 		# buckets = lsh.lsh(sigs, settings.numBands, settings.numHashes / settings.numBands)
 
 		print "Classification results:"
@@ -86,6 +86,7 @@ def main():
 			print
 			print "Trace File Name: \"%s\"" % new_docsObjects[i].get_filename()
 			print "Program Name: \"%s\"" % new_docsObjects[i].get_name()
+			new_docsObjects[i].display_classification_time()
 			for j in range(len(classify[i])):
 				print "\tBand #%d: bucket %d: %d neighbors" % (j + 1, classify[i][j][0], len(classify[i][j][1]))
 			all_neighbors = set.union(*[set(bucket[1]) for bucket in classify[i]])

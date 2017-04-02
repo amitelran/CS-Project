@@ -2,6 +2,7 @@ from real_similarities import calcJaccard
 import settings
 import json
 import dump_load_args
+import trace_class
 
 # ================================================================================================================================
 #	 LSH (Locality Sensitive Hashing \ Near-Neighbour Search) calculation, Buckets building, Classification of unclassified traces
@@ -27,7 +28,9 @@ import dump_load_args
 # Takes the signatures matrix 'sigs', divide it to 'b' bands, each with 'r' rows, hashes each band and saves the
 # index of the respective trace (by signature index) in the hash 2 dimensional array ([band-number][hash-result]).
 
-def build_buckets(sigs, b, r):
+traces = dict()
+
+def build_buckets(sigs, b, r, docsObjects):
 	print "\nBuilding buckets with LSH...\n"
 	hashMax = settings.hashMax		# Get the maximal number of hash functions as set in settings.py
 	buckets = dict()
@@ -37,6 +40,7 @@ def build_buckets(sigs, b, r):
 		for j in range(0, len(sigs)):		# Go through all line elements in a band row (number of columns of signatures matrix)
 			#print("i = "+str(i)+", j = "+str(j))
 			#print(sigs[j][b*(i):b*(i)+r])
+			curTrace = docsObjects[j].get_filename()
 			start = b*i				# start point of the band
 			if i == b-1:			# If reached to the last band, define the end as a NoneType value (Respresents absence of a value)
 				end = None
@@ -44,6 +48,12 @@ def build_buckets(sigs, b, r):
 				end = b*i + r		# If not the last band, set 'end' as the start of the band plus number of rows in a single band
 			curHash = int(hash(tuple(sigs[j][start:end]))) % hashMax		# Hash current band
 			#print(curHash)
+
+			#add current bucket(curHash) to the trace that the current signature represent
+			if curTrace in traces:
+				traces[curTrace].append(curHash)
+			else:
+				traces[curTrace] = [curHash]
 
 			# Check for membership of current hashing in the buckets dictionary structure:
 			# If already existing bucket for hash value --> append to the corresponding bucket
@@ -53,11 +63,12 @@ def build_buckets(sigs, b, r):
 			else:
 				buckets[curHash] = [j]
 	dump_load_args.DumpBuckets(buckets)			# Dump data into buckets data file
+	#print traces
 	return buckets
 
 
 # Classify new incoming traces (similar way to the build_buckets function above)
-def classify_new_data(sigs, b, r, buckets):
+def classify_new_data(sigs, b, r, buckets, docsObjects):
 	print "\nClassifying with LSH...\n"
 	hashMax =  settings.hashMax
 	neighbors = [list() for _ in range(len(sigs))]
@@ -65,6 +76,7 @@ def classify_new_data(sigs, b, r, buckets):
 		for j in range(len(sigs)):
 			#print("i = "+str(i)+", j = "+str(j))
 			#print(sigs[j][b*(i):b*(i)+r])
+			curTrace = docsObjects[j].get_filename()
 			start = b*i
 			if i == b-1:
 				end = None
@@ -72,6 +84,12 @@ def classify_new_data(sigs, b, r, buckets):
 				end = b*i+r
 			curHash = int(hash(tuple(sigs[j][start:end]))) % hashMax
 			#print(curHash
+
+			if curTrace in traces:
+				traces[curTrace].append(curHash)
+			else:
+				traces[curTrace] = [curHash]
+
 			if curHash in buckets:
 				# buckets[i][curHash].append(j)
 				neighbors[j].append((curHash,buckets[curHash]))
@@ -79,6 +97,7 @@ def classify_new_data(sigs, b, r, buckets):
 				# buckets[i][curHash] = [j]
 				neighbors[j].append((curHash,[]))
 	# dump_load_args.DumpBuckets(buckets)
+	print traces
 	return neighbors
 
 # =============================================================================
@@ -134,3 +153,4 @@ def findRB(signatures,docsAsShingles,jumps,falsePositivesWeight,falseNegativesWe
 	print("Best parameters with FP weight = "+str(falsePositivesWeight)+", FN weight = "+str(falseNegativesWeight)+":")
 	print("B = "+str(bestNumOfBands)+", R = "+str(settings.numHashes/bestNumOfBands))
 	return [bestNumOfBands,settings.numHashes/bestNumOfBands]
+
