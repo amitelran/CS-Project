@@ -11,7 +11,9 @@ import sim_comparison
 import dump_load_args
 import trace_parser
 import sys
-
+import os
+from watchdog.events import FileSystemEventHandler
+from watchdog.observers import Observer
 
 
 # def Sergey(docs,JcrdSim,LevSim,i,j):
@@ -22,6 +24,21 @@ import sys
 #	 print('Lev= %.3f' % LevSim[getTriangleIndex(i, j, len(docs))])
 #	 print('*******************************\n\n')
 
+
+class ClassifyEventHandler(FileSystemEventHandler):
+	def __init__(self):
+		self.count = 0
+		self.classifyFiles = False
+
+	def handleFile(self, event):
+		if not event.is_directory and not self.classifyFiles:
+			self.classifyFiles = True
+
+	def on_created(self, event):
+		self.handleFile(event)
+
+	def on_modified(self, event):
+		self.handleFile(event)
 
 def main():
 	t0 = time.time()		# Store beginning time to measure running time
@@ -63,34 +80,59 @@ def main():
 		# print buckets
 
 	if settings.classifyTraces:		# Need to classify traces (Indicating boolean is 'ON')
+
 		# First, get unclassified traces from the unclassified-traces directory, and parse them as text
-		new_docsObjects = trace_parser.parse_traces_as_objects(settings.unclassified_traces_directory)
-		new_docs_as_strings = trace_parser.generate_traces_as_text(new_docsObjects)
+		unclassified_directory = settings.unclassified_traces_directory
+		classified_directory = settings.classified_traces_directory
+		# classified_directory = None
 
-		# docs = docs[0:50]
-		# docs = random.sample(docs,30)
+		path = settings.unclassified_traces_directory
+		event_handler = ClassifyEventHandler()
+		for dirpath, dirnames, files in os.walk(unclassified_directory):
+			if files:
+				event_handler.classifyFiles = True
+		observer = Observer()
+		observer.schedule(event_handler, path, recursive=True)
+		observer.start()
+		try:
+			while True:
+				time.sleep(2)
+				if event_handler.classifyFiles:
+					event_handler.classifyFiles = False
 
-		# Classification of unclassified traces:
-		print "\nStarting classification...\n"
-		new_docsAsShingles = shingles.convertToShingles(new_docs_as_strings)
-		# print docsAsShingles
-		# numOfDocs = len(new_docs)
-		new_sigs = minhashing.MinHashNumpy(new_docsAsShingles)	# New signatures matrix
-		# lsh.findRB(sigs,docsAsShingles,1,1,2,0.9)
-		classify = lsh.classify_new_data(new_sigs, settings.numBands, settings.numHashes / settings.numBands, buckets, new_docsObjects)	# Finally, classify the un-classified traces
-		# buckets = lsh.lsh(sigs, settings.numBands, settings.numHashes / settings.numBands)
+					new_docsObjects = trace_parser.parse_traces_as_objects(unclassified_directory, classified_directory)
+					new_docs_as_strings = trace_parser.generate_traces_as_text(new_docsObjects)
 
-		print "Classification results:"
-		print "========================="
-		for i in range(len(new_sigs)):
-			print
-			print "Trace File Name: \"%s\"" % new_docsObjects[i].get_filename()
-			print "Program Name: \"%s\"" % new_docsObjects[i].get_name()
-			new_docsObjects[i].display_classification_time()
-			for j in range(len(classify[i])):
-				print "\tBand #%d: bucket %d: %d neighbors" % (j + 1, classify[i][j][0], len(classify[i][j][1]))
-			all_neighbors = set.union(*[set(bucket[1]) for bucket in classify[i]])
-			print "\t\t>> Total unique neighbors: %d" % len(all_neighbors)
+					# docs = docs[0:50]
+					# docs = random.sample(docs,30)
+
+					# Classification of unclassified traces:
+					print "\nStarting classification...\n"
+					new_docsAsShingles = shingles.convertToShingles(new_docs_as_strings)
+					# print docsAsShingles
+					# numOfDocs = len(new_docs)
+					new_sigs = minhashing.MinHashNumpy(new_docsAsShingles)  # New signatures matrix
+					# lsh.findRB(sigs,docsAsShingles,1,1,2,0.9)
+					classify = lsh.classify_new_data(new_sigs, settings.numBands, settings.numHashes / settings.numBands,
+					                                 buckets, new_docsObjects)  # Finally, classify the un-classified traces
+					# buckets = lsh.lsh(sigs, settings.numBands, settings.numHashes / settings.numBands)
+
+					print "Classification results:"
+					print "========================="
+					for i in range(len(new_sigs)):
+						print
+						print "Trace File Name: \"%s\"" % new_docsObjects[i].get_filename()
+						print "Program Name: \"%s\"" % new_docsObjects[i].get_name()
+						new_docsObjects[i].display_classification_time()
+						for j in range(len(classify[i])):
+							print "\tBand #%d: bucket %d: %d neighbors" % (j + 1, classify[i][j][0], len(classify[i][j][1]))
+						all_neighbors = set.union(*[set(bucket[1]) for bucket in classify[i]])
+						print "\t\t>> Total unique neighbors: %d" % len(all_neighbors)
+
+		except KeyboardInterrupt:
+			observer.stop()
+		observer.join()
+
 
 	print('\nTotal flow time took %.2f sec.' % (time.time() - t0))
 

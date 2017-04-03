@@ -99,7 +99,7 @@ def classify_new_data(sigs, b, r, buckets, docsObjects):
 				neighbors[j].append((curHash,[]))
 	# dump_load_args.DumpBuckets(buckets)
 	# dump_load_args.DumpTraces(traces)
-	print traces
+	# print traces
 	return neighbors
 
 # =============================================================================

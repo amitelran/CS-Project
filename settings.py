@@ -10,6 +10,7 @@ def init():
 	global shingle_size
 	global samples_directory
 	global unclassified_traces_directory
+	global classified_traces_directory
 	global check_for_minHash_file
 	global numBands
 	global nextPrime
@@ -35,6 +36,7 @@ def init():
 	shingle_size = 3							# Size of a shingle
 	samples_directory = 'codedatasetsample'		# Reference to traces directory
 	unclassified_traces_directory = 'unclassifiedtraces'		# The directory where unclassified traces inserted until classification is made
+	classified_traces_directory = 'classifiedtraces'		# The directory where unclassified traces inserted until classification is made
 	nextPrime = 4294967311						# Value of next prime number
 	hashMax = 50021								# Maximum number of MinHash functions
 	clustered_data_directory = "data"			# Directory storing the already clustered traces data
@@ -44,5 +46,5 @@ def init():
 	traces_file = "traces.pkl"					# Pickle file storing all buckets data
 	coeffA = None								# 1st Co-efficient for MinHash functions
 	coeffB = None								# 2nd Co-efficient for MinHash functions
-	overwriteData = True						# Boolean to indicate whether need to overwrite existing MinHash, Signatures & Buckets existing data
+	overwriteData = False						# Boolean to indicate whether need to overwrite existing MinHash, Signatures & Buckets existing data
 	classifyTraces = True						# Boolean to indicate whether need to classify traces or not
