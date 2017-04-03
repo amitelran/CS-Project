@@ -10,7 +10,7 @@ class Trace:
         self.file_name = file_name
         self.program_name = program_name
         self.raw_data = data
-        self.classification_time = time.strftime("%c")
+        self.classification_time = time.strftime("%c")     # Classification time occurrence of trace
         #self.classification_bucket = None
         # Variable to indicate if trace is malicious or benign
         self.is_malicious = True                            # TODO get this value as parameter
@@ -31,7 +31,7 @@ class Trace:
     def display_classification_time(self):
         print "Trace classification date & time: ", self.classification_time
 
-#     # Display trace's classification bucket
+#   # Display trace's classification bucket
 #   def display_classification_bucket(self):
 #        print "Trace's classification bucket: ", self.classification_bucket
 

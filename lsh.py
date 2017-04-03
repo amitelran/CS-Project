@@ -42,14 +42,14 @@ def build_buckets(sigs, b, r, docsObjects):
 			#print(sigs[j][b*(i):b*(i)+r])
 			curTrace = docsObjects[j].get_filename()
 			start = b*i				# start point of the band
-			if i == b-1:			# If reached to the last band, define the end as a NoneType value (Respresents absence of a value)
+			if i == b-1:			# If reached to the last band, band's end is till the end of sigs (None respresents absence of a value)
 				end = None
 			else:
 				end = b*i + r		# If not the last band, set 'end' as the start of the band plus number of rows in a single band
 			curHash = int(hash(tuple(sigs[j][start:end]))) % hashMax		# Hash current band
 			#print(curHash)
 
-			#add current bucket(curHash) to the trace that the current signature represent
+			# Add current bucket(curHash) to the trace that the current signature represent
 			if curTrace in traces:
 				traces[curTrace].append(curHash)
 			else:
@@ -104,7 +104,7 @@ def classify_new_data(sigs, b, r, buckets, docsObjects):
 
 # =============================================================================
 
-# Function that experimenting with different Bands & Rows values,
+# Function that experiments with different Bands & Rows values,
 # and finds the optimal Bands & Rows values according to a given weight and similarity threshold.
 
 def findRB(signatures,docsAsShingles,jumps,falsePositivesWeight,falseNegativesWeight,similarityThreshold):
