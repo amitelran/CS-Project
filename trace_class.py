@@ -13,7 +13,7 @@ class Trace:
         self.classification_time = time.strftime("%c")     # Classification time occurrence of trace
         #self.classification_bucket = None
         # Variable to indicate if trace is malicious or benign
-        self.is_malicious = True                            # TODO get this value as parameter
+        self.is_malicious = None                            # TODO get this value as parameter
 
     # Display trace's file's name
     def display_file_name(self):
@@ -35,16 +35,20 @@ class Trace:
 #   def display_classification_bucket(self):
 #        print "Trace's classification bucket: ", self.classification_bucket
 
-    # Check whether trace is classified as benign or malicious
+    # Check whether trace is classified as benign or malicious, or unlabeled if unclassified
     def is_malicious_check(self):
-        if self.is_malicious:
+        if (self.is_malicious == True):
             print "Trace is malicious"
         else:
-            print "Trace is not malicious"
+            if (self.is_malicious == False):
+                print "Trace is not malicious"
+            else:
+                if (self.is_malicious == None):
+                    print "Trace is unlabeled"
 
-    # Change trace status from current status (as benign or malicious) to the opposite status when called
-    def change_status(self):
-        self.is_malicious = not self.is_malicious
+    # Change trace status from current status (as benign or malicious) to the new given boolean status
+    def change_status(self, newStatus):
+        self.is_malicious = newStatus
 
     # Trace's name getter (1st line of trace's file)
     def get_name(self):

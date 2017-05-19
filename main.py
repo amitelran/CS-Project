@@ -42,6 +42,7 @@ class ClassifyEventHandler(FileSystemEventHandler):
 
 def main():
 	t0 = time.time()		# Store beginning time to measure running time
+
 	# Check whether there is already Minhash, Signatures & Buckets data exists. If so, load the existing data.
 	# else, generate MinHash functions, Signatures & Buckets data, and store this data by exporting to files.
 	if not settings.overwriteData and dump_load_args.dataFilesExist():
@@ -81,7 +82,16 @@ def main():
 
 	if settings.classifyTraces:		# Need to classify traces (Indicating boolean is 'ON')
 
-		# First, get unclassified traces from the unclassified-traces directory, and parse them as text
+		# First, get training data (benign and malicious) and label them
+		training_data_directory = settings.training_data_directory
+		training_data_benign_directory = settings.training_data_benign_directory
+		training_data_malicious_directory = settings.training_data_malicious_directory
+		test_data_directory = settings.test_data_directory
+		test_data_benign_directory = settings.test_data_benign_directory
+		test_data_malicious_directory = settings.test_data_malicious_directory
+		test_data_unlabeled_directory = settings.test_data_unlabeled_directory
+
+		# Get unclassified traces from the unclassified-traces directory, and parse them as text
 		unclassified_directory = settings.unclassified_traces_directory
 		classified_directory = settings.classified_traces_directory
 		# classified_directory = None
@@ -100,7 +110,11 @@ def main():
 				if event_handler.classifyFiles:
 					event_handler.classifyFiles = False
 
-					new_docsObjects = trace_parser.parse_traces_as_objects(unclassified_directory, classified_directory)
+					if (settings.testLabeledData):
+						new_docsObjects = trace_parser.parse_traces_as_objects(training_data_directory, classified_directory)
+					else:
+						new_docsObjects = trace_parser.parse_traces_as_objects(test_data_unlabeled_directory, classified_directory)
+					# new_docsObjects = trace_parser.parse_traces_as_objects(unclassified_directory, classified_directory)
 					new_docs_as_strings = trace_parser.generate_traces_as_text(new_docsObjects)
 
 					# docs = docs[0:50]

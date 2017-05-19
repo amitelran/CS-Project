@@ -32,11 +32,18 @@ def init():
 
 	numHashes = 100
 	maxShingleID = 2 ** 32 - 1					# Record the maximum shingle ID that we assigned.
-	numBands = 5								# Number of bands set
+	numBands = 10								# Number of bands set
 	shingle_size = 3							# Size of a shingle
 	samples_directory = 'codedatasetsample'		# Reference to traces directory
 	unclassified_traces_directory = 'unclassifiedtraces'		# The directory where unclassified traces inserted until classification is made
-	classified_traces_directory = 'classifiedtraces'		# The directory where unclassified traces inserted until classification is made
+	classified_traces_directory = 'classifiedtraces'		# The directory where classified traces are inserted after classification is made
+	training_data_directory = 'trainingdata'	# Directory for training data containing two sub-directories: benign and malicious.
+	training_data_benign_directory = 'trainingdata/benign'	# Sub-directory of the trainingdata directory containing benign traces.
+	training_data_malicious_directory = 'trainingdata/malicious'	# Sub-directory of the trainingdata directory containing malicious traces
+	test_data_directory = 'testdata'
+	test_data_benign_directory = 'testdata/benign'
+	test_data_malicious_directory = 'testdata/malicious'
+	test_data_unlabeled_directory = 'unlabeled/malicious'
 	nextPrime = 4294967311						# Value of next prime number
 	hashMax = 50021								# Maximum number of MinHash functions
 	clustered_data_directory = "data"			# Directory storing the already clustered traces data
@@ -48,3 +55,4 @@ def init():
 	coeffB = None								# 2nd Co-efficient for MinHash functions
 	overwriteData = False						# Boolean to indicate whether need to overwrite existing MinHash, Signatures & Buckets existing data
 	classifyTraces = True						# Boolean to indicate whether need to classify traces or not
+	testLabeledData = False						# Boolean to indicate what mode to test: one mode of testing 'benign' and 'malicious', the other mode of testing with 'unlabeled'

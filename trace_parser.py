@@ -16,7 +16,7 @@ import ntpath
 # # =============================================================================
 
 
-def parse_traces_as_objects(directory, moveToDirecotry=None):
+def parse_traces_as_objects(directory, moveToDirectory=None):
 	files = get_files_paths(directory, 'hooklog')  # Getting all files (extension 'hooklog') from given directory
 	trace_objects = []
 
@@ -38,8 +38,7 @@ def parse_traces_as_objects(directory, moveToDirecotry=None):
 			line = line.strip()  # strips remove all white spaces at the start and end
 			# Search for a pattern which looks for character '#' and some digit 0-9 (\d) afterwards.
 			# The '+' means that other digits after the first one don't matter
-			match_timestamp = re.search(r'#([\d]+)',
-										line)  # regular expression searching for timestamp and return boolean value if found or not # TODO
+			match_timestamp = re.search(r'#([\d]+)', line)  # regular expression searching for timestamp and return boolean value if found or not # TODO
 			if match_timestamp:
 				trace_data.append(
 					{})  # Appending an empty Python dictionary to program_name (dictionary - set of separated words)
@@ -49,18 +48,22 @@ def parse_traces_as_objects(directory, moveToDirecotry=None):
 			if not match_keyvalue:  # If there is no '=' within the line, insert the line as an "API Name (e.g. 'CreateFile')" and continue to next line of file
 				trace_data[-1]['API_Name'] = line
 				continue
-			line_elements = line.split(
-				'=')  # If line includes '=': Splits lines to separate lines (treating '=' as a delimeter)
+			line_elements = line.split('=')  # If line includes '=': Splits lines to separate lines (treating '=' as a delimeter)
 			trace_data[-1][line_elements[0]] = line_elements[1]  # Append the string after the 1st '='
 		# End of file lines looping
 
 		input_file.close()
-		trace_objects.append(
-			Trace(file_name, program_name, trace_data))  # Append parsed traced as a Trace object to list
-		if moveToDirecotry:
-			if not os.path.exists(moveToDirecotry):
-				os.makedirs(moveToDirecotry)
-			os.rename(fName, moveToDirecotry+"/"+ntpath.basename(fName))
+		trace_objects.append(Trace(file_name, program_name, trace_data))  # Append parsed traced as a Trace object to list
+		if (directory == settings.training_data_benign_directory):		# If the trace is coming from the benign directory --> set the trace object malicious field as false
+			trace_objects[-1].change_status(False)
+		else:
+			if (directory == settings.training_data_malicious_directory):
+				trace_objects[-1].change_status(True)
+		trace_objects[-1].isMalicious()
+		if moveToDirectory:
+			if not os.path.exists(moveToDirectory):
+				os.makedirs(moveToDirectory)
+			os.rename(fName, moveToDirectory+"/"+ntpath.basename(fName))
 	return trace_objects  # Return the list of all traces as Trace objects
 
 
