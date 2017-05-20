@@ -1,7 +1,6 @@
 import settings
 import glob
 import re
-import ntpath
 import os
 from trace_class import Trace
 import ntpath
