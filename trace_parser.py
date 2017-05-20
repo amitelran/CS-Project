@@ -54,12 +54,12 @@ def parse_traces_as_objects(directory, moveToDirectory=None):
 
 		input_file.close()
 		trace_objects.append(Trace(file_name, program_name, trace_data))  # Append parsed traced as a Trace object to list
-		if (directory == settings.training_data_benign_directory):		# If the trace is coming from the benign directory --> set the trace object malicious field as false
+		if directory.endswith('benign'):		# If the trace is coming from the benign directory --> set the trace object malicious field as false
 			trace_objects[-1].change_status(False)
 		else:
-			if (directory == settings.training_data_malicious_directory):
+			if directory.endswith('malicious'):
 				trace_objects[-1].change_status(True)
-		trace_objects[-1].isMalicious()
+
 		if moveToDirectory:
 			if not os.path.exists(moveToDirectory):
 				os.makedirs(moveToDirectory)
@@ -136,6 +136,8 @@ def extract_API_name(traces):
 # Filter data for every trace to 'program_name', 'parsed data' (calling get_data_as_string function from Trace class)
 def extract_APIhKey_name(traces):
 	return [[t.get_name(), t.get_data_as_string()] for t in traces]
+
+
 
 
 # Generating the parsed traces as text

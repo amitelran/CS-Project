@@ -65,40 +65,36 @@ def main():
 			print "Terminating..."
 			return
 	else:		# (If no data exists, generate MinHash, Signatures & Buckets data and export (a.k.a dump) to files
-		docsObjects = trace_parser.parse_traces_as_objects(settings.samples_directory)
-		docs_as_strings = trace_parser.generate_traces_as_text(docsObjects)
-		# docs = docs[0:50]
-		# docs = random.sample(docs,30)
-		docsAsShingles = shingles.convertToShingles(docs_as_strings)
-		# print docsAsShingles
-		# numOfDocs = len(docsAsShingles)
+		#tracesObjects = trace_parser.parse_traces_as_objects(settings.samples_directory)
+
+		tracesObjectsMalicious = trace_parser.parse_traces_as_objects(settings.training_data_malicious_directory)
+		tracesObjectsBenign = trace_parser.parse_traces_as_objects(settings.training_data_benign_directory)
+		tracesObjects = tracesObjectsMalicious + tracesObjectsBenign
+
+		#docs_as_strings = trace_parser.generate_traces_as_text(tracesObjects)
+		#docsAsShingles = shingles.convertToShingles(docs_as_strings)
+
+		shingles.setTracesShingles(tracesObjects)
+
 		minhashing.setRandomCoeffs()
 		dump_load_args.DumpMinHash(settings.coeffA,settings.coeffB,settings.nextPrime)
-		sigs = minhashing.MinHashNumpy(docsAsShingles)
+		#sigs = minhashing.MinHashNumpy(docsAsShingles)
+		sigs = minhashing.setTracesMinHashSignatures(tracesObjects)
+
 		dump_load_args.DumpSignatures(sigs)
 		# lsh.findRB(sigs,docsAsShingles,1,1,2,0.9)
-		buckets = lsh.build_buckets(sigs, settings.numBands, settings.numHashes / settings.numBands, docsObjects)
+		buckets = lsh.build_buckets2(sigs, settings.numBands, settings.numHashes / settings.numBands, tracesObjects)
 		# print buckets
 
 	if settings.classifyTraces:		# Need to classify traces (Indicating boolean is 'ON')
 
-		# First, get training data (benign and malicious) and label them
-		training_data_directory = settings.training_data_directory
-		training_data_benign_directory = settings.training_data_benign_directory
-		training_data_malicious_directory = settings.training_data_malicious_directory
-		test_data_directory = settings.test_data_directory
-		test_data_benign_directory = settings.test_data_benign_directory
-		test_data_malicious_directory = settings.test_data_malicious_directory
-		test_data_unlabeled_directory = settings.test_data_unlabeled_directory
 
 		# Get unclassified traces from the unclassified-traces directory, and parse them as text
-		unclassified_directory = settings.unclassified_traces_directory
-		classified_directory = settings.classified_traces_directory
 		# classified_directory = None
 
 		path = settings.unclassified_traces_directory
 		event_handler = ClassifyEventHandler()
-		for dirpath, dirnames, files in os.walk(unclassified_directory):
+		for dirpath, dirnames, files in os.walk(settings.unclassified_traces_directory):
 			if files:
 				event_handler.classifyFiles = True
 		observer = Observer()
@@ -111,37 +107,26 @@ def main():
 					event_handler.classifyFiles = False
 
 					if (settings.testLabeledData):
-						new_docsObjects = trace_parser.parse_traces_as_objects(training_data_directory, classified_directory)
+						tracesObjectsMalicious = trace_parser.parse_traces_as_objects(settings.test_data_malicious_directory)
+						tracesObjectsBenign = trace_parser.parse_traces_as_objects(settings.test_data_benign_directory)
+						testDocsObjects = tracesObjectsMalicious + tracesObjectsBenign
 					else:
-						new_docsObjects = trace_parser.parse_traces_as_objects(test_data_unlabeled_directory, classified_directory)
+						testDocsObjects = trace_parser.parse_traces_as_objects(settings.test_data_unlabeled_directory)
 					# new_docsObjects = trace_parser.parse_traces_as_objects(unclassified_directory, classified_directory)
-					new_docs_as_strings = trace_parser.generate_traces_as_text(new_docsObjects)
-
-					# docs = docs[0:50]
-					# docs = random.sample(docs,30)
+					test_docs_as_strings = trace_parser.generate_traces_as_text(testDocsObjects)
 
 					# Classification of unclassified traces:
 					print "\nStarting classification...\n"
-					new_docsAsShingles = shingles.convertToShingles(new_docs_as_strings)
+					new_docsAsShingles = shingles.convertToShingles(test_docs_as_strings)
 					# print docsAsShingles
 					# numOfDocs = len(new_docs)
 					new_sigs = minhashing.MinHashNumpy(new_docsAsShingles)  # New signatures matrix
 					# lsh.findRB(sigs,docsAsShingles,1,1,2,0.9)
-					classify = lsh.classify_new_data(new_sigs, settings.numBands, settings.numHashes / settings.numBands,
-					                                 buckets, new_docsObjects)  # Finally, classify the un-classified traces
+					classify = lsh.classify_new_data2(new_sigs, settings.numBands, settings.numHashes / settings.numBands,
+					                                 buckets, testDocsObjects)  # Finally, classify the un-classified traces
 					# buckets = lsh.lsh(sigs, settings.numBands, settings.numHashes / settings.numBands)
 
-					print "Classification results:"
-					print "========================="
-					for i in range(len(new_sigs)):
-						print
-						print "Trace File Name: \"%s\"" % new_docsObjects[i].get_filename()
-						print "Program Name: \"%s\"" % new_docsObjects[i].get_name()
-						new_docsObjects[i].display_classification_time()
-						for j in range(len(classify[i])):
-							print "\tBand #%d: bucket %d: %d neighbors" % (j + 1, classify[i][j][0], len(classify[i][j][1]))
-						all_neighbors = set.union(*[set(bucket[1]) for bucket in classify[i]])
-						print "\t\t>> Total unique neighbors: %d" % len(all_neighbors)
+					printClassifResults2(classify, new_sigs, testDocsObjects)
 
 		except KeyboardInterrupt:
 			observer.stop()
@@ -149,6 +134,61 @@ def main():
 
 
 	print('\nTotal flow time took %.2f sec.' % (time.time() - t0))
+
+
+def printClassifResults1(classify, new_sigs, testDocsObjects):
+	print "Classification results 1:"
+	print "========================="
+	for i in range(len(new_sigs)):
+		print
+		print "Trace File Name: \"%s\"" % testDocsObjects[i].get_filename()
+		print "Program Name: \"%s\"" % testDocsObjects[i].get_name()
+		testDocsObjects[i].display_classification_time()
+		for j in range(len(classify[i])):
+			print "\tBand #%d: bucket %d: %d neighbors" % (j + 1, classify[i][j][0], len(classify[i][j][1]))
+		all_neighbors = set.union(*[set(bucket[1]) for bucket in classify[i]])
+		print "\t\t>> Total unique neighbors: %d" % len(all_neighbors)
+
+def printClassifResults2(classify, new_sigs, testDocsObjects):
+	print "Classification Results :"
+	print "========================="
+	for i in range(len(new_sigs)):
+		print
+		print "Trace File Name: %s" % testDocsObjects[i].get_filename()
+		print("Program Name: %s" % testDocsObjects[i].get_name())
+		print("Malicious: %r" % (testDocsObjects[i].get_is_malicious()))
+
+
+		if True:
+			print "Buckets details:"
+			for j in range(len(classify[i])):
+				bucket_neighbors = classify[i][j][1]
+				bucket_neighbors_count = len(bucket_neighbors)
+				malicious_bucket_neighbors_count = sum(1 for n in bucket_neighbors if n.get_is_malicious() == True)
+				benign_bucket_neighbors_count = sum(1 for n in bucket_neighbors if n.get_is_malicious() == False)
+				print "\tband# %d: bucket index %d: %d neighbors" % (j, classify[i][j][0], bucket_neighbors_count)
+				print "\t\t Malicious: %d (%.3f), Benign %d (%.3f)" % (malicious_bucket_neighbors_count,
+																   float(
+																	   malicious_bucket_neighbors_count / bucket_neighbors_count) if bucket_neighbors_count != 0 else 0,
+																   benign_bucket_neighbors_count,
+																   float(
+																	   benign_bucket_neighbors_count / bucket_neighbors_count) if bucket_neighbors_count != 0 else 0)
+
+		unique_nbors = set.union(*[set(bucket[1]) for bucket in classify[i]])
+		unique_nbors_cnt = len(unique_nbors)
+		benign_unique_nbors_cnt = sum(1 for n in unique_nbors if n.get_is_malicious() == False)
+		malicious_unique_nbors_cnt = sum(1 for n in unique_nbors if n.get_is_malicious() == True)
+
+		print "\t>> Total unique neighbors: %d" % unique_nbors_cnt
+		#print "\t>> Total unique neighbors: %d" % benign_unique_nbors_cnt
+		#print "\t>> Total unique neighbors: %d" % malicious_unique_nbors_cnt
+		print "\t\t Malicious: %d (%.3f), Benign %d (%.3f)" % (malicious_unique_nbors_cnt,
+														   float(
+															   malicious_unique_nbors_cnt / unique_nbors_cnt) if unique_nbors_cnt != 0 else 0,
+														   benign_unique_nbors_cnt,
+														   float(
+															   benign_unique_nbors_cnt / unique_nbors_cnt) if unique_nbors_cnt != 0 else 0)
+
 
 if __name__ == '__main__':
 	main()

@@ -1,7 +1,7 @@
 import binascii
 import time
 import settings
-
+import trace_class
 # =============================================================================
 #               Convert Documents To Sets of Shingles
 # =============================================================================
@@ -78,3 +78,27 @@ def convertToShingles(docs):
 
     return docsAsShingleSets
 
+
+def setTracesShingles(traces):
+    print "Shingling " + str(len(traces)) + " traces..."
+    # The current shingle ID value to assign to the next new shingle we
+    # encounter. When a shingle gets added to the dictionary, we'll increment this
+    # value.
+    curShingleID = 0
+    # Create a dictionary of the articles, mapping the article identifier (e.g.,
+    # "t8470") to the list of shingle IDs that appear in the document.
+
+    numDocs = len(traces)
+    t0 = time.time()
+    totalShingles = 0
+    for t in traces:
+        doc = t.get_data_as_string()
+        shinglesInDoc = set()
+        for j in range(len(doc) - settings.shingle_size + 1):
+            shingle = doc[j:j + settings.shingle_size]
+            crc = binascii.crc32(shingle) & 0xffffffff
+            shinglesInDoc.add(crc)
+        t.set_shingles(shinglesInDoc)
+
+    print('\nShingles are set. ' 'took %.2f sec.' % (time.time() - t0))
+    print('\nAverage shingles per doc: %.2f' % (totalShingles / numDocs))

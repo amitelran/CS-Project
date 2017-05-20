@@ -12,8 +12,9 @@ class Trace:
         self.raw_data = data
         self.classification_time = time.strftime("%c")     # Classification time occurrence of trace
         #self.classification_bucket = None
-        # Variable to indicate if trace is malicious or benign
-        self.is_malicious = None                            # TODO get this value as parameter
+        self.is_malicious = None           # Variable to indicate if trace is malicious or benign
+        self.shingles = None
+        self.signature = None
 
     # Display trace's file's name
     def display_file_name(self):
@@ -54,6 +55,9 @@ class Trace:
     def get_name(self):
         return self.program_name
 
+    def get_is_malicious(self):
+        return self.is_malicious
+
     # Trace's file's name getter
     def get_filename(self):
         return self.file_name
@@ -65,3 +69,15 @@ class Trace:
     # Parse raw data as string when called
     def get_data_as_string(self):
         return '*'.join([(str(call.get('API_Name')) + '@' + str(call.get('hKey'))) for call in self.raw_data[:]])
+
+    def get_shingles(self):
+        return self.shingles
+
+    def set_shingles(self, shingles):
+        self.shingles = shingles
+
+    def get_signature(self):
+        return self.signature
+
+    def set_signature(self, sig):
+        self.signature = sig
