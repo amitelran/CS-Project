@@ -1,0 +1,133 @@
+3200 malware.exe
+#234150000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\IMM32.DLL
+Return=SUCCESS
+#234970000
+LoadLibrary
+lpFileName=gdi32.dll
+Return=SUCCESS
+#234660000
+LoadLibrary
+lpFileName=LPK.DLL
+Return=SUCCESS
+#235400000
+CreateFile
+hName=\\.\Ip
+desiredAccess=GENERIC_EXECUTE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#235400000
+CreateFile
+hName=\\.\Ip
+desiredAccess=GENERIC_EXECUTE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#235790000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#236870000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#237280000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#239050000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\CriticalSectionTimeout
+Return=0
+#239100000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Ole\RWLockResourceTimeOut
+Return=2
+#240350000
+CreateFile
+hName=C:\WINDOWS\WindowsShell.Manifest
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#240640000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Control Panel\Desktop\SmoothScroll
+Return=2
+#240660000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\EnableBalloonTips
+Return=2
+#240680000
+RegEnumValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\LanguagePack\SURR
+type=REG_DWORD
+data=2
+Return=0
+#239610000
+LoadLibrary
+lpFileName=comctl32.dll
+Return=SUCCESS
+#240970000
+RegCreateKey
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings
+Return=0
+#241080000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#241080000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#241130000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#241170000
+CreateFile
+hName=C:\Documents
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#241200000
+CreateFile
+hName=C:\Documents and
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#241230000
+CreateFile
+hName=C:\Documents and Settings\All
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#242030000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders\Cache
+Return=0
+#242070000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#241150000
+CreateProcessInternal
+lpCommandLine=C:\Documents and Settings\All Users\Desktop\malware.exe sj.c
+Return=SUCCESS
+dwProcessId=3216
+dwThreadId=3220
+#241140000
+CreateProcessInternal
+lpCommandLine=C:\Documents and Settings\All Users\Desktop\malware.exe sj.c
+Return=SUCCESS
+dwProcessId=3216
+dwThreadId=3220
+#241140000
+WinExec
+lpCmdLine=C:\Documents and Settings\All Users\Desktop\malware.exe sj.c
+Return=SUCCESS
+#272560000
+ExitProcess

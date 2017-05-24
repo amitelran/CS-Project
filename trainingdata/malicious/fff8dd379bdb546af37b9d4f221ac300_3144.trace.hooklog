@@ -1,0 +1,1345 @@
+3144 malware.exe
+#204550000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\IMM32.DLL
+Return=SUCCESS
+#205280000
+LoadLibrary
+lpFileName=gdi32.dll
+Return=SUCCESS
+#205000000
+LoadLibrary
+lpFileName=LPK.DLL
+Return=SUCCESS
+#205850000
+LoadLibrary
+lpFileName=kernel32
+Return=SUCCESS
+#205870000
+LoadLibrary
+lpFileName=kernel32
+Return=SUCCESS
+#205890000
+LoadLibrary
+lpFileName=kernel32
+Return=SUCCESS
+#205910000
+LoadLibrary
+lpFileName=kernel32
+Return=SUCCESS
+#205920000
+LoadLibrary
+lpFileName=kernel32
+Return=SUCCESS
+#205940000
+LoadLibrary
+lpFileName=kernel32
+Return=SUCCESS
+#205960000
+LoadLibrary
+lpFileName=kernel32
+Return=SUCCESS
+#205970000
+LoadLibrary
+lpFileName=kernel32
+Return=SUCCESS
+#205990000
+LoadLibrary
+lpFileName=kernel32
+Return=SUCCESS
+#206000000
+LoadLibrary
+lpFileName=kernel32
+Return=SUCCESS
+#206020000
+LoadLibrary
+lpFileName=kernel32
+Return=SUCCESS
+#206040000
+LoadLibrary
+lpFileName=kernel32
+Return=SUCCESS
+#206050000
+LoadLibrary
+lpFileName=kernel32
+Return=SUCCESS
+#206070000
+LoadLibrary
+lpFileName=kernel32
+Return=SUCCESS
+#206080000
+LoadLibrary
+lpFileName=kernel32
+Return=SUCCESS
+#206240000
+LoadLibrary
+lpFileName=mapi
+Return=FAILURE
+#206330000
+LoadLibrary
+lpFileName=mapi
+Return=FAILURE
+#206420000
+LoadLibrary
+lpFileName=mapi
+Return=FAILURE
+#206510000
+LoadLibrary
+lpFileName=mapi
+Return=FAILURE
+#206610000
+LoadLibrary
+lpFileName=mapi
+Return=FAILURE
+#207020000
+LoadLibrary
+lpFileName=user32
+Return=SUCCESS
+#207040000
+LoadLibrary
+lpFileName=user32
+Return=SUCCESS
+#207050000
+LoadLibrary
+lpFileName=user32
+Return=SUCCESS
+#207070000
+LoadLibrary
+lpFileName=user32
+Return=SUCCESS
+#207090000
+LoadLibrary
+lpFileName=user32
+Return=SUCCESS
+#207110000
+LoadLibrary
+lpFileName=user32
+Return=SUCCESS
+#207120000
+LoadLibrary
+lpFileName=user32
+Return=SUCCESS
+#207140000
+LoadLibrary
+lpFileName=user32
+Return=SUCCESS
+#207160000
+LoadLibrary
+lpFileName=user32
+Return=SUCCESS
+#207180000
+LoadLibrary
+lpFileName=user32
+Return=SUCCESS
+#207210000
+LoadLibrary
+lpFileName=user32
+Return=SUCCESS
+#207250000
+LoadLibrary
+lpFileName=shlwapi
+Return=SUCCESS
+#208860000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#209680000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#210060000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#211700000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\CriticalSectionTimeout
+Return=0
+#211710000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Ole\RWLockResourceTimeOut
+Return=2
+#212830000
+CreateFile
+hName=C:\WINDOWS\WindowsShell.Manifest
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#213090000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Control Panel\Desktop\SmoothScroll
+Return=2
+#213110000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\EnableBalloonTips
+Return=2
+#213110000
+RegEnumValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\LanguagePack\SURR
+type=REG_DWORD
+data=2
+Return=0
+#212110000
+LoadLibrary
+lpFileName=comctl32.dll
+Return=SUCCESS
+#213370000
+RegCreateKey
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings
+Return=0
+#207820000
+LoadLibrary
+lpFileName=wininet
+Return=SUCCESS
+#218390000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#218390000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\Necromania Trap Of Darkness Patch.exe
+Return=SUCCESS
+#218450000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#218450000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\AikaQuest3Hentai ISO - Full Downloader.exe
+Return=SUCCESS
+#218490000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#218490000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\Civilization 3 Full Downloader.exe
+Return=SUCCESS
+#218540000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#218540000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\Hitman 2 Silent Assassin Patch.exe
+Return=SUCCESS
+#218590000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#218590000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\International Cricket Captain 2003 Full Downloader.exe
+Return=SUCCESS
+#218630000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#218630000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\Tomb Raider 3 ISO - Full Downloader.exe
+Return=SUCCESS
+#218680000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#218680000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\Austerlitz Napoleons Greatest Victory Full Downloader.exe
+Return=SUCCESS
+#218730000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#218730000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\Age Of Wonders 2 Crack.exe
+Return=SUCCESS
+#218790000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#218790000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\Prisoner Of War Full Downloader.exe
+Return=SUCCESS
+#218840000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#218840000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\Soldier Of Fortune 2 ISO - Full Downloader.exe
+Return=SUCCESS
+#218880000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#218880000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\Elder Scrolls III Morrowind THX Brrbrr Patch.exe
+Return=SUCCESS
+#218930000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#218930000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\Age Of Empires 2 Full Downloader.exe
+Return=SUCCESS
+#218970000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#218970000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\Age Of Empires 2 Patch.exe
+Return=SUCCESS
+#219030000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#219030000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\Warcraft 3 ONLINE Key Generator.exe
+Return=SUCCESS
+#219070000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#219070000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\Norton Utilities 2002 XP Patch.exe
+Return=SUCCESS
+#219120000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#219120000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\Necromania Trap Of Darkness Key Generator.exe
+Return=SUCCESS
+#219170000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#219170000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\Freedom Force Full Downloader.exe
+Return=SUCCESS
+#219210000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#219210000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\Windows XP ISO - Full Downloader.exe
+Return=SUCCESS
+#219260000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#219260000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\Nero Burning Rom 5.8.0.1 Patch.exe
+Return=SUCCESS
+#219300000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#219300000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\Austerlitz Napoleons Greatest Victory Patch.exe
+Return=SUCCESS
+#219350000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#219350000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\Aliens versus Predator 2 Primal Hunt Full Downloader.exe
+Return=SUCCESS
+#219410000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#219410000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\Age of Sail 2 Full Downloader.exe
+Return=SUCCESS
+#219450000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#219450000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\BORLAND Delphi 7 Patch.exe
+Return=SUCCESS
+#219500000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#219490000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\CloneCD Full Downloader.exe
+Return=SUCCESS
+#219540000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#219540000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\CloneCD ISO - Full Downloader.exe
+Return=SUCCESS
+#219580000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#219580000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\Gladiator Key Generator.exe
+Return=SUCCESS
+#219620000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#219620000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\Macromedia Full Downloader.exe
+Return=SUCCESS
+#219670000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#219670000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\Soldier Of Fortune 2 Patch.exe
+Return=SUCCESS
+#219710000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#219710000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\AikaQuest3Hentai Patch.exe
+Return=SUCCESS
+#219760000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#219760000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\Warcraft 3 battle.net Key Generator.exe
+Return=SUCCESS
+#219810000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#219800000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\Quake 3 Arena Key Generator.exe
+Return=SUCCESS
+#219850000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#219850000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\DSL Modem Uncapper Patch.exe
+Return=SUCCESS
+#219890000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#219890000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\Hoyle Card Games 2003 Full Downloader.exe
+Return=SUCCESS
+#219940000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#219940000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\Tomb Raider 3 Full Downloader.exe
+Return=SUCCESS
+#219990000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#219990000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\Half-life WON Full Downloader.exe
+Return=SUCCESS
+#220040000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#220040000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\Hard Truck 18 Wheels of Steel Full Downloader.exe
+Return=SUCCESS
+#220080000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#220080000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\Microsoft Office XP (English) Key Generator.exe
+Return=SUCCESS
+#220120000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#220120000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\Soldier Of Fortune 2 Key Generator.exe
+Return=SUCCESS
+#220170000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#220170000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\Cat Attacks Child Key Generator.exe
+Return=SUCCESS
+#220220000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#220220000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\Quake 3 Arena Full Downloader.exe
+Return=SUCCESS
+#220260000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#220260000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\KaZaA Media Desktop v2.5 UNOFFICIAL Full Downloader.exe
+Return=SUCCESS
+#220310000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#220310000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\Macromedia Dreamweaver MX Crack.exe
+Return=SUCCESS
+#220370000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#220370000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\Clive Barkers Undying Crack.exe
+Return=SUCCESS
+#220410000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#220410000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\Critical Point Manga game Patch.exe
+Return=SUCCESS
+#220460000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#220460000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\The Eye Of Kraken Full Downloader.exe
+Return=SUCCESS
+#220510000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#220510000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\Borland Delphi 6 Full Downloader.exe
+Return=SUCCESS
+#220550000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#220550000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\Red Ace Squadron Key Generator.exe
+Return=SUCCESS
+#220590000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#220590000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\Industry Giant 2 Full Downloader.exe
+Return=SUCCESS
+#220640000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#220640000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\Cabelas Ultimate Deer Hunt 2 ISO - Full Downloader.exe
+Return=SUCCESS
+#220690000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#220690000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\My Downloads\Cat Attacks Child Crack.exe
+Return=SUCCESS
+#220780000
+CreateFile
+hName=C:\My Downloads\Necromania Trap Of Darkness Patch.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#220780000
+CreateFile
+hName=C:\My Downloads\Necromania Trap Of Darkness Patch.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#220810000
+CreateFile
+hName=C:\My Downloads\AikaQuest3Hentai ISO - Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#220810000
+CreateFile
+hName=C:\My Downloads\AikaQuest3Hentai ISO - Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#220840000
+CreateFile
+hName=C:\My Downloads\Civilization 3 Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#220840000
+CreateFile
+hName=C:\My Downloads\Civilization 3 Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#220870000
+CreateFile
+hName=C:\My Downloads\Hitman 2 Silent Assassin Patch.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#220870000
+CreateFile
+hName=C:\My Downloads\Hitman 2 Silent Assassin Patch.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#220890000
+CreateFile
+hName=C:\My Downloads\International Cricket Captain 2003 Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#220890000
+CreateFile
+hName=C:\My Downloads\International Cricket Captain 2003 Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#220920000
+CreateFile
+hName=C:\My Downloads\Tomb Raider 3 ISO - Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#220920000
+CreateFile
+hName=C:\My Downloads\Tomb Raider 3 ISO - Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#220950000
+CreateFile
+hName=C:\My Downloads\Austerlitz Napoleons Greatest Victory Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#220950000
+CreateFile
+hName=C:\My Downloads\Austerlitz Napoleons Greatest Victory Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#220980000
+CreateFile
+hName=C:\My Downloads\Age Of Wonders 2 Crack.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#220980000
+CreateFile
+hName=C:\My Downloads\Age Of Wonders 2 Crack.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221010000
+CreateFile
+hName=C:\My Downloads\Prisoner Of War Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221010000
+CreateFile
+hName=C:\My Downloads\Prisoner Of War Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221030000
+CreateFile
+hName=C:\My Downloads\Soldier Of Fortune 2 ISO - Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221030000
+CreateFile
+hName=C:\My Downloads\Soldier Of Fortune 2 ISO - Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221060000
+CreateFile
+hName=C:\My Downloads\Elder Scrolls III Morrowind THX Brrbrr Patch.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221060000
+CreateFile
+hName=C:\My Downloads\Elder Scrolls III Morrowind THX Brrbrr Patch.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221090000
+CreateFile
+hName=C:\My Downloads\Age Of Empires 2 Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221080000
+CreateFile
+hName=C:\My Downloads\Age Of Empires 2 Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221110000
+CreateFile
+hName=C:\My Downloads\Age Of Empires 2 Patch.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221110000
+CreateFile
+hName=C:\My Downloads\Age Of Empires 2 Patch.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221140000
+CreateFile
+hName=C:\My Downloads\Warcraft 3 ONLINE Key Generator.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221140000
+CreateFile
+hName=C:\My Downloads\Warcraft 3 ONLINE Key Generator.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221170000
+CreateFile
+hName=C:\My Downloads\Norton Utilities 2002 XP Patch.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221160000
+CreateFile
+hName=C:\My Downloads\Norton Utilities 2002 XP Patch.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221200000
+CreateFile
+hName=C:\My Downloads\Necromania Trap Of Darkness Key Generator.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221200000
+CreateFile
+hName=C:\My Downloads\Necromania Trap Of Darkness Key Generator.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221220000
+CreateFile
+hName=C:\My Downloads\Freedom Force Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221220000
+CreateFile
+hName=C:\My Downloads\Freedom Force Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221240000
+CreateFile
+hName=C:\My Downloads\Windows XP ISO - Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221240000
+CreateFile
+hName=C:\My Downloads\Windows XP ISO - Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221270000
+CreateFile
+hName=C:\My Downloads\Nero Burning Rom 5.8.0.1 Patch.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221270000
+CreateFile
+hName=C:\My Downloads\Nero Burning Rom 5.8.0.1 Patch.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221300000
+CreateFile
+hName=C:\My Downloads\Austerlitz Napoleons Greatest Victory Patch.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221300000
+CreateFile
+hName=C:\My Downloads\Austerlitz Napoleons Greatest Victory Patch.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221330000
+CreateFile
+hName=C:\My Downloads\Aliens versus Predator 2 Primal Hunt Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221330000
+CreateFile
+hName=C:\My Downloads\Aliens versus Predator 2 Primal Hunt Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221380000
+CreateFile
+hName=C:\My Downloads\Age of Sail 2 Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221380000
+CreateFile
+hName=C:\My Downloads\Age of Sail 2 Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221410000
+CreateFile
+hName=C:\My Downloads\BORLAND Delphi 7 Patch.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221410000
+CreateFile
+hName=C:\My Downloads\BORLAND Delphi 7 Patch.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221430000
+CreateFile
+hName=C:\My Downloads\CloneCD Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221430000
+CreateFile
+hName=C:\My Downloads\CloneCD Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221460000
+CreateFile
+hName=C:\My Downloads\CloneCD ISO - Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221460000
+CreateFile
+hName=C:\My Downloads\CloneCD ISO - Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221480000
+CreateFile
+hName=C:\My Downloads\Gladiator Key Generator.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221480000
+CreateFile
+hName=C:\My Downloads\Gladiator Key Generator.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221510000
+CreateFile
+hName=C:\My Downloads\Macromedia Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221510000
+CreateFile
+hName=C:\My Downloads\Macromedia Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221530000
+CreateFile
+hName=C:\My Downloads\Soldier Of Fortune 2 Patch.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221530000
+CreateFile
+hName=C:\My Downloads\Soldier Of Fortune 2 Patch.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221560000
+CreateFile
+hName=C:\My Downloads\AikaQuest3Hentai Patch.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221550000
+CreateFile
+hName=C:\My Downloads\AikaQuest3Hentai Patch.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221580000
+CreateFile
+hName=C:\My Downloads\Warcraft 3 battle.net Key Generator.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221580000
+CreateFile
+hName=C:\My Downloads\Warcraft 3 battle.net Key Generator.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221600000
+CreateFile
+hName=C:\My Downloads\Quake 3 Arena Key Generator.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221600000
+CreateFile
+hName=C:\My Downloads\Quake 3 Arena Key Generator.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221630000
+CreateFile
+hName=C:\My Downloads\DSL Modem Uncapper Patch.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221620000
+CreateFile
+hName=C:\My Downloads\DSL Modem Uncapper Patch.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221650000
+CreateFile
+hName=C:\My Downloads\Hoyle Card Games 2003 Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221650000
+CreateFile
+hName=C:\My Downloads\Hoyle Card Games 2003 Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221680000
+CreateFile
+hName=C:\My Downloads\Tomb Raider 3 Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221670000
+CreateFile
+hName=C:\My Downloads\Tomb Raider 3 Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221710000
+CreateFile
+hName=C:\My Downloads\Half-life WON Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221710000
+CreateFile
+hName=C:\My Downloads\Half-life WON Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221730000
+CreateFile
+hName=C:\My Downloads\Hard Truck 18 Wheels of Steel Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221730000
+CreateFile
+hName=C:\My Downloads\Hard Truck 18 Wheels of Steel Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221750000
+CreateFile
+hName=C:\My Downloads\Microsoft Office XP (English) Key Generator.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221750000
+CreateFile
+hName=C:\My Downloads\Microsoft Office XP (English) Key Generator.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221780000
+CreateFile
+hName=C:\My Downloads\Soldier Of Fortune 2 Key Generator.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221780000
+CreateFile
+hName=C:\My Downloads\Soldier Of Fortune 2 Key Generator.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221810000
+CreateFile
+hName=C:\My Downloads\Cat Attacks Child Key Generator.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221810000
+CreateFile
+hName=C:\My Downloads\Cat Attacks Child Key Generator.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221830000
+CreateFile
+hName=C:\My Downloads\Quake 3 Arena Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221830000
+CreateFile
+hName=C:\My Downloads\Quake 3 Arena Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221860000
+CreateFile
+hName=C:\My Downloads\KaZaA Media Desktop v2.5 UNOFFICIAL Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221850000
+CreateFile
+hName=C:\My Downloads\KaZaA Media Desktop v2.5 UNOFFICIAL Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221880000
+CreateFile
+hName=C:\My Downloads\Macromedia Dreamweaver MX Crack.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221880000
+CreateFile
+hName=C:\My Downloads\Macromedia Dreamweaver MX Crack.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221910000
+CreateFile
+hName=C:\My Downloads\Clive Barkers Undying Crack.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221910000
+CreateFile
+hName=C:\My Downloads\Clive Barker’s Undying Crack.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221930000
+CreateFile
+hName=C:\My Downloads\Critical Point Manga game Patch.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221930000
+CreateFile
+hName=C:\My Downloads\Critical Point Manga game Patch.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221960000
+CreateFile
+hName=C:\My Downloads\The Eye Of Kraken Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221960000
+CreateFile
+hName=C:\My Downloads\The Eye Of Kraken Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221990000
+CreateFile
+hName=C:\My Downloads\Borland Delphi 6 Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#221990000
+CreateFile
+hName=C:\My Downloads\Borland Delphi 6 Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#222010000
+CreateFile
+hName=C:\My Downloads\Red Ace Squadron Key Generator.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#222010000
+CreateFile
+hName=C:\My Downloads\Red Ace Squadron Key Generator.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#222030000
+CreateFile
+hName=C:\My Downloads\Industry Giant 2 Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#222030000
+CreateFile
+hName=C:\My Downloads\Industry Giant 2 Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#222060000
+CreateFile
+hName=C:\My Downloads\Cabelas Ultimate Deer Hunt 2 ISO - Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#222060000
+CreateFile
+hName=C:\My Downloads\Cabelas Ultimate Deer Hunt 2 ISO - Full Downloader.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#222090000
+CreateFile
+hName=C:\My Downloads\Cat Attacks Child Crack.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#222090000
+CreateFile
+hName=C:\My Downloads\Cat Attacks Child Crack.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#222320000
+ExitProcess

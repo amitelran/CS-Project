@@ -1,0 +1,444 @@
+3264 malware.exe
+#209280000
+LoadLibrary
+lpFileName=gdi32.dll
+Return=SUCCESS
+#208930000
+LoadLibrary
+lpFileName=LPK.DLL
+Return=SUCCESS
+#209770000
+CreateFile
+hName=C:\WINDOWS\WindowsShell.Manifest
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#210100000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Control Panel\Desktop\SmoothScroll
+Return=2
+#210120000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\EnableBalloonTips
+Return=2
+#210120000
+RegEnumValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\LanguagePack\SURR
+type=REG_DWORD
+data=2
+Return=0
+#210370000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\Setup\SystemSetupInProgress
+Return=0
+type=REG_DWORD
+data=0
+#210650000
+LoadLibrary
+lpFileName=comctl32.dll
+Return=SUCCESS
+#210730000
+LoadLibrary
+lpFileName=comctl32.dll
+Return=SUCCESS
+#210890000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\CriticalSectionTimeout
+Return=0
+#210900000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Ole\RWLockResourceTimeOut
+Return=2
+#211280000
+CreateFile
+hName=C:\WINDOWS\system32\OLEACCRC.DLL
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#212210000
+LoadLibrary
+lpFileName=comctl32.dll
+Return=SUCCESS
+#212350000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Internet Settings\DisableImprovedZoneCheck
+Return=2
+#212410000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_OBJECT_CACHING\malware.exe
+Return=2
+#212410000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_OBJECT_CACHING\*
+Return=2
+#212420000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_ZONE_ELEVATION\malware.exe
+Return=2
+#212420000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_ZONE_ELEVATION\*
+Return=2
+#212430000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_MIME_HANDLING\malware.exe
+Return=2
+#212430000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_MIME_HANDLING\*
+Return=2
+#212440000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_MIME_SNIFFING\malware.exe
+Return=2
+#212440000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_MIME_SNIFFING\*
+Return=2
+#212450000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_WINDOW_RESTRICTIONS\malware.exe
+Return=2
+#212450000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_WINDOW_RESTRICTIONS\*
+Return=2
+#212450000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_WEBOC_POPUPMANAGEMENT\malware.exe
+Return=2
+#212450000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_WEBOC_POPUPMANAGEMENT\*
+Return=2
+#212460000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_BEHAVIORS\malware.exe
+Return=2
+#212460000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_BEHAVIORS\*
+Return=0
+type=REG_DWORD
+data=1
+#212470000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_DISABLE_MK_PROTOCOL\malware.exe
+Return=2
+#212470000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_DISABLE_MK_PROTOCOL\*
+Return=0
+type=REG_DWORD
+data=1
+#212470000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_LOCALMACHINE_LOCKDOWN\malware.exe
+Return=2
+#212470000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_LOCALMACHINE_LOCKDOWN\*
+Return=2
+#212480000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_LOCALMACHINE_LOCKDOWN\malware.exe
+Return=2
+#212480000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_LOCALMACHINE_LOCKDOWN\*
+Return=2
+#212510000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_PROTOCOL_LOCKDOWN\malware.exe
+Return=2
+#212510000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_PROTOCOL_LOCKDOWN\*
+Return=2
+#212520000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_SAFE_BINDTOOBJECT\malware.exe
+Return=2
+#212520000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_SAFE_BINDTOOBJECT\*
+Return=2
+#212760000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#213630000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#214030000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#216010000
+LoadLibrary
+lpFileName=comctl32.dll
+Return=SUCCESS
+#216140000
+RegCreateKey
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings
+Return=0
+#216330000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\MediaProperties\PrivateProperties\Joystick\Winmm\wheel
+Return=0
+#272410000
+LoadLibrary
+lpFileName=KERNEL32.DLL
+Return=SUCCESS
+#272950000
+LoadLibrary
+lpFileName=ADVAPI32.dll
+Return=SUCCESS
+#273050000
+LoadLibrary
+lpFileName=COMCTL32.dll
+Return=SUCCESS
+#273080000
+LoadLibrary
+lpFileName=COMDLG32.dll
+Return=SUCCESS
+#273100000
+LoadLibrary
+lpFileName=GDI32.dll
+Return=SUCCESS
+#273310000
+LoadLibrary
+lpFileName=gdiplus.dll
+Return=SUCCESS
+#273390000
+LoadLibrary
+lpFileName=IMM32.dll
+Return=SUCCESS
+#273420000
+LoadLibrary
+lpFileName=MSIMG32.dll
+Return=SUCCESS
+#273440000
+LoadLibrary
+lpFileName=ole32.dll
+Return=SUCCESS
+#273540000
+LoadLibrary
+lpFileName=OLEACC.dll
+Return=SUCCESS
+#273560000
+LoadLibrary
+lpFileName=OLEAUT32.dll
+Return=SUCCESS
+#273600000
+LoadLibrary
+lpFileName=oledlg.dll
+Return=SUCCESS
+#273620000
+LoadLibrary
+lpFileName=SHELL32.dll
+Return=SUCCESS
+#273660000
+LoadLibrary
+lpFileName=SHLWAPI.dll
+Return=SUCCESS
+#273690000
+LoadLibrary
+lpFileName=urlmon.dll
+Return=SUCCESS
+#273710000
+LoadLibrary
+lpFileName=USER32.dll
+Return=SUCCESS
+#274190000
+LoadLibrary
+lpFileName=WININET.dll
+Return=SUCCESS
+#274250000
+LoadLibrary
+lpFileName=WINMM.dll
+Return=SUCCESS
+#274270000
+LoadLibrary
+lpFileName=WINSPOOL.DRV
+Return=SUCCESS
+#276930000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ThemeManager\Compositing
+Return=2
+#276950000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Control Panel\Desktop\LameButtonText
+Return=2
+#276960000
+LoadLibrary
+lpFileName=uxtheme.dll
+Return=SUCCESS
+#278720000
+LoadLibrary
+lpFileName=UxTheme.dll
+Return=SUCCESS
+#278930000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\dwmapi.dll
+Return=FAILURE
+#279790000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\NoRun
+Return=2
+#279790000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\NoDrives
+Return=2
+#279790000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\RestrictRun
+Return=2
+#279790000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\NoNetConnectDisconnect
+Return=2
+#279790000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\NoRecentDocsHistory
+Return=2
+#279790000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\NoClose
+Return=2
+#279820000
+LoadLibrary
+lpFileName=KERNEL32.DLL
+Return=SUCCESS
+#279870000
+LoadLibrary
+lpFileName=C:\Documents and Settings\All Users\Desktop\malwareENU.dll
+Return=FAILURE
+#279920000
+LoadLibrary
+lpFileName=C:\Documents and Settings\All Users\Desktop\malwareENU.dll
+Return=FAILURE
+#279970000
+LoadLibrary
+lpFileName=C:\Documents and Settings\All Users\Desktop\malwareENU.dll
+Return=FAILURE
+#280020000
+LoadLibrary
+lpFileName=C:\Documents and Settings\All Users\Desktop\malwareENU.dll
+Return=FAILURE
+#280060000
+LoadLibrary
+lpFileName=C:\Documents and Settings\All Users\Desktop\malwareLOC.dll
+Return=FAILURE
+#280400000
+LoadLibrary
+lpFileName=ole32.dll
+Return=SUCCESS
+#283440000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\IMM\Ime File
+Return=0
+#283520000
+CreateFile
+hName=C:\WINDOWS\system32\msctfime.ime
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#283600000
+CreateFile
+hName=C:\WINDOWS\system32\msctfime.ime
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#284220000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\ole32.dll
+Return=SUCCESS
+#283740000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\msctfime.ime
+Return=SUCCESS
+#284370000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\CTF\Disable Thread Input Manager
+Return=2
+#284390000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\CTF\SystemShared\CUAS
+Return=0
+type=REG_DWORD
+data=0
+#284470000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\msctfime.ime
+Return=SUCCESS
+#284940000
+CreateFile
+hName=language.map
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#288670000
+LoadLibrary
+lpFileName=UxTheme.dll
+Return=SUCCESS
+#289050000
+CreateFile
+hName=C:\DOCUME~1\ants\LOCALS~1\Temp\air1.tmp
+desiredAccess=GENERIC_READ 
+creationDisposition=CREATE_NEW
+Return=SUCCESS
+#289080000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#289080000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\DOCUME~1\ants\LOCALS~1\Temp\setup.exe
+Return=SUCCESS
+#289190000
+DeleteFile
+fileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+Return=FAILURE
+#290280000
+LoadLibrary
+lpFileName=VERSION.dll
+Return=SUCCESS
+#290380000
+CreateFile
+hName=C:\DOCUME~1\ants\LOCALS~1\Temp\setup.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#290460000
+CreateFile
+hName=C:\DOCUME~1\ants\LOCALS~1\Temp\setup.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#358480000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders\Cache
+Return=0
+#358530000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#289230000
+CreateProcessInternal
+lpCommandLine=C:\DOCUME~1\ants\LOCALS~1\Temp\setup.exe  relaunch
+Return=SUCCESS
+dwProcessId=3324
+dwThreadId=3328
+#289230000
+CreateProcess
+lpCommandLine=C:\DOCUME~1\ants\LOCALS~1\Temp\setup.exe  relaunch
+Return=SUCCESS
+dwProcessId=3324
+dwThreadId=3328
+#368450000
+ExitProcess

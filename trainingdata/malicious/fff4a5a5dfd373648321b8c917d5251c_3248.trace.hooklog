@@ -1,0 +1,35 @@
+3248 malware.exe
+#208090000
+LoadLibrary
+lpFileName=Kernel32.dll
+Return=SUCCESS
+#208130000
+LoadLibrary
+lpFileName=ntdll.dll
+Return=SUCCESS
+#235930000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders\Cache
+Return=0
+#235970000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#235150000
+CreateProcessInternal
+lpApplicationName=C:\Documents and Settings\All Users\Desktop\malware.exe
+Return=SUCCESS
+dwProcessId=3264
+dwThreadId=3268
+#235150000
+CreateProcessInternal
+lpApplicationName=C:\Documents and Settings\All Users\Desktop\malware.exe
+Return=SUCCESS
+dwProcessId=3264
+dwThreadId=3268
+#235150000
+CreateProcess
+lpApplicationName=C:\Documents and Settings\All Users\Desktop\malware.exe
+Return=SUCCESS
+dwProcessId=3264
+dwThreadId=3268

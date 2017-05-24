@@ -1,0 +1,321 @@
+3228 malware.exe
+#221680000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\IMM32.DLL
+Return=SUCCESS
+#222510000
+LoadLibrary
+lpFileName=gdi32.dll
+Return=SUCCESS
+#222200000
+LoadLibrary
+lpFileName=LPK.DLL
+Return=SUCCESS
+#222980000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\Setup\SystemSetupInProgress
+Return=0
+type=REG_DWORD
+data=0
+#223990000
+CreateFile
+hName=C:\WINDOWS\WindowsShell.Manifest
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#224250000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Control Panel\Desktop\SmoothScroll
+Return=2
+#224260000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\EnableBalloonTips
+Return=2
+#224270000
+RegEnumValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\LanguagePack\SURR
+type=REG_DWORD
+data=2
+Return=0
+#223290000
+LoadLibrary
+lpFileName=comctl32.dll
+Return=SUCCESS
+#225100000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Control Panel\Desktop\SmoothScroll
+Return=2
+#225110000
+LoadLibrary
+lpFileName=imm32.dll
+Return=SUCCESS
+#224480000
+LoadLibrary
+lpFileName=comctl32.dll
+Return=SUCCESS
+#226480000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#226480000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#317880000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders\AppData
+Return=0
+type=REG_EXPAND_SZ
+data=%USERPROFILE%\Application Data
+#317920000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders\Local AppData
+Return=0
+type=REG_EXPAND_SZ
+data=%USERPROFILE%\Local Settings\Application Data
+#318510000
+CreateFile
+hName=\\.\Ip
+desiredAccess=GENERIC_EXECUTE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#318510000
+CreateFile
+hName=\\.\Ip
+desiredAccess=GENERIC_EXECUTE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#317980000
+LoadLibrary
+lpFileName=iphlpapi.dll
+Return=SUCCESS
+#318650000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Linkage\Bind
+Return=0
+type=REG_MULTI_SZ
+data=                                                                                                                                                                                                                                  
+#318660000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Linkage\Bind
+Return=0
+type=REG_MULTI_SZ
+data=\ D e v i c e \ { 2 9 9 7 E 7 8 B - 5 F B C - 4 4 9 C - A 3 3 C - 5 E 0 4 C 7 B 1 3 E A 4 }   \ D e v i c e \ { 6 D B E 5 7 2 E - D D D 4 - 4 5 0 9 - B 4 8 8 - 6 0 E 8 3 0 B 8 D B 3 6 }   \ D e v i c e \ N d i s W a n I p     
+#318720000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces\{2997E78B-5FBC-449C-A33C-5E04C7B13EA4}\EnableDHCP
+Return=0
+type=REG_DWORD
+data=1
+#318720000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces\{2997E78B-5FBC-449C-A33C-5E04C7B13EA4}\LeaseObtainedTime
+Return=0
+type=REG_DWORD
+data=1474620154
+#318720000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces\{2997E78B-5FBC-449C-A33C-5E04C7B13EA4}\LeaseTerminatesTime
+Return=0
+type=REG_DWORD
+data=1474706554
+#318720000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces\{2997E78B-5FBC-449C-A33C-5E04C7B13EA4}\DhcpServer
+Return=0
+type=REG_SZ
+data=10.0.2.2
+#318910000
+CreateFile
+hName=C:\DOCUME~1\ants\LOCALS~1\Temp/00294823/tZF20LIwzV.dat
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#318900000
+CreateFile
+hName=C:\DOCUME~1\ants\LOCALS~1\Temp/00294823/tZF20LIwzV.dat
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#318970000
+CreateFile
+hName=C:\DOCUME~1\ants\LOCALS~1\Temp/00294823/tZF20LIwzV.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#318970000
+CreateFile
+hName=C:\DOCUME~1\ants\LOCALS~1\Temp/00294823/tZF20LIwzV.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#319180000
+CreateFile
+hName=C:\DOCUME~1\ants\LOCALS~1\Temp/00294823/vhW4oKlmD.tlb
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#319180000
+CreateFile
+hName=C:\DOCUME~1\ants\LOCALS~1\Temp/00294823/vhW4oKlmD.tlb
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#319360000
+CreateFile
+hName=C:\DOCUME~1\ants\LOCALS~1\Temp/00294823/vhW4oKlmD.dll
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#319360000
+CreateFile
+hName=C:\DOCUME~1\ants\LOCALS~1\Temp/00294823/vhW4oKlmD.dll
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#319590000
+CreateFile
+hName=C:\DOCUME~1\ants\LOCALS~1\Temp/00294823/kqhq4_yy@eujauy.co.uk/content/bg.js
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#319580000
+CreateFile
+hName=C:\DOCUME~1\ants\LOCALS~1\Temp/00294823/kqhq4_yy@eujauy.co.uk/content/bg.js
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#319650000
+CreateFile
+hName=C:\DOCUME~1\ants\LOCALS~1\Temp/00294823/kqhq4_yy@eujauy.co.uk/install.rdf
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#319650000
+CreateFile
+hName=C:\DOCUME~1\ants\LOCALS~1\Temp/00294823/kqhq4_yy@eujauy.co.uk/install.rdf
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#319740000
+CreateFile
+hName=C:\DOCUME~1\ants\LOCALS~1\Temp/00294823/kqhq4_yy@eujauy.co.uk/chrome.manifest
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#319740000
+CreateFile
+hName=C:\DOCUME~1\ants\LOCALS~1\Temp/00294823/kqhq4_yy@eujauy.co.uk/chrome.manifest
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#319820000
+CreateFile
+hName=C:\DOCUME~1\ants\LOCALS~1\Temp/00294823/kqhq4_yy@eujauy.co.uk/bootstrap.js
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#319810000
+CreateFile
+hName=C:\DOCUME~1\ants\LOCALS~1\Temp/00294823/kqhq4_yy@eujauy.co.uk/bootstrap.js
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#320000000
+CreateFile
+hName=C:\DOCUME~1\ants\LOCALS~1\Temp/00294823/oimnhobkckboickkdicdjnjekcfeeomp/lsdb.js
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#320000000
+CreateFile
+hName=C:\DOCUME~1\ants\LOCALS~1\Temp/00294823/oimnhobkckboickkdicdjnjekcfeeomp/lsdb.js
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#320140000
+CreateFile
+hName=C:\DOCUME~1\ants\LOCALS~1\Temp/00294823/oimnhobkckboickkdicdjnjekcfeeomp/content.js
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#320140000
+CreateFile
+hName=C:\DOCUME~1\ants\LOCALS~1\Temp/00294823/oimnhobkckboickkdicdjnjekcfeeomp/content.js
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#320260000
+CreateFile
+hName=C:\DOCUME~1\ants\LOCALS~1\Temp/00294823/oimnhobkckboickkdicdjnjekcfeeomp/sqlite.js
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#320250000
+CreateFile
+hName=C:\DOCUME~1\ants\LOCALS~1\Temp/00294823/oimnhobkckboickkdicdjnjekcfeeomp/sqlite.js
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#320340000
+CreateFile
+hName=C:\DOCUME~1\ants\LOCALS~1\Temp/00294823/oimnhobkckboickkdicdjnjekcfeeomp/manifest.json
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#320340000
+CreateFile
+hName=C:\DOCUME~1\ants\LOCALS~1\Temp/00294823/oimnhobkckboickkdicdjnjekcfeeomp/manifest.json
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#320410000
+CreateFile
+hName=C:\DOCUME~1\ants\LOCALS~1\Temp/00294823/oimnhobkckboickkdicdjnjekcfeeomp/background.html
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#320410000
+CreateFile
+hName=C:\DOCUME~1\ants\LOCALS~1\Temp/00294823/oimnhobkckboickkdicdjnjekcfeeomp/background.html
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#320530000
+CreateFile
+hName=C:\DOCUME~1\ants\LOCALS~1\Temp/00294823/oimnhobkckboickkdicdjnjekcfeeomp/tQJPhIpIYh.js
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#320530000
+CreateFile
+hName=C:\DOCUME~1\ants\LOCALS~1\Temp/00294823/oimnhobkckboickkdicdjnjekcfeeomp/tQJPhIpIYh.js
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#322440000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders\Cache
+Return=0
+#322480000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#320650000
+CreateProcessInternal
+lpApplicationName=C:\DOCUME~1\ants\LOCALS~1\Temp/00294823/tZF20LIwzV.exe
+lpCommandLine="C:\DOCUME~1\ants\LOCALS~1\Temp/00294823/tZF20LIwzV.exe" 
+Return=SUCCESS
+dwProcessId=3272
+dwThreadId=3276
+#320650000
+CreateProcess
+lpApplicationName=C:\DOCUME~1\ants\LOCALS~1\Temp/00294823/tZF20LIwzV.exe
+lpCommandLine="C:\DOCUME~1\ants\LOCALS~1\Temp/00294823/tZF20LIwzV.exe" 
+Return=SUCCESS
+dwProcessId=3272
+dwThreadId=3276

@@ -1,0 +1,56 @@
+3140 malware.exe
+#198670000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\IMM32.DLL
+Return=SUCCESS
+#199440000
+LoadLibrary
+lpFileName=gdi32.dll
+Return=SUCCESS
+#199140000
+LoadLibrary
+lpFileName=LPK.DLL
+Return=SUCCESS
+#199970000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\CriticalSectionTimeout
+Return=0
+#199970000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Ole\RWLockResourceTimeOut
+Return=2
+#200190000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#200180000
+CopyFile
+lpExistingFileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+lpNewFileName=C:\WINDOWS\system32\sIRC4.exe
+Return=SUCCESS
+#200340000
+CreateFile
+hName=C:\marijuana.txt
+desiredAccess=GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#200340000
+CreateFile
+hName=C:\marijuana.txt
+desiredAccess=GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#200690000
+CreateFile
+hName=C:\AiOLog.txt
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#200690000
+CreateFile
+hName=C:\AiOLog.txt
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS

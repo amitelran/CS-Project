@@ -1,0 +1,17 @@
+3436 net.exe
+#501000000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\IMM32.DLL
+Return=SUCCESS
+#513080000
+LoadLibrary
+lpFileName=gdi32.dll
+Return=SUCCESS
+#508690000
+LoadLibrary
+lpFileName=LPK.DLL
+Return=SUCCESS
+#518020000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\MediaProperties\PrivateProperties\Joystick\Winmm\wheel
+Return=0

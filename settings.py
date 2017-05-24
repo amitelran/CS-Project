@@ -36,14 +36,12 @@ def init():
 	global test_data_unlabeled_directory
 	global testLabeledData
 
-	# This is the number of components in the resulting MinHash signatures.
-	# Correspondingly, it is also the number of random hash functions that
-	# we will need in order to calculate the MinHash.
-
-	numHashes = 100
+	numHashes = 100								# number of random hash functions,number of components in the resulting MinHash signatures
 	maxShingleID = 2 ** 32 - 1					# Record the maximum shingle ID that we assigned.
 	numBands = 10								# Number of bands set
 	shingle_size = 3							# Size of a shingle
+	nextPrime = 4294967311  # Value of next prime number
+	hashMax = 50021  # Buckets hash table size
 
 	samples_directory = 'codedatasetsample'		# Reference to traces directory
 	unclassified_traces_directory = 'unclassifiedtraces'		# The directory where unclassified traces inserted until classification is made
@@ -58,8 +56,7 @@ def init():
 	test_data_benign_directory = test_data_directory+'/benign'
 	test_data_malicious_directory = test_data_directory+'/malicious'
 
-	nextPrime = 4294967311						# Value of next prime number
-	hashMax = 50021								# Maximum number of MinHash functions
+
 	clustered_data_directory = "data"			# Directory storing the already clustered traces data
 	minhash_file = "minhash_data.pkl"			# Pickle file storing all generated MinHash functions data
 	signatures_file = "signatures.pkl"			# Pickle file storing signatures matrix data
@@ -67,6 +64,7 @@ def init():
 	traces_file = "traces.pkl"					# Pickle file storing all buckets data
 	coeffA = None								# 1st Co-efficient for MinHash functions
 	coeffB = None								# 2nd Co-efficient for MinHash functions
+
 	overwriteData = True						# Boolean to indicate whether need to overwrite existing MinHash, Signatures & Buckets existing data
 	classifyTraces = True						# Boolean to indicate whether need to classify traces or not
 	testLabeledData = True						# Boolean to indicate what mode to test: one mode of testing 'benign' and 'malicious', the other mode of testing with 'unlabeled'

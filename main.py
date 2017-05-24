@@ -66,7 +66,6 @@ def main():
 			return
 	else:		# (If no data exists, generate MinHash, Signatures & Buckets data and export (a.k.a dump) to files
 		#tracesObjects = trace_parser.parse_traces_as_objects(settings.samples_directory)
-
 		tracesObjectsMalicious = trace_parser.parse_traces_as_objects(settings.training_data_malicious_directory)
 		tracesObjectsBenign = trace_parser.parse_traces_as_objects(settings.training_data_benign_directory)
 		tracesObjects = tracesObjectsMalicious + tracesObjectsBenign
@@ -94,7 +93,7 @@ def main():
 
 		path = settings.unclassified_traces_directory
 		event_handler = ClassifyEventHandler()
-		for dirpath, dirnames, files in os.walk(settings.unclassified_traces_directory):
+		for dirpath, dirnames, files in os.walk(settings.test_data_directory):
 			if files:
 				event_handler.classifyFiles = True
 		observer = Observer()
@@ -113,6 +112,9 @@ def main():
 					else:
 						testDocsObjects = trace_parser.parse_traces_as_objects(settings.test_data_unlabeled_directory)
 					# new_docsObjects = trace_parser.parse_traces_as_objects(unclassified_directory, classified_directory)
+					if len(testDocsObjects) == 0:
+						continue
+
 					test_docs_as_strings = trace_parser.generate_traces_as_text(testDocsObjects)
 
 					# Classification of unclassified traces:
