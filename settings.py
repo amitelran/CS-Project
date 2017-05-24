@@ -47,7 +47,9 @@ def init():
 	unclassified_traces_directory = 'unclassifiedtraces'		# The directory where unclassified traces inserted until classification is made
 	classified_traces_directory = 'classifiedtraces'		# The directory where classified traces are inserted after classification is made
 
-	training_data_directory = 'trainingdata'	# Directory for training data containing two sub-directories: benign and malicious.
+#	training_data_directory = 'trainingdata'	# Directory for training data containing two sub-directories: benign and malicious.
+	training_data_directory = 'trnSergey50'	# Directory for training data containing two sub-directories: benign and malicious.
+
 	training_data_benign_directory = training_data_directory + '/benign'	# Sub-directory of the trainingdata directory containing benign traces.
 	training_data_malicious_directory = training_data_directory + '/malicious'	# Sub-directory of the trainingdata directory containing malicious traces
 
@@ -66,5 +68,5 @@ def init():
 	coeffB = None								# 2nd Co-efficient for MinHash functions
 
 	overwriteData = True						# Boolean to indicate whether need to overwrite existing MinHash, Signatures & Buckets existing data
-	classifyTraces = True						# Boolean to indicate whether need to classify traces or not
+	classifyTraces = False						# Boolean to indicate whether need to classify traces or not
 	testLabeledData = True						# Boolean to indicate what mode to test: one mode of testing 'benign' and 'malicious', the other mode of testing with 'unlabeled'

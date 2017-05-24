@@ -84,6 +84,7 @@ def main():
 		# lsh.findRB(sigs,docsAsShingles,1,1,2,0.9)
 		buckets = lsh.build_buckets2(sigs, settings.numBands, settings.numHashes / settings.numBands, tracesObjects)
 		# print buckets
+	sim_comparison.bucketsReport(buckets)
 
 	if settings.classifyTraces:		# Need to classify traces (Indicating boolean is 'ON')
 
