@@ -1,6 +1,34 @@
 import numpy
 import time
 from matplotlib import pyplot
+import settings
+
+
+
+# Similarities comparison
+def bucketsReport(buckets):
+    print "MinHash parameters:"
+    print "\tCoeffA: " + str(settings.coeffA)
+    print "\tCoeffB: " + str(settings.coeffB)
+    print "\tnextPrime: " + str(settings.nextPrime)
+    print "\n\n\Buckets Report: %d buckets" % len(buckets)
+    for b,ns in buckets.iteritems():
+        print "(*)Bucket #%d, has %d traces" % (b, len(ns))
+        jSims = []
+        for i in range(0,len(ns)):
+            for j in range(i+1, len(ns)):
+                s1 = ns[i].get_shingles()
+                s2 = ns[j].get_shingles()
+                jSim = (len(s1.intersection(s2)) / float(len(s1.union(s2))))
+                # print str(jSim)
+                jSims.append(jSim)
+        avg = numpy.mean(numpy.array(jSims))
+        SD = numpy.std(numpy.array(jSims)) #sqrt(mean(abs(x - x.mean())**2))
+        print "\tJSim - AVG: %f, SD %f " % (avg, SD)
+        print "\tBucket Traces list:'"
+        print "\t\t" + '\n\t\t'.join([(t.get_name() + ' / ' + t.get_filename()) for t in ns])
+
+
 
 # Similarities comparison
 def CompareSimilarities(Sim1,Sim2):

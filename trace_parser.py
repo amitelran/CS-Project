@@ -1,7 +1,6 @@
 import settings
 import glob
 import re
-import ntpath
 import os
 from trace_class import Trace
 import ntpath
@@ -40,26 +39,25 @@ def parse_traces_as_objects(directory, moveToDirectory=None):
 			# The '+' means that other digits after the first one don't matter
 			match_timestamp = re.search(r'#([\d]+)', line)  # regular expression searching for timestamp and return boolean value if found or not # TODO
 			if match_timestamp:
-				trace_data.append(
-					{})  # Appending an empty Python dictionary to program_name (dictionary - set of separated words)
+				trace_data.append({})  # Appending an empty Python dictionary to program_name (dictionary - set of separated words)
 				trace_data[-1]['timestamp'] = match_timestamp.group(1)
 				continue
 			match_keyvalue = re.search(r'.+=.+', line)  # Regular expression matching all line that include '=' within
 			if not match_keyvalue:  # If there is no '=' within the line, insert the line as an "API Name (e.g. 'CreateFile')" and continue to next line of file
 				trace_data[-1]['API_Name'] = line
 				continue
-			line_elements = line.split('=')  # If line includes '=': Splits lines to separate lines (treating '=' as a delimeter)
+			line_elements = line.split('=')  # If line includes '=': Splits line to elements  (treating '=' as a delimeter)
 			trace_data[-1][line_elements[0]] = line_elements[1]  # Append the string after the 1st '='
 		# End of file lines looping
 
 		input_file.close()
 		trace_objects.append(Trace(file_name, program_name, trace_data))  # Append parsed traced as a Trace object to list
-		if (directory == settings.training_data_benign_directory):		# If the trace is coming from the benign directory --> set the trace object malicious field as false
+		if directory.endswith('benign'):		# If the trace is coming from the benign directory --> set the trace object malicious field as false
 			trace_objects[-1].change_status(False)
 		else:
-			if (directory == settings.training_data_malicious_directory):
+			if directory.endswith('malicious'):
 				trace_objects[-1].change_status(True)
-		trace_objects[-1].isMalicious()
+
 		if moveToDirectory:
 			if not os.path.exists(moveToDirectory):
 				os.makedirs(moveToDirectory)
@@ -137,7 +135,13 @@ def extract_API_name(traces):
 def extract_APIhKey_name(traces):
 	return [[t.get_name(), t.get_data_as_string()] for t in traces]
 
+def parse_as_API_calls(traces):
+	return [[t.get_name(), t.get_api_data_as_string()] for t in traces]
+
 
 # Generating the parsed traces as text
-def generate_traces_as_text(prasedTracesObjects):
-	return extract_APIhKey_name(prasedTracesObjects)
+def generate_traces_as_text(parsedTracesObjects):
+	if settings.mode is settings.Modes.APIs_mode:
+		return parse_as_API_calls(parsedTracesObjects)
+	else:
+		return extract_APIhKey_name(parsedTracesObjects)

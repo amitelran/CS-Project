@@ -67,6 +67,43 @@ def build_buckets(sigs, b, r, docsObjects):
 	#print traces
 	return buckets
 
+def build_buckets2(sigs, b, r, docsObjects):
+	print "\nBuilding buckets with LSH...\n"
+	hashMax = settings.hashMax		# Get the maximal number of hash functions as set in settings.py
+	buckets = dict()
+
+	# Hashing for each of the bands (number of bands as set by 'b' input)
+	for i in range(b):
+		for j in range(0, len(sigs)):		# Go through all line elements in a band row (number of columns of signatures matrix)
+			#print("i = "+str(i)+", j = "+str(j))
+			#print(sigs[j][b*(i):b*(i)+r])
+			curTrace = docsObjects[j]
+			start = b*i				# start point of the band
+			if i == b-1:			# If reached to the last band, band's end is till the end of sigs (None respresents absence of a value)
+				end = None
+			else:
+				end = b*i + r		# If not the last band, set 'end' as the start of the band plus number of rows in a single band
+			curHash = int(hash(tuple(sigs[j][start:end]))) % hashMax		# Hash current band
+			#print(curHash)
+
+			# Add current bucket(curHash) to the trace that the current signature represent
+			if curTrace in traces:
+				traces[curTrace].append(curHash)
+			else:
+				traces[curTrace] = [curHash]
+
+			# Check for membership of current hashing in the buckets dictionary structure:
+			# If already existing bucket for hash value --> append to the corresponding bucket
+			# else, map the new bucket according to the hashing value
+			if curHash in buckets:
+				buckets[curHash].append(curTrace)
+			else:
+				buckets[curHash] = [curTrace]
+	dump_load_args.DumpBuckets(buckets)			# Dump data into buckets data file
+	dump_load_args.DumpTraces(traces)			# Dump data into traces data file
+	#print traces
+	return buckets
+
 
 # Classify new incoming traces (similar way to the build_buckets function above)
 def classify_new_data(sigs, b, r, buckets, docsObjects):
@@ -100,6 +137,41 @@ def classify_new_data(sigs, b, r, buckets, docsObjects):
 	# dump_load_args.DumpBuckets(buckets)
 	# dump_load_args.DumpTraces(traces)
 	# print traces
+	return neighbors
+
+def classify_new_data2(sigs, b, r, buckets, docsObjects):
+	print "\nClassifying with LSH...\n"
+	hashMax =  settings.hashMax
+	neighbors = [list() for _ in range(len(sigs))]
+	for i in range(b):
+		for j in range(len(sigs)):
+			#print("i = "+str(i)+", j = "+str(j))
+			#print(sigs[j][b*(i):b*(i)+r])
+			curTrace = docsObjects[j].get_filename()
+			start = b*i
+			if i == b-1:
+				end = None
+			else:
+				end = b*i+r
+			curHash = int(hash(tuple(sigs[j][start:end]))) % hashMax
+			#print(curHash
+
+			if curTrace in traces:
+				traces[curTrace].append(curHash)
+			else:
+				traces[curTrace] = [curHash]
+
+			if curHash in buckets:
+				# buckets[i][curHash].append(j)
+				neighbors[j].append((curHash,buckets[curHash]))
+			else:
+				# buckets[i][curHash] = [j]
+				neighbors[j].append((curHash,[]))
+	# dump_load_args.DumpBuckets(buckets)
+	# dump_load_args.DumpTraces(traces)
+	# print traces
+	print("neighborrrrrrrrrs:")
+	print(neighbors)
 	return neighbors
 
 # =============================================================================

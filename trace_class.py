@@ -3,7 +3,7 @@
 # =============================================================================
 
 import time
-
+import settings
 
 class Trace:
     def __init__(self, file_name, program_name, data):
@@ -12,8 +12,10 @@ class Trace:
         self.raw_data = data
         self.classification_time = time.strftime("%c")     # Classification time occurrence of trace
         #self.classification_bucket = None
-        # Variable to indicate if trace is malicious or benign
-        self.is_malicious = None                            # TODO get this value as parameter
+        self.is_malicious = None           # Variable to indicate if trace is malicious or benign
+        self.shingles = None
+        self.signature = None
+
 
     # Display trace's file's name
     def display_file_name(self):
@@ -54,6 +56,9 @@ class Trace:
     def get_name(self):
         return self.program_name
 
+    def get_is_malicious(self):
+        return self.is_malicious
+
     # Trace's file's name getter
     def get_filename(self):
         return self.file_name
@@ -65,3 +70,46 @@ class Trace:
     # Parse raw data as string when called
     def get_data_as_string(self):
         return '*'.join([(str(call.get('API_Name')) + '@' + str(call.get('hKey'))) for call in self.raw_data[:]])
+
+
+    # Parse raw data as API call string
+    def get_api_data_as_string(self):
+        api_calls_data = []
+        for call in self.raw_data[:]:
+            API_call = str(call.get('API_Name'))
+            if (str(call.get('hKey')) != 'None'):
+                API_call += '@' + (str(call.get('hKey')))
+            if (str(call.get('lpFileName')) != 'None'):
+                API_call += '@' + (str(call.get('lpFileName')))
+            if (str(call.get('Return')) != 'None'):
+                API_call += '@' + (str(call.get('Return')))
+            if (str(call.get('desiredAccess')) != 'None'):
+                API_call += '@' + (str(call.get('desiredAccess')))
+            api_calls_data.append(API_call)
+
+        # Generate accumulated string of API calls, delimeted by '*'
+        APIs = ''
+        counter = 0
+        for api_call in api_calls_data:
+            counter += 1
+            #APIs += '*' + api_call
+            APIs += '*' + api_call
+            if counter == settings.apiCalls_per_shingle:
+                counter = 0
+
+        #print('APIs: ')
+        #print(APIs)
+        return APIs
+
+
+    def get_shingles(self):
+        return self.shingles
+
+    def set_shingles(self, shingles):
+        self.shingles = shingles
+
+    def get_signature(self):
+        return self.signature
+
+    def set_signature(self, sig):
+        self.signature = sig
