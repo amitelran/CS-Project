@@ -85,6 +85,7 @@ def convertToShingles(docs):
 # =============================================================================
 
 
+
 def convertToAPIcalls(docs):
     print "Shingling " + str(len(docs)) + " docs as API calls..."
     docsAsAPIcalls = []
