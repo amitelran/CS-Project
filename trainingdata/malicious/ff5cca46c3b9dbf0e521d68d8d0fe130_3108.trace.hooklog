@@ -1,0 +1,381 @@
+3108 malware.exe
+#209750000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\IMM32.DLL
+Return=SUCCESS
+#210540000
+LoadLibrary
+lpFileName=gdi32.dll
+Return=SUCCESS
+#210220000
+LoadLibrary
+lpFileName=LPK.DLL
+Return=SUCCESS
+#211000000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\CriticalSectionTimeout
+Return=0
+#211000000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Ole\RWLockResourceTimeOut
+Return=2
+#231490000
+LoadLibrary
+lpFileName=KERNEL32.DLL
+Return=SUCCESS
+#231860000
+LoadLibrary
+lpFileName=ADVAPI32.dll
+Return=SUCCESS
+#231920000
+LoadLibrary
+lpFileName=GDI32.dll
+Return=SUCCESS
+#231970000
+LoadLibrary
+lpFileName=ole32.dll
+Return=SUCCESS
+#232020000
+LoadLibrary
+lpFileName=OLEAUT32.dll
+Return=SUCCESS
+#232060000
+LoadLibrary
+lpFileName=SHLWAPI.dll
+Return=SUCCESS
+#232090000
+LoadLibrary
+lpFileName=USER32.dll
+Return=SUCCESS
+#232280000
+LoadLibrary
+lpFileName=VERSION.dll
+Return=SUCCESS
+#232300000
+LoadLibrary
+lpFileName=WS2_32.dll
+Return=SUCCESS
+#232680000
+RegQueryValue
+hKey=HKEY_CLASSES_ROOT\http\shell\open\command\\
+Return=0
+type=REG_SZ
+data=
+#232690000
+RegQueryValue
+hKey=HKEY_CLASSES_ROOT\http\shell\open\command\\
+Return=0
+#233080000
+CreateFile
+hName=\\.\Scsi0:
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#233090000
+CreateFile
+hName=\\.\Scsi1:
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#233100000
+CreateFile
+hName=\\.\Scsi2:
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#233120000
+CreateFile
+hName=\\.\Scsi3:
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#233130000
+CreateFile
+hName=\\.\Scsi4:
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#233140000
+CreateFile
+hName=\\.\Scsi5:
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#233160000
+CreateFile
+hName=\\.\Scsi6:
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#233180000
+CreateFile
+hName=\\.\Scsi7:
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#233190000
+CreateFile
+hName=\\.\Scsi8:
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#233200000
+CreateFile
+hName=\\.\Scsi9:
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#233220000
+CreateFile
+hName=\\.\Scsi10:
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#233230000
+CreateFile
+hName=\\.\Scsi11:
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#233240000
+CreateFile
+hName=\\.\Scsi12:
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#233260000
+CreateFile
+hName=\\.\Scsi13:
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#233270000
+CreateFile
+hName=\\.\Scsi14:
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#233280000
+CreateFile
+hName=\\.\Scsi15:
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#233310000
+CreateFile
+hName=\\.\PhysicalDrive0
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#233340000
+CreateFile
+hName=\\.\PhysicalDrive1
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#233360000
+CreateFile
+hName=\\.\PhysicalDrive2
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#233380000
+CreateFile
+hName=\\.\PhysicalDrive3
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#233400000
+CreateFile
+hName=\\.\PhysicalDrive4
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#233420000
+CreateFile
+hName=\\.\PhysicalDrive5
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#233430000
+CreateFile
+hName=\\.\PhysicalDrive6
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#233450000
+CreateFile
+hName=\\.\PhysicalDrive7
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#233470000
+CreateFile
+hName=\\.\PhysicalDrive8
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#233490000
+CreateFile
+hName=\\.\PhysicalDrive9
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#233510000
+CreateFile
+hName=\\.\PhysicalDrive10
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#233530000
+CreateFile
+hName=\\.\PhysicalDrive11
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#233550000
+CreateFile
+hName=\\.\PhysicalDrive12
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#233570000
+CreateFile
+hName=\\.\PhysicalDrive13
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#233590000
+CreateFile
+hName=\\.\PhysicalDrive14
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#233610000
+CreateFile
+hName=\\.\PhysicalDrive15
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#233990000
+CreateFile
+hName=\\.\Ip
+desiredAccess=GENERIC_EXECUTE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#233990000
+CreateFile
+hName=\\.\Ip
+desiredAccess=GENERIC_EXECUTE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#233640000
+LoadLibrary
+lpFileName=IPHLPAPI.dll
+Return=SUCCESS
+#234140000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Linkage\Bind
+Return=0
+type=REG_MULTI_SZ
+data=                                                                                                                                                                                                                                  
+#234150000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Linkage\Bind
+Return=0
+type=REG_MULTI_SZ
+data=\ D e v i c e \ { 2 9 9 7 E 7 8 B - 5 F B C - 4 4 9 C - A 3 3 C - 5 E 0 4 C 7 B 1 3 E A 4 }   \ D e v i c e \ { 6 D B E 5 7 2 E - D D D 4 - 4 5 0 9 - B 4 8 8 - 6 0 E 8 3 0 B 8 D B 3 6 }   \ D e v i c e \ N d i s W a n I p     
+#234200000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces\{2997E78B-5FBC-449C-A33C-5E04C7B13EA4}\EnableDHCP
+Return=0
+type=REG_DWORD
+data=1
+#234200000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces\{2997E78B-5FBC-449C-A33C-5E04C7B13EA4}\LeaseObtainedTime
+Return=0
+type=REG_DWORD
+data=1474639232
+#234200000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces\{2997E78B-5FBC-449C-A33C-5E04C7B13EA4}\LeaseTerminatesTime
+Return=0
+type=REG_DWORD
+data=1474725632
+#234200000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces\{2997E78B-5FBC-449C-A33C-5E04C7B13EA4}\DhcpServer
+Return=0
+type=REG_SZ
+data=10.0.2.2
+#234930000
+LoadLibrary
+lpFileName=shfolder.dll
+Return=SUCCESS
+#235450000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\Setup\SystemSetupInProgress
+Return=0
+type=REG_DWORD
+data=0
+#236490000
+CreateFile
+hName=C:\WINDOWS\WindowsShell.Manifest
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#236770000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Control Panel\Desktop\SmoothScroll
+Return=2
+#236780000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\EnableBalloonTips
+Return=2
+#236790000
+RegEnumValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\LanguagePack\SURR
+type=REG_DWORD
+data=2
+Return=0
+#235770000
+LoadLibrary
+lpFileName=comctl32.dll
+Return=SUCCESS
+#237620000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Control Panel\Desktop\SmoothScroll
+Return=2
+#237640000
+LoadLibrary
+lpFileName=imm32.dll
+Return=SUCCESS
+#237000000
+LoadLibrary
+lpFileName=comctl32.dll
+Return=SUCCESS
+#235120000
+LoadLibrary
+lpFileName=shell32.dll
+Return=SUCCESS
+#238110000
+RegCreateKey
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders
+Return=0
+#238120000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders\Personal
+Return=0
+type=REG_EXPAND_SZ
+data=%
+#238150000
+RegCreateKey
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders
+Return=0
+#238160000
+RegSetValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders\Personal
+type=REG_SZ
+data=C:\Documents and Settings\ants\My Documents
+Return=0

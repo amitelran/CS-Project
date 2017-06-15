@@ -139,6 +139,8 @@ def parse_as_API_calls(traces):
 	return [[t.get_name(), t.get_api_data_as_string()] for t in traces]
 
 
+
+
 # Generating the parsed traces as text
 def generate_traces_as_text(parsedTracesObjects):
 	if settings.mode is settings.Modes.APIs_mode:

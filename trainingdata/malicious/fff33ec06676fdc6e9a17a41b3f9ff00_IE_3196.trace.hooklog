@@ -1,0 +1,17 @@
+3196 IEXPLORE.EXE
+#261260000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\IMM32.DLL
+Return=SUCCESS
+#262130000
+LoadLibrary
+lpFileName=gdi32.dll
+Return=SUCCESS
+#261820000
+LoadLibrary
+lpFileName=LPK.DLL
+Return=SUCCESS
+#262550000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS

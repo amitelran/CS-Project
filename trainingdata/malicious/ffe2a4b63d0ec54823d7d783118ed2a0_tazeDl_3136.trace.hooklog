@@ -1,0 +1,1644 @@
+3136 tazebama.dl_
+#233930000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\IMM32.DLL
+Return=SUCCESS
+#235790000
+LoadLibrary
+lpFileName=gdi32.dll
+Return=SUCCESS
+#235190000
+LoadLibrary
+lpFileName=LPK.DLL
+Return=SUCCESS
+#237900000
+LoadLibrary
+lpFileName=Netapi32.dll
+Return=SUCCESS
+#238310000
+LoadLibrary
+lpFileName=Netapi32.dll
+Return=SUCCESS
+#238610000
+LoadLibrary
+lpFileName=mpr.dll
+Return=SUCCESS
+#239030000
+LoadLibrary
+lpFileName=mpr.dll
+Return=SUCCESS
+#239330000
+LoadLibrary
+lpFileName=mpr.dll
+Return=SUCCESS
+#239660000
+LoadLibrary
+lpFileName=mpr.dll
+Return=SUCCESS
+#240830000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\Setup\SystemSetupInProgress
+Return=0
+type=REG_DWORD
+data=0
+#242690000
+CreateFile
+hName=C:\WINDOWS\WindowsShell.Manifest
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#243000000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Control Panel\Desktop\SmoothScroll
+Return=2
+#243040000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\EnableBalloonTips
+Return=2
+#243050000
+RegEnumValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\LanguagePack\SURR
+type=REG_DWORD
+data=2
+Return=0
+#241190000
+LoadLibrary
+lpFileName=comctl32.dll
+Return=SUCCESS
+#244680000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Control Panel\Desktop\SmoothScroll
+Return=2
+#244690000
+LoadLibrary
+lpFileName=imm32.dll
+Return=SUCCESS
+#243510000
+LoadLibrary
+lpFileName=comctl32.dll
+Return=SUCCESS
+#239960000
+LoadLibrary
+lpFileName=shell32.dll
+Return=SUCCESS
+#246070000
+LoadLibrary
+lpFileName=shell32.dll
+Return=SUCCESS
+#246770000
+LoadLibrary
+lpFileName=shell32.dll
+Return=SUCCESS
+#246990000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#247080000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#247160000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#247250000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#247350000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#247440000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#247530000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#247620000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#247750000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#247880000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#247970000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#248060000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#249120000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#249870000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#250310000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#252470000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\CriticalSectionTimeout
+Return=0
+#252480000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Ole\RWLockResourceTimeOut
+Return=2
+#252930000
+LoadLibrary
+lpFileName=comctl32.dll
+Return=SUCCESS
+#253330000
+RegCreateKey
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings
+Return=0
+#248160000
+LoadLibrary
+lpFileName=wininet.dll
+Return=SUCCESS
+#253360000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#253400000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#253420000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#253440000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#253470000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#253490000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#253510000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#253540000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#253560000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#253590000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#253610000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#253640000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#253660000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#253690000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#253710000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#253730000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#253750000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#253780000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#253800000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#253820000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#253850000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#253870000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#253900000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#253910000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#253930000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#253950000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#253970000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#254000000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#254020000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#254040000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#254060000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#254080000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#254100000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#254120000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#254140000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#254160000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#254180000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#254210000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#254230000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#254250000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#254280000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#254290000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#254310000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#254330000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#254350000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#254360000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#254380000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#254400000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#254420000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#254440000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#254450000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#254480000
+LoadLibrary
+lpFileName=ole32.dll
+Return=SUCCESS
+#254650000
+LoadLibrary
+lpFileName=ole32.dll
+Return=SUCCESS
+#254850000
+LoadLibrary
+lpFileName=ole32.dll
+Return=SUCCESS
+#255020000
+LoadLibrary
+lpFileName=MAPI32.DLL
+Return=SUCCESS
+#255450000
+LoadLibrary
+lpFileName=MAPI32.DLL
+Return=SUCCESS
+#255600000
+LoadLibrary
+lpFileName=MAPI32.DLL
+Return=SUCCESS
+#255740000
+LoadLibrary
+lpFileName=MAPI32.DLL
+Return=SUCCESS
+#255880000
+LoadLibrary
+lpFileName=MAPI32.DLL
+Return=SUCCESS
+#256040000
+OpenProcess
+desiredAccess=DELETE READ_CONTROL SYNCHRONIZE WRITE_DAC WRITE_OWNER PROCESS_CREATE_PROCESS PROCESS_CREATE_THREAD PROCESS_DUP_HANDLE PROCESS_QUERY_INFORMATION PROCESS_SET_INFORMATION PROCESS_SET_QUOTA PROCESS_SUSPEND_RESUME PROCESS_TERMINATE PROCESS_VM_OPERATION PROCESS_VM_READ PROCESS_VM_WRITE 
+dwProcessId=0
+Return=FAILURE
+#256040000
+OpenProcess
+desiredAccess=DELETE READ_CONTROL SYNCHRONIZE WRITE_DAC WRITE_OWNER PROCESS_CREATE_PROCESS PROCESS_CREATE_THREAD PROCESS_DUP_HANDLE PROCESS_QUERY_INFORMATION PROCESS_SET_INFORMATION PROCESS_SET_QUOTA PROCESS_SUSPEND_RESUME PROCESS_TERMINATE PROCESS_VM_OPERATION PROCESS_VM_READ PROCESS_VM_WRITE 
+dwProcessId=4
+Return=FAILURE
+#256040000
+OpenProcess
+desiredAccess=DELETE READ_CONTROL SYNCHRONIZE WRITE_DAC WRITE_OWNER PROCESS_CREATE_PROCESS PROCESS_CREATE_THREAD PROCESS_DUP_HANDLE PROCESS_QUERY_INFORMATION PROCESS_SET_INFORMATION PROCESS_SET_QUOTA PROCESS_SUSPEND_RESUME PROCESS_TERMINATE PROCESS_VM_OPERATION PROCESS_VM_READ PROCESS_VM_WRITE 
+dwProcessId=292
+Return=FAILURE
+#256050000
+OpenProcess
+desiredAccess=DELETE READ_CONTROL SYNCHRONIZE WRITE_DAC WRITE_OWNER PROCESS_CREATE_PROCESS PROCESS_CREATE_THREAD PROCESS_DUP_HANDLE PROCESS_QUERY_INFORMATION PROCESS_SET_INFORMATION PROCESS_SET_QUOTA PROCESS_SUSPEND_RESUME PROCESS_TERMINATE PROCESS_VM_OPERATION PROCESS_VM_READ PROCESS_VM_WRITE 
+dwProcessId=400
+Return=FAILURE
+#256050000
+OpenProcess
+desiredAccess=DELETE READ_CONTROL SYNCHRONIZE WRITE_DAC WRITE_OWNER PROCESS_CREATE_PROCESS PROCESS_CREATE_THREAD PROCESS_DUP_HANDLE PROCESS_QUERY_INFORMATION PROCESS_SET_INFORMATION PROCESS_SET_QUOTA PROCESS_SUSPEND_RESUME PROCESS_TERMINATE PROCESS_VM_OPERATION PROCESS_VM_READ PROCESS_VM_WRITE 
+dwProcessId=432
+Return=FAILURE
+#256060000
+OpenProcess
+desiredAccess=DELETE READ_CONTROL SYNCHRONIZE WRITE_DAC WRITE_OWNER PROCESS_CREATE_PROCESS PROCESS_CREATE_THREAD PROCESS_DUP_HANDLE PROCESS_QUERY_INFORMATION PROCESS_SET_INFORMATION PROCESS_SET_QUOTA PROCESS_SUSPEND_RESUME PROCESS_TERMINATE PROCESS_VM_OPERATION PROCESS_VM_READ PROCESS_VM_WRITE 
+dwProcessId=496
+Return=FAILURE
+#256060000
+OpenProcess
+desiredAccess=DELETE READ_CONTROL SYNCHRONIZE WRITE_DAC WRITE_OWNER PROCESS_CREATE_PROCESS PROCESS_CREATE_THREAD PROCESS_DUP_HANDLE PROCESS_QUERY_INFORMATION PROCESS_SET_INFORMATION PROCESS_SET_QUOTA PROCESS_SUSPEND_RESUME PROCESS_TERMINATE PROCESS_VM_OPERATION PROCESS_VM_READ PROCESS_VM_WRITE 
+dwProcessId=508
+Return=FAILURE
+#256070000
+OpenProcess
+desiredAccess=DELETE READ_CONTROL SYNCHRONIZE WRITE_DAC WRITE_OWNER PROCESS_CREATE_PROCESS PROCESS_CREATE_THREAD PROCESS_DUP_HANDLE PROCESS_QUERY_INFORMATION PROCESS_SET_INFORMATION PROCESS_SET_QUOTA PROCESS_SUSPEND_RESUME PROCESS_TERMINATE PROCESS_VM_OPERATION PROCESS_VM_READ PROCESS_VM_WRITE 
+dwProcessId=704
+Return=FAILURE
+#256080000
+OpenProcess
+desiredAccess=DELETE READ_CONTROL SYNCHRONIZE WRITE_DAC WRITE_OWNER PROCESS_CREATE_PROCESS PROCESS_CREATE_THREAD PROCESS_DUP_HANDLE PROCESS_QUERY_INFORMATION PROCESS_SET_INFORMATION PROCESS_SET_QUOTA PROCESS_SUSPEND_RESUME PROCESS_TERMINATE PROCESS_VM_OPERATION PROCESS_VM_READ PROCESS_VM_WRITE 
+dwProcessId=780
+Return=FAILURE
+#256080000
+OpenProcess
+desiredAccess=DELETE READ_CONTROL SYNCHRONIZE WRITE_DAC WRITE_OWNER PROCESS_CREATE_PROCESS PROCESS_CREATE_THREAD PROCESS_DUP_HANDLE PROCESS_QUERY_INFORMATION PROCESS_SET_INFORMATION PROCESS_SET_QUOTA PROCESS_SUSPEND_RESUME PROCESS_TERMINATE PROCESS_VM_OPERATION PROCESS_VM_READ PROCESS_VM_WRITE 
+dwProcessId=852
+Return=FAILURE
+#256080000
+OpenProcess
+desiredAccess=DELETE READ_CONTROL SYNCHRONIZE WRITE_DAC WRITE_OWNER PROCESS_CREATE_PROCESS PROCESS_CREATE_THREAD PROCESS_DUP_HANDLE PROCESS_QUERY_INFORMATION PROCESS_SET_INFORMATION PROCESS_SET_QUOTA PROCESS_SUSPEND_RESUME PROCESS_TERMINATE PROCESS_VM_OPERATION PROCESS_VM_READ PROCESS_VM_WRITE 
+dwProcessId=1040
+Return=FAILURE
+#256090000
+OpenProcess
+desiredAccess=DELETE READ_CONTROL SYNCHRONIZE WRITE_DAC WRITE_OWNER PROCESS_CREATE_PROCESS PROCESS_CREATE_THREAD PROCESS_DUP_HANDLE PROCESS_QUERY_INFORMATION PROCESS_SET_INFORMATION PROCESS_SET_QUOTA PROCESS_SUSPEND_RESUME PROCESS_TERMINATE PROCESS_VM_OPERATION PROCESS_VM_READ PROCESS_VM_WRITE 
+dwProcessId=1076
+Return=FAILURE
+#256100000
+OpenProcess
+desiredAccess=DELETE READ_CONTROL SYNCHRONIZE WRITE_DAC WRITE_OWNER PROCESS_CREATE_PROCESS PROCESS_CREATE_THREAD PROCESS_DUP_HANDLE PROCESS_QUERY_INFORMATION PROCESS_SET_INFORMATION PROCESS_SET_QUOTA PROCESS_SUSPEND_RESUME PROCESS_TERMINATE PROCESS_VM_OPERATION PROCESS_VM_READ PROCESS_VM_WRITE 
+dwProcessId=1280
+Return=SUCCESS
+procName=explorer.exe
+#256100000
+OpenProcess
+desiredAccess=DELETE READ_CONTROL SYNCHRONIZE WRITE_DAC WRITE_OWNER PROCESS_CREATE_PROCESS PROCESS_CREATE_THREAD PROCESS_DUP_HANDLE PROCESS_QUERY_INFORMATION PROCESS_SET_INFORMATION PROCESS_SET_QUOTA PROCESS_SUSPEND_RESUME PROCESS_TERMINATE PROCESS_VM_OPERATION PROCESS_VM_READ PROCESS_VM_WRITE 
+dwProcessId=1312
+Return=FAILURE
+#256100000
+OpenProcess
+desiredAccess=DELETE READ_CONTROL SYNCHRONIZE WRITE_DAC WRITE_OWNER PROCESS_CREATE_PROCESS PROCESS_CREATE_THREAD PROCESS_DUP_HANDLE PROCESS_QUERY_INFORMATION PROCESS_SET_INFORMATION PROCESS_SET_QUOTA PROCESS_SUSPEND_RESUME PROCESS_TERMINATE PROCESS_VM_OPERATION PROCESS_VM_READ PROCESS_VM_WRITE 
+dwProcessId=1712
+Return=SUCCESS
+procName=rundll32.exe
+#256110000
+OpenProcess
+desiredAccess=DELETE READ_CONTROL SYNCHRONIZE WRITE_DAC WRITE_OWNER PROCESS_CREATE_PROCESS PROCESS_CREATE_THREAD PROCESS_DUP_HANDLE PROCESS_QUERY_INFORMATION PROCESS_SET_INFORMATION PROCESS_SET_QUOTA PROCESS_SUSPEND_RESUME PROCESS_TERMINATE PROCESS_VM_OPERATION PROCESS_VM_READ PROCESS_VM_WRITE 
+dwProcessId=1796
+Return=SUCCESS
+procName=jusched.exe
+#256110000
+OpenProcess
+desiredAccess=DELETE READ_CONTROL SYNCHRONIZE WRITE_DAC WRITE_OWNER PROCESS_CREATE_PROCESS PROCESS_CREATE_THREAD PROCESS_DUP_HANDLE PROCESS_QUERY_INFORMATION PROCESS_SET_INFORMATION PROCESS_SET_QUOTA PROCESS_SUSPEND_RESUME PROCESS_TERMINATE PROCESS_VM_OPERATION PROCESS_VM_READ PROCESS_VM_WRITE 
+dwProcessId=2860
+Return=FAILURE
+#256120000
+OpenProcess
+desiredAccess=DELETE READ_CONTROL SYNCHRONIZE WRITE_DAC WRITE_OWNER PROCESS_CREATE_PROCESS PROCESS_CREATE_THREAD PROCESS_DUP_HANDLE PROCESS_QUERY_INFORMATION PROCESS_SET_INFORMATION PROCESS_SET_QUOTA PROCESS_SUSPEND_RESUME PROCESS_TERMINATE PROCESS_VM_OPERATION PROCESS_VM_READ PROCESS_VM_WRITE 
+dwProcessId=2872
+Return=FAILURE
+#256120000
+OpenProcess
+desiredAccess=DELETE READ_CONTROL SYNCHRONIZE WRITE_DAC WRITE_OWNER PROCESS_CREATE_PROCESS PROCESS_CREATE_THREAD PROCESS_DUP_HANDLE PROCESS_QUERY_INFORMATION PROCESS_SET_INFORMATION PROCESS_SET_QUOTA PROCESS_SUSPEND_RESUME PROCESS_TERMINATE PROCESS_VM_OPERATION PROCESS_VM_READ PROCESS_VM_WRITE 
+dwProcessId=3024
+Return=SUCCESS
+procName=wscntfy.exe
+#256130000
+OpenProcess
+desiredAccess=DELETE READ_CONTROL SYNCHRONIZE WRITE_DAC WRITE_OWNER PROCESS_CREATE_PROCESS PROCESS_CREATE_THREAD PROCESS_DUP_HANDLE PROCESS_QUERY_INFORMATION PROCESS_SET_INFORMATION PROCESS_SET_QUOTA PROCESS_SUSPEND_RESUME PROCESS_TERMINATE PROCESS_VM_OPERATION PROCESS_VM_READ PROCESS_VM_WRITE 
+dwProcessId=3128
+Return=SUCCESS
+procName=malware.exe
+#256130000
+OpenProcess
+desiredAccess=DELETE READ_CONTROL SYNCHRONIZE WRITE_DAC WRITE_OWNER PROCESS_CREATE_PROCESS PROCESS_CREATE_THREAD PROCESS_DUP_HANDLE PROCESS_QUERY_INFORMATION PROCESS_SET_INFORMATION PROCESS_SET_QUOTA PROCESS_SUSPEND_RESUME PROCESS_TERMINATE PROCESS_VM_OPERATION PROCESS_VM_READ PROCESS_VM_WRITE 
+dwProcessId=3136
+Return=SUCCESS
+procName=tazebama.dl_
+#256140000
+LoadLibrary
+lpFileName=Secur32.dll
+Return=SUCCESS
+#256240000
+RegCreateKey
+hKey=HKEY_LOCAL_MACHINE\system\CurrentControlSet\Services\Tcpip\Parameters
+Return=0
+#256240000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\system\CurrentControlSet\Services\Tcpip\Parameters\Domain
+Return=0
+type=REG_SZ
+data=
+#256240000
+RegCreateKey
+hKey=HKEY_CURRENT_USER\software\Microsoft\Exchange
+Return=0
+#256260000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\software\Microsoft\Exchange\UserName
+Return=2
+#256290000
+CreateFile
+hName=C:\Documents and Settings\tazebama.dl_
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#256290000
+CreateFile
+hName=C:\Documents and Settings\tazebama.dl_
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#256970000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ThemeManager\Compositing
+Return=2
+#256990000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Control Panel\Desktop\LameButtonText
+Return=2
+#257010000
+LoadLibrary
+lpFileName=uxtheme.dll
+Return=SUCCESS
+#258340000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\COM3\Com+Enabled
+Return=0
+type=REG_DWORD
+data=1
+#258870000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OLE\MinimumFreeMemPercentageToCreateProcess
+Return=2
+#258880000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OLE\MinimumFreeMemPercentageToCreateObject
+Return=2
+#258340000
+LoadLibrary
+lpFileName=CLBCATQ.DLL
+Return=SUCCESS
+#258910000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\COM3\Com+Enabled
+Return=0
+type=REG_DWORD
+data=1
+#258910000
+LoadLibrary
+lpFileName=CLBCATQ.DLL
+Return=SUCCESS
+#259320000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\COM3\REGDBVersion
+Return=0
+#259340000
+CreateFile
+hName=C:\WINDOWS\Registration\R000000000007.clb
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#259550000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\COM3\REGDBVersion
+Return=0
+#259660000
+RegQueryValue
+hKey=92\CLSID\{00021401-0000-0000-C000-000000000046}\InprocServer32\InprocServer32
+Return=2
+#259720000
+RegQueryValue
+hKey=92\CLSID\{00021401-0000-0000-C000-000000000046}\InprocServer32
+Return=0
+type=REG_SZ
+data=shell32.dll
+#259820000
+RegQueryValue
+hKey=92\CLSID\{00021401-0000-0000-C000-000000000046}\AppID
+Return=2
+#259900000
+RegQueryValue
+hKey=92\CLSID\{00021401-0000-0000-C000-000000000046}\InprocServer32\ThreadingModel
+Return=0
+type=REG_SZ
+data=Apartment
+#261050000
+CreateFile
+hName=C:\Documents and Settings\tazebama.dl_
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#261050000
+CreateFile
+hName=C:\Documents and Settings\tazebama.dl_
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#262760000
+CreateFile
+hName=C:\Documents and Settings\tazebama.dl_
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#262760000
+CreateFile
+hName=C:\Documents and Settings\tazebama.dl_
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#265060000
+RegCreateKey
+hKey=HKEY_LOCAL_MACHINE\software\Microsoft\Windows\CurrentVersion\run
+Return=0
+#265070000
+RegEnumValue
+hKey=HKEY_LOCAL_MACHINE\software\Microsoft\Windows\CurrentVersion\run\SunJavaUpdateSched
+Return=0
+#265160000
+RegEnumValue
+hKey=HKEY_LOCAL_MACHINE\software\Microsoft\Windows\CurrentVersion\run\IMJPMIG8.1
+Return=0
+#265230000
+RegEnumValue
+hKey=HKEY_LOCAL_MACHINE\software\Microsoft\Windows\CurrentVersion\run\MSPY2002
+Return=0
+#265280000
+RegEnumValue
+hKey=HKEY_LOCAL_MACHINE\software\Microsoft\Windows\CurrentVersion\run\PHIME2002ASync
+Return=0
+#265340000
+RegEnumValue
+hKey=HKEY_LOCAL_MACHINE\software\Microsoft\Windows\CurrentVersion\run\PHIME2002A
+Return=0
+#265410000
+RegEnumValue
+hKey=HKEY_LOCAL_MACHINE\software\Microsoft\Windows\CurrentVersion\run\Cryptographic Service
+Return=0
+#265610000
+DeleteFile
+fileName=C:\autorun.inf
+Return=FAILURE
+#265610000
+DeleteFile
+fileName=C:\autorun.inf
+Return=FAILURE
+#265650000
+CreateFile
+hName=C:\1.taz
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#265650000
+CreateFile
+hName=C:\1.taz
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#265760000
+CreateFile
+hName=C:\zPharaoh.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#265760000
+CreateFile
+hName=C:\zPharaoh.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#265840000
+CreateFile
+hName=C:\RCX1.tmp
+desiredAccess=GENERIC_READ 
+creationDisposition=CREATE_NEW
+Return=SUCCESS
+#265860000
+CreateFile
+hName=C:\zPharaoh.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#265870000
+CreateFile
+hName=C:\RCX1.tmp
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#265990000
+DeleteFile
+fileName=C:\zPharaoh.exe
+Return=SUCCESS
+#266050000
+CreateFile
+hName=C:\zPharaoh.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#266050000
+CreateFile
+hName=C:\zPharaoh.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#266120000
+CreateFile
+hName=C:\zPharaoh.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#266120000
+CreateFile
+hName=C:\zPharaoh.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#267230000
+CreateFile
+hName=C:\zPharaoh.exe
+desiredAccess=GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#267230000
+CreateFile
+hName=C:\zPharaoh.exe
+desiredAccess=GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#268620000
+RegDeleteKey
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\policies\explorer\NoDriveTypeAutoRun
+Return=0
+#268640000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\explorer\advanced\Hidden
+Return=0
+type=REG_DWORD
+data=2
+#268640000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\explorer\advanced\HideFileExt
+Return=0
+type=REG_DWORD
+data=1
+#268640000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\explorer\advanced\ShowSuperHidden
+Return=2
+#268650000
+RegSetValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\explorer\advanced\ShowSuperHidden
+type=REG_DWORD
+data=0
+Return=0
+#268870000
+DeleteFile
+fileName=C:\Documents and Settings\ants\Local Settings\Application Data\Microsoft\CD Burning\autorun.inf
+Return=FAILURE
+#268860000
+DeleteFile
+fileName=C:\Documents and Settings\ants\Local Settings\Application Data\Microsoft\CD Burning\autorun.inf
+Return=FAILURE
+#268930000
+DeleteFile
+fileName=C:\Documents and Settings\ants\Local Settings\Application Data\Microsoft\CD Burning\zPharaoh.exe
+Return=FAILURE
+#268920000
+DeleteFile
+fileName=C:\Documents and Settings\ants\Local Settings\Application Data\Microsoft\CD Burning\zPharaoh.exe
+Return=FAILURE
+#268960000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\software\microsoft\windows\CurrentVersion\App Paths\bckgzm.exe
+Return=0
+type=REG_SZ
+data=C:\Program Files\MSN Gaming Zone\Windows\bckgzm.exe
+#269050000
+CreateFile
+hName=C:\PROGRAM FILES\MSN GAMING ZONE\WINDOWS\BCKGZM.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#269050000
+CreateFile
+hName=C:\PROGRAM FILES\MSN GAMING ZONE\WINDOWS\BCKGZM.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#269100000
+CreateFile
+hName=C:\PROGRAM FILES\MSN GAMING ZONE\WINDOWS\BCKGZM.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#269100000
+CreateFile
+hName=C:\PROGRAM FILES\MSN GAMING ZONE\WINDOWS\BCKGZM.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#269180000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\software\microsoft\windows\CurrentVersion\App Paths\chkrzm.exe
+Return=0
+type=REG_SZ
+data=C:\Program Files\MSN Gaming Zone\Windows\chkrzm.exe
+#269240000
+CreateFile
+hName=C:\PROGRAM FILES\MSN GAMING ZONE\WINDOWS\CHKRZM.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#269240000
+CreateFile
+hName=C:\PROGRAM FILES\MSN GAMING ZONE\WINDOWS\CHKRZM.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#269280000
+CreateFile
+hName=C:\PROGRAM FILES\MSN GAMING ZONE\WINDOWS\CHKRZM.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#269280000
+CreateFile
+hName=C:\PROGRAM FILES\MSN GAMING ZONE\WINDOWS\CHKRZM.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#269360000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\software\microsoft\windows\CurrentVersion\App Paths\cmmgr32.exe
+Return=0
+type=REG_SZ
+data=C:\WINDOWS\system32\cmmgr32.exe
+#269400000
+CreateFile
+hName=C:\WINDOWS\SYSTEM32\CMMGR32.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#269400000
+CreateFile
+hName=C:\WINDOWS\SYSTEM32\CMMGR32.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#269420000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\software\microsoft\windows\CurrentVersion\App Paths\CONF.EXE
+Return=0
+type=REG_SZ
+data=C:\Program Files\NetMeeting\conf.exe
+#269470000
+CreateFile
+hName=C:\PROGRAM FILES\NETMEETING\CONF.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#269470000
+CreateFile
+hName=C:\PROGRAM FILES\NETMEETING\CONF.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#269530000
+CreateFile
+hName=C:\PROGRAM FILES\NETMEETING\CONF.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#269530000
+CreateFile
+hName=C:\PROGRAM FILES\NETMEETING\CONF.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#270130000
+CreateFile
+hName=C:\PROGRAM FILES\NETMEETING\CONF.EXE
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#270130000
+CreateFile
+hName=C:\PROGRAM FILES\NETMEETING\CONF.EXE
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#275260000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\software\microsoft\windows\CurrentVersion\App Paths\dialer.exe
+Return=0
+type=REG_SZ
+data=C:\Program Files\Windows NT\dialer.exe
+#275350000
+CreateFile
+hName=C:\PROGRAM FILES\WINDOWS NT\DIALER.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#275350000
+CreateFile
+hName=C:\PROGRAM FILES\WINDOWS NT\DIALER.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#275940000
+CreateFile
+hName=C:\PROGRAM FILES\WINDOWS NT\DIALER.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#275910000
+CreateFile
+hName=C:\PROGRAM FILES\WINDOWS NT\DIALER.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#276390000
+CreateFile
+hName=C:\PROGRAM FILES\WINDOWS NT\DIALER.EXE
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#276390000
+CreateFile
+hName=C:\PROGRAM FILES\WINDOWS NT\DIALER.EXE
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#326870000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\software\microsoft\windows\CurrentVersion\App Paths\HELPCTR.EXE
+Return=0
+type=REG_SZ
+data=C:\WINDOWS\PCHealth\HelpCtr\Binaries\HelpCtr.exe
+#332860000
+CreateFile
+hName=C:\WINDOWS\PCHEALTH\HELPCTR\BINARIES\HELPCTR.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#332860000
+CreateFile
+hName=C:\WINDOWS\PCHEALTH\HELPCTR\BINARIES\HELPCTR.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#337390000
+CreateFile
+hName=C:\WINDOWS\PCHEALTH\HELPCTR\BINARIES\HELPCTR.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#337390000
+CreateFile
+hName=C:\WINDOWS\PCHEALTH\HELPCTR\BINARIES\HELPCTR.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#338200000
+CreateFile
+hName=C:\WINDOWS\PCHEALTH\HELPCTR\BINARIES\HELPCTR.EXE
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#338200000
+CreateFile
+hName=C:\WINDOWS\PCHEALTH\HELPCTR\BINARIES\HELPCTR.EXE
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#351190000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\software\microsoft\windows\CurrentVersion\App Paths\hrtzzm.exe
+Return=0
+type=REG_SZ
+data=C:\Program Files\MSN Gaming Zone\Windows\hrtzzm.exe
+#351240000
+CreateFile
+hName=C:\PROGRAM FILES\MSN GAMING ZONE\WINDOWS\HRTZZM.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#351240000
+CreateFile
+hName=C:\PROGRAM FILES\MSN GAMING ZONE\WINDOWS\HRTZZM.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#351640000
+CreateFile
+hName=C:\PROGRAM FILES\MSN GAMING ZONE\WINDOWS\HRTZZM.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#351640000
+CreateFile
+hName=C:\PROGRAM FILES\MSN GAMING ZONE\WINDOWS\HRTZZM.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#351720000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\software\microsoft\windows\CurrentVersion\App Paths\hypertrm.exe
+Return=0
+type=REG_SZ
+data="C:\Program Files\Windows NT\hypertrm.exe"
+#351870000
+CreateFile
+hName=C:\Documents and Settings\ants\Desktop\"C:\PROGRAM FILES\WINDOWS NT\HYPERTRM.EXE"
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#351870000
+CreateFile
+hName=C:\Documents and Settings\ants\Desktop\"C:\PROGRAM FILES\WINDOWS NT\HYPERTRM.EXE"
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#351890000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\software\microsoft\windows\CurrentVersion\App Paths\ICWCONN1.EXE
+Return=0
+type=REG_SZ
+data="C:\Program Files\Internet Explorer\Connection Wizard\ICWCONN1.EXE"
+#352050000
+CreateFile
+hName=C:\Documents and Settings\ants\Desktop\"C:\PROGRAM FILES\INTERNET EXPLORER\CONNECTION WIZARD\ICWCONN1.EXE"
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#352050000
+CreateFile
+hName=C:\Documents and Settings\ants\Desktop\"C:\PROGRAM FILES\INTERNET EXPLORER\CONNECTION WIZARD\ICWCONN1.EXE"
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#352070000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\software\microsoft\windows\CurrentVersion\App Paths\ICWCONN2.EXE
+Return=0
+type=REG_SZ
+data="C:\Program Files\Internet Explorer\Connection Wizard\ICWCONN2.EXE"
+#352280000
+CreateFile
+hName=C:\Documents and Settings\ants\Desktop\"C:\PROGRAM FILES\INTERNET EXPLORER\CONNECTION WIZARD\ICWCONN2.EXE"
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#352280000
+CreateFile
+hName=C:\Documents and Settings\ants\Desktop\"C:\PROGRAM FILES\INTERNET EXPLORER\CONNECTION WIZARD\ICWCONN2.EXE"
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#352300000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\software\microsoft\windows\CurrentVersion\App Paths\IEXPLORE.EXE
+Return=0
+type=REG_SZ
+data=C:\Program Files\Internet Explorer\iexplore.exe
+#352350000
+CreateFile
+hName=C:\PROGRAM FILES\INTERNET EXPLORER\IEXPLORE.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#352350000
+CreateFile
+hName=C:\PROGRAM FILES\INTERNET EXPLORER\IEXPLORE.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#352380000
+CreateFile
+hName=C:\PROGRAM FILES\INTERNET EXPLORER\IEXPLORE.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#352370000
+CreateFile
+hName=C:\PROGRAM FILES\INTERNET EXPLORER\IEXPLORE.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#352550000
+CreateFile
+hName=C:\PROGRAM FILES\INTERNET EXPLORER\IEXPLORE.EXE
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#352550000
+CreateFile
+hName=C:\PROGRAM FILES\INTERNET EXPLORER\IEXPLORE.EXE
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#365000000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\software\microsoft\windows\CurrentVersion\App Paths\INETWIZ.EXE
+Return=0
+type=REG_SZ
+data="C:\Program Files\Internet Explorer\Connection Wizard\INETWIZ.EXE"
+#377070000
+CreateFile
+hName=C:\Documents and Settings\ants\Desktop\"C:\PROGRAM FILES\INTERNET EXPLORER\CONNECTION WIZARD\INETWIZ.EXE"
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#377070000
+CreateFile
+hName=C:\Documents and Settings\ants\Desktop\"C:\PROGRAM FILES\INTERNET EXPLORER\CONNECTION WIZARD\INETWIZ.EXE"
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#377090000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\software\microsoft\windows\CurrentVersion\App Paths\install.exe
+Return=2
+#381860000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\software\microsoft\windows\CurrentVersion\App Paths\ISIGNUP.EXE
+Return=0
+type=REG_SZ
+data="C:\Program Files\Internet Explorer\Connection Wizard\ISIGNUP.EXE"
+#384100000
+CreateFile
+hName=C:\Documents and Settings\ants\Desktop\"C:\PROGRAM FILES\INTERNET EXPLORER\CONNECTION WIZARD\ISIGNUP.EXE"
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#384100000
+CreateFile
+hName=C:\Documents and Settings\ants\Desktop\"C:\PROGRAM FILES\INTERNET EXPLORER\CONNECTION WIZARD\ISIGNUP.EXE"
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#384120000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\software\microsoft\windows\CurrentVersion\App Paths\javaws.exe
+Return=0
+type=REG_SZ
+data=C:\Program Files\Java\jre8\bin\javaws.exe
+#384280000
+CreateFile
+hName=C:\PROGRAM FILES\JAVA\JRE8\BIN\JAVAWS.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#384280000
+CreateFile
+hName=C:\PROGRAM FILES\JAVA\JRE8\BIN\JAVAWS.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#384360000
+CreateFile
+hName=C:\PROGRAM FILES\JAVA\JRE8\BIN\JAVAWS.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#384360000
+CreateFile
+hName=C:\PROGRAM FILES\JAVA\JRE8\BIN\JAVAWS.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#384940000
+CreateFile
+hName=C:\PROGRAM FILES\JAVA\JRE8\BIN\JAVAWS.EXE
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#384940000
+CreateFile
+hName=C:\PROGRAM FILES\JAVA\JRE8\BIN\JAVAWS.EXE
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#389360000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\software\microsoft\windows\CurrentVersion\App Paths\migwiz.exe
+Return=0
+type=REG_EXPAND_SZ
+data=%SystemRoot%\system32\usmt\migwiz.exe
+#389370000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\software\microsoft\windows\CurrentVersion\App Paths\moviemk.exe
+Return=0
+type=REG_SZ
+data=C:\Program Files\Movie Maker\moviemk.exe
+#389420000
+CreateFile
+hName=C:\PROGRAM FILES\MOVIE MAKER\MOVIEMK.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#389420000
+CreateFile
+hName=C:\PROGRAM FILES\MOVIE MAKER\MOVIEMK.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#389650000
+CreateFile
+hName=C:\PROGRAM FILES\MOVIE MAKER\MOVIEMK.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#389650000
+CreateFile
+hName=C:\PROGRAM FILES\MOVIE MAKER\MOVIEMK.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#390310000
+CreateFile
+hName=C:\PROGRAM FILES\MOVIE MAKER\MOVIEMK.EXE
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#390310000
+CreateFile
+hName=C:\PROGRAM FILES\MOVIE MAKER\MOVIEMK.EXE
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#394890000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\software\microsoft\windows\CurrentVersion\App Paths\mplayer2.exe
+Return=0
+type=REG_SZ
+data="C:\Program Files\Windows Media Player\mplayer2.exe"
+#395030000
+CreateFile
+hName=C:\Documents and Settings\ants\Desktop\"C:\PROGRAM FILES\WINDOWS MEDIA PLAYER\MPLAYER2.EXE"
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#395030000
+CreateFile
+hName=C:\Documents and Settings\ants\Desktop\"C:\PROGRAM FILES\WINDOWS MEDIA PLAYER\MPLAYER2.EXE"
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#395050000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\software\microsoft\windows\CurrentVersion\App Paths\MSCONFIG.EXE
+Return=0
+type=REG_SZ
+data=C:\WINDOWS\PCHealth\HelpCtr\Binaries\MSConfig.exe
+#395100000
+CreateFile
+hName=C:\WINDOWS\PCHEALTH\HELPCTR\BINARIES\MSCONFIG.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#395100000
+CreateFile
+hName=C:\WINDOWS\PCHEALTH\HELPCTR\BINARIES\MSCONFIG.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#395530000
+CreateFile
+hName=C:\WINDOWS\PCHEALTH\HELPCTR\BINARIES\MSCONFIG.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#395530000
+CreateFile
+hName=C:\WINDOWS\PCHEALTH\HELPCTR\BINARIES\MSCONFIG.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#395900000
+CreateFile
+hName=C:\WINDOWS\PCHEALTH\HELPCTR\BINARIES\MSCONFIG.EXE
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#395890000
+CreateFile
+hName=C:\WINDOWS\PCHEALTH\HELPCTR\BINARIES\MSCONFIG.EXE
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#428350000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\software\microsoft\windows\CurrentVersion\App Paths\msimn.exe
+Return=0
+type=REG_EXPAND_SZ
+data=%ProgramFiles%\Outlook Express\msimn.exe
+#428980000
+CreateFile
+hName=C:\PROGRAM FILES\OUTLOOK EXPRESS\MSIMN.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#428980000
+CreateFile
+hName=C:\PROGRAM FILES\OUTLOOK EXPRESS\MSIMN.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#437110000
+CreateFile
+hName=C:\PROGRAM FILES\OUTLOOK EXPRESS\MSIMN.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#437080000
+CreateFile
+hName=C:\PROGRAM FILES\OUTLOOK EXPRESS\MSIMN.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#437350000
+CreateFile
+hName=C:\PROGRAM FILES\OUTLOOK EXPRESS\MSIMN.EXE
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#437350000
+CreateFile
+hName=C:\PROGRAM FILES\OUTLOOK EXPRESS\MSIMN.EXE
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#449680000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\software\microsoft\windows\CurrentVersion\App Paths\msinfo32.exe
+Return=0
+type=REG_SZ
+data=C:\Program Files\Common Files\Microsoft Shared\MSInfo\MSInfo32.exe
+#454890000
+CreateFile
+hName=C:\PROGRAM FILES\COMMON FILES\MICROSOFT SHARED\MSINFO\MSINFO32.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#454890000
+CreateFile
+hName=C:\PROGRAM FILES\COMMON FILES\MICROSOFT SHARED\MSINFO\MSINFO32.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#454950000
+CreateFile
+hName=C:\PROGRAM FILES\COMMON FILES\MICROSOFT SHARED\MSINFO\MSINFO32.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#454950000
+CreateFile
+hName=C:\PROGRAM FILES\COMMON FILES\MICROSOFT SHARED\MSINFO\MSINFO32.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#456640000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\software\microsoft\windows\CurrentVersion\App Paths\MSMSGS.EXE
+Return=0
+type=REG_SZ
+data=C:\Program Files\Messenger\msmsgs.exe
+#456720000
+CreateFile
+hName=C:\PROGRAM FILES\MESSENGER\MSMSGS.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#456720000
+CreateFile
+hName=C:\PROGRAM FILES\MESSENGER\MSMSGS.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#457060000
+CreateFile
+hName=C:\PROGRAM FILES\MESSENGER\MSMSGS.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#457060000
+CreateFile
+hName=C:\PROGRAM FILES\MESSENGER\MSMSGS.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#458380000
+CreateFile
+hName=C:\PROGRAM FILES\MESSENGER\MSMSGS.EXE
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#458380000
+CreateFile
+hName=C:\PROGRAM FILES\MESSENGER\MSMSGS.EXE
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#471500000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\software\microsoft\windows\CurrentVersion\App Paths\pbrush.exe
+Return=0
+type=REG_EXPAND_SZ
+data=%SystemRoot%\system32\mspaint.exe
+#471500000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\software\microsoft\windows\CurrentVersion\App Paths\pinball.exe
+Return=0
+type=REG_SZ
+data=C:\Program Files\Windows NT\Pinball\pinball.exe
+#471620000
+CreateFile
+hName=C:\PROGRAM FILES\WINDOWS NT\PINBALL\PINBALL.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#471620000
+CreateFile
+hName=C:\PROGRAM FILES\WINDOWS NT\PINBALL\PINBALL.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#472350000
+CreateFile
+hName=C:\PROGRAM FILES\WINDOWS NT\PINBALL\PINBALL.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#472350000
+CreateFile
+hName=C:\PROGRAM FILES\WINDOWS NT\PINBALL\PINBALL.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#472810000
+CreateFile
+hName=C:\PROGRAM FILES\WINDOWS NT\PINBALL\PINBALL.EXE
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#472810000
+CreateFile
+hName=C:\PROGRAM FILES\WINDOWS NT\PINBALL\PINBALL.EXE
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#481380000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\software\microsoft\windows\CurrentVersion\App Paths\rvsezm.exe
+Return=0
+type=REG_SZ
+data=C:\Program Files\MSN Gaming Zone\Windows\rvsezm.exe
+#484080000
+CreateFile
+hName=C:\PROGRAM FILES\MSN GAMING ZONE\WINDOWS\RVSEZM.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#484080000
+CreateFile
+hName=C:\PROGRAM FILES\MSN GAMING ZONE\WINDOWS\RVSEZM.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#484320000
+CreateFile
+hName=C:\PROGRAM FILES\MSN GAMING ZONE\WINDOWS\RVSEZM.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#484320000
+CreateFile
+hName=C:\PROGRAM FILES\MSN GAMING ZONE\WINDOWS\RVSEZM.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#484460000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\software\microsoft\windows\CurrentVersion\App Paths\setup.exe
+Return=2
+#484480000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\software\microsoft\windows\CurrentVersion\App Paths\shvlzm.exe
+Return=0
+type=REG_SZ
+data=C:\Program Files\MSN Gaming Zone\Windows\shvlzm.exe
+#484540000
+CreateFile
+hName=C:\PROGRAM FILES\MSN GAMING ZONE\WINDOWS\SHVLZM.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#484540000
+CreateFile
+hName=C:\PROGRAM FILES\MSN GAMING ZONE\WINDOWS\SHVLZM.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#484580000
+CreateFile
+hName=C:\PROGRAM FILES\MSN GAMING ZONE\WINDOWS\SHVLZM.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#484580000
+CreateFile
+hName=C:\PROGRAM FILES\MSN GAMING ZONE\WINDOWS\SHVLZM.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#484770000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\software\microsoft\windows\CurrentVersion\App Paths\table30.exe
+Return=2
+#484790000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\software\microsoft\windows\CurrentVersion\App Paths\wab.exe
+Return=0
+type=REG_EXPAND_SZ
+data=%ProgramFiles%\Outlook Express\wab.exe
+#484860000
+CreateFile
+hName=C:\PROGRAM FILES\OUTLOOK EXPRESS\WAB.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#484860000
+CreateFile
+hName=C:\PROGRAM FILES\OUTLOOK EXPRESS\WAB.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#484900000
+CreateFile
+hName=C:\PROGRAM FILES\OUTLOOK EXPRESS\WAB.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#484890000
+CreateFile
+hName=C:\PROGRAM FILES\OUTLOOK EXPRESS\WAB.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#485080000
+CreateFile
+hName=C:\PROGRAM FILES\OUTLOOK EXPRESS\WAB.EXE
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#485080000
+CreateFile
+hName=C:\PROGRAM FILES\OUTLOOK EXPRESS\WAB.EXE
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#498470000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\software\microsoft\windows\CurrentVersion\App Paths\wabmig.exe
+Return=0
+type=REG_EXPAND_SZ
+data=%ProgramFiles%\Outlook Express\wabmig.exe
+#498760000
+CreateFile
+hName=C:\PROGRAM FILES\OUTLOOK EXPRESS\WABMIG.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#498760000
+CreateFile
+hName=C:\PROGRAM FILES\OUTLOOK EXPRESS\WABMIG.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#503740000
+CreateFile
+hName=C:\PROGRAM FILES\OUTLOOK EXPRESS\WABMIG.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#503740000
+CreateFile
+hName=C:\PROGRAM FILES\OUTLOOK EXPRESS\WABMIG.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#506030000
+CreateFile
+hName=C:\PROGRAM FILES\OUTLOOK EXPRESS\WABMIG.EXE
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#506020000
+CreateFile
+hName=C:\PROGRAM FILES\OUTLOOK EXPRESS\WABMIG.EXE
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS

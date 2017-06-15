@@ -1,0 +1,29 @@
+3160 malware.exe
+#191350000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\IMM32.DLL
+Return=SUCCESS
+#192140000
+LoadLibrary
+lpFileName=gdi32.dll
+Return=SUCCESS
+#191840000
+LoadLibrary
+lpFileName=LPK.DLL
+Return=SUCCESS
+#192600000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\CriticalSectionTimeout
+Return=0
+#192600000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Ole\RWLockResourceTimeOut
+Return=2
+#192930000
+LoadLibrary
+lpFileName=kernel32
+Return=SUCCESS
+#192950000
+LoadLibrary
+lpFileName=user32
+Return=SUCCESS

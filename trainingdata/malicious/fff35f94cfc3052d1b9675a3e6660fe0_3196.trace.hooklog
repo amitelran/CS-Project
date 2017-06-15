@@ -1,0 +1,543 @@
+3196 malware.exe
+#197910000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\IMM32.DLL
+Return=SUCCESS
+#198700000
+LoadLibrary
+lpFileName=gdi32.dll
+Return=SUCCESS
+#198400000
+LoadLibrary
+lpFileName=LPK.DLL
+Return=SUCCESS
+#199110000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\CriticalSectionTimeout
+Return=0
+#199110000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Ole\RWLockResourceTimeOut
+Return=2
+#205750000
+LoadLibrary
+lpFileName=KERNEL32.DLL
+Return=SUCCESS
+#205830000
+LoadLibrary
+lpFileName=KERNEL32.DLL
+Return=SUCCESS
+#205850000
+LoadLibrary
+lpFileName=KERNEL32.DLL
+Return=SUCCESS
+#205960000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#205980000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#206000000
+LoadLibrary
+lpFileName=oleaut32.dll
+Return=SUCCESS
+#206030000
+LoadLibrary
+lpFileName=user32.dll
+Return=SUCCESS
+#206080000
+LoadLibrary
+lpFileName=user32.dll
+Return=SUCCESS
+#206590000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Setup\Version
+Return=2
+#206590000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Setup\Version
+type=REG_DWORD
+data=131
+Return=0
+#206620000
+CreateFile
+hName=C:\WINDOWS\system32\winxcfg.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#206620000
+CreateFile
+hName=C:\WINDOWS\system32\winxcfg.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#206660000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\winxcfg.exe
+type=REG_SZ
+data=C:\WINDOWS\system32\winxcfg.exe
+Return=0
+#206690000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#206680000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#208510000
+RegSetValue
+hKey=0\DisableSharing
+type=REG_DWORD
+data=0
+Return=6
+#208510000
+RegSetValue
+hKey=0\Dir98
+type=REG_SZ
+data=012345:C:\WINDOWS\system32\macromd
+Return=6
+#208530000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\teen tied up and raped.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#208530000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\teen tied up and raped.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#208560000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\password stealer.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#208560000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\password stealer.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#208600000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\girls gone wild.mpg.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#208600000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\girls gone wild.mpg.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#208640000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\aimcracker.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#208640000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\aimcracker.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#208670000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\Napster Clone.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#208660000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\Napster Clone.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#208700000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\MSN.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#208700000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\MSN.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#208720000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\nude.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#208720000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\nude.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#208760000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\Cable Modem Uncapper.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#208760000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\Cable Modem Uncapper.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#208800000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\yahoo hacker.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#208800000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\yahoo hacker.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#208840000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\blonde with titts and cunt sending chills thru cock.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#208840000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\blonde with titts and cunt sending chills thru cock.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#208890000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\amateur spreading more fine ass than stud can handle.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#208890000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\amateur spreading more fine ass than stud can handle.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#208930000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\teen with her legs wide and fingers in her wet cunt.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#208930000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\teen with her legs wide and fingers in her wet cunt.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#208970000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\huge titty blonde taking in a full 12 inch cock.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#208970000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\huge titty blonde taking in a full 12 inch cock.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#209010000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\gangbang tryout with young slut and two studs.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#209010000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\gangbang tryout with young slut and two studs.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#209050000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\candy stripper getting down on sick mans cock.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#209050000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\candy stripper getting down on sick mans cock.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#209110000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\tiny girl opening hole in crazy wish of cock.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#209110000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\tiny girl opening hole in crazy wish of cock.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#209230000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\cute blonde cheerleader dancing.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#209230000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\cute blonde cheerleader dancing.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#209280000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\hot hungry sluts sucking cum for a line of coke.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#209280000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\hot hungry sluts sucking cum for a line of coke.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#209330000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\nasty chick in hardcore fucking.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#209330000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\nasty chick in hardcore fucking.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#209370000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\showing some hot girls share cock.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#209370000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\showing some hot girls share cock.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#209410000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\asian girls stuffed mouth shots.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#209410000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\asian girls stuffed mouth shots.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#209470000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\girls with cock in hand and mouths fill with cum .mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#209470000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\girls with cock in hand and mouths fill with cum .mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#209520000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\jessica shows us her fat fisting.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#209520000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\jessica shows us her fat fisting.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#209560000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\gay super heros and fairys.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#209560000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\gay super heros and fairys.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#209600000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\two dudes comparing dick sizes.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#209600000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\two dudes comparing dick sizes.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#209640000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\wild hoe showing spreading the pink.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#209640000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\wild hoe showing spreading the pink.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#209680000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\sexy fucked tranny babe.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#209680000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\sexy fucked tranny babe.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#209740000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\young and mature babes working soft juggs.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#209730000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\young and mature babes working soft juggs.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#209780000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\toon tramps strutting around.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#209780000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\toon tramps strutting around.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#209820000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\couple beach vacation fucking.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#209820000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\couple beach vacation fucking.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#209860000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\sizzling slut flashing outdoors.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#209860000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\sizzling slut flashing outdoors.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#210040000
+RegEnumValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\FontLink\SystemLink\Lucida San
+Return=0
+#210050000
+RegEnumValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\FontLink\SystemLink\Tah
+Return=0
+#210060000
+RegEnumValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\FontLink\SystemLink\Microsoft 
+Return=0
+#211670000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ThemeManager\Compositing
+Return=2
+#211700000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Control Panel\Desktop\LameButtonText
+Return=2
+#211720000
+LoadLibrary
+lpFileName=uxtheme.dll
+Return=SUCCESS
+#213000000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\IMM\Ime File
+Return=0
+#213020000
+LoadLibrary
+lpFileName=version.dll
+Return=SUCCESS
+#213140000
+CreateFile
+hName=C:\WINDOWS\system32\msctfime.ime
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#213230000
+CreateFile
+hName=C:\WINDOWS\system32\msctfime.ime
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#213800000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\ole32.dll
+Return=SUCCESS
+#213380000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\msctfime.ime
+Return=SUCCESS
+#213930000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\CTF\Disable Thread Input Manager
+Return=2
+#213950000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\CTF\SystemShared\CUAS
+Return=0
+type=REG_DWORD
+data=0
+#214010000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\msctfime.ime
+Return=SUCCESS

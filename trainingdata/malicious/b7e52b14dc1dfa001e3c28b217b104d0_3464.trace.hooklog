@@ -1,0 +1,5 @@
+3464 net1.exe
+#478570000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\IMM32.DLL
+Return=SUCCESS

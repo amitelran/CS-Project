@@ -1,0 +1,13 @@
+3140 malware.exe
+#205380000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\IMM32.DLL
+Return=SUCCESS
+#206380000
+LoadLibrary
+lpFileName=gdi32.dll
+Return=SUCCESS
+#205990000
+LoadLibrary
+lpFileName=LPK.DLL
+Return=SUCCESS

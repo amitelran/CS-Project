@@ -1,0 +1,155 @@
+3124 22a82b70.exe
+#235800000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\IMM32.DLL
+Return=SUCCESS
+#236610000
+LoadLibrary
+lpFileName=gdi32.dll
+Return=SUCCESS
+#236300000
+LoadLibrary
+lpFileName=LPK.DLL
+Return=SUCCESS
+#236810000
+CreateFile
+hName=\\.\Ip
+desiredAccess=GENERIC_EXECUTE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#236810000
+CreateFile
+hName=\\.\Ip
+desiredAccess=GENERIC_EXECUTE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#237190000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#237850000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#238260000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#240080000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\Setup\SystemSetupInProgress
+Return=0
+type=REG_DWORD
+data=0
+#241140000
+CreateFile
+hName=C:\WINDOWS\WindowsShell.Manifest
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#241410000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Control Panel\Desktop\SmoothScroll
+Return=2
+#241420000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\EnableBalloonTips
+Return=2
+#241430000
+RegEnumValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\LanguagePack\SURR
+type=REG_DWORD
+data=2
+Return=0
+#240430000
+LoadLibrary
+lpFileName=comctl32.dll
+Return=SUCCESS
+#242240000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Control Panel\Desktop\SmoothScroll
+Return=2
+#242250000
+LoadLibrary
+lpFileName=imm32.dll
+Return=SUCCESS
+#241640000
+LoadLibrary
+lpFileName=comctl32.dll
+Return=SUCCESS
+#476290000
+CreateFile
+hName=\\.\pipe\{D952F2D0-0BCE-4b2b-8FFF-2317F120FCC3}
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#476290000
+CreateFile
+hName=\\.\pipe\{D952F2D0-0BCE-4b2b-8FFF-2317F120FCC3}
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#476310000
+CreateFile
+hName=C:\Documents and Settings\Infotmp.txt
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#476310000
+CreateFile
+hName=C:\Documents and Settings\Infotmp.txt
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#477080000
+CreateFile
+hName=C:\22a82b70.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#477080000
+CreateFile
+hName=C:\22a82b70.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#477360000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Rpc\MaxRpcSize
+Return=2
+#477470000
+LoadLibrary
+lpFileName=rpcrt4.dll
+Return=SUCCESS
+#480140000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\CriticalSectionTimeout
+Return=0
+#480140000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Ole\RWLockResourceTimeOut
+Return=2
+#478200000
+LoadLibrary
+lpFileName=sfc_os.dll
+Return=SUCCESS
+#481190000
+CreateFile
+hName=\\.\PIPE\SfcApi
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#481340000
+CreateFile
+hName=C:\WINDOWS\system32\appmgmts.dll
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_ALWAYS
+Return=SUCCESS
+#481340000
+CreateFile
+hName=C:\WINDOWS\system32\appmgmts.dll
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_ALWAYS
+Return=SUCCESS
+#486850000
+ExitProcess
