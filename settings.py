@@ -77,7 +77,7 @@ def init():
 
 	overwriteData = True						# Boolean to indicate whether need to overwrite existing MinHash, Signatures & Buckets existing data
 	classifyTraces = True						# Boolean to indicate whether need to classify traces or not
-	testLabeledData = False						# Boolean to indicate what mode to test: one mode of testing 'benign' and 'malicious', the other mode of testing with 'unlabeled'
+	testLabeledData = True						# Boolean to indicate what mode to test: one mode of testing 'benign' and 'malicious', the other mode of testing with 'unlabeled'
 
 	mode = Modes.APIs_mode						# Set shingling mode
 	apiCalls_per_shingle = 3					# Number of API calls to be set as a single shingle

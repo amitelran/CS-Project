@@ -170,8 +170,6 @@ def classify_new_data2(sigs, b, r, buckets, docsObjects):
 	# dump_load_args.DumpBuckets(buckets)
 	# dump_load_args.DumpTraces(traces)
 	# print traces
-	print("neighborrrrrrrrrs:")
-	print(neighbors)
 	return neighbors
 
 # =============================================================================

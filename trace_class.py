@@ -89,16 +89,9 @@ class Trace:
 
         # Generate accumulated string of API calls, delimeted by '*'
         APIs = ''
-        counter = 0
         for api_call in api_calls_data:
-            counter += 1
-            #APIs += '*' + api_call
             APIs += '*' + api_call
-            if counter == settings.apiCalls_per_shingle:
-                counter = 0
 
-        #print('APIs: ')
-        #print(APIs)
         return APIs
 
 
