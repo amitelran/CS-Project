@@ -67,13 +67,15 @@ def build_buckets(sigs, b, r, docsObjects):
 	#print traces
 	return buckets
 
+# Build different buckets array for each band separately
 def build_buckets2(sigs, b, r, docsObjects):
-	print "\nBuilding buckets with LSH...\n"
+	print "\nBuilding buckets for each band in sigs separately with LSH...\n"
 	hashMax = settings.hashMax		# Get the maximal number of hash functions as set in settings.py
 	buckets = dict()
 
 	# Hashing for each of the bands (number of bands as set by 'b' input)
 	for i in range(b):
+		buckets_i = dict()					# Initialize new buckets set for single band
 		for j in range(0, len(sigs)):		# Go through all line elements in a band row (number of columns of signatures matrix)
 			#print("i = "+str(i)+", j = "+str(j))
 			#print(sigs[j][b*(i):b*(i)+r])
@@ -84,7 +86,6 @@ def build_buckets2(sigs, b, r, docsObjects):
 			else:
 				end = b*i + r		# If not the last band, set 'end' as the start of the band plus number of rows in a single band
 			curHash = int(hash(tuple(sigs[j][start:end]))) % hashMax		# Hash current band
-			#print(curHash)
 
 			# Add current bucket(curHash) to the trace that the current signature represent
 			if curTrace in traces:
@@ -95,13 +96,21 @@ def build_buckets2(sigs, b, r, docsObjects):
 			# Check for membership of current hashing in the buckets dictionary structure:
 			# If already existing bucket for hash value --> append to the corresponding bucket
 			# else, map the new bucket according to the hashing value
-			if curHash in buckets:
-				buckets[curHash].append(curTrace)
+			if curHash in buckets_i:
+				buckets_i[curHash].append(curTrace)
 			else:
-				buckets[curHash] = [curTrace]
+				buckets_i[curHash] = [curTrace]
+
+			if j == (len(sigs)-1):
+				buckets[i] = buckets_i
+				#print("buckets["+str(i)+"]:")
+				#print(buckets_i)
+
 	dump_load_args.DumpBuckets(buckets)			# Dump data into buckets data file
 	dump_load_args.DumpTraces(traces)			# Dump data into traces data file
 	#print traces
+	print("build_buckets2: ")
+	print(buckets)
 	return buckets
 
 
@@ -128,6 +137,7 @@ def classify_new_data(sigs, b, r, buckets, docsObjects):
 			else:
 				traces[curTrace] = [curHash]
 
+			print(curHash)
 			if curHash in buckets:
 				# buckets[i][curHash].append(j)
 				neighbors[j].append((curHash,buckets[curHash]))
@@ -139,11 +149,23 @@ def classify_new_data(sigs, b, r, buckets, docsObjects):
 	# print traces
 	return neighbors
 
+
+# Classify data separately for each of the bands
 def classify_new_data2(sigs, b, r, buckets, docsObjects):
-	print "\nClassifying with LSH...\n"
-	hashMax =  settings.hashMax
+	print "\nClassifying with LSH with separated buckets for each of the bands...\n"
+	hashMax = settings.hashMax
 	neighbors = [list() for _ in range(len(sigs))]
+	#for i in range(0, len(buckets)):
+		#print("\nbuckets[" + str(i) + "]: ", i,  buckets[i])
+		#for j in buckets[i]:
+			#print(j, buckets[i][j])
+			#print(list(buckets[i][j]))
+
 	for i in range(b):
+		print("\nclassify new data 2 buckets[i]:")
+		#print("len of buckets["+str(i)+"]: ", len(buckets[i]))
+		print("bucket["+str(i)+"]: ", buckets[i])
+		#print("len of sigs[i]: ", len(sigs))
 		for j in range(len(sigs)):
 			#print("i = "+str(i)+", j = "+str(j))
 			#print(sigs[j][b*(i):b*(i)+r])
@@ -154,22 +176,35 @@ def classify_new_data2(sigs, b, r, buckets, docsObjects):
 			else:
 				end = b*i+r
 			curHash = int(hash(tuple(sigs[j][start:end]))) % hashMax
-			#print(curHash
 
 			if curTrace in traces:
 				traces[curTrace].append(curHash)
 			else:
 				traces[curTrace] = [curHash]
 
-			if curHash in buckets:
+			if curHash in buckets[i]:
 				# buckets[i][curHash].append(j)
-				neighbors[j].append((curHash,buckets[curHash]))
+				#for k in buckets[i]:
+					#neighbors[j].append((curHash, buckets[i][k]))
+				print('bucket['+str(i)+']['+str(curHash)+']: ', buckets[i][curHash])
+				#print('neighbors['+str(j)+']: ', neighbors[j])
+				neighbors[j].append((curHash, buckets[i][curHash]))
+				print("neighbors["+str(j)+"].append: ", neighbors[j])
 			else:
 				# buckets[i][curHash] = [j]
-				neighbors[j].append((curHash,[]))
+				neighbors[j].append((curHash, []))
+
+			if j == (len(sigs)-1):
+				print("neighbors["+str(i)+"]:")
+				print(neighbors[j])
+				print("")
 	# dump_load_args.DumpBuckets(buckets)
 	# dump_load_args.DumpTraces(traces)
 	# print traces
+
+	print("neighborrrrrrrrrrrrrrrrrrrrrrrs2:")
+	for j in neighbors:
+		print(j)
 	return neighbors
 
 # =============================================================================
