@@ -85,7 +85,7 @@ def main():
 
 		dump_load_args.DumpSignatures(sigs)
 		# lsh.findRB(sigs,docsAsShingles,1,1,2,0.9)
-		buckets = lsh.build_buckets2(sigs, settings.numBands, settings.numHashes / settings.numBands, tracesObjects)
+		buckets = lsh.build_buckets(sigs, settings.numBands, settings.numHashes / settings.numBands, tracesObjects)
 
 	# print buckets
 	#sim_comparison.bucketsReport(buckets)
@@ -135,9 +135,9 @@ def main():
 							new_docsAsAPIcalls = shingles.convertToAPIcalls(test_docs_as_strings)
 							new_sigs = minhashing.MinHashNumpy(new_docsAsAPIcalls)  # New signatures matrix
 
-					classify = lsh.classify_new_data2(new_sigs, settings.numBands, settings.numHashes / settings.numBands, buckets, testDocsObjects)  # Finally, classify the un-classified traces
+					classify = lsh.classify_new_data(new_sigs, settings.numBands, settings.numHashes / settings.numBands, buckets, testDocsObjects)  # Finally, classify the un-classified traces
 					# buckets = lsh.lsh(sigs, settings.numBands, settings.numHashes / settings.numBands)
-					printClassifResults2(classify, new_sigs, testDocsObjects)
+					printClassifResults1(classify, new_sigs, testDocsObjects)
 
 
 

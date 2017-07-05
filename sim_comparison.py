@@ -4,7 +4,6 @@ from matplotlib import pyplot
 import settings
 
 
-
 # Similarities comparison
 def bucketsReport(buckets):
     print "MinHash parameters:"

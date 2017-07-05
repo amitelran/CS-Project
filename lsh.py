@@ -34,20 +34,23 @@ def build_buckets(sigs, b, r, docsObjects):
 	print "\nBuilding buckets with LSH...\n"
 	hashMax = settings.hashMax		# Get the maximal number of hash functions as set in settings.py
 	buckets = dict()
+	medioids = dict()
 
 	# Hashing for each of the bands (number of bands as set by 'b' input)
 	for i in range(b):
 		for j in range(0, len(sigs)):		# Go through all line elements in a band row (number of columns of signatures matrix)
 			#print("i = "+str(i)+", j = "+str(j))
 			#print(sigs[j][b*(i):b*(i)+r])
-			curTrace = docsObjects[j].get_filename()
+			#curTrace = docsObjects[j].get_filename()
+
+			curTrace = docsObjects[j]
 			start = b*i				# start point of the band
 			if i == b-1:			# If reached to the last band, band's end is till the end of sigs (None respresents absence of a value)
 				end = None
 			else:
 				end = b*i + r		# If not the last band, set 'end' as the start of the band plus number of rows in a single band
+
 			curHash = int(hash(tuple(sigs[j][start:end]))) % hashMax		# Hash current band
-			#print(curHash)
 
 			# Add current bucket(curHash) to the trace that the current signature represent
 			if curTrace in traces:
@@ -59,19 +62,26 @@ def build_buckets(sigs, b, r, docsObjects):
 			# If already existing bucket for hash value --> append to the corresponding bucket
 			# else, map the new bucket according to the hashing value
 			if curHash in buckets:
-				buckets[curHash].append(j)
+				buckets[curHash].append(curTrace)
 			else:
-				buckets[curHash] = [j]
+				buckets[curHash] = [curTrace]
+
+	medioids = calc_buckets_medioids(buckets)
+	medioids_compare(medioids)
 	dump_load_args.DumpBuckets(buckets)			# Dump data into buckets data file
 	dump_load_args.DumpTraces(traces)			# Dump data into traces data file
-	#print traces
+	print("build_buckets:")
+	print(buckets)
 	return buckets
+
+
 
 # Build different buckets array for each band separately
 def build_buckets2(sigs, b, r, docsObjects):
 	print "\nBuilding buckets for each band in sigs separately with LSH...\n"
 	hashMax = settings.hashMax		# Get the maximal number of hash functions as set in settings.py
 	buckets = dict()
+	medioids = dict()
 
 	# Hashing for each of the bands (number of bands as set by 'b' input)
 	for i in range(b):
@@ -85,7 +95,7 @@ def build_buckets2(sigs, b, r, docsObjects):
 				end = None
 			else:
 				end = b*i + r		# If not the last band, set 'end' as the start of the band plus number of rows in a single band
-			curHash = int(hash(tuple(sigs[j][start:end]))) % hashMax		# Hash current band
+			curHash = int(hash(tuple(sigs[j][start:end]))) % hashMax
 
 			# Add current bucket(curHash) to the trace that the current signature represent
 			if curTrace in traces:
@@ -102,6 +112,7 @@ def build_buckets2(sigs, b, r, docsObjects):
 				buckets_i[curHash] = [curTrace]
 
 			if j == (len(sigs)-1):
+				medioids[i] = calc_buckets_medioids(buckets_i)
 				buckets[i] = buckets_i
 				#print("buckets["+str(i)+"]:")
 				#print(buckets_i)
@@ -112,6 +123,7 @@ def build_buckets2(sigs, b, r, docsObjects):
 	print("build_buckets2: ")
 	print(buckets)
 	return buckets
+
 
 
 # Classify new incoming traces (similar way to the build_buckets function above)
@@ -130,14 +142,12 @@ def classify_new_data(sigs, b, r, buckets, docsObjects):
 			else:
 				end = b*i+r
 			curHash = int(hash(tuple(sigs[j][start:end]))) % hashMax
-			#print(curHash
 
 			if curTrace in traces:
 				traces[curTrace].append(curHash)
 			else:
 				traces[curTrace] = [curHash]
 
-			print(curHash)
 			if curHash in buckets:
 				# buckets[i][curHash].append(j)
 				neighbors[j].append((curHash,buckets[curHash]))
@@ -261,3 +271,78 @@ def findRB(signatures,docsAsShingles,jumps,falsePositivesWeight,falseNegativesWe
 	print("B = "+str(bestNumOfBands)+", R = "+str(settings.numHashes/bestNumOfBands))
 	return [bestNumOfBands,settings.numHashes/bestNumOfBands]
 
+
+
+# ================================================================================================================================
+#				Compute medioid for every bucket, given band buckets array
+# ================================================================================================================================
+
+def calc_buckets_medioids(buckets):
+	print("\nCreate cluster medioids:")
+	print(buckets)
+	medioids = dict()								# Initialize medioids dictionary
+
+	for bucket in buckets.keys():
+		print("\nbucket:")
+		print(bucket)
+		medioid_trace = buckets[bucket][-1]			# Initialize medioid trace to be the last (in case of single trace in a bucket)
+		maximal_mediod_value = 0
+
+		# Iterate over every trace in the bucket (reset values)
+		for t1 in buckets[bucket]:
+			t1_medioid_value = 0
+			t1_shingles = t1.get_shingles()
+
+			# Iterate over every other trace in the bucket and accumulate Jaccard similarities
+			for t2 in buckets[bucket]:
+				if t1 is t2:
+					continue
+				t2_shingles = t2.get_shingles()
+				t1_medioid_value += (len(t1_shingles.intersection(t2_shingles)) / float(len(t1_shingles.union(t2_shingles))))
+
+			#print(t1, t1_medioid_value)
+
+			# Update medioid value and the medioid trace
+			if (t1_medioid_value > maximal_mediod_value):
+				maximal_mediod_value = t1_medioid_value
+				medioid_trace = t1
+
+			# When reached the last trace in the bucket, append the medioid value to the medioids data structure
+			if (t1 is buckets[bucket][-1]):
+				medioids[bucket] = ((medioid_trace, maximal_mediod_value))
+				print("Chosen medioid:")
+				print(medioids[bucket])
+
+	print("\nCalculated medioids:")
+	print(medioids)
+	return medioids
+
+
+# ================================================================================================================================
+#				Calculate clusters (buckets) medioids distance using Jaccard similarity
+# ================================================================================================================================
+
+
+def medioids_compare(medioids):
+	print("\n================= Medioids Similarity =================")
+
+	# Iterate over all buckets medioids in the medioids dictionary
+	for index1, bucketKey1 in enumerate(medioids):
+		medioid1 = medioids[bucketKey1][0]
+		medioid1_shingles = medioid1.get_shingles()
+
+		# Iterate and calculates medioids similarity to all other buckets (using the indexes, we don't calculate twice)
+		for index2, bucketKey2 in enumerate(medioids):
+			if (index1 >= index2):
+				continue
+
+			medioid2 = medioids[bucketKey2][0]
+			medioid2_shingles = medioid2.get_shingles()
+			medioidsJaccSim = (len(medioid1_shingles.intersection(medioid2_shingles)) / float(len(medioid1_shingles.union(medioid2_shingles))))
+
+			print("\n------------------------------")
+			print("Buckets: %d %d " % (bucketKey1, bucketKey2))
+			print(medioid1, medioid2)
+			print(medioidsJaccSim)
+
+	print("\n====================================================\n")

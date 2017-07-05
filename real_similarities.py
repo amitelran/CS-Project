@@ -6,9 +6,6 @@ from triangle_matrix import *
 #                 Calculate Jaccard Similarities
 # =============================================================================
 
-# In this section, we will directly calculate the Jaccard similarities by
-# comparing the sets. This is included here to show how much slower it is than
-# the MinHash approach.
 
 def calcJaccard(docsAsShingleSets):
     #print("\nCalculating Jaccard Similarities..."
