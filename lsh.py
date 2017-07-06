@@ -274,7 +274,7 @@ def findRB(signatures,docsAsShingles,jumps,falsePositivesWeight,falseNegativesWe
 
 
 # ================================================================================================================================
-#				Compute medioid for every bucket, given band buckets array
+#				Compute medioid for every bucket, given buckets array
 # ================================================================================================================================
 
 def calc_buckets_medioids(buckets):
