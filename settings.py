@@ -33,6 +33,7 @@ def init():
 	global maxShingleID
 	global mode
 	global apiCalls_per_shingle
+	global benign_threshold
 
 	global training_data_directory
 	global training_data_benign_directory
@@ -47,9 +48,12 @@ def init():
 	numHashes = 100								# number of random hash functions,number of components in the resulting MinHash signatures
 	maxShingleID = 2 ** 32 - 1					# Record the maximum shingle ID that we assigned.
 	numBands = 10								# Number of bands set
-	shingle_size = 3							# Size of a shingle
-	nextPrime = 4294967311  # Value of next prime number
-	hashMax = 50021  # Buckets hash table size
+	shingle_size = 3							# Size of a shingle (in shingles_mode)
+	apiCalls_per_shingle = 3					# Number of API calls to be set as a single shingle (in APIs_mode)
+	nextPrime = 4294967311  					# Value of next prime number
+	hashMax = 50021  							# Buckets hash table size
+	benign_threshold = 70/(100 * 1.0)			# Benign threshold for cluster (=bucket)
+
 
 	samples_directory = 'codedatasetsample'		# Reference to traces directory
 	unclassified_traces_directory = 'unclassifiedtraces'		# The directory where unclassified traces inserted until classification is made
@@ -79,5 +83,5 @@ def init():
 	classifyTraces = True						# Boolean to indicate whether need to classify traces or not
 	testLabeledData = True						# Boolean to indicate what mode to test: one mode of testing 'benign' and 'malicious', the other mode of testing with 'unlabeled'
 
-	mode = Modes.APIs_mode						# Set shingling mode
-	apiCalls_per_shingle = 3					# Number of API calls to be set as a single shingle
+	# Set shingling mode
+	mode = Modes.shingles_mode

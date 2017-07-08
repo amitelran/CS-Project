@@ -1,4 +1,5 @@
 from real_similarities import calcJaccard
+from cluster_class import Cluster
 import settings
 import json
 import dump_load_args
@@ -35,6 +36,7 @@ def build_buckets(sigs, b, r, docsObjects):
 	hashMax = settings.hashMax		# Get the maximal number of hash functions as set in settings.py
 	buckets = dict()
 	medioids = dict()
+	clusters = dict()
 
 	# Hashing for each of the bands (number of bands as set by 'b' input)
 	for i in range(b):
@@ -66,12 +68,21 @@ def build_buckets(sigs, b, r, docsObjects):
 			else:
 				buckets[curHash] = [curTrace]
 
-	medioids = calc_buckets_medioids(buckets)
-	medioids_compare(medioids)
+			# Add trace to cluster (if cluster does not exist, create the cluster first)
+			if curHash in clusters:
+				clusters[curHash].append_trace(curTrace)
+			else:
+				clusters[curHash] = Cluster(curHash)
+				clusters[curHash].append_trace(curTrace)
+
+	# Calculate medioids for clusters, and compute distance vector for each of the clusters
+	calc_clusters_medioids(clusters)
+	medioids_compare(clusters)
+	for clusterKey, clusterValue in clusters.items():
+		clusterValue.print_cluster_data()
+
 	dump_load_args.DumpBuckets(buckets)			# Dump data into buckets data file
 	dump_load_args.DumpTraces(traces)			# Dump data into traces data file
-	print("build_buckets:")
-	print(buckets)
 	return buckets
 
 
@@ -274,9 +285,48 @@ def findRB(signatures,docsAsShingles,jumps,falsePositivesWeight,falseNegativesWe
 
 
 # ================================================================================================================================
-#				Compute medioid for every bucket, given buckets array
+#				Compute medioid for every cluster (=bucket), given buckets array
 # ================================================================================================================================
 
+
+def calc_clusters_medioids(clusters):
+	print("\nCreate cluster medioids:")
+	medioids = dict()								# Initialize medioids dictionary
+
+	for clusterKey, clusterValue in clusters.items():
+		cluster_traces = clusters[clusterKey].cluster_traces
+		medioid_trace = cluster_traces[-1]						# Initialize medioid trace to be the last (in case of single trace in a bucket)
+		maximal_mediod_value = 0
+
+		# Iterate over every trace in the bucket (reset values)
+		for t1 in cluster_traces:
+			t1_medioid_value = 0
+			t1_shingles = t1.get_shingles()
+
+			# Iterate over every other trace in the bucket and accumulate Jaccard similarities
+			for t2 in cluster_traces:
+				if t1 is t2:
+					continue
+				t2_shingles = t2.get_shingles()
+				t1_medioid_value += (len(t1_shingles.intersection(t2_shingles)) / float(len(t1_shingles.union(t2_shingles))))
+
+			#print(t1, t1_medioid_value)
+
+			# Update medioid value and the medioid trace
+			if (t1_medioid_value > maximal_mediod_value):
+				maximal_mediod_value = t1_medioid_value
+				medioid_trace = t1
+
+			# When reached the last trace in the bucket, append the medioid value to the medioids data structure
+			if (t1 is cluster_traces[-1]):
+				medioids[clusterKey] = ((medioid_trace, maximal_mediod_value))
+				clusters[clusterKey].medioid = ((medioid_trace, maximal_mediod_value))
+
+	print("\nCalculated medioids:")
+	print(medioids)
+	return medioids
+
+"""
 def calc_buckets_medioids(buckets):
 	print("\nCreate cluster medioids:")
 	print(buckets)
@@ -316,6 +366,7 @@ def calc_buckets_medioids(buckets):
 	print("\nCalculated medioids:")
 	print(medioids)
 	return medioids
+"""
 
 
 # ================================================================================================================================
@@ -323,26 +374,66 @@ def calc_buckets_medioids(buckets):
 # ================================================================================================================================
 
 
-def medioids_compare(medioids):
-	print("\n================= Medioids Similarity =================")
+def medioids_compare(clusters):
+	#print("\n================= Medioids Similarity =================")
 
 	# Iterate over all buckets medioids in the medioids dictionary
-	for index1, bucketKey1 in enumerate(medioids):
-		medioid1 = medioids[bucketKey1][0]
+	for index1, clusterKey1 in enumerate(clusters):
+		cluster1 = clusters[clusterKey1]
+		medioid1 = cluster1.medioid[0]
 		medioid1_shingles = medioid1.get_shingles()
 
 		# Iterate and calculates medioids similarity to all other buckets (using the indexes, we don't calculate twice)
-		for index2, bucketKey2 in enumerate(medioids):
+		for index2, clusterKey2 in enumerate(clusters):
 			if (index1 >= index2):
 				continue
 
-			medioid2 = medioids[bucketKey2][0]
+			cluster2 = clusters[clusterKey2]
+			medioid2 = cluster2.medioid[0]
 			medioid2_shingles = medioid2.get_shingles()
 			medioidsJaccSim = (len(medioid1_shingles.intersection(medioid2_shingles)) / float(len(medioid1_shingles.union(medioid2_shingles))))
 
-			print("\n------------------------------")
-			print("Buckets: %d %d " % (bucketKey1, bucketKey2))
-			print(medioid1, medioid2)
-			print(medioidsJaccSim)
+			cluster1.distance_vector.append((clusterKey2, medioidsJaccSim, cluster2))
+			cluster2.distance_vector.append((clusterKey1, medioidsJaccSim, cluster1))
 
+	#print("\n====================================================\n")
+
+
+	"""
+	def medioids_compare(medioids):
+		print("\n================= Medioids Similarity =================")
+
+		# Iterate over all buckets medioids in the medioids dictionary
+		for index1, bucketKey1 in enumerate(medioids):
+			medioid1 = medioids[bucketKey1][0]
+			medioid1_shingles = medioid1.get_shingles()
+
+			# Iterate and calculates medioids similarity to all other buckets (using the indexes, we don't calculate twice)
+			for index2, bucketKey2 in enumerate(medioids):
+				if (index1 >= index2):
+					continue
+
+				medioid2 = medioids[bucketKey2][0]
+				medioid2_shingles = medioid2.get_shingles()
+				medioidsJaccSim = (len(medioid1_shingles.intersection(medioid2_shingles)) / float(len(medioid1_shingles.union(medioid2_shingles))))
+
+				print("\n------------------------------")
+				print("Buckets: %d %d " % (bucketKey1, bucketKey2))
+				print(medioid1, medioid2)
+				print(medioidsJaccSim)
+
+		print("\n====================================================\n")
+	"""
+
+
+# ================================================================================================================================
+#				Print clusters data
+# ================================================================================================================================
+
+
+def print_clusters_data(clusters):
+	print("\n================= Clusters Data =================")
+	print(settings.benign_threshold)
+	for cluster in clusters.keys():
+		cluster.print_cluster_data()
 	print("\n====================================================\n")

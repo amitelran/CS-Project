@@ -16,6 +16,7 @@ from watchdog.events import FileSystemEventHandler
 from watchdog.observers import Observer
 
 
+
 # def Sergey(docs,JcrdSim,LevSim,i,j):
 #	 print('*******************************\nPair : %s and %s' % (docs[i][0], docs[j][0]))
 #	 print('\n Trace of %s representation (length= %d):\n %s \n\n\n' % (docs[i][0], len(docs[i][1]), docs[i][1]))
