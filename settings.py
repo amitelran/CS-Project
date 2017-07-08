@@ -45,6 +45,7 @@ def init():
 	global test_data_unlabeled_directory
 	global testLabeledData
 
+
 	numHashes = 100								# number of random hash functions,number of components in the resulting MinHash signatures
 	maxShingleID = 2 ** 32 - 1					# Record the maximum shingle ID that we assigned.
 	numBands = 10								# Number of bands set
@@ -59,8 +60,8 @@ def init():
 	unclassified_traces_directory = 'unclassifiedtraces'		# The directory where unclassified traces inserted until classification is made
 	classified_traces_directory = 'classifiedtraces'		# The directory where classified traces are inserted after classification is made
 
-#	training_data_directory = 'trainingdata'	# Directory for training data containing two sub-directories: benign and malicious.
-	training_data_directory = 'trnSergey50'	# Directory for training data containing two sub-directories: benign and malicious.
+	training_data_directory = 'trainingdata'	# Directory for training data containing two sub-directories: benign and malicious.
+#	training_data_directory = 'trnSergey50'	# Directory for training data containing two sub-directories: benign and malicious.
 
 	training_data_benign_directory = training_data_directory + '/benign'	# Sub-directory of the trainingdata directory containing benign traces.
 	training_data_malicious_directory = training_data_directory + '/malicious'	# Sub-directory of the trainingdata directory containing malicious traces
@@ -85,3 +86,4 @@ def init():
 
 	# Set shingling mode
 	mode = Modes.shingles_mode
+

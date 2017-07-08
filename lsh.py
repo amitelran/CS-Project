@@ -35,7 +35,6 @@ def build_buckets(sigs, b, r, docsObjects):
 	print "\nBuilding buckets with LSH...\n"
 	hashMax = settings.hashMax		# Get the maximal number of hash functions as set in settings.py
 	buckets = dict()
-	medioids = dict()
 	clusters = dict()
 
 	# Hashing for each of the bands (number of bands as set by 'b' input)
@@ -123,7 +122,7 @@ def build_buckets2(sigs, b, r, docsObjects):
 				buckets_i[curHash] = [curTrace]
 
 			if j == (len(sigs)-1):
-				medioids[i] = calc_buckets_medioids(buckets_i)
+				medioids[i] = calc_clusters_medioids(buckets_i)
 				buckets[i] = buckets_i
 				#print("buckets["+str(i)+"]:")
 				#print(buckets_i)
@@ -290,7 +289,7 @@ def findRB(signatures,docsAsShingles,jumps,falsePositivesWeight,falseNegativesWe
 
 
 def calc_clusters_medioids(clusters):
-	print("\nCreate cluster medioids:")
+	print("\nCreating cluster medioids...")
 	medioids = dict()								# Initialize medioids dictionary
 
 	for clusterKey, clusterValue in clusters.items():
@@ -322,9 +321,9 @@ def calc_clusters_medioids(clusters):
 				medioids[clusterKey] = ((medioid_trace, maximal_mediod_value))
 				clusters[clusterKey].medioid = ((medioid_trace, maximal_mediod_value))
 
-	print("\nCalculated medioids:")
-	print(medioids)
-	return medioids
+	#print("\nCalculated medioids:")
+	#print(medioids)
+	#return medioids
 
 """
 def calc_buckets_medioids(buckets):
@@ -363,9 +362,9 @@ def calc_buckets_medioids(buckets):
 				print("Chosen medioid:")
 				print(medioids[bucket])
 
-	print("\nCalculated medioids:")
-	print(medioids)
-	return medioids
+	#print("\nCalculated medioids:")
+	#print(medioids)
+	#return medioids
 """
 
 
@@ -378,6 +377,7 @@ def medioids_compare(clusters):
 	#print("\n================= Medioids Similarity =================")
 
 	# Iterate over all buckets medioids in the medioids dictionary
+	print("\nCalculating medioids distances...\n")
 	for index1, clusterKey1 in enumerate(clusters):
 		cluster1 = clusters[clusterKey1]
 		medioid1 = cluster1.medioid[0]

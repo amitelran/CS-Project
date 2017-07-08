@@ -36,7 +36,7 @@ class Cluster:
         if (self.num_malicious_traces == 0):
             return 100.0
         else:
-            return (float(self.num_benign_traces / (self.num_malicious_traces * 0.1)))
+            return (float(self.num_benign_traces / (self.num_traces * 1.0)))
 
 
     # Print traces in cluster
@@ -51,29 +51,26 @@ class Cluster:
     def print_cluster_data(self):
         print("\n------------------------------")
         print("Cluster ID: %d " % self.cluster_id)
-        print("%d traces | %d benign traces | %d malicious traces | %.3f%% Benign"
-              % (self.num_traces, self.num_benign_traces, self.num_malicious_traces, self.benign_ratio()))
-
-        if (self.num_benign_traces > 0):
-            print("BENIGNNNNNNNNNNNNNNNNNNNNNNNN")
+        print("%d traces | %d malicious traces | %d benign traces | %.3f%% Benign"
+              % (self.num_traces, self.num_malicious_traces, self.num_benign_traces, self.benign_ratio()))
 
         print("Distance from other clusters:")
         sys.stdout.write("Cluster ID:       \t\t")
         for cluster in self.distance_vector:
             otherCluster = cluster[-1]
             if (otherCluster.benign_ratio() >= settings.benign_threshold):
-                sys.stdout.write("* %s *\t" % otherCluster.cluster_id)
+                sys.stdout.write("++%-*s" % (10, otherCluster.cluster_id))
             else:
-                sys.stdout.write("%s\t" % otherCluster.cluster_id)
+                sys.stdout.write("%-*s" % (10, otherCluster.cluster_id))
 
         print("")
         sys.stdout.write("Cluster Similarity:\t\t")
         for cluster in self.distance_vector:
             otherCluster = cluster[-1]
             if (otherCluster.benign_ratio() >= settings.benign_threshold):
-                sys.stdout.write("  %.3f  \t" % cluster[1])
+                sys.stdout.write("%-*.4f" % (12, cluster[1]))
             else:
-                sys.stdout.write("%.3f\t" % cluster[1])
+                sys.stdout.write("%-*.4f" % (10, cluster[1]))
 
         print("")
 
