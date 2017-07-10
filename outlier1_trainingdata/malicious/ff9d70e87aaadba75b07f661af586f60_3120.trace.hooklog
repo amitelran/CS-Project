@@ -1,0 +1,99 @@
+3120 malware.exe
+#231590000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\IMM32.DLL
+Return=SUCCESS
+#232360000
+LoadLibrary
+lpFileName=gdi32.dll
+Return=SUCCESS
+#232060000
+LoadLibrary
+lpFileName=LPK.DLL
+Return=SUCCESS
+#232730000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#232730000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#237190000
+RegEnumValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\FontLink\SystemLink\Lucida San
+Return=0
+#237200000
+RegEnumValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\FontLink\SystemLink\Tah
+Return=0
+#237200000
+RegEnumValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\FontLink\SystemLink\Microsoft 
+Return=0
+#238870000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ThemeManager\Compositing
+Return=2
+#238890000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Control Panel\Desktop\LameButtonText
+Return=2
+#238900000
+LoadLibrary
+lpFileName=uxtheme.dll
+Return=SUCCESS
+#240200000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\IMM\Ime File
+Return=0
+#240230000
+LoadLibrary
+lpFileName=version.dll
+Return=SUCCESS
+#240390000
+CreateFile
+hName=C:\WINDOWS\system32\msctfime.ime
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#240470000
+CreateFile
+hName=C:\WINDOWS\system32\msctfime.ime
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#241530000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\CriticalSectionTimeout
+Return=0
+#241530000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Ole\RWLockResourceTimeOut
+Return=2
+#241160000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\ole32.dll
+Return=SUCCESS
+#240630000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\msctfime.ime
+Return=SUCCESS
+#241760000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\CTF\Disable Thread Input Manager
+Return=2
+#241770000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\CTF\SystemShared\CUAS
+Return=0
+type=REG_DWORD
+data=0
+#241840000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\msctfime.ime
+Return=SUCCESS

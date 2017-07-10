@@ -1,0 +1,555 @@
+3208 malware.exe
+#219650000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\IMM32.DLL
+Return=SUCCESS
+#220410000
+LoadLibrary
+lpFileName=gdi32.dll
+Return=SUCCESS
+#220120000
+LoadLibrary
+lpFileName=LPK.DLL
+Return=SUCCESS
+#220870000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\CriticalSectionTimeout
+Return=0
+#220870000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Ole\RWLockResourceTimeOut
+Return=2
+#229210000
+LoadLibrary
+lpFileName=KERNEL32.DLL
+Return=SUCCESS
+#229290000
+LoadLibrary
+lpFileName=KERNEL32.DLL
+Return=SUCCESS
+#229310000
+LoadLibrary
+lpFileName=KERNEL32.DLL
+Return=SUCCESS
+#229420000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#229450000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#229470000
+LoadLibrary
+lpFileName=oleaut32.dll
+Return=SUCCESS
+#229480000
+LoadLibrary
+lpFileName=user32.dll
+Return=SUCCESS
+#229510000
+LoadLibrary
+lpFileName=user32.dll
+Return=SUCCESS
+#229940000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Setup\Version
+Return=2
+#229950000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Setup\Version
+type=REG_DWORD
+data=131
+Return=0
+#229980000
+CreateFile
+hName=C:\WINDOWS\system32\winxcfg.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#229980000
+CreateFile
+hName=C:\WINDOWS\system32\winxcfg.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#230020000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\winxcfg.exe
+type=REG_SZ
+data=C:\WINDOWS\system32\winxcfg.exe
+Return=0
+#230040000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#230040000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#231940000
+RegSetValue
+hKey=0\DisableSharing
+type=REG_DWORD
+data=0
+Return=6
+#231940000
+RegSetValue
+hKey=0\Dir98
+type=REG_SZ
+data=012345:C:\WINDOWS\system32\macromd
+Return=6
+#231970000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\Hotmail Hacker.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#231970000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\Hotmail Hacker.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#232010000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\Pamela Anderson And Tommy Lee Home Video (Part 1).mpg.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#232010000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\Pamela Anderson And Tommy Lee Home Video (Part 1).mpg.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#232050000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\15 year old on beach.mpg.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#232050000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\15 year old on beach.mpg.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#232090000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\invisible IP.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#232090000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\invisible IP.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#232120000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\AIM Account Stealer.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#232120000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\AIM Account Stealer.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#232160000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\nude.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#232160000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\nude.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#232190000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\Free Porn.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#232190000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\Free Porn.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#232230000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\MSN Flooder.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#232230000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\MSN Flooder.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#232280000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\Xbox Iso 2 Rom Converter.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#232280000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\Xbox Iso 2 Rom Converter.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#232320000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\Cable Modem Uncapper.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#232320000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\Cable Modem Uncapper.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#232360000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\babes taking turns munching on hot beavers.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#232360000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\babes taking turns munching on hot beavers.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#232410000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\euro moma with big headlights and scrumptous ass.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#232410000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\euro moma with big headlights and scrumptous ass.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#232450000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\horny housewife looking for some action.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#232450000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\horny housewife looking for some action.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#232500000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\3 teen blonde babes chin deep in pussy sauce.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#232500000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\3 teen blonde babes chin deep in pussy sauce.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#232540000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\amateur swinger babe sucking on a couple of cocks.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#232540000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\amateur swinger babe sucking on a couple of cocks.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#232590000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\extremely fine hoine with incredible sweet twat.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#232590000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\extremely fine hoine with incredible sweet twat.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#232640000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\uncle fred spanking his young nieces little ass.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#232640000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\uncle fred spanking his young nieces little ass.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#232680000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\yummy lesbos licking wet pussy holes.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#232680000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\yummy lesbos licking wet pussy holes.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#232730000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\some fine amateur pussy shots from behind.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#232720000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\some fine amateur pussy shots from behind.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#232760000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\hot hungry sluts sucking cum for a line of coke.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#232760000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\hot hungry sluts sucking cum for a line of coke.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#232840000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\teen taking off her panties outdoors.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#232840000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\teen taking off her panties outdoors.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#232880000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\sister and brother gettin' freaky .mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#232880000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\sister and brother gettin' freaky .mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#232930000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\mature show older pussy and happy to do it.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#232930000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\mature show older pussy and happy to do it.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#232980000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\hot anal sex for the first time ever.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#232970000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\hot anal sex for the first time ever.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#233020000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\swimmingpool threesome fuck suck group sucking.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#233020000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\swimmingpool threesome fuck suck group sucking.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#233060000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\slutty cum babes sharing a dick.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#233060000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\slutty cum babes sharing a dick.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#233120000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\asian studys how to strip.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#233110000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\asian studys how to strip.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#233160000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\brazilian supermodel adriana lima.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#233160000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\brazilian supermodel adriana lima.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#233200000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\cum hungry teen in action.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#233200000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\cum hungry teen in action.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#233270000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\some painfully deep fist insertions.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#233270000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\some painfully deep fist insertions.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#233320000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\two dudes comparing dick sizes.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#233320000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\two dudes comparing dick sizes.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#233360000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\little dicks on gay male tricks.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#233360000
+CreateFile
+hName=C:\WINDOWS\system32\macromd\little dicks on gay male tricks.mpg.pif
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#233560000
+RegEnumValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\FontLink\SystemLink\Lucida San
+Return=0
+#233560000
+RegEnumValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\FontLink\SystemLink\Tah
+Return=0
+#233570000
+RegEnumValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\FontLink\SystemLink\Microsoft 
+Return=0
+#235230000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ThemeManager\Compositing
+Return=2
+#235270000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Control Panel\Desktop\LameButtonText
+Return=2
+#235280000
+LoadLibrary
+lpFileName=uxtheme.dll
+Return=SUCCESS
+#236590000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\IMM\Ime File
+Return=0
+#236620000
+LoadLibrary
+lpFileName=version.dll
+Return=SUCCESS
+#236750000
+CreateFile
+hName=C:\WINDOWS\system32\msctfime.ime
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#236830000
+CreateFile
+hName=C:\WINDOWS\system32\msctfime.ime
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#237470000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\ole32.dll
+Return=SUCCESS
+#236990000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\msctfime.ime
+Return=SUCCESS
+#237610000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\CTF\Disable Thread Input Manager
+Return=2
+#237640000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\CTF\SystemShared\CUAS
+Return=0
+type=REG_DWORD
+data=0
+#237710000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\msctfime.ime
+Return=SUCCESS

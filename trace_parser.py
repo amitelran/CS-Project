@@ -143,7 +143,9 @@ def parse_as_API_calls(traces):
 
 # Generating the parsed traces as text
 def generate_traces_as_text(parsedTracesObjects):
-	if settings.mode is settings.Modes.APIs_mode:
-		return parse_as_API_calls(parsedTracesObjects)
-	else:
-		return extract_APIhKey_name(parsedTracesObjects)
+	#TODO look at setTracesShingles() and do this logic there
+	return parse_as_API_calls(parsedTracesObjects)
+	# if settings.mode is settings.Modes.APIs_mode:
+	# 	return parse_as_API_calls(parsedTracesObjects)
+	# else:
+	# 	return extract_APIhKey_name(parsedTracesObjects)

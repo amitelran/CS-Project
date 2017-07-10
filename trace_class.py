@@ -48,6 +48,16 @@ class Trace:
                 if (self.is_malicious == None):
                     print "Trace is unlabeled"
 
+    def get_malicious_benign_label(self):
+        if (self.is_malicious == True):
+            return "Malicious"
+        else:
+            if (self.is_malicious == False):
+                return "Benign"
+            else:
+                if (self.is_malicious == None):
+                    return "Unlabeled"
+
     # Change trace status from current status (as benign or malicious) to the new given boolean status
     def change_status(self, newStatus):
         self.is_malicious = newStatus

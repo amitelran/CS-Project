@@ -1,0 +1,25 @@
+2828 malware.exe
+#185360000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\IMM32.DLL
+Return=SUCCESS
+#186120000
+LoadLibrary
+lpFileName=gdi32.dll
+Return=SUCCESS
+#185830000
+LoadLibrary
+lpFileName=LPK.DLL
+Return=SUCCESS
+#192120000
+CreateFile
+hName=C:\WINDOWS\system32\hal.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#192120000
+CreateFile
+hName=C:\WINDOWS\system32\hal.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS

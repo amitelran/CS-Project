@@ -1,0 +1,59 @@
+3104 malware.exe
+#198370000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\IMM32.DLL
+Return=SUCCESS
+#199130000
+LoadLibrary
+lpFileName=gdi32.dll
+Return=SUCCESS
+#198820000
+LoadLibrary
+lpFileName=LPK.DLL
+Return=SUCCESS
+#199550000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\CriticalSectionTimeout
+Return=0
+#199550000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Ole\RWLockResourceTimeOut
+Return=2
+#199710000
+CreateFile
+hName=C:\06d11bd4.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#199710000
+CreateFile
+hName=C:\06d11bd4.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#201360000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders\Cache
+Return=0
+#201390000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#199760000
+CreateProcessInternal
+lpCommandLine=C:\06d11bd4.exe
+Return=SUCCESS
+dwProcessId=3116
+dwThreadId=3120
+#199750000
+CreateProcessInternal
+lpCommandLine=C:\06d11bd4.exe
+Return=SUCCESS
+dwProcessId=3116
+dwThreadId=3120
+#199750000
+WinExec
+lpCmdLine=C:\06d11bd4.exe
+Return=SUCCESS
+#232030000
+ExitProcess

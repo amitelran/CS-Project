@@ -1,0 +1,31 @@
+3300 malware.exe
+#233620000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\CRTDLL.DLL
+Return=SUCCESS
+#233750000
+CreateFile
+hName=CONIN$
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#233750000
+CreateFile
+hName=CONIN$
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#233750000
+CreateFile
+hName=CONOUT$
+desiredAccess=GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#233750000
+CreateFile
+hName=CONOUT$
+desiredAccess=GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#233930000
+ExitProcess

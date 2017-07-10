@@ -1,0 +1,1259 @@
+3304 Ekecdikl.exe
+#237190000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\IMM32.DLL
+Return=SUCCESS
+#238030000
+LoadLibrary
+lpFileName=gdi32.dll
+Return=SUCCESS
+#237740000
+LoadLibrary
+lpFileName=LPK.DLL
+Return=SUCCESS
+#238470000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\CriticalSectionTimeout
+Return=0
+#238480000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Ole\RWLockResourceTimeOut
+Return=2
+#238820000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#239490000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#239910000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#242720000
+CreateFile
+hName=C:\WINDOWS\WindowsShell.Manifest
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#242980000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Control Panel\Desktop\SmoothScroll
+Return=2
+#243000000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\EnableBalloonTips
+Return=2
+#243000000
+RegEnumValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\LanguagePack\SURR
+type=REG_DWORD
+data=2
+Return=0
+#242040000
+LoadLibrary
+lpFileName=comctl32.dll
+Return=SUCCESS
+#243260000
+RegCreateKey
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings
+Return=0
+#243280000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\CRTDLL.DLL
+Return=SUCCESS
+#243390000
+CreateFile
+hName=CONIN$
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#243390000
+CreateFile
+hName=CONIN$
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#243400000
+CreateFile
+hName=CONOUT$
+desiredAccess=GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#243400000
+CreateFile
+hName=CONOUT$
+desiredAccess=GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#244020000
+CreateFile
+hName=C:\WINDOWS\system32\surf.dat
+desiredAccess=GENERIC_WRITE 
+creationDisposition=OPEN_ALWAYS
+Return=SUCCESS
+#244020000
+CreateFile
+hName=C:\WINDOWS\system32\surf.dat
+desiredAccess=GENERIC_WRITE 
+creationDisposition=OPEN_ALWAYS
+Return=SUCCESS
+#244060000
+LoadLibrary
+lpFileName=Secur32.dll
+Return=SUCCESS
+#244450000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ThemeManager\Compositing
+Return=2
+#244470000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Control Panel\Desktop\LameButtonText
+Return=2
+#244480000
+LoadLibrary
+lpFileName=uxtheme.dll
+Return=SUCCESS
+#245860000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\IMM\Ime File
+Return=0
+#245880000
+LoadLibrary
+lpFileName=version.dll
+Return=SUCCESS
+#246020000
+CreateFile
+hName=C:\WINDOWS\system32\msctfime.ime
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#246100000
+CreateFile
+hName=C:\WINDOWS\system32\msctfime.ime
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#246690000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\ole32.dll
+Return=SUCCESS
+#246250000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\msctfime.ime
+Return=SUCCESS
+#246830000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\CTF\Disable Thread Input Manager
+Return=2
+#246840000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\CTF\SystemShared\CUAS
+Return=0
+type=REG_DWORD
+data=0
+#246910000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\msctfime.ime
+Return=SUCCESS
+#247300000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#247310000
+LoadLibrary
+lpFileName=ntdll.dll
+Return=SUCCESS
+#247810000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LDAP\LdapClientIntegrity
+Return=0
+type=REG_DWORD
+data=1
+#247330000
+LoadLibrary
+lpFileName=NTMARTA.DLL
+Return=SUCCESS
+#263550000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\frm2
+Return=2
+#263550000
+CreateThread
+dwThreadId=4371584
+Return=SUCCESS
+#263560000
+CreateThread
+dwThreadId=1240564
+Return=SUCCESS
+#263590000
+CreateThread
+dwThreadId=11927164
+Return=SUCCESS
+#263560000
+CreateThread
+dwThreadId=1240564
+Return=SUCCESS
+#263650000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\IE Setup\Setup\Path
+Return=0
+#263680000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\SyncMode5
+Return=2
+#263730000
+RegCreateKey
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\0
+Return=0
+#263730000
+RegSetValue
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\0\1601
+type=REG_DWORD
+data=0
+Return=0
+#263740000
+RegCreateKey
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\1
+Return=0
+#263750000
+RegSetValue
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\1\1601
+type=REG_DWORD
+data=0
+Return=0
+#263690000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Cache\FixupKey
+Return=2
+#263760000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\SessionStartTimeDefaultDeltaSecs
+Return=2
+#263820000
+RegCreateKey
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\2
+Return=0
+#263830000
+RegSetValue
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\2\1601
+type=REG_DWORD
+data=0
+Return=0
+#263840000
+RegCreateKey
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3
+Return=0
+#263840000
+RegSetValue
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3\1601
+type=REG_DWORD
+data=0
+Return=0
+#263850000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\System\Setup\SystemSetupInProgress
+Return=0
+#263870000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\Signature
+Return=0
+type=REG_SZ
+data=Client UrlCache MMF Ver 5.2
+#263870000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders\Cache
+Return=0
+type=REG_EXPAND_SZ
+data=
+#263920000
+RegCreateKey
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4
+Return=0
+#263920000
+RegSetValue
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4\1601
+type=REG_DWORD
+data=0
+Return=0
+#263930000
+RegCreateKey
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings
+Return=0
+#263940000
+RegSetValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\GlobalUserOffline
+type=REG_DWORD
+data=0
+Return=0
+#263940000
+RegCreateKey
+hKey=HKEY_USERS\.DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\BrowseNewProcess
+Return=0
+#263880000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders\Cookies
+Return=0
+type=REG_EXPAND_SZ
+data=
+#263980000
+RegSetValue
+hKey=HKEY_USERS\.DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\BrowseNewProcess\BrowseNewProcess
+type=REG_SZ
+data=yes
+Return=0
+#264020000
+CreateFile
+hName=C:\WINDOWS\system32\surf.dat
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#264020000
+CreateFile
+hName=C:\WINDOWS\system32\surf.dat
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#263990000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders\History
+Return=0
+type=REG_EXPAND_SZ
+data=
+#264090000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\Content\PerUserItem
+Return=2
+#264090000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\Content\PerUserItem
+Return=0
+type=REG_DWORD
+data=1
+#265020000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\Setup\SystemSetupInProgress
+Return=0
+type=REG_DWORD
+data=0
+#265480000
+CreateFile
+hName=C:\DOCUME~1\ants\LOCALS~1\Temp\gpeiojlh.htm
+desiredAccess=GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#265480000
+CreateFile
+hName=C:\DOCUME~1\ants\LOCALS~1\Temp\gpeiojlh.htm
+desiredAccess=GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#265670000
+CreateFile
+hName=C:\Program
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#265730000
+CreateFile
+hName=C:\Program Files\Internet
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#265430000
+LoadLibrary
+lpFileName=comctl32.dll
+Return=SUCCESS
+#266510000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Control Panel\Desktop\SmoothScroll
+Return=2
+#266530000
+LoadLibrary
+lpFileName=imm32.dll
+Return=SUCCESS
+#265890000
+LoadLibrary
+lpFileName=comctl32.dll
+Return=SUCCESS
+#264170000
+LoadLibrary
+lpFileName=shell32.dll
+Return=SUCCESS
+#267050000
+RegCreateKey
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders
+Return=0
+#267060000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders\Cache
+Return=0
+type=REG_EXPAND_SZ
+data=%
+#267160000
+RegCreateKey
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders
+Return=0
+#267170000
+RegSetValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders\Cache
+type=REG_SZ
+data=C:\Documents and Settings\ants\Local Settings\Temporary Internet Files
+Return=0
+#267340000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\Content\CachePrefix
+Return=0
+type=REG_SZ
+data=
+#267350000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\Content\CacheLimit
+Return=0
+type=REG_DWORD
+data=327323
+#267440000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Cache\Paths\Directory
+type=REG_SZ
+data=C:\Documents and Settings\ants\Local Settings\Temporary Internet Files\Content.IE5
+Return=0
+#267450000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Cache\Paths\Paths
+type=REG_DWORD
+data=4
+Return=0
+#267450000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Cache\Paths\Path1\CachePath
+type=REG_SZ
+data=C:\Documents and Settings\ants\Local Settings\Temporary Internet Files\Content.IE5\Cache1
+Return=0
+#267450000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Cache\Paths\Path2\CachePath
+type=REG_SZ
+data=C:\Documents and Settings\ants\Local Settings\Temporary Internet Files\Content.IE5\Cache2
+Return=0
+#267570000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Cache\Paths\Path3\CachePath
+type=REG_SZ
+data=C:\Documents and Settings\ants\Local Settings\Temporary Internet Files\Content.IE5\Cache3
+Return=0
+#267570000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Cache\Paths\Path4\CachePath
+type=REG_SZ
+data=C:\Documents and Settings\ants\Local Settings\Temporary Internet Files\Content.IE5\Cache4
+Return=0
+#267570000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Cache\Paths\Path1\CacheLimit
+type=REG_DWORD
+data=81830
+Return=0
+#267580000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Cache\Paths\Path2\CacheLimit
+type=REG_DWORD
+data=81830
+Return=0
+#267580000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Cache\Paths\Path3\CacheLimit
+type=REG_DWORD
+data=81830
+Return=0
+#267580000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Cache\Paths\Path4\CacheLimit
+type=REG_DWORD
+data=81830
+Return=0
+#267590000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\Cookies\PerUserItem
+Return=2
+#267590000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\Cookies\PerUserItem
+Return=0
+type=REG_DWORD
+data=1
+#267670000
+RegCreateKey
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders
+Return=0
+#267680000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders\Cookies
+Return=0
+type=REG_EXPAND_SZ
+data=%
+#267740000
+RegCreateKey
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders
+Return=0
+#267740000
+RegSetValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders\Cookies
+type=REG_SZ
+data=C:\Documents and Settings\ants\Cookies
+Return=0
+#267750000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\Cookies\CachePrefix
+Return=0
+type=REG_SZ
+data=Cookie:
+#267760000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\Cookies\CacheLimit
+Return=0
+type=REG_DWORD
+data=8192
+#267830000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\History\PerUserItem
+Return=2
+#267830000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\History\PerUserItem
+Return=0
+type=REG_DWORD
+data=1
+#267840000
+RegCreateKey
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders
+Return=0
+#267840000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders\History
+Return=0
+type=REG_EXPAND_SZ
+data=%
+#267880000
+RegCreateKey
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders
+Return=0
+#267880000
+RegSetValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders\History
+type=REG_SZ
+data=C:\Documents and Settings\ants\Local Settings\History
+Return=0
+#267970000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\History\CachePrefix
+Return=0
+type=REG_SZ
+data=Visited:
+#267980000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\History\CacheLimit
+Return=0
+type=REG_DWORD
+data=8192
+#268060000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\COM3\Com+Enabled
+Return=0
+type=REG_DWORD
+data=1
+#269320000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OLE\MinimumFreeMemPercentageToCreateProcess
+Return=2
+#269320000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OLE\MinimumFreeMemPercentageToCreateObject
+Return=2
+#268060000
+LoadLibrary
+lpFileName=CLBCATQ.DLL
+Return=SUCCESS
+#269410000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\COM3\Com+Enabled
+Return=0
+type=REG_DWORD
+data=1
+#269540000
+CreateFile
+hName=C:\Documents and Settings\ants\Local Settings\Temporary Internet Files\Content.IE5\index.dat
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_ALWAYS
+Return=SUCCESS
+#269540000
+CreateFile
+hName=C:\Documents and Settings\ants\Local Settings\Temporary Internet Files\Content.IE5\index.dat
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_ALWAYS
+Return=SUCCESS
+#269550000
+CreateFile
+hName=C:\Documents and Settings\ants\Local Settings\Temporary Internet Files\Content.IE5\index.dat
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_ALWAYS
+Return=SUCCESS
+#269550000
+CreateFile
+hName=C:\Documents and Settings\ants\Local Settings\Temporary Internet Files\Content.IE5\index.dat
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_ALWAYS
+Return=SUCCESS
+#269560000
+LoadLibrary
+lpFileName=VERSION.dll
+Return=SUCCESS
+#269410000
+LoadLibrary
+lpFileName=CLBCATQ.DLL
+Return=SUCCESS
+#270410000
+CreateFile
+hName=C:\Program Files\Internet Explorer\IEXPLORE.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#270470000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\COM3\REGDBVersion
+Return=0
+#270530000
+CreateFile
+hName=C:\WINDOWS\Registration\R000000000007.clb
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#270760000
+CreateFile
+hName=C:\Program Files\Internet Explorer\IEXPLORE.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#271120000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\COM3\REGDBVersion
+Return=0
+#271490000
+RegQueryValue
+hKey=b2\CLSID\{9BA05972-F6A8-11CF-A442-00A0C90A8F39}\InprocServer32\InprocServer32
+Return=2
+#271670000
+RegQueryValue
+hKey=b2\CLSID\{9BA05972-F6A8-11CF-A442-00A0C90A8F39}\InprocServer32
+Return=0
+type=REG_EXPAND_SZ
+data=%
+#271920000
+RegQueryValue
+hKey=b2\CLSID\{9BA05972-F6A8-11CF-A442-00A0C90A8F39}\AppID
+Return=2
+#272190000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Rpc\MaxRpcSize
+Return=2
+#272370000
+LoadLibrary
+lpFileName=rpcrt4.dll
+Return=SUCCESS
+#273340000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Ole\MaximumAllowedAllocationSize
+Return=2
+#273740000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OLE\DefaultAccessPermission
+Return=2
+#274010000
+CreateFile
+hName=\\.\PIPE\lsarpc
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#274450000
+CreateThread
+dwThreadId=10744092
+Return=SUCCESS
+#274880000
+LoadLibrary
+lpFileName=OLE32
+Return=SUCCESS
+#275080000
+CreateThread
+dwThreadId=10744572
+Return=SUCCESS
+#275160000
+LoadLibrary
+lpFileName=OLE32.DLL
+Return=SUCCESS
+#275760000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders\Cache
+Return=0
+#275900000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#276080000
+CreateThread
+dwThreadId=18218460
+Return=SUCCESS
+#265560000
+CreateProcessInternal
+lpCommandLine=C:\Program Files\Internet Explorer\Iexplore.exe C:\DOCUME~1\ants\LOCALS~1\Temp\gpeiojlh.htm
+Return=SUCCESS
+dwProcessId=3360
+dwThreadId=3368
+#276700000
+CreateFile
+hName=\\.\PIPE\lsarpc
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#277090000
+RegQueryValue
+hKey=HKEY_CLASSES_ROOT\Interface\{85CB6900-4D95-11CF-960C-0080C7F4EE85}\ProxyStubClsid32
+Return=0
+type=REG_SZ
+data={00020424-0000-0000-C000-000000000046}
+#277120000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\COM3\REGDBVersion
+Return=0
+#277210000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\COM3\REGDBVersion
+Return=0
+#277460000
+RegQueryValue
+hKey=b2\CLSID\{00020424-0000-0000-C000-000000000046}\InprocServer32\InprocServer32
+Return=2
+#277590000
+RegQueryValue
+hKey=b2\CLSID\{00020424-0000-0000-C000-000000000046}\InprocServer32
+Return=0
+type=REG_SZ
+data=oleaut32.dll
+#277810000
+RegQueryValue
+hKey=b2\CLSID\{00020424-0000-0000-C000-000000000046}\AppID
+Return=2
+#278080000
+RegQueryValue
+hKey=b2\CLSID\{00020424-0000-0000-C000-000000000046}\InprocServer32\ThreadingModel
+Return=0
+type=REG_SZ
+data=Both
+#278200000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\rpcrt4.dll
+Return=SUCCESS
+#278430000
+LoadLibrary
+lpFileName=SXS.DLL
+Return=SUCCESS
+#279570000
+RegQueryValue
+hKey=182\Interface\{85CB6900-4D95-11CF-960C-0080C7F4EE85}\ProxyStubClsid32
+Return=0
+type=REG_SZ
+data={00020424-0000-0000-C000-000000000046}
+#279940000
+RegQueryValue
+hKey=HKEY_CLASSES_ROOT\Interface\{85CB6900-4D95-11CF-960C-0080C7F4EE85}\TypeLib
+Return=0
+type=REG_SZ
+data={EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}
+#280030000
+RegQueryValue
+hKey=HKEY_CLASSES_ROOT\Interface\{85CB6900-4D95-11CF-960C-0080C7F4EE85}\TypeLib\Version
+Return=0
+#280180000
+CreateFile
+hName=C:\Documents and Settings\ants\Cookies\index.dat
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_ALWAYS
+Return=SUCCESS
+#280180000
+CreateFile
+hName=C:\Documents and Settings\ants\Cookies\index.dat
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_ALWAYS
+Return=SUCCESS
+#280200000
+CreateFile
+hName=C:\Documents and Settings\ants\Cookies\index.dat
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_ALWAYS
+Return=SUCCESS
+#280190000
+CreateFile
+hName=C:\Documents and Settings\ants\Cookies\index.dat
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_ALWAYS
+Return=SUCCESS
+#280430000
+RegQueryValue
+hKey=HKEY_CLASSES_ROOT\TypeLib\{EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}\1.1\0\win32
+Return=0
+type=REG_SZ
+data=C:\WINDOWS\system32\shdocvw.dll
+#280530000
+CreateFile
+hName=C:\WINDOWS\system32\shdocvw.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#281340000
+RegQueryValue
+hKey=HKEY_CLASSES_ROOT\TypeLib\{00020430-0000-0000-C000-000000000046}\2.0\0\win32
+Return=0
+type=REG_SZ
+data=C:\WINDOWS\system32\stdole2.tlb
+#281420000
+CreateFile
+hName=C:\WINDOWS\system32\stdole2.tlb
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#281570000
+DeleteFile
+fileName=C:\DOCUME~1\ants\LOCALS~1\Temp\gpeiojlh.htm
+Return=SUCCESS
+#281570000
+DeleteFile
+fileName=C:\DOCUME~1\ants\LOCALS~1\Temp\gpeiojlh.htm
+Return=SUCCESS
+#281580000
+TerminateProcess
+#281890000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Rpc\UDTAlignmentPolicy
+Return=2
+#281930000
+CreateFile
+hName=C:\WINDOWS\system32\kk32.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#281930000
+CreateFile
+hName=C:\WINDOWS\system32\kk32.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#281990000
+RegQueryValue
+hKey=HKEY_CLASSES_ROOT\Interface\{00020400-0000-0000-C000-000000000046}\ProxyStubClsid32
+Return=0
+type=REG_SZ
+data={00020420-0000-0000-C000-000000000046}
+#282080000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\COM3\REGDBVersion
+Return=0
+#282170000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\COM3\REGDBVersion
+Return=0
+#282450000
+RegQueryValue
+hKey=b2\CLSID\{00020420-0000-0000-C000-000000000046}\InprocServer32\InprocServer32
+Return=2
+#282610000
+RegQueryValue
+hKey=b2\CLSID\{00020420-0000-0000-C000-000000000046}\InprocServer32
+Return=0
+type=REG_SZ
+data=oleaut32.dll
+#282800000
+RegQueryValue
+hKey=b2\CLSID\{00020420-0000-0000-C000-000000000046}\AppID
+Return=2
+#282980000
+RegQueryValue
+hKey=b2\CLSID\{00020420-0000-0000-C000-000000000046}\InprocServer32\ThreadingModel
+Return=0
+type=REG_SZ
+data=Both
+#285990000
+CreateFile
+hName=C:\Documents and Settings\ants\Local Settings\History\History.IE5\index.dat
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_ALWAYS
+Return=SUCCESS
+#285980000
+CreateFile
+hName=C:\Documents and Settings\ants\Local Settings\History\History.IE5\index.dat
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_ALWAYS
+Return=SUCCESS
+#286000000
+CreateFile
+hName=C:\Documents and Settings\ants\Local Settings\History\History.IE5\index.dat
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_ALWAYS
+Return=SUCCESS
+#286000000
+CreateFile
+hName=C:\Documents and Settings\ants\Local Settings\History\History.IE5\index.dat
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_ALWAYS
+Return=SUCCESS
+#289540000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\Extensible Cache\MSHist012016040420160405\CacheRepair
+Return=0
+type=REG_DWORD
+data=0
+#289540000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\Extensible Cache\MSHist012016040420160405\CachePath
+Return=0
+type=REG_EXPAND_SZ
+data=%USERPROFILE%\Local Settings\History\History.IE5\MSHist012016040420160405\
+#289570000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\Extensible Cache\MSHist012016040420160405\CachePrefix
+Return=0
+type=REG_SZ
+data=:2016040420160405: 
+#289580000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\Extensible Cache\MSHist012016040420160405\CacheLimit
+Return=0
+type=REG_DWORD
+data=8192
+#289580000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\Extensible Cache\MSHist012016040420160405\CacheOptions
+Return=0
+type=REG_DWORD
+data=11
+#289590000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\Extensible Cache\MSHist012016040520160406\CacheRepair
+Return=0
+type=REG_DWORD
+data=0
+#289600000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\Extensible Cache\MSHist012016040520160406\CachePath
+Return=0
+type=REG_EXPAND_SZ
+data=%USERPROFILE%\Local Settings\History\History.IE5\MSHist012016040520160406\
+#289610000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\Extensible Cache\MSHist012016040520160406\CachePrefix
+Return=0
+type=REG_SZ
+data=:2016040520160406: 
+#289620000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\Extensible Cache\MSHist012016040520160406\CacheLimit
+Return=0
+type=REG_DWORD
+data=8192
+#289620000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\Cache\Extensible Cache\MSHist012016040520160406\CacheOptions
+Return=0
+type=REG_DWORD
+data=11
+#289640000
+CreateThread
+dwThreadId=12973920
+Return=SUCCESS
+#289680000
+RegCreateKey
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\0
+Return=0
+#289680000
+RegSetValue
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\0\1601
+type=REG_DWORD
+data=0
+Return=0
+#289700000
+RegCreateKey
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\1
+Return=0
+#289700000
+RegSetValue
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\1\1601
+type=REG_DWORD
+data=0
+Return=0
+#289720000
+RegCreateKey
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\2
+Return=0
+#289720000
+RegSetValue
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\2\1601
+type=REG_DWORD
+data=0
+Return=0
+#289730000
+RegCreateKey
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3
+Return=0
+#289740000
+RegSetValue
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3\1601
+type=REG_DWORD
+data=0
+Return=0
+#289750000
+RegCreateKey
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4
+Return=0
+#289760000
+RegSetValue
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4\1601
+type=REG_DWORD
+data=0
+Return=0
+#289760000
+RegCreateKey
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings
+Return=0
+#289760000
+RegSetValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\GlobalUserOffline
+type=REG_DWORD
+data=0
+Return=0
+#289770000
+RegCreateKey
+hKey=HKEY_USERS\.DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\BrowseNewProcess
+Return=0
+#289770000
+RegSetValue
+hKey=HKEY_USERS\.DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\BrowseNewProcess\BrowseNewProcess
+type=REG_SZ
+data=yes
+Return=0
+#289780000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\IE Setup\Setup\Path
+Return=0
+#289910000
+CreateFile
+hName=C:\DOCUME~1\ants\LOCALS~1\Temp\ammkongb.htm
+desiredAccess=GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#289900000
+CreateFile
+hName=C:\DOCUME~1\ants\LOCALS~1\Temp\ammkongb.htm
+desiredAccess=GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#289990000
+CreateFile
+hName=C:\Program
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#290020000
+CreateFile
+hName=C:\Program Files\Internet
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#291060000
+CreateFile
+hName=C:\Program Files\Internet Explorer\IEXPLORE.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#291140000
+CreateFile
+hName=C:\Program Files\Internet Explorer\IEXPLORE.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#292270000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#289930000
+CreateProcessInternal
+lpCommandLine=C:\Program Files\Internet Explorer\Iexplore.exe C:\DOCUME~1\ants\LOCALS~1\Temp\ammkongb.htm
+Return=SUCCESS
+dwProcessId=3380
+dwThreadId=3384
+#289930000
+CreateProcessInternal
+lpCommandLine=C:\Program Files\Internet Explorer\Iexplore.exe C:\DOCUME~1\ants\LOCALS~1\Temp\ammkongb.htm
+Return=SUCCESS
+dwProcessId=3380
+dwThreadId=3384
+#289930000
+CreateProcess
+lpCommandLine=C:\Program Files\Internet Explorer\Iexplore.exe C:\DOCUME~1\ants\LOCALS~1\Temp\ammkongb.htm
+Return=SUCCESS
+dwProcessId=3380
+dwThreadId=3384
+#297440000
+DeleteFile
+fileName=C:\DOCUME~1\ants\LOCALS~1\Temp\ammkongb.htm
+Return=SUCCESS
+#297440000
+DeleteFile
+fileName=C:\DOCUME~1\ants\LOCALS~1\Temp\ammkongb.htm
+Return=SUCCESS
+#297450000
+TerminateProcess
+#297560000
+CreateThread
+dwThreadId=12973912
+Return=SUCCESS
+#297590000
+RegCreateKey
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\0
+Return=0
+#297600000
+RegSetValue
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\0\1601
+type=REG_DWORD
+data=0
+Return=0
+#297610000
+RegCreateKey
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\1
+Return=0
+#297610000
+RegSetValue
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\1\1601
+type=REG_DWORD
+data=0
+Return=0
+#297620000
+RegCreateKey
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\2
+Return=0
+#297630000
+RegSetValue
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\2\1601
+type=REG_DWORD
+data=0
+Return=0
+#297640000
+RegCreateKey
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3
+Return=0
+#297640000
+RegSetValue
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3\1601
+type=REG_DWORD
+data=0
+Return=0
+#297660000
+RegCreateKey
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4
+Return=0
+#297660000
+RegSetValue
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4\1601
+type=REG_DWORD
+data=0
+Return=0
+#297660000
+RegCreateKey
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings
+Return=0
+#297670000
+RegSetValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\GlobalUserOffline
+type=REG_DWORD
+data=0
+Return=0
+#297670000
+RegCreateKey
+hKey=HKEY_USERS\.DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\BrowseNewProcess
+Return=0
+#297670000
+RegSetValue
+hKey=HKEY_USERS\.DEFAULT\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\BrowseNewProcess\BrowseNewProcess
+type=REG_SZ
+data=yes
+Return=0
+#297680000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\IE Setup\Setup\Path
+Return=0
+#297810000
+CreateFile
+hName=C:\DOCUME~1\ants\LOCALS~1\Temp\nekcjcog.htm
+desiredAccess=GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#297810000
+CreateFile
+hName=C:\DOCUME~1\ants\LOCALS~1\Temp\nekcjcog.htm
+desiredAccess=GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#297880000
+CreateFile
+hName=C:\Program
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#297910000
+CreateFile
+hName=C:\Program Files\Internet
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#298920000
+CreateFile
+hName=C:\Program Files\Internet Explorer\IEXPLORE.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#299010000
+CreateFile
+hName=C:\Program Files\Internet Explorer\IEXPLORE.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#300180000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#297840000
+CreateProcessInternal
+lpCommandLine=C:\Program Files\Internet Explorer\Iexplore.exe C:\DOCUME~1\ants\LOCALS~1\Temp\nekcjcog.htm
+Return=SUCCESS
+dwProcessId=3396
+dwThreadId=3400
+#297840000
+CreateProcessInternal
+lpCommandLine=C:\Program Files\Internet Explorer\Iexplore.exe C:\DOCUME~1\ants\LOCALS~1\Temp\nekcjcog.htm
+Return=SUCCESS
+dwProcessId=3396
+dwThreadId=3400
+#297840000
+CreateProcess
+lpCommandLine=C:\Program Files\Internet Explorer\Iexplore.exe C:\DOCUME~1\ants\LOCALS~1\Temp\nekcjcog.htm
+Return=SUCCESS
+dwProcessId=3396
+dwThreadId=3400
+#305300000
+DeleteFile
+fileName=C:\DOCUME~1\ants\LOCALS~1\Temp\nekcjcog.htm
+Return=SUCCESS
+#305300000
+DeleteFile
+fileName=C:\DOCUME~1\ants\LOCALS~1\Temp\nekcjcog.htm
+Return=SUCCESS
+#305350000
+TerminateProcess

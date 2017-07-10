@@ -1,0 +1,255 @@
+2788 malware.exe
+#223160000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\IMM32.DLL
+Return=SUCCESS
+#223960000
+LoadLibrary
+lpFileName=gdi32.dll
+Return=SUCCESS
+#223650000
+LoadLibrary
+lpFileName=LPK.DLL
+Return=SUCCESS
+#224450000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\CriticalSectionTimeout
+Return=0
+#224450000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Ole\RWLockResourceTimeOut
+Return=2
+#224780000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\MediaProperties\PrivateProperties\Joystick\Winmm\wheel
+Return=0
+#225350000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#226200000
+LoadLibrary
+lpFileName=netapi32.dll
+Return=SUCCESS
+#226590000
+CreateFile
+hName=C:\WINDOWS\system32\\drivers\etc\hosts
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#226590000
+CreateFile
+hName=C:\WINDOWS\system32\\drivers\etc\hosts
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#226760000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#226760000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#230240000
+CreateFile
+hName=C:\WINDOWS\system32\wscntfy.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#230330000
+CreateFile
+hName=C:\WINDOWS\system32\wscntfy.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#230720000
+CreateFile
+hName=C:\WINDOWS\system32\rundll32.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#230830000
+CreateFile
+hName=C:\WINDOWS\system32\rundll32.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#232910000
+LoadLibrary
+lpFileName=VERSION.dll
+Return=SUCCESS
+#233000000
+CreateFile
+hName=C:\WINDOWS\system32\net.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#233090000
+CreateFile
+hName=C:\WINDOWS\system32\net.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#234520000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders\Cache
+Return=0
+#234560000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#231980000
+CreateProcessInternal
+lpCommandLine=net stop "Kingsoft AntiVirus Service"
+Return=SUCCESS
+dwProcessId=2804
+dwThreadId=2808
+#231980000
+CreateProcessInternal
+lpCommandLine=net stop "Kingsoft AntiVirus Service"
+Return=SUCCESS
+dwProcessId=2804
+dwThreadId=2808
+#235660000
+CreateFile
+hName=C:\WINDOWS\rundl132.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#235660000
+CreateFile
+hName=C:\WINDOWS\rundl132.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#235900000
+RegCreateKey
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\Windows
+Return=0
+#235940000
+RegSetValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\Windows\load
+type=REG_SZ
+data=C:\WINDOWS\rundl132.exe
+Return=0
+#236000000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#235960000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#236020000
+DeleteFile
+fileName=C:\Documents and Settings\All Users\Desktop\malware.exe.exe
+Return=FAILURE
+#236020000
+DeleteFile
+fileName=C:\Documents and Settings\All Users\Desktop\malware.exe.exe
+Return=FAILURE
+#236070000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#236070000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#236130000
+CreateFile
+hName=C:\WINDOWS\Logo1_.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#236130000
+CreateFile
+hName=C:\WINDOWS\Logo1_.exe
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#237670000
+CreateFile
+hName=C:\DOCUME~1\ants\LOCALS~1\Temp\$$a1.tmp
+desiredAccess=GENERIC_READ 
+creationDisposition=CREATE_NEW
+Return=SUCCESS
+#237830000
+DeleteFile
+fileName=C:\DOCUME~1\ants\LOCALS~1\Temp\$$a1.bat
+Return=FAILURE
+#237830000
+DeleteFile
+fileName=C:\DOCUME~1\ants\LOCALS~1\Temp\$$a1.bat
+Return=FAILURE
+#237840000
+CreateFile
+hName=C:\DOCUME~1\ants\LOCALS~1\Temp\$$a1.bat
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#237840000
+CreateFile
+hName=C:\DOCUME~1\ants\LOCALS~1\Temp\$$a1.bat
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#240720000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#238030000
+CreateProcessInternal
+lpCommandLine=C:\DOCUME~1\ants\LOCALS~1\Temp\$$a1.bat
+Return=SUCCESS
+dwProcessId=2820
+dwThreadId=2824
+#238020000
+CreateProcessInternal
+lpCommandLine=C:\DOCUME~1\ants\LOCALS~1\Temp\$$a1.bat
+Return=SUCCESS
+dwProcessId=2820
+dwThreadId=2824
+#238020000
+CreateProcess
+lpCommandLine=C:\DOCUME~1\ants\LOCALS~1\Temp\$$a1.bat
+Return=SUCCESS
+dwProcessId=2820
+dwThreadId=2824
+#243220000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#241050000
+CreateProcessInternal
+lpCommandLine=C:\WINDOWS\Logo1_.exe
+Return=SUCCESS
+dwProcessId=2828
+dwThreadId=2832
+#241050000
+CreateProcessInternal
+lpCommandLine=C:\WINDOWS\Logo1_.exe
+Return=SUCCESS
+dwProcessId=2828
+dwThreadId=2832
+#241050000
+CreateProcess
+lpCommandLine=C:\WINDOWS\Logo1_.exe
+Return=SUCCESS
+dwProcessId=2828
+dwThreadId=2832
+#243370000
+ExitProcess

@@ -1,0 +1,57 @@
+3196 malware.exe
+#204800000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\IMM32.DLL
+Return=SUCCESS
+#205680000
+LoadLibrary
+lpFileName=gdi32.dll
+Return=SUCCESS
+#205380000
+LoadLibrary
+lpFileName=LPK.DLL
+Return=SUCCESS
+#206930000
+LoadLibrary
+lpFileName=user32.dll
+Return=SUCCESS
+#206970000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#206990000
+LoadLibrary
+lpFileName=msvcrt.dll
+Return=SUCCESS
+#209140000
+LoadLibrary
+lpFileName=ntdll.dll
+Return=SUCCESS
+#212210000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders\Cache
+Return=0
+#212250000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#211590000
+CreateProcessInternal
+lpApplicationName=C:\Documents and Settings\All Users\Desktop\malware.exe
+Return=SUCCESS
+dwProcessId=3216
+dwThreadId=3220
+#211590000
+CreateProcessInternal
+lpApplicationName=C:\Documents and Settings\All Users\Desktop\malware.exe
+Return=SUCCESS
+dwProcessId=3216
+dwThreadId=3220
+#211590000
+CreateProcess
+lpApplicationName=C:\Documents and Settings\All Users\Desktop\malware.exe
+Return=SUCCESS
+dwProcessId=3216
+dwThreadId=3220
+#212680000
+ExitProcess

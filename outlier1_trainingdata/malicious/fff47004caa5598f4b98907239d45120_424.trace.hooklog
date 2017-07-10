@@ -1,0 +1,25 @@
+424 winlogon.exe
+#242500000
+CreateThread
+dwThreadId=12320244
+Return=SUCCESS
+#272520000
+CreateThread
+dwThreadId=12320244
+Return=SUCCESS
+#302940000
+CreateThread
+dwThreadId=12320244
+Return=SUCCESS
+#343020000
+CreateThread
+dwThreadId=12320244
+Return=SUCCESS
+#374240000
+CreateThread
+dwThreadId=12320244
+Return=SUCCESS
+#439100000
+CreateThread
+dwThreadId=12320244
+Return=SUCCESS

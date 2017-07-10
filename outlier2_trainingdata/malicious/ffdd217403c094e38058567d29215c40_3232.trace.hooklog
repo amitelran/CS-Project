@@ -1,0 +1,147 @@
+3232 cmd.exe
+#342750000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\IMM32.DLL
+Return=SUCCESS
+#343670000
+LoadLibrary
+lpFileName=gdi32.dll
+Return=SUCCESS
+#343370000
+LoadLibrary
+lpFileName=LPK.DLL
+Return=SUCCESS
+#343790000
+LoadLibrary
+lpFileName=ADVAPI32.dll
+Return=SUCCESS
+#343920000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Command Processor\DisableUNCCheck
+Return=2
+#343930000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Command Processor\EnableExtensions
+Return=0
+type=REG_DWORD
+data=1
+#343930000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Command Processor\DelayedExpansion
+Return=2
+#343940000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Command Processor\DefaultColor
+Return=0
+type=REG_DWORD
+data=0
+#343940000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Command Processor\CompletionChar
+Return=0
+type=REG_DWORD
+data=64
+#343940000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Command Processor\PathCompletionChar
+Return=0
+type=REG_DWORD
+data=64
+#343940000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Command Processor\AutoRun
+Return=0
+type=REG_SZ
+data=
+#343950000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Command Processor\DisableUNCCheck
+Return=2
+#343960000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Command Processor\EnableExtensions
+Return=0
+type=REG_DWORD
+data=1
+#343960000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Command Processor\DelayedExpansion
+Return=2
+#343960000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Command Processor\DefaultColor
+Return=0
+type=REG_DWORD
+data=0
+#343970000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Command Processor\CompletionChar
+Return=0
+type=REG_DWORD
+data=9
+#343970000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Command Processor\PathCompletionChar
+Return=2
+#343970000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Command Processor\AutoRun
+Return=2
+#345470000
+CreateFile
+hName=C:\DOCUME~1\ants\LOCALS~1\Temp\TLULR.bat
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#345570000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders\Cache
+Return=0
+#345620000
+CreateFile
+hName=C:\DOCUME~1\ants\LOCALS~1\Temp\TLULR.bat
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#347430000
+LoadLibrary
+lpFileName=VERSION.dll
+Return=SUCCESS
+#347570000
+CreateFile
+hName=C:\WINDOWS\system32\reg.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#347650000
+CreateFile
+hName=C:\WINDOWS\system32\reg.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#348760000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#346590000
+CreateProcessInternal
+lpApplicationName=C:\WINDOWS\system32\reg.exe
+lpCommandLine=REG ADD "HKCU\Software\Microsoft\Windows\CurrentVersion\Run" /v "skypee" /t REG_SZ /d "C:\WINDOWS\Skypee\skypee.exe" /f
+Return=SUCCESS
+dwProcessId=3252
+dwThreadId=3256
+#346590000
+CreateProcess
+lpApplicationName=C:\WINDOWS\system32\reg.exe
+lpCommandLine=REG ADD "HKCU\Software\Microsoft\Windows\CurrentVersion\Run" /v "skypee" /t REG_SZ /d "C:\WINDOWS\Skypee\skypee.exe" /f
+Return=SUCCESS
+dwProcessId=3252
+dwThreadId=3256
+#359170000
+CreateFile
+hName=C:\DOCUME~1\ants\LOCALS~1\Temp\TLULR.bat
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#359260000
+ExitProcess

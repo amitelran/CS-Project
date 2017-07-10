@@ -1,0 +1,21 @@
+3360 picture.exe
+#445360000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\IMM32.DLL
+Return=SUCCESS
+#458180000
+LoadLibrary
+lpFileName=gdi32.dll
+Return=SUCCESS
+#452000000
+LoadLibrary
+lpFileName=LPK.DLL
+Return=SUCCESS
+#463430000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#472640000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS

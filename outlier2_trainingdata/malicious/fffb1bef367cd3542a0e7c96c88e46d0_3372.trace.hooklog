@@ -1,0 +1,117 @@
+3372 GcFTJQ.exe
+#474970000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\IMM32.DLL
+Return=SUCCESS
+#475740000
+LoadLibrary
+lpFileName=gdi32.dll
+Return=SUCCESS
+#475440000
+LoadLibrary
+lpFileName=LPK.DLL
+Return=SUCCESS
+#476220000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\CriticalSectionTimeout
+Return=0
+#476230000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Ole\RWLockResourceTimeOut
+Return=2
+#476360000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\Setup\SystemSetupInProgress
+Return=0
+type=REG_DWORD
+data=0
+#477280000
+CreateFile
+hName=C:\WINDOWS\WindowsShell.Manifest
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#477510000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Control Panel\Desktop\SmoothScroll
+Return=2
+#477520000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\EnableBalloonTips
+Return=2
+#477530000
+RegEnumValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\LanguagePack\SURR
+type=REG_DWORD
+data=2
+Return=0
+#476620000
+LoadLibrary
+lpFileName=comctl32.dll
+Return=SUCCESS
+#478320000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Control Panel\Desktop\SmoothScroll
+Return=2
+#478330000
+LoadLibrary
+lpFileName=imm32.dll
+Return=SUCCESS
+#477740000
+LoadLibrary
+lpFileName=comctl32.dll
+Return=SUCCESS
+#479180000
+LoadLibrary
+lpFileName=netapi32.dll
+Return=SUCCESS
+#479870000
+LoadLibrary
+lpFileName=WTSAPI32.dll
+Return=SUCCESS
+#480560000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\winlogon\UserEnvDebugLevel
+Return=2
+#480570000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\winlogon\ChkAccDebugLevel
+Return=2
+#480590000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\ProductOptions\ProductType
+Return=0
+type=REG_SZ
+data=WinNT
+#480710000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders\Personal
+Return=0
+type=REG_EXPAND_SZ
+data=%
+#480710000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders\Local Settings
+Return=0
+type=REG_EXPAND_SZ
+data=%
+#480770000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\winlogon\RsopDebugLevel
+Return=2
+#480770000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\winlogon\UserEnvDebugLevel
+Return=2
+#480770000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\winlogon\RsopLogging
+Return=2
+#480790000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\winlogon\UserEnvDebugLevel
+Return=2
+#480310000
+LoadLibrary
+lpFileName=USERENV.dll
+Return=SUCCESS

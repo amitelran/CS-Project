@@ -140,7 +140,7 @@ def setTracesShingles(traces):
     t0 = time.time()
     totalShingles = 0
     for t in traces:
-        doc = t.get_data_as_string()
+        doc = t.get_api_data_as_string() #t.get_data_as_string()
         shinglesInDoc = set()
         for j in range(len(doc) - settings.shingle_size + 1):
             shingle = doc[j:j + settings.shingle_size]

@@ -1,0 +1,67 @@
+3260 malware.exe
+#266780000
+LoadLibrary
+lpFileName=gdi32.dll
+Return=77f10000
+#266200000
+LoadLibrary
+lpFileName=LPK.DLL
+Return=629c0000
+#267600000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Control Panel\Desktop\SmoothScroll
+Return=2
+#267620000
+LoadLibrary
+lpFileName=imm32.dll
+Return=76390000
+#268340000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\Setup\SystemSetupInProgress
+Return=0
+#269520000
+CreateFile
+hName=C:\WINDOWS\WindowsShell.Manifest
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=4c
+#269840000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Control Panel\Desktop\SmoothScroll
+Return=2
+#269850000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\EnableBalloonTips
+Return=2
+#269860000
+RegEnumValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\LanguagePack\SURR
+Return=0
+type=REG_DWORD
+data=2
+#268690000
+LoadLibrary
+lpFileName=comctl32.dll
+Return=773d0000
+#270180000
+LoadLibrary
+lpFileName=comctl32.dll
+Return=5d090000
+#270430000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\CriticalSectionTimeout
+Return=0
+#270430000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Ole\RWLockResourceTimeOut
+Return=2
+#270860000
+CreateFile
+hName=C:\WINDOWS\system32\OLEACCRC.DLL
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=50
+#271120000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\MediaProperties\PrivateProperties\Joystick\Winmm\wheel
+Return=0

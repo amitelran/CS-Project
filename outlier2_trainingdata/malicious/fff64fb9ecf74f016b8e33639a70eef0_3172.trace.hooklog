@@ -1,0 +1,139 @@
+3172 cmd.exe
+#303000000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\IMM32.DLL
+Return=SUCCESS
+#303960000
+LoadLibrary
+lpFileName=gdi32.dll
+Return=SUCCESS
+#303570000
+LoadLibrary
+lpFileName=LPK.DLL
+Return=SUCCESS
+#304100000
+LoadLibrary
+lpFileName=ADVAPI32.dll
+Return=SUCCESS
+#304220000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Command Processor\DisableUNCCheck
+Return=2
+#304220000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Command Processor\EnableExtensions
+Return=0
+type=REG_DWORD
+data=1
+#304220000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Command Processor\DelayedExpansion
+Return=2
+#304230000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Command Processor\DefaultColor
+Return=0
+type=REG_DWORD
+data=0
+#304230000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Command Processor\CompletionChar
+Return=0
+type=REG_DWORD
+data=64
+#304290000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Command Processor\PathCompletionChar
+Return=0
+type=REG_DWORD
+data=64
+#304290000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Command Processor\AutoRun
+Return=0
+type=REG_SZ
+data=
+#304300000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Command Processor\DisableUNCCheck
+Return=2
+#304300000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Command Processor\EnableExtensions
+Return=0
+type=REG_DWORD
+data=1
+#304300000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Command Processor\DelayedExpansion
+Return=2
+#304310000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Command Processor\DefaultColor
+Return=0
+type=REG_DWORD
+data=0
+#304310000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Command Processor\CompletionChar
+Return=0
+type=REG_DWORD
+data=9
+#304310000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Command Processor\PathCompletionChar
+Return=2
+#304310000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Command Processor\AutoRun
+Return=2
+#305350000
+CreateFile
+hName=c:\$$$$$.bat
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#305400000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders\Cache
+Return=0
+#305450000
+CreateFile
+hName=c:\$$$$$.bat
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#305470000
+CreateFile
+hName=c:\$$$$$.bat
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#305780000
+DeleteFile
+fileName=C:\Documents and Settings\All Users\Desktop\malware.exe
+Return=SUCCESS
+#305900000
+CreateFile
+hName=c:\$$$$$.bat
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#306080000
+CreateFile
+hName=c:\$$$$$.bat
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#306290000
+DeleteFile
+fileName=c:\$$$$$.bat
+Return=SUCCESS
+#306320000
+CreateFile
+hName=c:\$$$$$.bat
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#306410000
+ExitProcess

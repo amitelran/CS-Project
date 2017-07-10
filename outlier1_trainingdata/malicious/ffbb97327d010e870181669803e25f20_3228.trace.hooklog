@@ -1,0 +1,5847 @@
+3228 malware.exe
+#234260000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\IMM32.DLL
+Return=SUCCESS
+#235060000
+LoadLibrary
+lpFileName=gdi32.dll
+Return=SUCCESS
+#234760000
+LoadLibrary
+lpFileName=LPK.DLL
+Return=SUCCESS
+#235530000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\CriticalSectionTimeout
+Return=0
+#235530000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Ole\RWLockResourceTimeOut
+Return=2
+#236510000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#237420000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#237820000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#240670000
+CreateFile
+hName=C:\WINDOWS\WindowsShell.Manifest
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#241020000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Control Panel\Desktop\SmoothScroll
+Return=2
+#241030000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\EnableBalloonTips
+Return=2
+#241040000
+RegEnumValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\LanguagePack\SURR
+type=REG_DWORD
+data=2
+Return=0
+#239800000
+LoadLibrary
+lpFileName=comctl32.dll
+Return=SUCCESS
+#241300000
+RegCreateKey
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings
+Return=0
+#235740000
+LoadLibrary
+lpFileName=wininet.dll
+Return=SUCCESS
+#241330000
+LoadLibrary
+lpFileName=wsock32.dll
+Return=SUCCESS
+#243680000
+LoadLibrary
+lpFileName=user32.dll
+Return=SUCCESS
+#243840000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#244350000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\Setup\SystemSetupInProgress
+Return=0
+type=REG_DWORD
+data=0
+#244650000
+LoadLibrary
+lpFileName=comctl32.dll
+Return=SUCCESS
+#245550000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Control Panel\Desktop\SmoothScroll
+Return=2
+#245560000
+LoadLibrary
+lpFileName=imm32.dll
+Return=SUCCESS
+#244920000
+LoadLibrary
+lpFileName=comctl32.dll
+Return=SUCCESS
+#243910000
+LoadLibrary
+lpFileName=shell32.dll
+Return=SUCCESS
+#247830000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\ServiceCurrent
+Return=0
+type=REG_DWORD
+data=8
+#248670000
+CreateFile
+hName=\\.\pipe\net\NtControlPipe8
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#248710000
+RegCreateKey
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}
+Return=0
+#248760000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\ThisEXE
+type=REG_SZ
+data=c:\documents and settings\all users\desktop\malware.exe
+Return=0
+#248800000
+LoadLibrary
+lpFileName=k2sec.dll
+Return=FAILURE
+#248920000
+LoadLibrary
+lpFileName=ole32w.dll
+Return=FAILURE
+#249030000
+RegDeleteKey
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\ThisEXE
+Return=0
+#249080000
+CreateFile
+hName=c:\windows\mui\rctfd.sys
+desiredAccess=GENERIC_WRITE 
+creationDisposition=OPEN_ALWAYS
+Return=SUCCESS
+#249080000
+CreateFile
+hName=c:\windows\mui\rctfd.sys
+desiredAccess=GENERIC_WRITE 
+creationDisposition=OPEN_ALWAYS
+Return=SUCCESS
+#249150000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\dls
+Return=2
+#249160000
+CreateFile
+hName=c:\documents and settings\all users\desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#249160000
+CreateFile
+hName=c:\documents and settings\all users\desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#249180000
+CreateFile
+hName=c:\documents and settings\all users\desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#249180000
+CopyFile
+lpExistingFileName=c:\documents and settings\all users\desktop\malware.exe
+lpNewFileName=c:\windows\wdfmgr.exe
+Return=SUCCESS
+#249230000
+CreateFile
+hName=c:\windows\wdfmgr.exe
+desiredAccess=GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#249230000
+CreateFile
+hName=c:\windows\wdfmgr.exe
+desiredAccess=GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#249280000
+CreateFile
+hName=c:\windows\wdfmgr.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#249280000
+CreateFile
+hName=c:\windows\wdfmgr.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#249290000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\VerProg
+Return=2
+#249300000
+RegCreateKey
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}
+Return=0
+#249300000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\VerProg
+type=REG_DWORD
+data=159
+Return=0
+#249330000
+RegCreateKey
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+Return=0
+#249340000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\wdfmgr
+type=REG_SZ
+data=c:\windows\wdfmgr.exe
+Return=0
+#249360000
+RegCreateKey
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer\Run
+Return=0
+#249380000
+RegSetValue
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer\Run\wdfmgr
+type=REG_SZ
+data=c:\windows\wdfmgr.exe
+Return=0
+#249390000
+RegCreateKey
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunServices
+Return=0
+#249410000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunServices\wdfmgr
+type=REG_SZ
+data=c:\windows\wdfmgr.exe
+Return=0
+#249420000
+RegCreateKey
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+Return=0
+#249430000
+RegSetValue
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\lsassv
+type=REG_SZ
+data=c:\windows\lsassv.exe
+Return=0
+#249430000
+RegCreateKey
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer\Run
+Return=0
+#249470000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer\Run\msrpc
+type=REG_SZ
+data=c:\windows\msrpc.exe
+Return=0
+#249490000
+RegCreateKey
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wdfmgr
+Return=0
+#249510000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wdfmgr\DependOnGroup
+type=REG_SZ
+data=
+Return=0
+#249530000
+RegCreateKey
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wdfmgr
+Return=0
+#249530000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wdfmgr\DependOnService
+type=REG_SZ
+data=RpcSs
+Return=0
+#249560000
+RegCreateKey
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wdfmgr
+Return=0
+#249560000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wdfmgr\Description
+type=REG_SZ
+data=Optimizes performance of Windows Presentation Foundation (WPF) applications by caching commonly used font data.
+Return=0
+#249600000
+RegCreateKey
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wdfmgr
+Return=0
+#249600000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wdfmgr\DisplayName
+type=REG_SZ
+data=Windows Font Cache
+Return=0
+#249690000
+RegCreateKey
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wdfmgr
+Return=0
+#249700000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wdfmgr\Group
+type=REG_SZ
+data=PlugPlay
+Return=0
+#249720000
+RegCreateKey
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wdfmgr
+Return=0
+#249740000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wdfmgr\ObjectName
+type=REG_SZ
+data=LocalSystem
+Return=0
+#249760000
+RegCreateKey
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wdfmgr
+Return=0
+#249770000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wdfmgr\ImagePath
+type=REG_SZ
+data=c:\windows\wdfmgr.exe
+Return=0
+#249830000
+RegCreateKey
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wdfmgr
+Return=0
+#249840000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wdfmgr\ErrorControl
+type=REG_DWORD
+data=1
+Return=0
+#249870000
+RegCreateKey
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wdfmgr
+Return=0
+#249870000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wdfmgr\PlugPlayServiceType
+type=REG_DWORD
+data=3
+Return=0
+#249880000
+RegCreateKey
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wdfmgr
+Return=0
+#249890000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wdfmgr\Start
+type=REG_DWORD
+data=2
+Return=0
+#249900000
+RegCreateKey
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wdfmgr
+Return=0
+#249900000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wdfmgr\Type
+type=REG_DWORD
+data=288
+Return=0
+#249910000
+CreateFile
+hName=c:\documents and settings\all users\desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#249910000
+CopyFile
+lpExistingFileName=c:\documents and settings\all users\desktop\malware.exe
+lpNewFileName=c:\windows\lsassv.exe
+Return=SUCCESS
+#249960000
+CreateFile
+hName=c:\windows\lsassv.exe
+desiredAccess=GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#249960000
+CreateFile
+hName=c:\windows\lsassv.exe
+desiredAccess=GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#250000000
+CreateFile
+hName=c:\windows\lsassv.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#250000000
+CreateFile
+hName=c:\windows\lsassv.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#250010000
+CreateFile
+hName=c:\documents and settings\all users\desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#250010000
+CopyFile
+lpExistingFileName=c:\documents and settings\all users\desktop\malware.exe
+lpNewFileName=c:\windows\msrpc.exe
+Return=SUCCESS
+#250060000
+CreateFile
+hName=c:\windows\msrpc.exe
+desiredAccess=GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#250060000
+CreateFile
+hName=c:\windows\msrpc.exe
+desiredAccess=GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#250100000
+CreateFile
+hName=c:\windows\msrpc.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#250100000
+CreateFile
+hName=c:\windows\msrpc.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#250130000
+CreateFile
+hName=c:\windows\k2f32.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#250130000
+CreateFile
+hName=c:\windows\k2f32.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#250140000
+CreateFile
+hName=c:\windows\k2f32.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#250150000
+CreateFile
+hName=c:\windows\k2f32.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#250130000
+CopyFile
+lpExistingFileName=c:\windows\k2f32.dll
+lpNewFileName=c:\windows\pool32.dll
+Return=FAILURE
+#250160000
+CreateFile
+hName=c:\windows\k2sec.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#250170000
+CreateFile
+hName=c:\windows\k2sec.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#250180000
+CreateFile
+hName=c:\windows\k2sec.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#250190000
+CreateFile
+hName=c:\windows\k2sec.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#250160000
+CopyFile
+lpExistingFileName=c:\windows\k2sec.dll
+lpNewFileName=c:\windows\ole32w.dll
+Return=FAILURE
+#250210000
+CreateFile
+hName=c:\windows\pool32.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#250210000
+CreateFile
+hName=c:\windows\pool32.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#250220000
+CreateFile
+hName=c:\windows\pool32.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#250240000
+CreateFile
+hName=c:\windows\pool32.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#250210000
+CopyFile
+lpExistingFileName=c:\windows\pool32.dll
+lpNewFileName=c:\windows\k2f32.dll
+Return=FAILURE
+#250250000
+CreateFile
+hName=c:\windows\ole32w.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#250260000
+CreateFile
+hName=c:\windows\ole32w.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#250270000
+CreateFile
+hName=c:\windows\ole32w.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#250280000
+CreateFile
+hName=c:\windows\ole32w.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#250250000
+CopyFile
+lpExistingFileName=c:\windows\ole32w.dll
+lpNewFileName=c:\windows\k2sec.dll
+Return=FAILURE
+#250310000
+CreateFile
+hName=c:\documents and settings\all users\desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#250300000
+CreateFile
+hName=c:\documents and settings\all users\desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#250340000
+CreateFile
+hName=c:\windows\k2f32.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#250340000
+CreateFile
+hName=c:\windows\k2f32.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#250380000
+CreateFile
+hName=c:\windows\k2sec.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#250380000
+CreateFile
+hName=c:\windows\k2sec.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#250420000
+CreateFile
+hName=c:\windows\pool32.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#250410000
+CreateFile
+hName=c:\windows\pool32.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#250450000
+CreateFile
+hName=c:\windows\ole32w.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#250450000
+CreateFile
+hName=c:\windows\ole32w.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#250470000
+CreateFile
+hName=c:\windows\calc.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#250480000
+CreateFile
+hName=c:\windows\calc.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#250490000
+CreateFile
+hName=c:\windows\calc.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#250500000
+CreateFile
+hName=c:\windows\calc.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#250470000
+CopyFile
+lpExistingFileName=c:\windows\calc.exe
+lpNewFileName=c:\windows\calc2.exe
+Return=FAILURE
+#250510000
+CreateFile
+hName=c:\documents and settings\all users\desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#250510000
+CopyFile
+lpExistingFileName=c:\documents and settings\all users\desktop\malware.exe
+lpNewFileName=c:\windows\calc.exe
+Return=SUCCESS
+#250560000
+CreateFile
+hName=c:\windows\calc.exe
+desiredAccess=GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#250560000
+CreateFile
+hName=c:\windows\calc.exe
+desiredAccess=GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#250600000
+CreateFile
+hName=c:\windows\calc.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#250600000
+CreateFile
+hName=c:\windows\calc.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#250620000
+CreateFile
+hName=c:\windows\regedit.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#250620000
+CopyFile
+lpExistingFileName=c:\windows\regedit.exe
+lpNewFileName=c:\windows\regedit2.exe
+Return=SUCCESS
+#250680000
+CreateFile
+hName=c:\windows\regedit2.exe
+desiredAccess=GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#250680000
+CreateFile
+hName=c:\windows\regedit2.exe
+desiredAccess=GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#250700000
+CreateFile
+hName=c:\documents and settings\all users\desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#250700000
+CopyFile
+lpExistingFileName=c:\documents and settings\all users\desktop\malware.exe
+lpNewFileName=c:\windows\regedit.exe
+Return=SUCCESS
+#250980000
+CreateFile
+hName=c:\windows\regedit.exe
+desiredAccess=GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#250980000
+CreateFile
+hName=c:\windows\regedit.exe
+desiredAccess=GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#251060000
+CreateFile
+hName=c:\windows\regedit.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#251060000
+CreateFile
+hName=c:\windows\regedit.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#251110000
+CreateFile
+hName=c:\windows\k2f32.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#251120000
+CreateFile
+hName=c:\windows\k2f32.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#251160000
+CreateFile
+hName=c:\windows\k2f32.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#251170000
+CreateFile
+hName=c:\windows\k2f32.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#251110000
+CopyFile
+lpExistingFileName=c:\windows\k2f32.dll
+lpNewFileName=c:\windows\k2f32.dll
+Return=FAILURE
+#251180000
+CreateFile
+hName=c:\windows\k2sec.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#251220000
+CreateFile
+hName=c:\windows\k2sec.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#251230000
+CreateFile
+hName=c:\windows\k2sec.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#251230000
+CreateFile
+hName=c:\windows\k2sec.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#251180000
+CopyFile
+lpExistingFileName=c:\windows\k2sec.dll
+lpNewFileName=c:\windows\k2sec.dll
+Return=FAILURE
+#251250000
+CreateFile
+hName=c:\windows\pool32.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#251290000
+CreateFile
+hName=c:\windows\pool32.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#251310000
+CreateFile
+hName=c:\windows\pool32.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#251350000
+CreateFile
+hName=c:\windows\pool32.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#251250000
+CopyFile
+lpExistingFileName=c:\windows\pool32.dll
+lpNewFileName=c:\windows\pool32.dll
+Return=FAILURE
+#251360000
+CreateFile
+hName=c:\windows\ole32w.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#251370000
+CreateFile
+hName=c:\windows\ole32w.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#251410000
+CreateFile
+hName=c:\windows\ole32w.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#251410000
+CreateFile
+hName=c:\windows\ole32w.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#251360000
+CopyFile
+lpExistingFileName=c:\windows\ole32w.dll
+lpNewFileName=c:\windows\ole32w.dll
+Return=FAILURE
+#251460000
+CreateFile
+hName=c:\winnt\system32\calc.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#251470000
+CreateFile
+hName=c:\winnt\system32\calc.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#251480000
+CreateFile
+hName=c:\winnt\system32\calc.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#251510000
+CreateFile
+hName=c:\winnt\system32\calc.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#251460000
+CopyFile
+lpExistingFileName=c:\winnt\system32\calc.exe
+lpNewFileName=c:\winnt\system32\calc2.exe
+Return=FAILURE
+#251550000
+CreateFile
+hName=c:\documents and settings\all users\desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#251530000
+CopyFile
+lpExistingFileName=c:\documents and settings\all users\desktop\malware.exe
+lpNewFileName=c:\winnt\system32\calc.exe
+Return=FAILURE
+#251620000
+CreateFile
+hName=c:\winnt\system32\regedit.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#251630000
+CreateFile
+hName=c:\winnt\system32\regedit.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#251640000
+CreateFile
+hName=c:\winnt\system32\regedit.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#251650000
+CreateFile
+hName=c:\winnt\system32\regedit.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#251620000
+CopyFile
+lpExistingFileName=c:\winnt\system32\regedit.exe
+lpNewFileName=c:\winnt\system32\regedit2.exe
+Return=FAILURE
+#251660000
+CreateFile
+hName=c:\documents and settings\all users\desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#251660000
+CopyFile
+lpExistingFileName=c:\documents and settings\all users\desktop\malware.exe
+lpNewFileName=c:\winnt\system32\regedit.exe
+Return=FAILURE
+#251700000
+CreateFile
+hName=c:\windows\k2f32.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#251710000
+CreateFile
+hName=c:\windows\k2f32.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#251710000
+CreateFile
+hName=c:\windows\k2f32.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#251720000
+CreateFile
+hName=c:\windows\k2f32.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#251700000
+CopyFile
+lpExistingFileName=c:\windows\k2f32.dll
+lpNewFileName=c:\winnt\k2f32.dll
+Return=FAILURE
+#251740000
+CreateFile
+hName=c:\windows\k2sec.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#251750000
+CreateFile
+hName=c:\windows\k2sec.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#251760000
+CreateFile
+hName=c:\windows\k2sec.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#251770000
+CreateFile
+hName=c:\windows\k2sec.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#251740000
+CopyFile
+lpExistingFileName=c:\windows\k2sec.dll
+lpNewFileName=c:\winnt\k2sec.dll
+Return=FAILURE
+#251780000
+CreateFile
+hName=c:\windows\pool32.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#251790000
+CreateFile
+hName=c:\windows\pool32.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#251800000
+CreateFile
+hName=c:\windows\pool32.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#251810000
+CreateFile
+hName=c:\windows\pool32.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#251780000
+CopyFile
+lpExistingFileName=c:\windows\pool32.dll
+lpNewFileName=c:\winnt\k2f32.dll
+Return=FAILURE
+#251820000
+CreateFile
+hName=c:\windows\ole32w.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#251830000
+CreateFile
+hName=c:\windows\ole32w.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#251840000
+CreateFile
+hName=c:\windows\ole32w.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#251850000
+CreateFile
+hName=c:\windows\ole32w.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#251820000
+CopyFile
+lpExistingFileName=c:\windows\ole32w.dll
+lpNewFileName=c:\winnt\k2sec.dll
+Return=FAILURE
+#251870000
+CreateFile
+hName=c:\documents and settings\all users\desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#251870000
+CopyFile
+lpExistingFileName=c:\documents and settings\all users\desktop\malware.exe
+lpNewFileName=c:\Documents and Settings\All Users.windows\Главное меню\Программы\Автозагрузка\AdobeLoader.scr
+Return=FAILURE
+#251900000
+CreateFile
+hName=c:\documents and settings\all users\desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#251900000
+CopyFile
+lpExistingFileName=c:\documents and settings\all users\desktop\malware.exe
+lpNewFileName=c:\Documents and Settings\All Users\Главное меню\Программы\Автозагрузка\AdobeLoader.scr
+Return=FAILURE
+#251940000
+CreateFile
+hName=c:\documents and settings\all users\desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#251940000
+CopyFile
+lpExistingFileName=c:\documents and settings\all users\desktop\malware.exe
+lpNewFileName=c:\Documents and Settings\All Users.windows\Start Menu\Programs\Startup\AdobeLoader.scr
+Return=FAILURE
+#252010000
+CreateFile
+hName=c:\documents and settings\all users\desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#252010000
+CopyFile
+lpExistingFileName=c:\documents and settings\all users\desktop\malware.exe
+lpNewFileName=c:\Documents and Settings\All Users\Start Menu\Programs\Startup\AdobeLoader.scr
+Return=SUCCESS
+#252130000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Startup\AdobeLoader.scr
+desiredAccess=GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#252130000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Startup\AdobeLoader.scr
+desiredAccess=GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#252200000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Startup\AdobeLoader.scr
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#252200000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Startup\AdobeLoader.scr
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#252220000
+CreateFile
+hName=c:\documents and settings\all users\desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#252220000
+CopyFile
+lpExistingFileName=c:\documents and settings\all users\desktop\malware.exe
+lpNewFileName=c:\Documents and Settings\All Users.winnt\Главное меню\Программы\Автозагрузка\AdobeLoader.scr
+Return=FAILURE
+#252300000
+CreateFile
+hName=c:\documents and settings\all users\desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#252300000
+CopyFile
+lpExistingFileName=c:\documents and settings\all users\desktop\malware.exe
+lpNewFileName=c:\Documents and Settings\All Users\Главное меню\Программы\Автозагрузка\AdobeLoader.scr
+Return=FAILURE
+#252380000
+CreateFile
+hName=c:\documents and settings\all users\desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#252360000
+CopyFile
+lpExistingFileName=c:\documents and settings\all users\desktop\malware.exe
+lpNewFileName=c:\Documents and Settings\All Users.winnt\Start Menu\Programs\Startup\AdobeLoader.scr
+Return=FAILURE
+#252450000
+CreateFile
+hName=c:\documents and settings\all users\desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#252450000
+CopyFile
+lpExistingFileName=c:\documents and settings\all users\desktop\malware.exe
+lpNewFileName=c:\Documents and Settings\All Users\Start Menu\Programs\Startup\AdobeLoader.scr
+Return=FAILURE
+#252570000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Startup\AdobeLoader.scr
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#252570000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Startup\AdobeLoader.scr
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#252590000
+CreateFile
+hName=c:\documents and settings\all users\desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#252590000
+CopyFile
+lpExistingFileName=c:\documents and settings\all users\desktop\malware.exe
+lpNewFileName=c:\windows\Главное меню\Программы\Автозагрузка\AdobeLoader.scr
+Return=FAILURE
+#252710000
+CreateFile
+hName=c:\windows\Главное меню\Программы\Автозагрузка\AdobeLoader.scr
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#252710000
+CreateFile
+hName=c:\windows\Главное меню\Программы\Автозагрузка\AdobeLoader.scr
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#252740000
+CreateFile
+hName=c:\documents and settings\all users\desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#252740000
+CopyFile
+lpExistingFileName=c:\documents and settings\all users\desktop\malware.exe
+lpNewFileName=c:\windows\Start Menu\Programs\Startup\AdobeLoader.scr
+Return=FAILURE
+#252860000
+CreateFile
+hName=c:\windows\Start Menu\Programs\Startup\AdobeLoader.scr
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#252860000
+CreateFile
+hName=c:\windows\Start Menu\Programs\Startup\AdobeLoader.scr
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#252920000
+CreateThread
+dwThreadId=4324272
+Return=SUCCESS
+#252920000
+CreateThread
+dwThreadId=4324272
+Return=SUCCESS
+#253020000
+RegCreateKey
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}
+Return=0
+#253040000
+CreateFile
+hName=c:\windows\setupiwz.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#253060000
+CreateFile
+hName=c:\windows\setupiwz.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#253070000
+CreateFile
+hName=c:\windows\setupiwz.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#253080000
+CreateFile
+hName=c:\windows\setupiwz.dll
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#253040000
+CopyFile
+lpExistingFileName=c:\windows\setupiwz.dll
+lpNewFileName=c:\windows\unrar.dll
+Return=FAILURE
+#253120000
+RegCreateKey
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile\AuthorizedApplications\List
+Return=0
+#253130000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile\AuthorizedApplications\List\c:\documents and settings\all users\desktop\malware.exe
+type=REG_SZ
+data=c:\documents and settings\all users\desktop\malware.exe:*:Enabled:SMPN
+Return=0
+#253150000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+Return=2
+#253160000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\Scanned
+Return=2
+#253160000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+Return=2
+#255960000
+CreateFile
+hName=c:\AiOLog.txt
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#255960000
+CreateFile
+hName=c:\AiOLog.txt
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#256390000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=1
+Return=0
+#256410000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\AiOLog.txt
+Return=0
+#256640000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=2
+Return=0
+#256670000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\AIO_Runtimes_230\All in One Runtimes\aio-runtimes_v2.3.0.exe
+Return=0
+#256760000
+CreateFile
+hName=c:\AUTOEXEC.BAT
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#256760000
+CreateFile
+hName=c:\AUTOEXEC.BAT
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#256810000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=3
+Return=0
+#256820000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\AUTOEXEC.BAT
+Return=0
+#256900000
+CreateFile
+hName=c:\boot.ini
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#256900000
+CreateFile
+hName=c:\boot.ini
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#256950000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=4
+Return=0
+#256950000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\boot.ini
+Return=0
+#257110000
+CreateFile
+hName=c:\CONFIG.SYS
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#257110000
+CreateFile
+hName=c:\CONFIG.SYS
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#257120000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=5
+Return=0
+#257130000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\CONFIG.SYS
+Return=0
+#257340000
+CreateFile
+hName=c:\Documents and Settings\All Users\Application Data\desktop.ini
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#257340000
+CreateFile
+hName=c:\Documents and Settings\All Users\Application Data\desktop.ini
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#257400000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=6
+Return=0
+#257400000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\desktop.ini
+Return=0
+#257760000
+CreateFile
+hName=c:\Documents and Settings\All Users\Application Data\Microsoft\Crypto\RSA\S-1-5-18\d42cc0c3858a58db2db37658219e6400_38699aa5-d96
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#257760000
+CreateFile
+hName=c:\Documents and Settings\All Users\Application Data\Microsoft\Crypto\RSA\S-1-5-18\d42cc0c3858a58db2db37658219e6400_38699aa5-d96f-4167-a9f0-bb8a1079547e
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#257880000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=7
+Return=0
+#257900000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\Microsoft\Crypto\RSA\S-1-5-18\d42cc0c3858a58db2db37658219e6400_38699aa5-d96f-4167-a9f0-bb8a1079547e
+Return=0
+#258180000
+CreateFile
+hName=c:\Documents and Settings\All Users\Application Data\Microsoft\Media Player\DefaultStore_59R.bin
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#258180000
+CreateFile
+hName=c:\Documents and Settings\All Users\Application Data\Microsoft\Media Player\DefaultStore_59R.bin
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#348240000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=8
+Return=0
+#348250000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\Microsoft\Media Player\DefaultStore_59R.bin
+Return=0
+#348310000
+CreateFile
+hName=c:\Documents and Settings\All Users\Application Data\Microsoft\Media Player\UserMigratedStore_59R.bin
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#348310000
+CreateFile
+hName=c:\Documents and Settings\All Users\Application Data\Microsoft\Media Player\UserMigratedStore_59R.bin
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#392380000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=9
+Return=0
+#392390000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\Microsoft\Media Player\UserMigratedStore_59R.bin
+Return=0
+#392560000
+CreateFile
+hName=c:\Documents and Settings\All Users\Application Data\Microsoft\Network\Connections\Pbk\sharedaccess.ini
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#392560000
+CreateFile
+hName=c:\Documents and Settings\All Users\Application Data\Microsoft\Network\Connections\Pbk\sharedaccess.ini
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#392650000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=10
+Return=0
+#392660000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\Microsoft\Network\Connections\Pbk\sharedaccess.ini
+Return=0
+#392750000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=11
+Return=0
+#392760000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\Microsoft\User Account Pictures\ants.bmp
+Return=0
+#392810000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=12
+Return=0
+#392810000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\Microsoft\User Account Pictures\Default Pictures\airplane.bmp
+Return=0
+#392830000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=13
+Return=0
+#392830000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\Microsoft\User Account Pictures\Default Pictures\astronaut.bmp
+Return=0
+#392850000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=14
+Return=0
+#392850000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\Microsoft\User Account Pictures\Default Pictures\ball.bmp
+Return=0
+#392870000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=15
+Return=0
+#392870000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\Microsoft\User Account Pictures\Default Pictures\beach.bmp
+Return=0
+#392890000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=16
+Return=0
+#392890000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\Microsoft\User Account Pictures\Default Pictures\butterfly.bmp
+Return=0
+#392910000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=17
+Return=0
+#392910000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\Microsoft\User Account Pictures\Default Pictures\car.bmp
+Return=0
+#392920000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=18
+Return=0
+#392930000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\Microsoft\User Account Pictures\Default Pictures\cat.bmp
+Return=0
+#392940000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=19
+Return=0
+#392950000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\Microsoft\User Account Pictures\Default Pictures\chess.bmp
+Return=0
+#392960000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=20
+Return=0
+#392970000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\Microsoft\User Account Pictures\Default Pictures\dirt bike.bmp
+Return=0
+#392980000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=21
+Return=0
+#392990000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\Microsoft\User Account Pictures\Default Pictures\dog.bmp
+Return=0
+#393000000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=22
+Return=0
+#393010000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\Microsoft\User Account Pictures\Default Pictures\drip.bmp
+Return=0
+#393020000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=23
+Return=0
+#393020000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\Microsoft\User Account Pictures\Default Pictures\duck.bmp
+Return=0
+#393040000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=24
+Return=0
+#393040000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\Microsoft\User Account Pictures\Default Pictures\fish.bmp
+Return=0
+#393050000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=25
+Return=0
+#393060000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\Microsoft\User Account Pictures\Default Pictures\frog.bmp
+Return=0
+#393070000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=26
+Return=0
+#393080000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\Microsoft\User Account Pictures\Default Pictures\guitar.bmp
+Return=0
+#393090000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=27
+Return=0
+#393100000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\Microsoft\User Account Pictures\Default Pictures\horses.bmp
+Return=0
+#393110000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=28
+Return=0
+#393120000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\Microsoft\User Account Pictures\Default Pictures\kick.bmp
+Return=0
+#393130000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=29
+Return=0
+#393130000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\Microsoft\User Account Pictures\Default Pictures\lift-off.bmp
+Return=0
+#393150000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=30
+Return=0
+#393150000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\Microsoft\User Account Pictures\Default Pictures\palm tree.bmp
+Return=0
+#393170000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=31
+Return=0
+#393170000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\Microsoft\User Account Pictures\Default Pictures\pink flower.bmp
+Return=0
+#393190000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=32
+Return=0
+#393190000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\Microsoft\User Account Pictures\Default Pictures\red flower.bmp
+Return=0
+#393210000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=33
+Return=0
+#393210000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\Microsoft\User Account Pictures\Default Pictures\skater.bmp
+Return=0
+#393230000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=34
+Return=0
+#393230000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\Microsoft\User Account Pictures\Default Pictures\snowflake.bmp
+Return=0
+#393250000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=35
+Return=0
+#393260000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\Microsoft\User Account Pictures\guest.bmp
+Return=0
+#393350000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=36
+Return=0
+#393370000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\Oracle\Java\installcache\baseimagefam8
+Return=0
+#393420000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=37
+Return=0
+#393430000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\Oracle\Java\javapath\java.exe
+Return=0
+#393440000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=38
+Return=0
+#393450000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\Oracle\Java\javapath\javaw.exe
+Return=0
+#393460000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=39
+Return=0
+#393470000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\Oracle\Java\javapath\javaws.exe
+Return=0
+#393510000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=40
+Return=0
+#393510000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\Oracle\Java\javapath_target_809031\java.exe
+Return=0
+#393530000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=41
+Return=0
+#393530000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\Oracle\Java\javapath_target_809031\javaw.exe
+Return=0
+#393550000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=42
+Return=0
+#393550000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\Oracle\Java\javapath_target_809031\javaws.exe
+Return=0
+#393710000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=43
+Return=0
+#393710000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\Package Cache\{13A4EE12-23EA-3371-91EE-EFB36DDFFF3E}v12.0.21005\packages\vcRuntimeMinimum_x86\cab1.cab
+Return=0
+#393750000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=44
+Return=0
+#393750000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\Package Cache\{13A4EE12-23EA-3371-91EE-EFB36DDFFF3E}v12.0.21005\packages\vcRuntimeMinimum_x86\vc_runtimeMinimum_x86.msi
+Return=0
+#393880000
+CreateFile
+hName=c:\Documents and Settings\All Users\Application Data\Package Cache\{74d0e5db-b326-4dae-a6b2-445b9de1836e}\state.rsm
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#393880000
+CreateFile
+hName=c:\Documents and Settings\All Users\Application Data\Package Cache\{74d0e5db-b326-4dae-a6b2-445b9de1836e}\state.rsm
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#393950000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=45
+Return=0
+#393960000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\Package Cache\{74d0e5db-b326-4dae-a6b2-445b9de1836e}\state.rsm
+Return=0
+#393970000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=46
+Return=0
+#393980000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\Package Cache\{74d0e5db-b326-4dae-a6b2-445b9de1836e}\VC_redist.x86.exe
+Return=0
+#394090000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=47
+Return=0
+#394100000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\Package Cache\{A2563E55-3BEC-3828-8D67-E5E8B9E8B675}v14.0.23026\packages\vcRuntimeMinimum_x86\cab1.cab
+Return=0
+#394110000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=48
+Return=0
+#394120000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\Package Cache\{A2563E55-3BEC-3828-8D67-E5E8B9E8B675}v14.0.23026\packages\vcRuntimeMinimum_x86\vc_runtimeMinimum_x86.msi
+Return=0
+#394240000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=49
+Return=0
+#394250000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\Package Cache\{BE960C1C-7BAD-3DE6-8B1A-2616FE532845}v14.0.23026\packages\vcRuntimeAdditional_x86\cab1.cab
+Return=0
+#394260000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=50
+Return=0
+#394270000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\Package Cache\{BE960C1C-7BAD-3DE6-8B1A-2616FE532845}v14.0.23026\packages\vcRuntimeAdditional_x86\vc_runtimeAdditional_x86.msi
+Return=0
+#394380000
+CreateFile
+hName=c:\Documents and Settings\All Users\Application Data\Package Cache\{f65db027-aff3-4070-886a-0d87064aabb1}\state.rsm
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#394380000
+CreateFile
+hName=c:\Documents and Settings\All Users\Application Data\Package Cache\{f65db027-aff3-4070-886a-0d87064aabb1}\state.rsm
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#394440000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=51
+Return=0
+#394450000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\Package Cache\{f65db027-aff3-4070-886a-0d87064aabb1}\state.rsm
+Return=0
+#394460000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=52
+Return=0
+#394470000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\Package Cache\{f65db027-aff3-4070-886a-0d87064aabb1}\vcredist_x86.exe
+Return=0
+#394580000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=53
+Return=0
+#394580000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\Package Cache\{F8CFEB22-A2E7-3971-9EDA-4B11EDEFC185}v12.0.21005\packages\vcRuntimeAdditional_x86\cab1.cab
+Return=0
+#394600000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=54
+Return=0
+#394600000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\Package Cache\{F8CFEB22-A2E7-3971-9EDA-4B11EDEFC185}v12.0.21005\packages\vcRuntimeAdditional_x86\vc_runtimeAdditional_x86.msi
+Return=0
+#394750000
+CreateFile
+hName=c:\Documents and Settings\All Users\Application Data\Sun\Java\Java Update\jaureglist.xml
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#394750000
+CreateFile
+hName=c:\Documents and Settings\All Users\Application Data\Sun\Java\Java Update\jaureglist.xml
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#394780000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=55
+Return=0
+#394780000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Application Data\Sun\Java\Java Update\jaureglist.xml
+Return=0
+#394850000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=56
+Return=0
+#394860000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Desktop\malware.exe
+Return=0
+#394940000
+CreateFile
+hName=c:\Documents and Settings\All Users\Documents\desktop.ini
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#394930000
+CreateFile
+hName=c:\Documents and Settings\All Users\Documents\desktop.ini
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#394960000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=57
+Return=0
+#394970000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Documents\desktop.ini
+Return=0
+#395030000
+CreateFile
+hName=c:\Documents and Settings\All Users\Documents\My Music\Desktop.ini
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#395030000
+CreateFile
+hName=c:\Documents and Settings\All Users\Documents\My Music\Desktop.ini
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#395070000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=58
+Return=0
+#395070000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Documents\My Music\Desktop.ini
+Return=0
+#395200000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=59
+Return=0
+#395200000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Documents\My Music\Sample Music\Beethoven's Symphony No. 9 (Scherzo).wma
+Return=0
+#395240000
+CreateFile
+hName=c:\Documents and Settings\All Users\Documents\My Music\Sample Music\desktop.ini
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#395240000
+CreateFile
+hName=c:\Documents and Settings\All Users\Documents\My Music\Sample Music\desktop.ini
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#395270000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=60
+Return=0
+#395280000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Documents\My Music\Sample Music\desktop.ini
+Return=0
+#395290000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=61
+Return=0
+#395300000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Documents\My Music\Sample Music\New Stories (Highway Blues).wma
+Return=0
+#395410000
+CreateFile
+hName=c:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\0982C40C\Plylst1.wpl
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#395410000
+CreateFile
+hName=c:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\0982C40C\Plylst1.wpl
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#395500000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=62
+Return=0
+#395510000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\0982C40C\Plylst1.wpl
+Return=0
+#395550000
+CreateFile
+hName=c:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\0982C40C\Plylst10.wpl
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#395550000
+CreateFile
+hName=c:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\0982C40C\Plylst10.wpl
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#395660000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=63
+Return=0
+#395670000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\0982C40C\Plylst10.wpl
+Return=0
+#395800000
+CreateFile
+hName=c:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\0982C40C\Plylst11.wpl
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#395800000
+CreateFile
+hName=c:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\0982C40C\Plylst11.wpl
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#395890000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=64
+Return=0
+#395900000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\0982C40C\Plylst11.wpl
+Return=0
+#395940000
+CreateFile
+hName=c:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\0982C40C\Plylst12.wpl
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#395940000
+CreateFile
+hName=c:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\0982C40C\Plylst12.wpl
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#396050000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=65
+Return=0
+#396060000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\0982C40C\Plylst12.wpl
+Return=0
+#396110000
+CreateFile
+hName=c:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\0982C40C\Plylst13.wpl
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#396100000
+CreateFile
+hName=c:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\0982C40C\Plylst13.wpl
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#396170000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=66
+Return=0
+#396180000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\0982C40C\Plylst13.wpl
+Return=0
+#396230000
+CreateFile
+hName=c:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\0982C40C\Plylst14.wpl
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#396230000
+CreateFile
+hName=c:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\0982C40C\Plylst14.wpl
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#396300000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=67
+Return=0
+#396310000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\0982C40C\Plylst14.wpl
+Return=0
+#396350000
+CreateFile
+hName=c:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\0982C40C\Plylst15.wpl
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#396350000
+CreateFile
+hName=c:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\0982C40C\Plylst15.wpl
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#396420000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=68
+Return=0
+#396430000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\0982C40C\Plylst15.wpl
+Return=0
+#396480000
+CreateFile
+hName=c:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\0982C40C\Plylst2.wpl
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#396480000
+CreateFile
+hName=c:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\0982C40C\Plylst2.wpl
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#396570000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=69
+Return=0
+#396580000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\0982C40C\Plylst2.wpl
+Return=0
+#396620000
+CreateFile
+hName=c:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\0982C40C\Plylst3.wpl
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#396620000
+CreateFile
+hName=c:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\0982C40C\Plylst3.wpl
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#396730000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=70
+Return=0
+#396740000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\0982C40C\Plylst3.wpl
+Return=0
+#396780000
+CreateFile
+hName=c:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\0982C40C\Plylst4.wpl
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#396780000
+CreateFile
+hName=c:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\0982C40C\Plylst4.wpl
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#396930000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=71
+Return=0
+#396940000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\0982C40C\Plylst4.wpl
+Return=0
+#396990000
+CreateFile
+hName=c:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\0982C40C\Plylst5.wpl
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#396980000
+CreateFile
+hName=c:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\0982C40C\Plylst5.wpl
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#397110000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=72
+Return=0
+#397110000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\0982C40C\Plylst5.wpl
+Return=0
+#397160000
+CreateFile
+hName=c:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\0982C40C\Plylst6.wpl
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#397160000
+CreateFile
+hName=c:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\0982C40C\Plylst6.wpl
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#397260000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=73
+Return=0
+#397270000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\0982C40C\Plylst6.wpl
+Return=0
+#397320000
+CreateFile
+hName=c:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\0982C40C\Plylst7.wpl
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#397310000
+CreateFile
+hName=c:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\0982C40C\Plylst7.wpl
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#397400000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=74
+Return=0
+#397400000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\0982C40C\Plylst7.wpl
+Return=0
+#397450000
+CreateFile
+hName=c:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\0982C40C\Plylst8.wpl
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#397450000
+CreateFile
+hName=c:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\0982C40C\Plylst8.wpl
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#397540000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=75
+Return=0
+#397540000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\0982C40C\Plylst8.wpl
+Return=0
+#397590000
+CreateFile
+hName=c:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\0982C40C\Plylst9.wpl
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#397590000
+CreateFile
+hName=c:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\0982C40C\Plylst9.wpl
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#397660000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=76
+Return=0
+#397670000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Documents\My Music\Sample Playlists\0982C40C\Plylst9.wpl
+Return=0
+#397760000
+CreateFile
+hName=c:\Documents and Settings\All Users\Documents\My Pictures\Desktop.ini
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#397750000
+CreateFile
+hName=c:\Documents and Settings\All Users\Documents\My Pictures\Desktop.ini
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#397790000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=77
+Return=0
+#397790000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Documents\My Pictures\Desktop.ini
+Return=0
+#397840000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=78
+Return=0
+#397840000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Documents\My Pictures\Sample Pictures\Blue hills.jpg
+Return=0
+#397880000
+CreateFile
+hName=c:\Documents and Settings\All Users\Documents\My Pictures\Sample Pictures\desktop.ini
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#397880000
+CreateFile
+hName=c:\Documents and Settings\All Users\Documents\My Pictures\Sample Pictures\desktop.ini
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#397910000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=79
+Return=0
+#397910000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Documents\My Pictures\Sample Pictures\desktop.ini
+Return=0
+#397920000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=80
+Return=0
+#397930000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Documents\My Pictures\Sample Pictures\Sunset.jpg
+Return=0
+#397940000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=81
+Return=0
+#397950000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Documents\My Pictures\Sample Pictures\Water lilies.jpg
+Return=0
+#397960000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=82
+Return=0
+#397970000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Documents\My Pictures\Sample Pictures\Winter.jpg
+Return=0
+#398050000
+CreateFile
+hName=c:\Documents and Settings\All Users\Documents\My Videos\Desktop.ini
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#398050000
+CreateFile
+hName=c:\Documents and Settings\All Users\Documents\My Videos\Desktop.ini
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#398080000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=83
+Return=0
+#398080000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Documents\My Videos\Desktop.ini
+Return=0
+#398160000
+CreateFile
+hName=c:\Documents and Settings\All Users\DRM\drmv2.lic
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#398160000
+CreateFile
+hName=c:\Documents and Settings\All Users\DRM\drmv2.lic
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#398280000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=84
+Return=0
+#398290000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\DRM\drmv2.lic
+Return=0
+#398330000
+CreateFile
+hName=c:\Documents and Settings\All Users\DRM\drmv2.sst
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#398330000
+CreateFile
+hName=c:\Documents and Settings\All Users\DRM\drmv2.sst
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#398450000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=85
+Return=0
+#398450000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\DRM\drmv2.sst
+Return=0
+#398560000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\desktop.ini
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#398560000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\desktop.ini
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#398600000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=86
+Return=0
+#398610000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\desktop.ini
+Return=0
+#398750000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\Accessibility\Accessibility Wizard.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#398740000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\Accessibility\Accessibility Wizard.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#398860000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=87
+Return=0
+#398870000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\Accessibility\Accessibility Wizard.lnk
+Return=0
+#398910000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\Accessibility\desktop.ini
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#398910000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\Accessibility\desktop.ini
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#398940000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=88
+Return=0
+#398940000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\Accessibility\desktop.ini
+Return=0
+#398990000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\Calculator.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#398990000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\Calculator.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#399100000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=89
+Return=0
+#399110000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\Calculator.lnk
+Return=0
+#399180000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\Communications\desktop.ini
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#399180000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\Communications\desktop.ini
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#399230000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=90
+Return=0
+#399230000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\Communications\desktop.ini
+Return=0
+#399270000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\Communications\HyperTerminal.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#399270000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\Communications\HyperTerminal.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#399350000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=91
+Return=0
+#399350000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\Communications\HyperTerminal.lnk
+Return=0
+#399400000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\Communications\Network Connections.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#399400000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\Communications\Network Connections.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#399530000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=92
+Return=0
+#399540000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\Communications\Network Connections.lnk
+Return=0
+#399590000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\Communications\Network Setup Wizard.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#399590000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\Communications\Network Setup Wizard.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#399710000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=93
+Return=0
+#399710000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\Communications\Network Setup Wizard.lnk
+Return=0
+#399770000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\Communications\New Connection Wizard.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#399770000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\Communications\New Connection Wizard.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#399900000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=94
+Return=0
+#399900000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\Communications\New Connection Wizard.lnk
+Return=0
+#399950000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\Communications\Wireless Network Setup Wizard.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#399950000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\Communications\Wireless Network Setup Wizard.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#400080000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=95
+Return=0
+#400080000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\Communications\Wireless Network Setup Wizard.lnk
+Return=0
+#400130000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\desktop.ini
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#400130000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\desktop.ini
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#400160000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=96
+Return=0
+#400170000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\desktop.ini
+Return=0
+#400240000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\Entertainment\desktop.ini
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#400240000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\Entertainment\desktop.ini
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#400270000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=97
+Return=0
+#400290000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\Entertainment\desktop.ini
+Return=0
+#400340000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\Entertainment\Sound Recorder.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#400340000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\Entertainment\Sound Recorder.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#400470000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=98
+Return=0
+#400480000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\Entertainment\Sound Recorder.lnk
+Return=0
+#400530000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\Entertainment\Volume Control.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#400520000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\Entertainment\Volume Control.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#400640000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=99
+Return=0
+#400650000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\Entertainment\Volume Control.lnk
+Return=0
+#400720000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\Paint.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#400720000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\Paint.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#400830000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=100
+Return=0
+#400840000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\Paint.lnk
+Return=0
+#400880000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\Remote Desktop Connection.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#400880000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\Remote Desktop Connection.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#401000000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=101
+Return=0
+#401000000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\Remote Desktop Connection.lnk
+Return=0
+#401080000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\System Tools\Backup.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#401080000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\System Tools\Backup.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#401190000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=102
+Return=0
+#401200000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\System Tools\Backup.lnk
+Return=0
+#401250000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\System Tools\Character Map.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#401250000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\System Tools\Character Map.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#401370000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=103
+Return=0
+#401370000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\System Tools\Character Map.lnk
+Return=0
+#401410000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\System Tools\desktop.ini
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#401410000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\System Tools\desktop.ini
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#401480000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=104
+Return=0
+#401490000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\System Tools\desktop.ini
+Return=0
+#401540000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\System Tools\Disk Cleanup.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#401540000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\System Tools\Disk Cleanup.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#401650000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=105
+Return=0
+#401660000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\System Tools\Disk Cleanup.lnk
+Return=0
+#401710000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\System Tools\Disk Defragmenter.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#401710000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\System Tools\Disk Defragmenter.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#401820000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=106
+Return=0
+#401830000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\System Tools\Disk Defragmenter.lnk
+Return=0
+#401890000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\System Tools\Files and Settings Transfer Wizard.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#401880000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\System Tools\Files and Settings Transfer Wizard.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#402010000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=107
+Return=0
+#402010000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\System Tools\Files and Settings Transfer Wizard.lnk
+Return=0
+#402060000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\System Tools\Scheduled Tasks.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#402060000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\System Tools\Scheduled Tasks.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#402190000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=108
+Return=0
+#402200000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\System Tools\Scheduled Tasks.lnk
+Return=0
+#402240000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\System Tools\Security Center.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#402240000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\System Tools\Security Center.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#402360000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=109
+Return=0
+#402360000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\System Tools\Security Center.lnk
+Return=0
+#402410000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\System Tools\System Information.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#402410000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\System Tools\System Information.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#402500000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=110
+Return=0
+#402510000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\System Tools\System Information.lnk
+Return=0
+#402560000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\System Tools\System Restore.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#402560000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\System Tools\System Restore.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#402680000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=111
+Return=0
+#402680000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\System Tools\System Restore.lnk
+Return=0
+#402740000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\WordPad.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#402740000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\WordPad.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#402810000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=112
+Return=0
+#402820000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Accessories\WordPad.lnk
+Return=0
+#402900000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Administrative Tools\Component Services.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#402900000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Administrative Tools\Component Services.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#403020000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=113
+Return=0
+#403030000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Administrative Tools\Component Services.lnk
+Return=0
+#403070000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Administrative Tools\Computer Management.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#403070000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Administrative Tools\Computer Management.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#403190000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=114
+Return=0
+#403190000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Administrative Tools\Computer Management.lnk
+Return=0
+#403240000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Administrative Tools\Data Sources (ODBC).lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#403240000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Administrative Tools\Data Sources (ODBC).lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#403370000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=115
+Return=0
+#403380000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Administrative Tools\Data Sources (ODBC).lnk
+Return=0
+#403420000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Administrative Tools\desktop.ini
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#403420000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Administrative Tools\desktop.ini
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#403470000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=116
+Return=0
+#403480000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Administrative Tools\desktop.ini
+Return=0
+#403530000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Administrative Tools\Event Viewer.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#403530000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Administrative Tools\Event Viewer.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#403700000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=117
+Return=0
+#403710000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Administrative Tools\Event Viewer.lnk
+Return=0
+#403750000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Administrative Tools\Local Security Policy.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#403750000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Administrative Tools\Local Security Policy.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#403870000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=118
+Return=0
+#403880000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Administrative Tools\Local Security Policy.lnk
+Return=0
+#403930000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Administrative Tools\Performance.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#403930000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Administrative Tools\Performance.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#404040000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=119
+Return=0
+#404050000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Administrative Tools\Performance.lnk
+Return=0
+#404090000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Administrative Tools\Services.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#404090000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Administrative Tools\Services.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#404210000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=120
+Return=0
+#404210000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Administrative Tools\Services.lnk
+Return=0
+#404260000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\desktop.ini
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#404260000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\desktop.ini
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#404290000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=121
+Return=0
+#404290000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\desktop.ini
+Return=0
+#404360000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Games\desktop.ini
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#404360000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Games\desktop.ini
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#404430000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=122
+Return=0
+#404430000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Games\desktop.ini
+Return=0
+#404480000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Games\Freecell.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#404480000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Games\Freecell.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#404590000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=123
+Return=0
+#404600000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Games\Freecell.lnk
+Return=0
+#404650000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Games\Hearts.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#404640000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Games\Hearts.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#404760000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=124
+Return=0
+#404760000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Games\Hearts.lnk
+Return=0
+#404810000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Games\Internet Backgammon.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#404800000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Games\Internet Backgammon.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#404880000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=125
+Return=0
+#404880000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Games\Internet Backgammon.lnk
+Return=0
+#404930000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Games\Internet Checkers.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#404930000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Games\Internet Checkers.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#405010000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=126
+Return=0
+#405020000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Games\Internet Checkers.lnk
+Return=0
+#405060000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Games\Internet Hearts.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#405060000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Games\Internet Hearts.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#405140000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=127
+Return=0
+#405140000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Games\Internet Hearts.lnk
+Return=0
+#405190000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Games\Internet Reversi.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#405190000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Games\Internet Reversi.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#405260000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=128
+Return=0
+#405270000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Games\Internet Reversi.lnk
+Return=0
+#405320000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Games\Internet Spades.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#405320000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Games\Internet Spades.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#405400000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=129
+Return=0
+#405400000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Games\Internet Spades.lnk
+Return=0
+#405440000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Games\Minesweeper.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#405440000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Games\Minesweeper.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#405560000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=130
+Return=0
+#405560000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Games\Minesweeper.lnk
+Return=0
+#405620000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Games\Pinball.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#405620000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Games\Pinball.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#405720000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=131
+Return=0
+#405720000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Games\Pinball.lnk
+Return=0
+#405770000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Games\Solitaire.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#405770000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Games\Solitaire.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#405880000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=132
+Return=0
+#405880000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Games\Solitaire.lnk
+Return=0
+#405930000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Games\Spider Solitaire.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#405930000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Games\Spider Solitaire.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#406040000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=133
+Return=0
+#406050000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Games\Spider Solitaire.lnk
+Return=0
+#406120000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Java\About Java.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#406120000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Java\About Java.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#406250000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=134
+Return=0
+#406250000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Java\About Java.lnk
+Return=0
+#406300000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Java\Check For Updates.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#406300000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Java\Check For Updates.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#406430000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=135
+Return=0
+#406430000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Java\Check For Updates.lnk
+Return=0
+#406490000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Java\Configure Java.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#406480000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Java\Configure Java.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#406610000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=136
+Return=0
+#406610000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Java\Configure Java.lnk
+Return=0
+#406650000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Java\Get Help.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#406650000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Java\Get Help.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#406750000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=137
+Return=0
+#406750000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Java\Get Help.lnk
+Return=0
+#406800000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Java\Visit Java.com.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#406800000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Java\Visit Java.com.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#406890000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=138
+Return=0
+#406900000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Java\Visit Java.com.lnk
+Return=0
+#406970000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Microsoft Silverlight\Microsoft Silverlight.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#406970000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Microsoft Silverlight\Microsoft Silverlight.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#407110000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=139
+Return=0
+#407120000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Microsoft Silverlight\Microsoft Silverlight.lnk
+Return=0
+#407160000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\MSN.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#407160000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\MSN.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#407340000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=140
+Return=0
+#407340000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\MSN.lnk
+Return=0
+#407410000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Startup\AdobeLoader.scr
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#407410000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Startup\AdobeLoader.scr
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#419690000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=141
+Return=0
+#419700000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Startup\AdobeLoader.scr
+Return=0
+#419740000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Startup\desktop.ini
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#419740000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Startup\desktop.ini
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#419780000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=142
+Return=0
+#419790000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Startup\desktop.ini
+Return=0
+#419840000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Windows Messenger.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#419840000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Windows Messenger.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#419900000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=143
+Return=0
+#419910000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Windows Messenger.lnk
+Return=0
+#419950000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Windows Movie Maker.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#419950000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Windows Movie Maker.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#420030000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=144
+Return=0
+#420040000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Windows Movie Maker.lnk
+Return=0
+#420120000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\WinPcap\Uninstall WinPcap 4.1.3.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#420120000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\WinPcap\Uninstall WinPcap 4.1.3.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#420170000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=145
+Return=0
+#420180000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\WinPcap\Uninstall WinPcap 4.1.3.lnk
+Return=0
+#420220000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\WinPcap\WinPcap Web Site.url
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#420220000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\WinPcap\WinPcap Web Site.url
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#420240000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=146
+Return=0
+#420250000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\WinPcap\WinPcap Web Site.url
+Return=0
+#420300000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Wireshark.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#420300000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Programs\Wireshark.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#420410000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=147
+Return=0
+#420420000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Programs\Wireshark.lnk
+Return=0
+#420470000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Set Program Access and Defaults.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#420470000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Set Program Access and Defaults.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#420600000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=148
+Return=0
+#420600000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Set Program Access and Defaults.lnk
+Return=0
+#420640000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Windows Catalog.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#420640000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Windows Catalog.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#420690000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=149
+Return=0
+#420690000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Windows Catalog.lnk
+Return=0
+#420740000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Windows Update.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#420740000
+CreateFile
+hName=c:\Documents and Settings\All Users\Start Menu\Windows Update.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#420850000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=150
+Return=0
+#420860000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\All Users\Start Menu\Windows Update.lnk
+Return=0
+#420990000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\desktop.ini
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#420990000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\desktop.ini
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#421020000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=151
+Return=0
+#421030000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Application Data\desktop.ini
+Return=0
+#421330000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\Content\135BD6A358680A7BF1CCEC7C0172393D
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#421330000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\Content\135BD6A358680A7BF1CCEC7C0172393D
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#421490000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=152
+Return=0
+#421490000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\Content\135BD6A358680A7BF1CCEC7C0172393D
+Return=0
+#421550000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\Content\2BF68F4714092295550497DD56F57004
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#421540000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\Content\2BF68F4714092295550497DD56F57004
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#421570000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=153
+Return=0
+#421580000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\Content\2BF68F4714092295550497DD56F57004
+Return=0
+#421630000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\Content\2CBA778EDE392869AE757635237D9DDF
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#421630000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\Content\2CBA778EDE392869AE757635237D9DDF
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#421980000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=154
+Return=0
+#421990000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\Content\2CBA778EDE392869AE757635237D9DDF
+Return=0
+#422040000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\Content\3130B1871A126520A8C47861EFE3ED4D
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#422040000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\Content\3130B1871A126520A8C47861EFE3ED4D
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#422090000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=155
+Return=0
+#422100000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\Content\3130B1871A126520A8C47861EFE3ED4D
+Return=0
+#422150000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\Content\40C68D5626484A90937F0752C8B950AB
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#422150000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\Content\40C68D5626484A90937F0752C8B950AB
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#422210000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=156
+Return=0
+#422210000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\Content\40C68D5626484A90937F0752C8B950AB
+Return=0
+#422260000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\Content\696F3DE637E6DE85B458996D49D759AD
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#422260000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\Content\696F3DE637E6DE85B458996D49D759AD
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#422340000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=157
+Return=0
+#422340000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\Content\696F3DE637E6DE85B458996D49D759AD
+Return=0
+#422390000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\Content\7396C420A8E1BC1DA97F1AF0D10BAD21
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#422390000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\Content\7396C420A8E1BC1DA97F1AF0D10BAD21
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#422450000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=158
+Return=0
+#422460000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\Content\7396C420A8E1BC1DA97F1AF0D10BAD21
+Return=0
+#422510000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\Content\7B2238AACCEDC3F1FFE8E7EB5F575EC9
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#422510000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\Content\7B2238AACCEDC3F1FFE8E7EB5F575EC9
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#422580000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=159
+Return=0
+#422580000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\Content\7B2238AACCEDC3F1FFE8E7EB5F575EC9
+Return=0
+#422630000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\Content\8DFDF057024880D7A081AFBF6D26B92F
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#422630000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\Content\8DFDF057024880D7A081AFBF6D26B92F
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#422690000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=160
+Return=0
+#422700000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\Content\8DFDF057024880D7A081AFBF6D26B92F
+Return=0
+#422780000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\Content\94308059B57B3142E455B38A6EB92015
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#422770000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\Content\94308059B57B3142E455B38A6EB92015
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#425730000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=161
+Return=0
+#425740000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\Content\94308059B57B3142E455B38A6EB92015
+Return=0
+#425790000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\Content\ECF3006D44DA211141391220EE5049F4
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#425780000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\Content\ECF3006D44DA211141391220EE5049F4
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#427180000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=162
+Return=0
+#427190000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\Content\ECF3006D44DA211141391220EE5049F4
+Return=0
+#427240000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\Content\F90F18257CBB4D84216AC1E1F3BB2C76
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#427240000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\Content\F90F18257CBB4D84216AC1E1F3BB2C76
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#427300000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=163
+Return=0
+#427310000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\Content\F90F18257CBB4D84216AC1E1F3BB2C76
+Return=0
+#427390000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\MetaData\135BD6A358680A7BF1CCEC7C0172393D
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#427390000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\MetaData\135BD6A358680A7BF1CCEC7C0172393D
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#427430000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=164
+Return=0
+#427430000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\MetaData\135BD6A358680A7BF1CCEC7C0172393D
+Return=0
+#427480000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\MetaData\2BF68F4714092295550497DD56F57004
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#427480000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\MetaData\2BF68F4714092295550497DD56F57004
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#427520000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=165
+Return=0
+#427530000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\MetaData\2BF68F4714092295550497DD56F57004
+Return=0
+#427570000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\MetaData\2CBA778EDE392869AE757635237D9DDF
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#427570000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\MetaData\2CBA778EDE392869AE757635237D9DDF
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#427610000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=166
+Return=0
+#427620000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\MetaData\2CBA778EDE392869AE757635237D9DDF
+Return=0
+#427670000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\MetaData\3130B1871A126520A8C47861EFE3ED4D
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#427670000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\MetaData\3130B1871A126520A8C47861EFE3ED4D
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#427700000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=167
+Return=0
+#427710000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\MetaData\3130B1871A126520A8C47861EFE3ED4D
+Return=0
+#427760000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\MetaData\40C68D5626484A90937F0752C8B950AB
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#427760000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\MetaData\40C68D5626484A90937F0752C8B950AB
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#427790000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=168
+Return=0
+#427790000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\MetaData\40C68D5626484A90937F0752C8B950AB
+Return=0
+#427840000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\MetaData\696F3DE637E6DE85B458996D49D759AD
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#427840000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\MetaData\696F3DE637E6DE85B458996D49D759AD
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#427880000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=169
+Return=0
+#427880000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\MetaData\696F3DE637E6DE85B458996D49D759AD
+Return=0
+#427930000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\MetaData\7396C420A8E1BC1DA97F1AF0D10BAD21
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#427930000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\MetaData\7396C420A8E1BC1DA97F1AF0D10BAD21
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#427970000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=170
+Return=0
+#427970000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\MetaData\7396C420A8E1BC1DA97F1AF0D10BAD21
+Return=0
+#428020000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\MetaData\7B2238AACCEDC3F1FFE8E7EB5F575EC9
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#428020000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\MetaData\7B2238AACCEDC3F1FFE8E7EB5F575EC9
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#428060000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=171
+Return=0
+#428080000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\MetaData\7B2238AACCEDC3F1FFE8E7EB5F575EC9
+Return=0
+#428130000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\MetaData\8DFDF057024880D7A081AFBF6D26B92F
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#428130000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\MetaData\8DFDF057024880D7A081AFBF6D26B92F
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#428180000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=172
+Return=0
+#428190000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\MetaData\8DFDF057024880D7A081AFBF6D26B92F
+Return=0
+#428240000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\MetaData\94308059B57B3142E455B38A6EB92015
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#428240000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\MetaData\94308059B57B3142E455B38A6EB92015
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#428280000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=173
+Return=0
+#428280000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\MetaData\94308059B57B3142E455B38A6EB92015
+Return=0
+#428340000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\MetaData\ECF3006D44DA211141391220EE5049F4
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#428330000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\MetaData\ECF3006D44DA211141391220EE5049F4
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#428360000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=174
+Return=0
+#428370000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\MetaData\ECF3006D44DA211141391220EE5049F4
+Return=0
+#428420000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\MetaData\F90F18257CBB4D84216AC1E1F3BB2C76
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#428420000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\MetaData\F90F18257CBB4D84216AC1E1F3BB2C76
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#428460000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=175
+Return=0
+#428460000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Application Data\Microsoft\CryptnetUrlCache\MetaData\F90F18257CBB4D84216AC1E1F3BB2C76
+Return=0
+#428720000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\Crypto\RSA\S-1-5-21-448539723-115176313-1177238915-1003\83aa4cc77f591d
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#428700000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\Crypto\RSA\S-1-5-21-448539723-115176313-1177238915-1003\83aa4cc77f591dfc2374580bbd95f6ba_38699aa5-d96f-4167-a9f0-bb8a1079547e
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#428770000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=176
+Return=0
+#428770000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Application Data\Microsoft\Crypto\RSA\S-1-5-21-448539723-115176313-1177238915-1003\83aa4cc77f591dfc2374580bbd95f6ba_38699aa5-d96f-4167-a9f0-bb8a1079547e
+Return=0
+#428990000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\IMJP8_1\imjp81u.dic
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#428990000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\IMJP8_1\imjp81u.dic
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#432930000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=177
+Return=0
+#432940000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Application Data\Microsoft\IMJP8_1\imjp81u.dic
+Return=0
+#433030000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\Internet Explorer\brndlog.bak
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#433030000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\Internet Explorer\brndlog.bak
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#433060000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=178
+Return=0
+#433070000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Application Data\Microsoft\Internet Explorer\brndlog.bak
+Return=0
+#433110000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\Internet Explorer\brndlog.txt
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#433110000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\Internet Explorer\brndlog.txt
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#433770000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=179
+Return=0
+#433780000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Application Data\Microsoft\Internet Explorer\brndlog.txt
+Return=0
+#433830000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\Internet Explorer\Desktop.htt
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#433830000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\Internet Explorer\Desktop.htt
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#434000000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=180
+Return=0
+#434010000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Application Data\Microsoft\Internet Explorer\Desktop.htt
+Return=0
+#434080000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\Internet Explorer\Quick Launch\desktop.ini
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#434080000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\Internet Explorer\Quick Launch\desktop.ini
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#434110000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=181
+Return=0
+#434120000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Application Data\Microsoft\Internet Explorer\Quick Launch\desktop.ini
+Return=0
+#434160000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\Internet Explorer\Quick Launch\Launch Internet Explorer Browser.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#434160000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\Internet Explorer\Quick Launch\Launch Internet Explorer Browser.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#434240000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=182
+Return=0
+#434240000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Application Data\Microsoft\Internet Explorer\Quick Launch\Launch Internet Explorer Browser.lnk
+Return=0
+#434300000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\Internet Explorer\Quick Launch\Show Desktop.scf
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#434300000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\Internet Explorer\Quick Launch\Show Desktop.scf
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#434320000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=183
+Return=0
+#434330000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Application Data\Microsoft\Internet Explorer\Quick Launch\Show Desktop.scf
+Return=0
+#434390000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\Internet Explorer\Quick Launch\Wireshark.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#434390000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\Internet Explorer\Quick Launch\Wireshark.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#434490000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=184
+Return=0
+#434500000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Application Data\Microsoft\Internet Explorer\Quick Launch\Wireshark.lnk
+Return=0
+#434650000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\Protect\CREDHIST
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#434650000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\Protect\CREDHIST
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#434670000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=185
+Return=0
+#434670000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Application Data\Microsoft\Protect\CREDHIST
+Return=0
+#434740000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\Protect\S-1-5-21-448539723-115176313-1177238915-1003\8e9052b1-b362-493
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#434730000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\Protect\S-1-5-21-448539723-115176313-1177238915-1003\8e9052b1-b362-4931-bcb7-add5a37d3042
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#434790000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=186
+Return=0
+#434790000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Application Data\Microsoft\Protect\S-1-5-21-448539723-115176313-1177238915-1003\8e9052b1-b362-4931-bcb7-add5a37d3042
+Return=0
+#434850000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\Protect\S-1-5-21-448539723-115176313-1177238915-1003\Preferred
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#434840000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Microsoft\Protect\S-1-5-21-448539723-115176313-1177238915-1003\Preferred
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#434870000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=187
+Return=0
+#434880000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Application Data\Microsoft\Protect\S-1-5-21-448539723-115176313-1177238915-1003\Preferred
+Return=0
+#435140000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=188
+Return=0
+#435150000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Application Data\Oracle\Java\AU\au.msi
+Return=0
+#435290000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Sun\Java\Deployment\deployment.properties
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#435290000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Sun\Java\Deployment\deployment.properties
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#435350000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=189
+Return=0
+#435360000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Application Data\Sun\Java\Deployment\deployment.properties
+Return=0
+#435460000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Sun\Java\Deployment\security\baseline.versions
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#435460000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Sun\Java\Deployment\security\baseline.versions
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#435490000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=190
+Return=0
+#435500000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Application Data\Sun\Java\Deployment\security\baseline.versions
+Return=0
+#435540000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Sun\Java\Deployment\security\blacklist.dynamic
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#435540000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Sun\Java\Deployment\security\blacklist.dynamic
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#435800000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=191
+Return=0
+#435800000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Application Data\Sun\Java\Deployment\security\blacklist.dynamic
+Return=0
+#435850000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Sun\Java\Deployment\security\blacklisted.certs
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#435850000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Sun\Java\Deployment\security\blacklisted.certs
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#435950000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=192
+Return=0
+#435960000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Application Data\Sun\Java\Deployment\security\blacklisted.certs
+Return=0
+#435970000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=193
+Return=0
+#435980000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Application Data\Sun\Java\Deployment\security\securitypack.jar
+Return=0
+#436020000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Sun\Java\Deployment\security\update.securitypack.timestamp
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#436020000
+CreateFile
+hName=c:\Documents and Settings\ants\Application Data\Sun\Java\Deployment\security\update.securitypack.timestamp
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#436050000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=194
+Return=0
+#436060000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Application Data\Sun\Java\Deployment\security\update.securitypack.timestamp
+Return=0
+#436110000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=195
+Return=0
+#436120000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Application Data\Sun\Java\jre1.8.0_51\jre1.8.0_51.msi
+Return=0
+#436210000
+CreateFile
+hName=c:\Documents and Settings\ants\Cookies\ants@adnxs[2].txt
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#436200000
+CreateFile
+hName=c:\Documents and Settings\ants\Cookies\ants@adnxs[2].txt
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#436250000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=196
+Return=0
+#436260000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Cookies\ants@adnxs[2].txt
+Return=0
+#436300000
+CreateFile
+hName=c:\Documents and Settings\ants\Cookies\ants@bing[1].txt
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#436300000
+CreateFile
+hName=c:\Documents and Settings\ants\Cookies\ants@bing[1].txt
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#436330000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=197
+Return=0
+#436340000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Cookies\ants@bing[1].txt
+Return=0
+#436380000
+CreateFile
+hName=c:\Documents and Settings\ants\Cookies\ants@c.bing[2].txt
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#436380000
+CreateFile
+hName=c:\Documents and Settings\ants\Cookies\ants@c.bing[2].txt
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#436410000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=198
+Return=0
+#436420000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Cookies\ants@c.bing[2].txt
+Return=0
+#436460000
+CreateFile
+hName=c:\Documents and Settings\ants\Cookies\ants@c.tw.msn[1].txt
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#436460000
+CreateFile
+hName=c:\Documents and Settings\ants\Cookies\ants@c.tw.msn[1].txt
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#436490000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=199
+Return=0
+#436500000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Cookies\ants@c.tw.msn[1].txt
+Return=0
+#436540000
+CreateFile
+hName=c:\Documents and Settings\ants\Cookies\ants@google.com[1].txt
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#436540000
+CreateFile
+hName=c:\Documents and Settings\ants\Cookies\ants@google.com[1].txt
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#436570000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=200
+Return=0
+#436580000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Cookies\ants@google.com[1].txt
+Return=0
+#436630000
+CreateFile
+hName=c:\Documents and Settings\ants\Cookies\ants@microsoft[1].txt
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#436630000
+CreateFile
+hName=c:\Documents and Settings\ants\Cookies\ants@microsoft[1].txt
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#436660000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=201
+Return=0
+#436660000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Cookies\ants@microsoft[1].txt
+Return=0
+#436710000
+CreateFile
+hName=c:\Documents and Settings\ants\Cookies\ants@msn[1].txt
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#436710000
+CreateFile
+hName=c:\Documents and Settings\ants\Cookies\ants@msn[1].txt
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#436840000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=202
+Return=0
+#436850000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Cookies\ants@msn[1].txt
+Return=0
+#436930000
+CreateFile
+hName=c:\Documents and Settings\ants\Cookies\ants@scorecardresearch[2].txt
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#436930000
+CreateFile
+hName=c:\Documents and Settings\ants\Cookies\ants@scorecardresearch[2].txt
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#437120000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=203
+Return=0
+#437140000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Cookies\ants@scorecardresearch[2].txt
+Return=0
+#437440000
+CreateFile
+hName=c:\Documents and Settings\ants\Cookies\ants@wireshark[1].txt
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#437440000
+CreateFile
+hName=c:\Documents and Settings\ants\Cookies\ants@wireshark[1].txt
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#437560000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=204
+Return=0
+#437560000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Cookies\ants@wireshark[1].txt
+Return=0
+#437610000
+CreateFile
+hName=c:\Documents and Settings\ants\Cookies\ants@www.msn[2].txt
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#437600000
+CreateFile
+hName=c:\Documents and Settings\ants\Cookies\ants@www.msn[2].txt
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#437680000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=205
+Return=0
+#437680000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Cookies\ants@www.msn[2].txt
+Return=0
+#437750000
+CreateFile
+hName=c:\Documents and Settings\ants\Cookies\index.dat
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#437750000
+CreateFile
+hName=c:\Documents and Settings\ants\Cookies\index.dat
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#441780000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=206
+Return=0
+#441780000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Cookies\index.dat
+Return=0
+#441920000
+CreateFile
+hName=c:\Documents and Settings\ants\Desktop\Command Prompt.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#441920000
+CreateFile
+hName=c:\Documents and Settings\ants\Desktop\Command Prompt.lnk
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#442150000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=207
+Return=0
+#442200000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Desktop\Command Prompt.lnk
+Return=0
+#442380000
+CreateFile
+hName=c:\Documents and Settings\ants\Favorites\Desktop.ini
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#442380000
+CreateFile
+hName=c:\Documents and Settings\ants\Favorites\Desktop.ini
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#442440000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=208
+Return=0
+#442440000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Favorites\Desktop.ini
+Return=0
+#442660000
+CreateFile
+hName=c:\Documents and Settings\ants\Favorites\Links\Customize Links.url
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#442660000
+CreateFile
+hName=c:\Documents and Settings\ants\Favorites\Links\Customize Links.url
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#442720000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=209
+Return=0
+#442730000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Favorites\Links\Customize Links.url
+Return=0
+#442840000
+CreateFile
+hName=c:\Documents and Settings\ants\Favorites\Links\Free Hotmail.url
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#442840000
+CreateFile
+hName=c:\Documents and Settings\ants\Favorites\Links\Free Hotmail.url
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#442900000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=210
+Return=0
+#442900000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Favorites\Links\Free Hotmail.url
+Return=0
+#443010000
+CreateFile
+hName=c:\Documents and Settings\ants\Favorites\Links\Windows Marketplace.url
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#442980000
+CreateFile
+hName=c:\Documents and Settings\ants\Favorites\Links\Windows Marketplace.url
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#443070000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=211
+Return=0
+#443080000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Favorites\Links\Windows Marketplace.url
+Return=0
+#443150000
+CreateFile
+hName=c:\Documents and Settings\ants\Favorites\Links\Windows Media.url
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#443150000
+CreateFile
+hName=c:\Documents and Settings\ants\Favorites\Links\Windows Media.url
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#443210000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=212
+Return=0
+#443220000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Favorites\Links\Windows Media.url
+Return=0
+#443360000
+CreateFile
+hName=c:\Documents and Settings\ants\Favorites\Links\Windows.url
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#443350000
+CreateFile
+hName=c:\Documents and Settings\ants\Favorites\Links\Windows.url
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#443410000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=213
+Return=0
+#443420000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Favorites\Links\Windows.url
+Return=0
+#443500000
+CreateFile
+hName=c:\Documents and Settings\ants\Favorites\MSN.com.url
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#443500000
+CreateFile
+hName=c:\Documents and Settings\ants\Favorites\MSN.com.url
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#443560000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=214
+Return=0
+#443560000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Favorites\MSN.com.url
+Return=0
+#443660000
+CreateFile
+hName=c:\Documents and Settings\ants\Favorites\Radio Station Guide.url
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#443660000
+CreateFile
+hName=c:\Documents and Settings\ants\Favorites\Radio Station Guide.url
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#443720000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=215
+Return=0
+#443790000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Favorites\Radio Station Guide.url
+Return=0
+#444050000
+CreateFile
+hName=c:\Documents and Settings\ants\Local Settings\Application Data\GDIPFONTCACHEV1.DAT
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#444050000
+CreateFile
+hName=c:\Documents and Settings\ants\Local Settings\Application Data\GDIPFONTCACHEV1.DAT
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#445330000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FNum
+type=REG_DWORD
+data=216
+Return=0
+#445330000
+RegSetValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{65D5AFFB-D4EF-49AA-GFFG-5DA5E12E300A}\FLast
+type=REG_SZ
+data=c:\Documents and Settings\ants\Local Settings\Application Data\GDIPFONTCACHEV1.DAT
+Return=0
+#445380000
+CreateFile
+hName=c:\Documents and Settings\ants\Local Settings\Application Data\IconCache.db
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#445380000
+CreateFile
+hName=c:\Documents and Settings\ants\Local Settings\Application Data\IconCache.db
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS

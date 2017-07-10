@@ -1,0 +1,115 @@
+3224 malware.exe
+#235490000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_ALWAYS
+Return=SUCCESS
+#235490000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_ALWAYS
+Return=SUCCESS
+#235530000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.usr
+desiredAccess=GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#235530000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.usr
+desiredAccess=GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#235570000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_ALWAYS
+Return=SUCCESS
+#235570000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_ALWAYS
+Return=SUCCESS
+#237290000
+CreateFile
+hName=C:\Documents
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#237320000
+CreateFile
+hName=C:\Documents and
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#237340000
+CreateFile
+hName=C:\Documents and Settings\All
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#240010000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders\Cache
+Return=0
+#240040000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#237250000
+CreateProcessInternal
+lpCommandLine=C:\Documents and Settings\All Users\Desktop\malware.usr
+Return=SUCCESS
+dwProcessId=3236
+dwThreadId=3240
+#237240000
+CreateProcessInternal
+lpCommandLine=C:\Documents and Settings\All Users\Desktop\malware.usr
+Return=SUCCESS
+dwProcessId=3236
+dwThreadId=3240
+#237240000
+WinExec
+lpCmdLine=C:\Documents and Settings\All Users\Desktop\malware.usr
+Return=SUCCESS
+#240290000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_ALWAYS
+Return=SUCCESS
+#240290000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_ALWAYS
+Return=SUCCESS
+#240350000
+CreateFile
+hName=C:\WINDOWS\USR_Shohdi_Photo_USR.exe
+desiredAccess=GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#240350000
+CreateFile
+hName=C:\WINDOWS\USR_Shohdi_Photo_USR.exe
+desiredAccess=GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#240400000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_ALWAYS
+Return=SUCCESS
+#240400000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_ALWAYS
+Return=SUCCESS

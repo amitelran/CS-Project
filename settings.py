@@ -1,5 +1,5 @@
-import os
-import enum
+#import os
+#import enum
 
 # =============================================================================
 #								 Settings
@@ -49,7 +49,7 @@ def init():
 	numHashes = 100								# number of random hash functions,number of components in the resulting MinHash signatures
 	maxShingleID = 2 ** 32 - 1					# Record the maximum shingle ID that we assigned.
 	numBands = 10								# Number of bands set
-	shingle_size = 3							# Size of a shingle (in shingles_mode)
+	shingle_size = 13							# Size of a shingle (in shingles_mode)
 	apiCalls_per_shingle = 3					# Number of API calls to be set as a single shingle (in APIs_mode)
 	nextPrime = 4294967311  					# Value of next prime number
 	hashMax = 50021  							# Buckets hash table size
@@ -60,13 +60,14 @@ def init():
 	unclassified_traces_directory = 'unclassifiedtraces'		# The directory where unclassified traces inserted until classification is made
 	classified_traces_directory = 'classifiedtraces'		# The directory where classified traces are inserted after classification is made
 
-	training_data_directory = 'trainingdata'	# Directory for training data containing two sub-directories: benign and malicious.
-#	training_data_directory = 'trnSergey50'	# Directory for training data containing two sub-directories: benign and malicious.
+	training_data_directory = 'outlier2_trainingdata'	# Directory for training data containing two sub-directories: benign and malicious.
+	#training_data_directory = 'trainingdataStam'
+	# training_data_directory = 'trnSergey50'	# Directory for training data containing two sub-directories: benign and malicious.
 
 	training_data_benign_directory = training_data_directory + '/benign'	# Sub-directory of the trainingdata directory containing benign traces.
 	training_data_malicious_directory = training_data_directory + '/malicious'	# Sub-directory of the trainingdata directory containing malicious traces
 
-	test_data_directory = 'testdata'
+	test_data_directory = 'outlier2_testdata'
 	test_data_unlabeled_directory = test_data_directory+'/unlabeled'
 	test_data_benign_directory = test_data_directory+'/benign'
 	test_data_malicious_directory = test_data_directory+'/malicious'
@@ -76,6 +77,7 @@ def init():
 	minhash_file = "minhash_data.pkl"			# Pickle file storing all generated MinHash functions data
 	signatures_file = "signatures.pkl"			# Pickle file storing signatures matrix data
 	buckets_file = "buckets.pkl"				# Pickle file storing all buckets data
+	buckets_file = "clusters.pkl"				# Pickle file storing all buckets data
 	traces_file = "traces.pkl"					# Pickle file storing all buckets data
 	coeffA = None								# 1st Co-efficient for MinHash functions
 	coeffB = None								# 2nd Co-efficient for MinHash functions

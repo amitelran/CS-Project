@@ -1,0 +1,117 @@
+3156 malware.exe
+#245350000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\IMM32.DLL
+Return=76390000
+#246240000
+LoadLibrary
+lpFileName=gdi32.dll
+Return=77f10000
+#245880000
+LoadLibrary
+lpFileName=LPK.DLL
+Return=629c0000
+#246750000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\CriticalSectionTimeout
+Return=0
+#246760000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Ole\RWLockResourceTimeOut
+Return=2
+#247880000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ThemeManager\Compositing
+Return=2
+#247910000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Control Panel\Desktop\LameButtonText
+Return=2
+#247920000
+LoadLibrary
+lpFileName=uxtheme.dll
+Return=5ad70000
+#249670000
+LoadLibrary
+lpFileName=mscoree.dll
+Return=0
+#249780000
+LoadLibrary
+lpFileName=mscoree.dll
+Return=0
+#249930000
+LoadLibrary
+lpFileName=C:\Documents and Settings\All Users\Desktop\1033\VSTOInstallerUI.dll
+Return=0
+#249990000
+LoadLibrary
+lpFileName=C:\Documents and Settings\All Users\Desktop\1033\VSTOInstallerUI.dll
+Return=0
+#250050000
+LoadLibrary
+lpFileName=C:\Documents and Settings\All Users\Desktop\1033\VSTOInstallerUI.dll
+Return=0
+#250130000
+LoadLibrary
+lpFileName=C:\Documents and Settings\All Users\Desktop\1033\VSTOInstallerUI.dll
+Return=0
+#250190000
+LoadLibrary
+lpFileName=C:\Documents and Settings\All Users\Desktop\1033\VSTOInstallerUI.dll
+Return=0
+#250240000
+LoadLibrary
+lpFileName=C:\Documents and Settings\All Users\Desktop\1033\VSTOInstallerUI.dll
+Return=0
+#250460000
+RegEnumValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\FontLink\SystemLink\Lucida San
+Return=0
+#250470000
+RegEnumValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\FontLink\SystemLink\Tah
+Return=0
+#250470000
+RegEnumValue
+hKey=HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\FontLink\SystemLink\Microsoft 
+Return=0
+#251340000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\IMM\Ime File
+Return=0
+#251360000
+LoadLibrary
+lpFileName=version.dll
+Return=77c00000
+#251530000
+CreateFile
+hName=C:\WINDOWS\system32\msctfime.ime
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=58
+#251610000
+CreateFile
+hName=C:\WINDOWS\system32\msctfime.ime
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=58
+#252300000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\ole32.dll
+Return=774e0000
+#251790000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\msctfime.ime
+Return=755c0000
+#252460000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\CTF\Disable Thread Input Manager
+Return=2
+#252480000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\CTF\SystemShared\CUAS
+Return=0
+#252640000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\msctfime.ime
+Return=755c0000

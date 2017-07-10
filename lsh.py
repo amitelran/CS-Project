@@ -4,6 +4,7 @@ import settings
 import json
 import dump_load_args
 import trace_class
+import numpy
 
 # ================================================================================================================================
 #	 LSH (Locality Sensitive Hashing \ Near-Neighbour Search) calculation, Buckets building, Classification of unclassified traces
@@ -75,14 +76,16 @@ def build_buckets(sigs, b, r, docsObjects):
 				clusters[curHash].append_trace(curTrace)
 
 	# Calculate medioids for clusters, and compute distance vector for each of the clusters
+	print("Number of clusters (buckets): %d" % len(clusters))
 	calc_clusters_medioids(clusters)
-	medioids_compare(clusters)
-	for clusterKey, clusterValue in clusters.items():
-		clusterValue.print_cluster_data()
+	#medioids_compare(clusters)
+	#for clusterKey, clusterValue in clusters.items():
+	#	clusterValue.print_cluster_data()
 
-	dump_load_args.DumpBuckets(buckets)			# Dump data into buckets data file
-	dump_load_args.DumpTraces(traces)			# Dump data into traces data file
-	return buckets
+	#dump_load_args.DumpBuckets(buckets)			# Dump data into buckets data file
+	#dump_load_args.DumpTraces(traces)			# Dump data into traces data file
+	#dump_load_args.DumpClusters(clusters)
+	return buckets, clusters
 
 
 
@@ -307,7 +310,12 @@ def calc_clusters_medioids(clusters):
 				if t1 is t2:
 					continue
 				t2_shingles = t2.get_shingles()
-				t1_medioid_value += (len(t1_shingles.intersection(t2_shingles)) / float(len(t1_shingles.union(t2_shingles))))
+
+				union_size = float(len(t1_shingles.union(t2_shingles)))
+				if union_size == 0:
+					t1_medioid_value += 0
+				else:
+					t1_medioid_value += (len(t1_shingles.intersection(t2_shingles)) / union_size)
 
 			#print(t1, t1_medioid_value)
 
@@ -367,6 +375,76 @@ def calc_buckets_medioids(buckets):
 	#return medioids
 """
 
+def calc_trace_distance_from_all_mediods(clusters, traces):
+	""""""
+	print("Calculating %d traces distances from all mediods" % len(traces))
+	averages = []
+	medians = []
+	maxes = []
+
+	for trace in traces:
+		traceShingles = trace.get_shingles()
+		jSims = []
+		# Iterate over all buckets medioids in the medioids dictionary
+		label = trace.get_malicious_benign_label()
+		print("\n\n%s Trace: %s , filename(MD5): %s" % (label, trace.get_name(), trace.get_filename()) )
+		for index1, clusterKey in enumerate(clusters):
+			cluster = clusters[clusterKey]
+			medioidTrace = cluster.medioid[0]
+			medioid_shingles = medioidTrace.get_shingles()
+
+			union_size = float(len(traceShingles.union(medioid_shingles)))
+			if union_size == 0:
+				trace_medioid_JSim = 0
+			else:
+				trace_medioid_JSim = (
+					len(traceShingles.intersection(medioid_shingles)) / union_size)
+
+			jSims.append(trace_medioid_JSim)
+
+		jSims_numpy_array = numpy.array(jSims)
+		avg = numpy.mean(jSims_numpy_array)
+		averages.append(avg)
+		SD = numpy.std(jSims_numpy_array)  # sqrt(mean(abs(x - x.mean())**2))
+		median = numpy.median(jSims_numpy_array)
+		medians.append(median)
+		max = numpy.max(jSims_numpy_array)
+		maxes.append(max)
+		min = numpy.min(jSims_numpy_array)
+		print("\tAverage JSim from mediods: %f, SD: %f " % (avg, SD))
+		print("\tMedian:%f" % median)
+		print("\tMax:%f , Min: %f"% (max, min))
+
+	print("\n ~~~~~~~~~~~~~~ Summary ~~~~~~~~~~~~~")
+	cnt, maxes_min, maxes_max, maxes_median, maxes_avg, maxes_std = get_count_min_max_median_avg_stdd(maxes)
+	print("Maxes: max:%f, median:%f avg:%f, sd:%f" % (maxes_max,maxes_median,maxes_avg,maxes_std))
+	print(str(maxes) + "\n")
+	#plot_hist(maxes)
+	return averages, medians, maxes
+
+
+def get_count_min_max_median_avg_stdd(numbers_list):#TODO move to other module
+	""" returns the count,min, max, median, avg, std """
+	numpyarray = numpy.array(numbers_list)
+	min = numpy.max(numpyarray)
+	max = numpy.max(numpyarray)
+	median = numpy.median(numpyarray)
+	avg = numpy.mean(numpyarray)
+	std = numpy.std(numpyarray)
+	return len(numbers_list),min, max, median, avg, std
+
+def plot_hist(x):
+	#import matplotlib.pyplot as plt
+	#plt.hist(x, normed=True, bins=30)
+	#plt.show()
+
+	import pylab as p
+
+	y, binEdges = numpy.histogram(x, bins=100)
+	bincenters = 0.5 * (binEdges[1:] + binEdges[:-1])
+	p.plot(bincenters, y, '-')
+	p.show()
+
 
 # ================================================================================================================================
 #				Calculate clusters (buckets) medioids distance using Jaccard similarity
@@ -392,7 +470,7 @@ def medioids_compare(clusters):
 			medioid2 = cluster2.medioid[0]
 			medioid2_shingles = medioid2.get_shingles()
 			medioidsJaccSim = (len(medioid1_shingles.intersection(medioid2_shingles)) / float(len(medioid1_shingles.union(medioid2_shingles))))
-
+#TODO zero devision
 			cluster1.distance_vector.append((clusterKey2, medioidsJaccSim, cluster2))
 			cluster2.distance_vector.append((clusterKey1, medioidsJaccSim, cluster1))
 
@@ -429,6 +507,27 @@ def medioids_compare(clusters):
 # ================================================================================================================================
 #				Print clusters data
 # ================================================================================================================================
+def print_clusters_stat(clusters):
+	print("\n================= Clusters Sizes Statistics =================")
+
+	#clusters_sizes = [len(c.cluster_traces) for c in clusters]
+	clusters_sizes = []
+	for clusterKey, clusterValue in clusters.items():
+		cluster_traces = clusters[clusterKey].cluster_traces
+		clusters_sizes.append(len(cluster_traces))
+
+
+	cluster_size_numpy_array = numpy.array(clusters_sizes)
+	median = numpy.median(cluster_size_numpy_array)
+	avg = numpy.mean(cluster_size_numpy_array)
+	SD = numpy.std(cluster_size_numpy_array)
+	max = numpy.max(cluster_size_numpy_array)
+	min = numpy.min(cluster_size_numpy_array)
+	num_of_singleton_clusters = len([s for s in clusters_sizes if s == 1])
+
+	print("Count:%d, Median:%d, Max:%d , Min: %d,Singleton Clusters:%d" % (len(clusters_sizes),median,max,min,num_of_singleton_clusters))
+	print("Average size:%f, SD: %f" % (avg,SD))
+	print("====================================================\n")
 
 
 def print_clusters_data(clusters):

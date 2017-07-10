@@ -48,7 +48,7 @@ def main():
 	# else, generate MinHash functions, Signatures & Buckets data, and store this data by exporting to files.
 	if not settings.overwriteData and dump_load_args.dataFilesExist():
 		try:
-			sigs,buckets,traces = dump_load_args.LoadMinHashSignaturesBuckets()
+			sigs,buckets,clusters, traces = dump_load_args.LoadMinHashSignaturesBuckets()
 			# print
 			# print "Buckets:"
 			# print buckets
@@ -80,16 +80,17 @@ def main():
 		shingles.setTracesShingles(tracesObjects)
 
 		minhashing.setRandomCoeffs()
-		dump_load_args.DumpMinHash(settings.coeffA,settings.coeffB,settings.nextPrime)
+		#dump_load_args.DumpMinHash(settings.coeffA,settings.coeffB,settings.nextPrime)
 		#sigs = minhashing.MinHashNumpy(docsAsShingles)
 		sigs = minhashing.setTracesMinHashSignatures(tracesObjects)
 
-		dump_load_args.DumpSignatures(sigs)
+		#dump_load_args.DumpSignatures(sigs)
 		# lsh.findRB(sigs,docsAsShingles,1,1,2,0.9)
-		buckets = lsh.build_buckets(sigs, settings.numBands, settings.numHashes / settings.numBands, tracesObjects)
+		buckets, clusters = lsh.build_buckets(sigs, settings.numBands, settings.numHashes / settings.numBands, tracesObjects)
 
 	# print buckets
 	#sim_comparison.bucketsReport(buckets)
+	lsh.print_clusters_stat(clusters)
 
 	if settings.classifyTraces:		# Need to classify traces (Indicating boolean is 'ON')
 
@@ -120,25 +121,36 @@ def main():
 					if len(testDocsObjects) == 0:
 						continue
 
-					test_docs_as_strings = trace_parser.generate_traces_as_text(testDocsObjects)
+					#test_docs_as_strings = trace_parser.generate_traces_as_text(testDocsObjects)
 
 					# Classification of unclassified traces:
 					print "\nStarting classification...\n"
 					if settings.mode is settings.Modes.shingles_mode:
-						new_docsAsShingles = shingles.convertToShingles(test_docs_as_strings)
-						new_sigs = minhashing.MinHashNumpy(new_docsAsShingles)  # New signatures matrix
+
+						shingles.setTracesShingles(testDocsObjects)
+						new_sigs = minhashing.setTracesMinHashSignatures(testDocsObjects)
+						#new_docsAsShingles = shingles.convertToShingles(test_docs_as_strings)
+						#new_sigs = minhashing.MinHashNumpy(new_docsAsShingles)  # New signatures matrix
 						# print docsAsShingles
 						# numOfDocs = len(new_docs)
 
 						# lsh.findRB(sigs,docsAsShingles,1,1,2,0.9)
-					else:
-						if settings.mode is settings.Modes.APIs_mode:
-							new_docsAsAPIcalls = shingles.convertToAPIcalls(test_docs_as_strings)
-							new_sigs = minhashing.MinHashNumpy(new_docsAsAPIcalls)  # New signatures matrix
+					#else:
+						#if settings.mode is settings.Modes.APIs_mode:
+							#new_docsAsAPIcalls = shingles.convertToAPIcalls(test_docs_as_strings)
+							#new_sigs = minhashing.MinHashNumpy(new_docsAsAPIcalls)  # New signatures matrix
+							#TODO use setTracesShingles() and setTracesMinHashSignatures()
 
-					classify = lsh.classify_new_data(new_sigs, settings.numBands, settings.numHashes / settings.numBands, buckets, testDocsObjects)  # Finally, classify the un-classified traces
+					print("\n******************* Malicious- Mediods ***************")
+					lsh.calc_trace_distance_from_all_mediods(clusters, tracesObjectsMalicious)
+					print("\n*******************************\n\n")
+					print("\n\n******************* Benign-Mediods ***************")
+					lsh.calc_trace_distance_from_all_mediods(clusters,tracesObjectsBenign)
+					print("\n*******************************\n\n")
+
+					#classify = lsh.classify_new_data(new_sigs, settings.numBands, settings.numHashes / settings.numBands, buckets, testDocsObjects)  # Finally, classify the un-classified traces
 					# buckets = lsh.lsh(sigs, settings.numBands, settings.numHashes / settings.numBands)
-					printClassifResults1(classify, new_sigs, testDocsObjects)
+					#printClassifResults1(classify, new_sigs, testDocsObjects)
 
 
 

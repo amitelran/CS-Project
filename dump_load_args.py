@@ -13,6 +13,7 @@ directory = settings.clustered_data_directory						# Get directory of clustered 
 minhashes_file = os.path.join(directory, settings.minhash_file)		# Get MinHash data file
 signatures_file = os.path.join(directory, settings.signatures_file)	# Get Signatures data file
 buckets_file = os.path.join(directory, settings.buckets_file)		# Get buckets data file
+clusters_file = os.path.join(directory, settings.buckets_file)		# Get clusters data file
 traces_file = os.path.join(directory, settings.traces_file)			# Get traces data file
 
 # Check if there are already existing MinHash, Signatures & Buckets data files
@@ -26,7 +27,7 @@ def makeSurePathExists():
 
 # If MinHash, Signatures & Buckets data files exist --> load them to get former data
 def LoadMinHashSignaturesBuckets():
-	print "\nLoading Signatures, MinHash parameters and Buckets..."
+	print "\nLoading Signatures, MinHash parameters and Clusters Buckets..."
 	if dataFilesExist():
 		with open(signatures_file, 'rb') as f:
 			signatures = pickle.load(f)
@@ -34,10 +35,12 @@ def LoadMinHashSignaturesBuckets():
 			settings.coeffA, settings.coeffB, settings.nextPrime = pickle.load(f)
 		with open(buckets_file, 'rb') as f:
 			buckets = pickle.load(f)
+		with open(clusters_file, 'rb') as f:
+			clusters = pickle.load(f)
 		with open(traces_file, 'rb') as f:
 			traces = pickle.load(f)
 		print "DONE"
-		return signatures,buckets,traces
+		return signatures,buckets,clusters, traces
 	raise Exception("Some data files not found...")
 
 # Dump MinHash calculated data to MinHash data file in set directory
@@ -62,6 +65,14 @@ def DumpBuckets(buckets):
 	print("\nSaving Buckets to file...")
 	with open(buckets_file, 'wb') as f:
 		pickle.dump(buckets, f, pickle.HIGHEST_PROTOCOL)
+	print "DONE"
+
+# Dump Clusters calculated data to MinHash data file in set directory
+def DumpClusters(clusters):
+	makeSurePathExists()
+	print("\nSaving clusters to file...")
+	with open(clusters_file, 'wb') as f:
+		pickle.dump(clusters, f, pickle.HIGHEST_PROTOCOL)
 	print "DONE"
 
 # Dump Traces calculated data to Traces data file in set directory
