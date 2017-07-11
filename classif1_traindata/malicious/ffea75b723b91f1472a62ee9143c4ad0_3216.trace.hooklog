@@ -1,0 +1,1115 @@
+3216 fevar.exe
+#251610000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\IMM32.DLL
+Return=SUCCESS
+#253580000
+LoadLibrary
+lpFileName=gdi32.dll
+Return=SUCCESS
+#252820000
+LoadLibrary
+lpFileName=LPK.DLL
+Return=SUCCESS
+#254290000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ThemeManager\Compositing
+Return=2
+#254310000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Control Panel\Desktop\LameButtonText
+Return=2
+#254330000
+LoadLibrary
+lpFileName=uxtheme.dll
+Return=SUCCESS
+#255650000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\IMM\Ime File
+Return=0
+#255680000
+LoadLibrary
+lpFileName=version.dll
+Return=SUCCESS
+#255810000
+CreateFile
+hName=C:\WINDOWS\system32\msctfime.ime
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#255890000
+CreateFile
+hName=C:\WINDOWS\system32\msctfime.ime
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#256960000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\CriticalSectionTimeout
+Return=0
+#256960000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Ole\RWLockResourceTimeOut
+Return=2
+#256570000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\ole32.dll
+Return=SUCCESS
+#256050000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\msctfime.ime
+Return=SUCCESS
+#257130000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\CTF\Disable Thread Input Manager
+Return=2
+#257150000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\CTF\SystemShared\CUAS
+Return=0
+type=REG_DWORD
+data=0
+#257220000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\msctfime.ime
+Return=SUCCESS
+#258980000
+LoadLibrary
+lpFileName=ntdll.dll
+Return=SUCCESS
+#259000000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#259900000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#260620000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#261030000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#264010000
+CreateFile
+hName=C:\WINDOWS\WindowsShell.Manifest
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#264330000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Control Panel\Desktop\SmoothScroll
+Return=2
+#264340000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\EnableBalloonTips
+Return=2
+#264350000
+RegEnumValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\LanguagePack\SURR
+type=REG_DWORD
+data=2
+Return=0
+#263300000
+LoadLibrary
+lpFileName=comctl32.dll
+Return=SUCCESS
+#264620000
+RegCreateKey
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings
+Return=0
+#259050000
+LoadLibrary
+lpFileName=wininet.dll
+Return=SUCCESS
+#264990000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\Setup\SystemSetupInProgress
+Return=0
+type=REG_DWORD
+data=0
+#265280000
+LoadLibrary
+lpFileName=comctl32.dll
+Return=SUCCESS
+#266170000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Control Panel\Desktop\SmoothScroll
+Return=2
+#266180000
+LoadLibrary
+lpFileName=imm32.dll
+Return=SUCCESS
+#265550000
+LoadLibrary
+lpFileName=comctl32.dll
+Return=SUCCESS
+#264650000
+LoadLibrary
+lpFileName=shell32.dll
+Return=SUCCESS
+#266590000
+CreateFile
+hName=C:\DOCUME~1\ants\LOCALS~1\Temp\fevar.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#266610000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#266720000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#266800000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#266870000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#267000000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#267060000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#267290000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#267410000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#267470000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#267540000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#267600000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#267830000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#267910000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#268100000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#268160000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#268250000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#268370000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#268440000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#268530000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#268590000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#268650000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#268740000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#268810000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#268890000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#268950000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#269010000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#269100000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#269410000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#269480000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#269540000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#269600000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#269800000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#269920000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#269980000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#270200000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#270260000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#270350000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#270430000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#270500000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#270570000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#270640000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#270730000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#270790000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#270880000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#270940000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#271000000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#271150000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#271220000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#271510000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#271580000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#271640000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#271720000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#271910000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#272020000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#272090000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#272240000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#272340000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#272520000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#272610000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#272670000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#272760000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#272820000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#272890000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#273020000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#273080000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#273170000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#273230000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#273300000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#273550000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#273660000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#273750000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#273810000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#273870000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#274050000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#274190000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#274360000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#274530000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#274600000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#274690000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#274750000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#274840000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#274910000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#274980000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#275070000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#275130000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#275220000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#275290000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#275360000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#275440000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#275720000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#275800000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#275870000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#275970000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#276170000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#276280000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#276370000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#276540000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#276600000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#276670000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#276740000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#276830000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#276900000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#276990000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#277060000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#277120000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#277220000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#277290000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#277470000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#277530000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#277580000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#277880000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#277940000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#278030000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#278100000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#278260000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#278400000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#278570000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#278730000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#278800000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#278860000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#278950000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#279010000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#279140000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#279200000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#279430000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#279520000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#279580000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#279670000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#279740000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#279800000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#280050000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#280200000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#280260000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#281240000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#281620000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#281810000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#281920000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#282070000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#282140000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#282220000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#282290000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#282350000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#282440000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#282500000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#282580000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#282650000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#282720000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#282800000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#282870000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#282950000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#283010000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#283370000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#283480000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#283540000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#283640000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#283810000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#283960000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#284030000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#284180000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#284260000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#284320000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#284380000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#284460000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#284530000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#284630000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#284690000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#284780000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#284840000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#284900000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#285000000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#285050000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#285140000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#285490000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#285550000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#285630000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#285840000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#286020000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#286120000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#286230000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#286390000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#286460000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#286600000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#286660000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#286720000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#286810000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#286880000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#286960000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#287030000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#287090000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#287180000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#287240000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#289230000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#290230000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#291360000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#292360000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#293440000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#294440000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#295520000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#296650000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#297720000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#298800000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#299870000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#300980000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#302050000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#303360000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#304400000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#305790000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#307090000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#308700000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#309850000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#311260000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#312580000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#313850000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#315040000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#316160000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#317250000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#318770000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#320370000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#321650000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#322800000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#323840000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#324960000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#326200000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#327590000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#328700000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#329910000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#331120000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#332340000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#333560000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#334630000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#335850000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#336910000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#338020000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#339050000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#340190000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#341220000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#342240000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#343280000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE
+#344290000
+DeleteFile
+fileName=C:\DOCUME~1\NaomiP\LOCALS~1\Temp\Temporary Directory 1 for ImportantDocuments.zip\ImportantDocuments.exe
+Return=FAILURE

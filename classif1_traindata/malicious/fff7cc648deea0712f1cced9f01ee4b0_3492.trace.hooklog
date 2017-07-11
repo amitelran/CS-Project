@@ -1,0 +1,21 @@
+3492 backup.exe
+#454950000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\IMM32.DLL
+Return=SUCCESS
+#463800000
+LoadLibrary
+lpFileName=gdi32.dll
+Return=SUCCESS
+#460220000
+LoadLibrary
+lpFileName=LPK.DLL
+Return=SUCCESS
+#468400000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\CriticalSectionTimeout
+Return=0
+#468410000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Ole\RWLockResourceTimeOut
+Return=2

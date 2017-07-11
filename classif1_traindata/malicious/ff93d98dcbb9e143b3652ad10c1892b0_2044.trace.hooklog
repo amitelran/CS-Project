@@ -1,0 +1,37 @@
+2044 CP.exe
+#355060000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\IMM32.DLL
+Return=SUCCESS
+#365980000
+LoadLibrary
+lpFileName=gdi32.dll
+Return=SUCCESS
+#363450000
+LoadLibrary
+lpFileName=LPK.DLL
+Return=SUCCESS
+#375300000
+LoadLibrary
+lpFileName=user32.dll
+Return=SUCCESS
+#384950000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Rpc\MaxRpcSize
+Return=2
+#385000000
+LoadLibrary
+lpFileName=rpcrt4.dll
+Return=SUCCESS
+#390950000
+CreateFile
+hName=\\.\PIPE\lsarpc
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#393430000
+CreateFile
+hName=\\.\PIPE\lsarpc
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS

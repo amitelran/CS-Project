@@ -1,0 +1,1143 @@
+3232 lcica.exe
+#262840000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\IMM32.DLL
+Return=SUCCESS
+#263870000
+LoadLibrary
+lpFileName=gdi32.dll
+Return=SUCCESS
+#263490000
+LoadLibrary
+lpFileName=LPK.DLL
+Return=SUCCESS
+#264430000
+CreateFile
+hName=C:\WINDOWS\WindowsShell.Manifest
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#264710000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Control Panel\Desktop\SmoothScroll
+Return=2
+#264730000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\EnableBalloonTips
+Return=2
+#264740000
+RegEnumValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\LanguagePack\SURR
+type=REG_DWORD
+data=2
+Return=0
+#265270000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ThemeManager\Compositing
+Return=2
+#265290000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Control Panel\Desktop\LameButtonText
+Return=2
+#265310000
+LoadLibrary
+lpFileName=uxtheme.dll
+Return=SUCCESS
+#266960000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\IMM\Ime File
+Return=0
+#266980000
+LoadLibrary
+lpFileName=version.dll
+Return=SUCCESS
+#267150000
+CreateFile
+hName=C:\WINDOWS\system32\msctfime.ime
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#267230000
+CreateFile
+hName=C:\WINDOWS\system32\msctfime.ime
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#268270000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\CriticalSectionTimeout
+Return=0
+#268270000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Ole\RWLockResourceTimeOut
+Return=2
+#267870000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\ole32.dll
+Return=SUCCESS
+#267400000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\msctfime.ime
+Return=SUCCESS
+#268420000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\CTF\Disable Thread Input Manager
+Return=2
+#268440000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\CTF\SystemShared\CUAS
+Return=0
+type=REG_DWORD
+data=0
+#268510000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\msctfime.ime
+Return=SUCCESS
+#268910000
+LoadLibrary
+lpFileName=Riched32.dll
+Return=SUCCESS
+#269370000
+LoadLibrary
+lpFileName=UxTheme.dll
+Return=SUCCESS
+#269720000
+LoadLibrary
+lpFileName=IMM32.dll
+Return=SUCCESS
+#270800000
+LoadLibrary
+lpFileName=ole32.dll
+Return=SUCCESS
+#271430000
+LoadLibrary
+lpFileName=Kernel32.dll
+Return=SUCCESS
+#271770000
+LoadLibrary
+lpFileName=Kernel32.dll
+Return=SUCCESS
+#271940000
+LoadLibrary
+lpFileName=Kernel32.dll
+Return=SUCCESS
+#272050000
+LoadLibrary
+lpFileName=user32.dll
+Return=SUCCESS
+#272080000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#273020000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#273680000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
+#274080000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#276200000
+LoadLibrary
+lpFileName=comctl32.dll
+Return=SUCCESS
+#276480000
+RegCreateKey
+hKey=HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings
+Return=0
+#272140000
+LoadLibrary
+lpFileName=wininet.dll
+Return=SUCCESS
+#276900000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\Setup\SystemSetupInProgress
+Return=0
+type=REG_DWORD
+data=0
+#277200000
+LoadLibrary
+lpFileName=comctl32.dll
+Return=SUCCESS
+#277270000
+LoadLibrary
+lpFileName=comctl32.dll
+Return=SUCCESS
+#276510000
+LoadLibrary
+lpFileName=shell32.dll
+Return=SUCCESS
+#277400000
+CreateFile
+hName=C:\DOCUME~1\ants\LOCALS~1\Temp\lcica.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#277430000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#277530000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#277630000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#277690000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#277800000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#277860000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#277930000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#278010000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#278070000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#278160000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#278490000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#278630000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#278740000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#278960000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#279080000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#279150000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#279200000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#279310000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#279370000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#279460000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#279520000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#279570000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#279660000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#279710000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#279800000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#279860000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#279920000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#280000000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#280050000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#280140000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#280200000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#280520000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#280650000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#280710000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#280940000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#281060000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#281120000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#281200000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#281270000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#281360000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#281420000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#281480000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#281600000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#281670000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#281810000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#281890000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#281960000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#282040000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#282100000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#282190000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#282250000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#282460000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#282710000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#282770000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#282940000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#283020000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#283150000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#283240000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#283410000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#283500000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#283570000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#283650000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#283740000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#283800000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#283890000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#283940000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#284030000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#284190000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#284290000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#284350000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#284430000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#284520000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#284940000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#285070000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#285120000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#285300000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#285430000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#285500000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#285590000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#285650000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#285710000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#285800000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#285870000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#285960000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#286030000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#286090000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#286180000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#286240000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#286330000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#286390000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#286450000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#286540000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#286600000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#286980000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#287030000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#287100000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#287290000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#287460000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#287520000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#287580000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#287630000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#287770000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#287830000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#287920000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#287980000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#288040000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#288130000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#288190000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#288280000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#288340000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#288400000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#288480000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#288540000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#288910000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#289140000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#289340000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#289530000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#289690000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#289800000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#289880000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#289940000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#290020000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#290090000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#290170000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#291160000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#291420000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#291520000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#291580000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#291670000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#291730000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#291790000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#291910000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#291970000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#292070000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#292380000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#292490000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#292570000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#292740000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#292850000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#292910000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#292970000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#293050000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#293120000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#293200000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#293260000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#293340000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#293410000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#293500000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#293570000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#293630000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#293720000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#293770000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#293860000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#293920000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#293990000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#294400000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#294460000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#294520000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#294670000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#294800000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#294940000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#295000000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#295090000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#295150000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#295210000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#295290000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#295360000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#295440000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#295500000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#295560000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#295640000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#295700000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#295800000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#295850000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#295910000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#296160000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#296460000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#296520000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#296720000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#296780000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#296920000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#296980000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#297070000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#297130000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#297200000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#297280000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#297350000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#297430000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#297500000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#297550000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#297680000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#297740000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#297830000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#297880000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#299860000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#301050000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#302010000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#302380000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#303390000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#304390000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#305390000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#306290000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#307290000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#308280000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#309280000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#310280000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#311280000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#312300000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#313470000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#314700000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#315680000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#316750000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#317760000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#318770000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#319880000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#320950000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#322040000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#323120000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#324280000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#325140000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#326230000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#327600000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#328680000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#329990000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#331340000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#332600000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#333910000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#335080000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#336380000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#337500000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#339130000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#340300000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#341550000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#342700000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#343870000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#345020000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#346420000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#347550000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#348780000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#350480000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE
+#351570000
+DeleteFile
+fileName=C:\Users\Sales7\AppData\Local\Temp\Temp1_Balance-Sheet.zip\Balance Sheet.scr
+Return=FAILURE

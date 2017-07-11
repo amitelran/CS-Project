@@ -1,0 +1,33 @@
+3356 sooupi.exe
+#513310000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\IMM32.DLL
+Return=SUCCESS
+#516000000
+LoadLibrary
+lpFileName=gdi32.dll
+Return=SUCCESS
+#514910000
+LoadLibrary
+lpFileName=LPK.DLL
+Return=SUCCESS
+#517620000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\CriticalSectionTimeout
+Return=0
+#517620000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Ole\RWLockResourceTimeOut
+Return=2
+#522690000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ThemeManager\Compositing
+Return=2
+#522830000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Control Panel\Desktop\LameButtonText
+Return=2
+#522850000
+LoadLibrary
+lpFileName=uxtheme.dll
+Return=SUCCESS

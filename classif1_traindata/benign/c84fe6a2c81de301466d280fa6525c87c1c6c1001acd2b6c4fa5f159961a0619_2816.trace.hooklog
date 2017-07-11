@@ -1,0 +1,53 @@
+2816 malware.exe
+#253670000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\IMM32.DLL
+Return=76390000
+#254630000
+LoadLibrary
+lpFileName=gdi32.dll
+Return=77f10000
+#254240000
+LoadLibrary
+lpFileName=LPK.DLL
+Return=629c0000
+#255630000
+CreateFile
+hName=C:\Documents
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=ffffffff
+#255660000
+CreateFile
+hName=C:\Documents and
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=ffffffff
+#255700000
+CreateFile
+hName=C:\Documents and Settings\All
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=ffffffff
+#255750000
+CreateFile
+hName=C:\Documents and Settings\All Users\DropboxUpdate.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=ffffffff
+#255780000
+CreateFile
+hName=C:\Documents and Settings\All Users\DropboxUpdate.exe /ondemand
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=ffffffff
+#255610000
+CreateProcessInternal
+lpCommandLine=C:\Documents and Settings\All Users\DropboxUpdate.exe /ondemand
+Return=0
+#255610000
+CreateProcess
+lpCommandLine=C:\Documents and Settings\All Users\DropboxUpdate.exe /ondemand
+Return=0
+#255820000
+ExitProcess

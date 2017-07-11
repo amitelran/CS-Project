@@ -1,0 +1,5 @@
+3032 malware.exe
+#200100000
+LoadLibrary
+lpFileName=kernel32.dll
+Return=SUCCESS
